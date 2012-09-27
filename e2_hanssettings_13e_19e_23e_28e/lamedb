@@ -235,7 +235,7 @@ transponders
 	s 12226000:29500000:0:3:282:2:0:1:1:0
 /
 011a0000:0802:0002
-	s 10847000:23000000:1:6:282:2:0:1:1:1
+	s 10847000:23000000:1:2:282:2:0:1:2:1:2
 /
 011a0000:07d1:0002
 	s 11719000:29500000:0:3:282:2:0:1:1:0
@@ -441,14 +441,14 @@ transponders
 00eb0000:7623:0003
 	s 12688000:3617000:1:3:235:2:0
 /
+00eb0000:0c91:0003
+	s 12032000:27500000:0:9:235:2:0:1:1:0
+/
 00eb0000:0c87:0003
 	s 11836000:27500000:0:4:235:2:0
 /
 00ebb174:ffff:ffff
 	s 12660000:477000:1:1:235:2:0
-/
-00eb0000:0c91:0003
-	s 12032000:27500000:0:9:235:2:0:1:1:0
 /
 00eb0000:0c90:0003
 	s 12012000:27500000:1:3:235:2:0
@@ -525,11 +525,11 @@ transponders
 00c00000:0430:0001
 	s 11856000:27500000:1:3:192:2:0
 /
-00c00000:045f:0035
-	s 12721000:22000000:0:4:192:2:0
-/
 00c00000:0001:0085
 	s 12070000:27500000:0:3:192:2:0
+/
+00c00000:045f:0035
+	s 12721000:22000000:0:4:192:2:0
 /
 00c00000:0456:0001
 	s 12581000:22000000:1:4:192:2:0
@@ -2238,10 +2238,13 @@ p:BSkyB
 Sky Sports 3
 p:BSkyB
 157c:011a0000:07e5:0002:1:0
-PBS
+PBS America
 p:BSkyB
 107d:011a0000:07e5:0002:1:0
 Sky Sports 1
+p:BSkyB
+0585:011a0000:07e5:0002:1:0
+Sky Atlantic+1
 p:BSkyB
 158b:011a0000:07e5:0002:1:0
 FX
@@ -2264,6 +2267,9 @@ p:BSkyB
 11a1:011a0000:07e5:0002:1:0
 Sky Sports 3
 p:BSkyB
+1f4f:011a0000:07e5:0002:130:0
+FAQ Development
+p:BSkyB
 1f7a:011a0000:07e5:0002:130:0
 Sports Swiching Browser
 p:BSkyB
@@ -2281,7 +2287,7 @@ Zee Punjabi
 p:BSkyB
 c530:011a0000:0965:0002:1:0
 Zee Café
-p:BSkyB
+p:BSkyB,c:098801
 c535:011a0000:0965:0002:1:0
 GayXchange
 p:BSkyB
@@ -2396,9 +2402,6 @@ p:BSkyB
 cb2e:011a0000:0907:0002:1:0
 Cinémoi movies
 p:BSkyB
-cb30:011a0000:0907:0002:1:0
-House Of Fun
-p:BSkyB
 cb48:011a0000:0907:0002:1:0
 SportxxxGirls
 p:BSkyB
@@ -2410,6 +2413,9 @@ Controversial tv
 p:BSkyB
 cb5c:011a0000:0907:0002:1:0
 BET +1
+p:BSkyB
+cb66:011a0000:0907:0002:1:0
+Klear TV
 p:BSkyB
 cb3b:011a0000:0907:0002:2:0
 Sunrise
@@ -4030,10 +4036,10 @@ Disney Chnl HD
 p:BSkyB,c:050001
 1b1c:011a0000:0802:0002:25:0
 BBC HD
-p:BSkyB,c:050001
+p:BSkyB
 1b1d:011a0000:0802:0002:25:0
 BBC One HD
-p:BSkyB,c:050001
+p:BSkyB
 1b21:011a0000:0802:0002:25:0
 6945
 p:BSkyB
@@ -4884,8 +4890,8 @@ p:unknown
 CARRIER ID DEMO
 p:SES
 527a:00eb0000:0c96:0003:1:0
-VT4
-p:TV Vlaanderen
+VIER
+p:TV Vlaanderen,c:050001
 5276:00eb0000:0c96:0003:22:0
 JIM
 p:TV Vlaanderen,c:050001
@@ -4894,9 +4900,9 @@ p:TV Vlaanderen,c:050001
 p:TV Vlaanderen
 527c:00eb0000:0c96:0003:22:0
 vtmKazoom/Kanaal Z
-p:TV Vlaanderen
+p:TV Vlaanderen,c:050001
 527e:00eb0000:0c96:0003:22:0
-VIJF tv
+VIJF
 p:TV Vlaanderen
 5280:00eb0000:0c96:0003:22:0
 Vitaya
@@ -4906,7 +4912,7 @@ Acht
 p:TV Vlaanderen
 5284:00eb0000:0c96:0003:22:0
 Man-X
-p:TV Vlaanderen
+p:TV Vlaanderen,c:050001
 5286:00eb0000:0c96:0003:22:0
 KetOp12
 p:TV Vlaanderen
@@ -5101,9 +5107,12 @@ History HD
 p:Skylink
 13b2:00eb0000:0c95:0003:1:0
 Slovak Sport
-p:Skylink,c:050001
+p:Skylink
 13b6:00eb0000:0c95:0003:1:0
 Doku CS
+p:Skylink
+13b9:00eb0000:0c95:0003:1:0
+AXN
 p:Skylink
 13c2:00eb0000:0c95:0003:1:0
 Kino CS
@@ -5114,9 +5123,6 @@ p:Skylink
 13c6:00eb0000:0c95:0003:1:0
 Film Europe
 p:Skylink
-13c9:00eb0000:0c95:0003:1:0
-Eurosport 2 HD DUT
-p:Skylink,c:050001
 13b1:00eb0000:0c95:0003:25:0
 Eurosport 2 HD
 p:Skylink
@@ -5198,6 +5204,24 @@ p:Skylink
 31d8:00eb0000:7623:0003:1:0
 GIGA
 p:Scopus Network Technologies
+17de:00eb0000:0c91:0003:1:0
+.
+p:BetaDigital
+182e:00eb0000:0c91:0003:12:0
+A2C-RMT
+p:ABBS
+17d4:00eb0000:0c91:0003:25:0
+DELUXE LOUNGE HD
+p:BetaDigital,c:050001
+17d5:00eb0000:0c91:0003:25:0
+UNITEL CLASSICA HD
+p:BetaDigital
+17d6:00eb0000:0c91:0003:25:0
+.
+p:BetaDigital
+17d7:00eb0000:0c91:0003:25:0
+AutoMotorSport HD
+p:BetaDigital,c:050001
 13ed:00eb0000:0c87:0003:1:0
 TV JOJ
 p:Towercom
@@ -5294,21 +5318,6 @@ p:unknown
 03e8:00ebb174:ffff:ffff:2:0
 Antenne Bayern
 p:unknown
-182e:00eb0000:0c91:0003:12:0
-A2C-RMT
-p:ABBS
-17d4:00eb0000:0c91:0003:25:0
-DELUXE LOUNGE HD
-p:BetaDigital
-17d5:00eb0000:0c91:0003:25:0
-UNITEL CLASSICA HD
-p:BetaDigital
-17d6:00eb0000:0c91:0003:25:0
-.
-p:BetaDigital
-17d7:00eb0000:0c91:0003:25:0
-AutoMotorSport HD
-p:BetaDigital
 1d83:00eb0000:0c90:0003:12:0
 SRV_11
 p:SES ASTRA
@@ -5348,9 +5357,6 @@ p:CANALDIGITAAL
 179e:00eb0000:0c82:0003:22:0
 Investigation Disc.CZ
 p:CANALDIGITAAL
-17a2:00eb0000:0c82:0003:22:0
-TEST
-p:CANALDIGITAAL
 17a7:00eb0000:0c82:0003:22:0
 TVL/ATV/TV Oost
 p:CANALDIGITAAL
@@ -5360,24 +5366,24 @@ p:CANALDIGITAAL
 17b1:00eb0000:0c82:0003:22:0
 Disney Channel
 p:CANALDIGITAAL
-17b2:00eb0000:0c82:0003:22:0
-Test1
-p:CANALDIGITAAL
 17b3:00eb0000:0c82:0003:22:0
-Test2
+HBO 2
 p:CANALDIGITAAL
 17b4:00eb0000:0c82:0003:22:0
-Test3
+HBO 3
 p:CANALDIGITAAL
 17b8:00eb0000:0c82:0003:22:0
 Private Spice
 p:CANALDIGITAAL
+17b2:00eb0000:0c82:0003:25:0
+HBO HD
+p:CANALDIGITAAL
 17c0:00eb0000:0c82:0003:25:0
 Nederland 2 HD
-p:CANALDIGITAAL,f:0008,c:050001
+p:CANALDIGITAAL,f:0008
 17ca:00eb0000:0c82:0003:25:0
 SBS6 HD
-p:CANALDIGITAAL
+p:CANALDIGITAAL,c:050001
 17cc:00eb0000:0c82:0003:25:0
 EDL1 HD
 p:Canaldigitaal
@@ -6803,81 +6809,6 @@ p:CSAT
 2012:00c00000:0430:0001:197:0
 PMU sur Canal+
 p:CSAT
-320e:00c00000:045f:0035:1:0
-VT4 (MPEG4)
-p:TV Vlaanderen,c:050001
-321a:00c00000:045f:0035:1:0
-Informatiekanaal
-p:TV Vlaanderen
-31e3:00c00000:045f:0035:1:0
-VTM
-p:TV Vlaanderen
-31e4:00c00000:045f:0035:1:0
-2BE
-p:TV Vlaanderen
-31e5:00c00000:045f:0035:1:0
-VT4 mpeg-2
-p:TV Vlaanderen,f:0008
-31e7:00c00000:045f:0035:1:0
-een
-p:TV Vlaanderen
-31e8:00c00000:045f:0035:1:0
-Canvas
-p:TV Vlaanderen
-31e9:00c00000:045f:0035:1:0
-Vitaya
-p:TV Vlaanderen
-31f0:00c00000:045f:0035:1:0
-VIJFtv
-p:TV Vlaanderen
-31f1:00c00000:045f:0035:1:0
-vtmKazoom/Kanaal Z
-p:TV Vlaanderen
-31f4:00c00000:045f:0035:1:0
-Man-X
-p:TV Vlaanderen
-31f6:00c00000:045f:0035:1:0
-Acht
-p:TV Vlaanderen
-31ea:00c00000:045f:0035:2:0
-VRT Radio1
-p:TV Vlaanderen
-31eb:00c00000:045f:0035:2:0
-VRT Radio2
-p:TV Vlaanderen
-31ec:00c00000:045f:0035:2:0
-MNM
-p:TV Vlaanderen
-31ed:00c00000:045f:0035:2:0
-Studio Brussel
-p:TV Vlaanderen
-31ee:00c00000:045f:0035:2:0
-Klara
-p:TV Vlaanderen
-31f2:00c00000:045f:0035:2:0
-Q-music
-p:TV Vlaanderen
-31f3:00c00000:045f:0035:2:0
-JOEfm
-p:TV Vlaanderen
-31f5:00c00000:045f:0035:2:0
-Nostalgie
-p:TV Vlaanderen
-3208:00c00000:045f:0035:22:0
-KetOp12
-p:TV Vlaanderen,c:050001
-320e:00c00000:045f:0035:22:0
-VT4 (MPEG4)
-p:TV Vlaanderen
-3210:00c00000:045f:0035:22:0
-vtmKazoom/Kanaal Z (MPEG4)
-p:TV Vlaanderen,c:050001
-3216:00c00000:045f:0035:22:0
-Acht (MPEG4)
-p:TV Vlaanderen,c:050001
-3218:00c00000:045f:0035:22:0
-Man-X (MPEG4)
-p:TV Vlaanderen,c:050001
 0010:00c00000:0001:0085:1:0
 Fox Serie
 p:SKY
@@ -6941,6 +6872,75 @@ p:
 0175:00c00000:0001:0085:211:0
 Sky Sport 13
 p:
+321a:00c00000:045f:0035:1:0
+Informatiekanaal
+p:TV Vlaanderen
+31e3:00c00000:045f:0035:1:0
+VTM
+p:TV Vlaanderen
+31e4:00c00000:045f:0035:1:0
+2BE
+p:TV Vlaanderen
+31e5:00c00000:045f:0035:1:0
+VIER
+p:TV Vlaanderen
+31e7:00c00000:045f:0035:1:0
+een
+p:TV Vlaanderen
+31e8:00c00000:045f:0035:1:0
+Canvas
+p:TV Vlaanderen
+31e9:00c00000:045f:0035:1:0
+Vitaya
+p:TV Vlaanderen
+31f0:00c00000:045f:0035:1:0
+VIJF
+p:TV Vlaanderen
+31f1:00c00000:045f:0035:1:0
+vtmKazoom/Kanaal Z
+p:TV Vlaanderen
+31f4:00c00000:045f:0035:1:0
+Man-X
+p:TV Vlaanderen
+31ea:00c00000:045f:0035:2:0
+VRT Radio1
+p:TV Vlaanderen
+31eb:00c00000:045f:0035:2:0
+VRT Radio2
+p:TV Vlaanderen
+31ec:00c00000:045f:0035:2:0
+MNM
+p:TV Vlaanderen
+31ed:00c00000:045f:0035:2:0
+Studio Brussel
+p:TV Vlaanderen
+31ee:00c00000:045f:0035:2:0
+Klara
+p:TV Vlaanderen
+31f2:00c00000:045f:0035:2:0
+Q-music
+p:TV Vlaanderen
+31f3:00c00000:045f:0035:2:0
+JOEfm
+p:TV Vlaanderen
+31f5:00c00000:045f:0035:2:0
+Nostalgie
+p:TV Vlaanderen
+3208:00c00000:045f:0035:22:0
+KetOp12
+p:TV Vlaanderen
+320e:00c00000:045f:0035:22:0
+VIER (MPEG4)
+p:TV Vlaanderen
+3210:00c00000:045f:0035:22:0
+vtmKazoom/Kanaal Z (MPEG4)
+p:TV Vlaanderen
+3216:00c00000:045f:0035:22:0
+Acht (MPEG4)
+p:TV Vlaanderen
+3218:00c00000:045f:0035:22:0
+Man-X (MPEG4)
+p:TV Vlaanderen,c:050001
 251d:00c00000:0456:0001:1:0
 TF6
 p:CSAT
@@ -7605,7 +7605,7 @@ p:SES ASTRA
 STB SRADIX
 p:SES ASTRA
 3138:00c00000:0459:0001:1:0
-MagicStar Digitalradio Promo
+Juwelo pur
 p:MEDIA BROADCAST
 3139:00c00000:0459:0001:1:0
 K-TV
@@ -7674,7 +7674,7 @@ p:MEDIA BROADCAST
 Shop24Direct
 p:Media Broadcast
 315a:00c00000:0459:0001:1:0
-MB Test
+MagicStar NEU Digitalradio Promo
 p:MEDIA BROADCAST
 315b:00c00000:0459:0001:1:0
 Cambabes24
@@ -7692,7 +7692,7 @@ p:MEDIA BROADCAST
 Clipmobile
 p:MEDIA BROADCAST
 3162:00c00000:0459:0001:1:0
-SmartCast Test
+MB SmartCast Test
 p:MEDIA BROADCAST
 3163:00c00000:0459:0001:1:0
 Deutsches Musik Fernsehen
@@ -7734,8 +7734,8 @@ p:MEDIA BROADCAST
 Radio Regenbogen
 p:MEDIA BROADCAST
 3178:00c00000:0459:0001:2:0
-12633H SID 0x3178
-p:DVB-S QPSK 12633H 19.2Â°E
+Power 104
+p:MEDIA BROADCAST
 3145:00c00000:0459:0001:12:0
 RAPS
 p:MEDIA BROADCAST
@@ -9765,7 +9765,7 @@ p:ARD
 TEST
 p:Rohde & Schwarz
 10cd:00c00000:0418:0001:1:0
-FTV test
+FTV SPAIN
 p:RRSat
 20d2:00c00000:043e:0001:1:0
 A LA CARTE 1
@@ -10129,7 +10129,7 @@ Juwelo HD
 p:BetaDigital
 151c:00c00000:0455:0001:25:0
 pearl.tv HD
-p:BetaDigital
+p:BetaDigital,c:050001
 5277:00c00000:041d:0001:22:0
 ASTRA Portal
 p:BetaDigital,c:050001
@@ -10474,7 +10474,7 @@ ZDFinfo HD
 p:ZDFvision,c:050001
 26ad:00c00000:045c:0001:25:0
 DISCOVERY HD
-p:CSAT
+p:CSAT,c:050001
 26b0:00c00000:045c:0001:25:0
 BRAVA HD
 p:CSAT
@@ -10603,7 +10603,7 @@ DARING TV
 p:Telespazio
 4224:00820000:3db8:013e:1:0
 Redlight 3D-HD
-p:Telespazio
+p:Telespazio,c:050001
 4225:00820000:3db8:013e:1:0
 HUSTLER HD-3D
 p:Telespazio
@@ -10622,6 +10622,9 @@ p:Harmonic
 422b:00820000:3db8:013e:1:0
 Roma Sat
 p:Telespazio
+422c:00820000:3db8:013e:1:0
+Passione Pesca
+p:Harmonic
 422e:00820000:3db8:013e:1:0
 Daring Tv!
 p:Telespazio
@@ -10633,6 +10636,9 @@ Studio Europa
 p:Harmonic
 4234:00820000:3db8:013e:1:0
 TASVIR AFN 18
+p:Telespazio
+4237:00820000:3db8:013e:1:0
+TV Luna
 p:Telespazio
 20ea:00820000:3db8:013e:1:0
 BLU
@@ -12367,7 +12373,7 @@ BBC Knowledge HD
 p:ITI
 0e09:00820000:2d50:013e:1:0
 HBO2 HD
-p:ITI
+p:ITI,c:050001
 0e0a:00820000:2d50:013e:1:0
 HBO COMEDY HD
 p:ITI
@@ -12389,12 +12395,6 @@ p:TVN
 0dc4:00820000:2d50:013e:1:0
 TVP Historia
 p:TVN
-0dc8:00820000:2d50:013e:1:0
-nSport 108
-p:ITI
-0dc9:00820000:2d50:013e:1:0
-nSport 109
-p:ITI
 0de8:00820000:2d50:013e:12:0
 Invoice
 p:ITI
@@ -13908,7 +13908,7 @@ p:Harmonic
 CTV AP
 p:Harmonic
 133c:00820000:33f4:013e:1:0
-Al Anwar
+STERK TV
 p:Telespazio
 133d:00820000:33f4:013e:1:0
 TRSP
@@ -14821,7 +14821,7 @@ p:NetMed
 p:DVB-S QPSK 12169H 13.0°E
 025f:00820000:3c8c:013e:1:0
 DW Europe
-p:MEDIA BROADCAST
+p:MEDIA BRODCAST
 0262:00820000:3c8c:013e:1:0
 HB-FEED
 p:MEDIA BROADCAST
@@ -14872,6 +14872,9 @@ Kosmica TV
 p:MEDIA BROADCAST
 0274:00820000:3c8c:013e:1:0
 ELITE SHOPPING
+p:MEDIA BROADCAST
+0275:00820000:3c8c:013e:1:0
+KLIKSAT.farhad
 p:MEDIA BROADCAST
 027d:00820000:3c8c:013e:1:0
 TVRUS
@@ -15551,15 +15554,15 @@ p:Arqiva
 1c86:00820000:332c:013e:1:0
 Bloomberg European TV
 p:Arqiva
-1c89:00820000:332c:013e:1:0
-MOTO TV
+1c88:00820000:332c:013e:1:0
+Vista Shopping
 p:Arqiva
 1c99:00820000:332c:013e:1:0
 TV5MONDE FBS
 p:Arqiva
 1c9a:00820000:332c:013e:1:0
 TV5MONDE EUROPE
-p:Arqiva,c:090202
+p:Arqiva
 1c9c:00820000:332c:013e:1:0
 Crime and Investigation
 p:Arqiva
@@ -16849,9 +16852,12 @@ ESPN America HD
 p:SkyItalia
 2cf2:00820000:2774:fbff:25:0
 ExtremeSportsHD
-p:SkyItalia,c:050001
+p:SkyItalia
 2cf3:00820000:2774:fbff:25:0
 Real Time HD
+p:SkyItalia
+2cf4:00820000:2774:fbff:25:0
+Primafila 1 HD
 p:SkyItalia
 2d4f:00820000:2774:fbff:131:0
 IEPG Data
@@ -16936,7 +16942,7 @@ Primafila 13 HD
 p:SkyItalia
 1e22:00820000:15e0:fbff:25:0
 NatGeo Adv HD
-p:SkyItalia
+p:SkyItalia,c:050001
 1e32:00820000:15e0:fbff:25:0
 Cinema Max +1 HD
 p:SkyItalia
@@ -16975,7 +16981,7 @@ History HD
 p:SkyItalia
 1e41:00820000:15e0:fbff:25:0
 NatGeo Wild HD
-p:SkyItalia,c:050001
+p:SkyItalia
 1e42:00820000:15e0:fbff:25:0
 GamberoRossoHD
 p:SkyItalia
@@ -16987,9 +16993,6 @@ MTV LIVE HD
 p:SkyItalia
 1e48:00820000:15e0:fbff:25:0
 Sky Sport Extra HD
-p:SkyItalia
-1e5b:00820000:15e0:fbff:25:0
-Primafila 1 HD
 p:SkyItalia
 1e5c:00820000:15e0:fbff:25:0
 Sky Calcio 8 HD
