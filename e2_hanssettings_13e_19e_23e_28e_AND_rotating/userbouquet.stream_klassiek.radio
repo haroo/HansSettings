@@ -1,6 +1,10 @@
 #NAME Stream Klassiek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//str0.creacast.com%3A900/listen.pls:Accent%204
 #DESCRIPTION Accent 4
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-baroque-bb-mp3:AVRO%20Baroque%20around%20the%20clock
+#DESCRIPTION AVRO Baroque around the clock
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-klassieken-bb-mp3:AVRO%20De%20Klassiek%2024/7
+#DESCRIPTION AVRO De Klassiek 24/7
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streams.br-online.de/br-klassik_1.m3u:BR-Klassik
 #DESCRIPTION BR-Klassik
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//live.btvradio.bg/classic-fm.mp3.m3u:Classic%20FM%20(bul)
@@ -15,6 +19,8 @@
 #DESCRIPTION Concertzender Gregoriaans
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streams.greenhost.nl%3A8080/klassiek.m3u:Concertzender%20Klassieke%20Muziek
 #DESCRIPTION Concertzender Klassieke Muziek
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/novembermusic:Concertzender%20Live
+#DESCRIPTION Concertzender Live
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streams.greenhost.nl%3A8080/nieuwemuziek.m3u:Concertzender%20Nieuwe%20Muziek
 #DESCRIPTION Concertzender Nieuwe Muziek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streams.greenhost.nl%3A8080/novembermusic.m3u:Concertzender%20November%20Music
@@ -27,9 +33,13 @@
 #DESCRIPTION Concertzender
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//metafiles.gl-systemhaus.de/hr/hr2_2.m3u:HR2
 #DESCRIPTION HR2
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:m3u%3A//edge.live.mp3.mdn.newmedia.nacamar.net/klassikradioopera128/livestream.mp3.m3u:Klassik%20Opera
+#DESCRIPTION Klassik Opera
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//edge.live.mp3.mdn.newmedia.nacamar.net/klassikradio128/livestream.mp3.m3u:Klassik%20Radio
 #DESCRIPTION Klassik Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//sun.m2stream.fr%3A9000/listen.pls:M2%20Classic
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//rbb.ic.llnwd.net/stream/rbb_kulturradio_mp3_m_a:Kulturradio
+#DESCRIPTION Kulturradio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:pls%3A//sun.m2stream.fr%3A9000/listen.pls:M2%20Classic
 #DESCRIPTION M2 Classic
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//avw.mdr.de/livestreams/mdr_figaro_classic_64.m3u:MDR%20FIGARO%20Classic%20in%20Concert
 #DESCRIPTION MDR FIGARO Classic in Concert
@@ -39,10 +49,14 @@
 #DESCRIPTION MDR KLASSIK Livestream
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.listenlive.eu/mr3.m3u:MR3-Bartok%20Radio
 #DESCRIPTION MR3-Bartok Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-musicareligiosa-mp3:Musica%20Religiosa
+#DESCRIPTION Musica Religiosa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//ndrstream.ic.llnwd.net/stream/ndrstream_ndrkultur_hi_mp3.m3u:NDR%20Kultur
 #DESCRIPTION NDR Kultur
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//lyd.nrk.no/nrk_radio_klassisk_aac_l.m3u:NRK%20Klassisk
 #DESCRIPTION NRK Klassisk
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio2-inconcert-mp3:Radio%202%20Concert
+#DESCRIPTION Radio 2 Concert
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl/radio4-baroque-bb-mp3?non_cache=1359878918265:Radio%204%20Baroque
 #DESCRIPTION Radio 4 Baroque
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-eigentijds-mp3:Radio%204%20Eigentijds
@@ -59,6 +73,12 @@
 #DESCRIPTION Radio 4 Musicareligiosa
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl/radio4-orgelradio-bb-mp3?non_cache=1359878835117:Radio%204%20Orgelradio
 #DESCRIPTION Radio 4 Orgelradio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-eigentijds-mp3:Radio%204-1
+#DESCRIPTION Radio 4-1
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio6-jazzjong-mp3:Radio%204-3
+#DESCRIPTION Radio 4-3
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-bb-mp3:Radio%204
+#DESCRIPTION Radio 4
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-bb-mp3:Radio%204
 #DESCRIPTION Radio 4
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//broadcast.infomaniak.ch/radioclassique-high.mp3.m3u:Radio%20Classique
@@ -93,6 +113,12 @@
 #DESCRIPTION Sveriges Radio SR Klassiskt
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//mp3-live.swr.de/swr2_m.m3u:SWR2
 #DESCRIPTION SWR2
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/traxx012-high.mp3:Traxx%20Classic
+#DESCRIPTION Traxx Classic
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/traxx012-low.mp3:Traxx%20Classic
+#DESCRIPTION Traxx Classic
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/traxx012-48.aac:Traxx%20Classic%20AAC+%2048
+#DESCRIPTION Traxx Classic AAC+ 48
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.radioonda.it/live2/128.pls:Venice%20Classic%20Radio
 #DESCRIPTION Venice Classic Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.listenlive.eu/vivaclassica.m3u:Viva%20Classica
@@ -101,3 +127,41 @@
 #DESCRIPTION VRT Klara Continuo
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.listenlive.eu/vrtklara-low.m3u:VRT%20Radio%20Klara
 #DESCRIPTION VRT Radio Klara
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//mp3.live.tv-radio.com/francemusique/all/francemusiquehautdebit.mp3:France%20Musique
+#DESCRIPTION France Musique
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//str20.creacast.com%3A443:Radio%20Classique%20(Bas%20debit)
+#DESCRIPTION Radio Classique (Bas debit)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/rsr-espace2-low.mp3:RSR%20Espace%202
+#DESCRIPTION RSR Espace 2
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/rsr-espace2-high.aac:RSR%20Espace%202%20AAC+
+#DESCRIPTION RSR Espace 2 AAC+
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//musiq3.ice.infomaniak.ch/musiq3.mp3:RTBF%20Musiq3
+#DESCRIPTION RTBF Musiq3
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/traxx012-high.mp3:Traxx%20Classic
+#DESCRIPTION Traxx Classic
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/traxx012-low.mp3:Traxx%20Classic
+#DESCRIPTION Traxx Classic
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/traxx012-48.aac:Traxx%20Classic%20AAC+%2048
+#DESCRIPTION Traxx Classic AAC+ 48
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//espacemusique-128.akacast.akamaistream.net/7/558/94045/v1/rc.akacast.akamaistream.net/espacemusique-128:Radio%20Canada%20-%20Espace%20musique
+#DESCRIPTION Radio Canada - Espace musique
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-high.aac:RTS%20(ex-RSR)%20-%20Espace%202%20(AAC)
+#DESCRIPTION RTS (ex-RSR) - Espace 2 (AAC)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-low.mp3:RTS%20(ex-RSR)%20-%20Espace%202%20(MP3)%20(Bas%20d%E9bit)
+#DESCRIPTION RTS (ex-RSR) - Espace 2 (MP3) (Bas débit)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-high.mp3:RTS%20(ex-RSR)%20-%20Espace%202%20(MP3)%20(Haut%20d%E9bit)
+#DESCRIPTION RTS (ex-RSR) - Espace 2 (MP3) (Haut débit)
+#SERVICE 1:64:5013:0:0:0:0:0:0:0:
+#DESCRIPTION Rusland
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//46.160.36.66%3A8000/rmf_classic.mp3:Radio%20RMF%20Classic%20RMF%20Classic
+#DESCRIPTION Radio RMF Classic RMF Classic
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//46.160.36.66%3A8000/zvezda.mp3:Radio%20Zvezda%20?????%20(English)
+#DESCRIPTION Radio Zvezda ????? (English)
+#SERVICE 1:64:5014:0:0:0:0:0:0:0:
+#DESCRIPTION Spanje
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//195.10.10.221%3A80/rtve/radioclasica.mp3?GKID=e00cf78c97c511df973200163ea2c743:RNE%20Radio%20Clasica%20(ex-Radio%202)
+#DESCRIPTION RNE Radio Clasica (ex-Radio 2)
+#SERVICE 1:64:5015:0:0:0:0:0:0:0:
+#DESCRIPTION Servie
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//217.26.213.214%3A8000/radiozlatousti.mp3:RADIO%20ZLATOUSTI
+#DESCRIPTION RADIO ZLATOUSTI
