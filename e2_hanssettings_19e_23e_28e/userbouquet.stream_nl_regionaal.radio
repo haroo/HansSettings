@@ -29,10 +29,8 @@
 #DESCRIPTION FR: Lokale Omroep Odrie
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//mercurius.ic-stream.nl%3A7050/listen.pls:FR%3A%20Mercurius%20RTV
 #DESCRIPTION FR: Mercurius RTV
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//ice.media05.kpnstreaming.nl%3A8000/kpn=OmropFryslanL=Radio.mp3.m3u:FR%3A%20Omrop%20Fryslan
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.pmedia80.kpnstreaming.nl/omropfryslanlive-OmropFryslanRadio.mp3:FR%3A%20Omrop%20Fryslan
 #DESCRIPTION FR: Omrop Fryslan
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.radiocentraal.com/rwconair.m3u:FR%3A%20Radio%20Centraal
-#DESCRIPTION FR: Radio Centraal
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//178.19.114.50%3A50004/listen.pls:FR%3A%20Radio%20Noordoost-Friesland
 #DESCRIPTION FR: Radio Noordoost-Friesland
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.stream-server.nl/streams/RadioStadHarlingen.pls:FR%3A%20Radiostad%20Harlingen
@@ -45,8 +43,10 @@
 #DESCRIPTION GD: Achterhoek FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.berkellandfm.nl/bfm.pls:GD%3A%20Berkelland%20FM
 #DESCRIPTION GD: Berkelland FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//rtvbetuweradio.stream2us.com/stream.m3u:GD%3A%20Betuwe%20Radio%20en%20TV
-#DESCRIPTION GD: Betuwe Radio en TV
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:mmsh%3A//wms.pmedia07.kpnstreaming.nl/omroepelburglive-radio?MSWMExt=.asf:GD%3A%20Omroep%20Elburg
+#DESCRIPTION GD: Omroep Elburg
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:mmsh%3A//213.75.58.223/omroepelburglive-radio?MSWMExt=.asf:GD%3A%20Omroep%20Elburg
+#DESCRIPTION GD: Omroep Elburg
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//extrafm.shoutcaststream.com/stream.m3u:GD%3A%20Extra%20FM
 #DESCRIPTION GD: Extra FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.hollanddata.net%3A8170/listen.pls:GD%3A%20Favoriet%20FM
@@ -65,6 +65,8 @@
 #DESCRIPTION GD: M-FM rheden Rozendaal
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//content.streamone.nl/livestream/jM45nMkqZt.pls:GD%3A%20Nijmegen1%20Radio
 #DESCRIPTION GD: Nijmegen1 Radio
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//62.75.228.171%3A8158/:GD%3A%20Oldebroek%20LOCO%20FM
+#DESCRIPTION GD: Oldebroek LOCO FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.omroepgroesbeek.nl/live.m3u:GD%3A%20Omroep%20Groesbeek
 #DESCRIPTION GD: Omroep Groesbeek
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.omroepn.nl/html/live/nfm.m3u:GD%3A%20Omroep%20Nijkerk
@@ -83,8 +85,6 @@
 #DESCRIPTION GD: SRC FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.radiototaal.fm/luisteren/totaalwinamp.pls:GD%3A%20Totaal%20Radio%20
 #DESCRIPTION GD: Totaal Radio 
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//212.45.53.237%3A8000/listen.pls:GD%3A%20Veluwe%20FM
-#DESCRIPTION GD: Veluwe FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//icecast.streamone.nl/k3MNdo0Azq.m3u:GD%3A%20Web%20FM
 #DESCRIPTION GD: Web FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.wijchenseomroep.nl/wo.pls:GD%3A%20Wijchense%20Omroep
@@ -99,6 +99,8 @@
 #DESCRIPTION GR: Radio Compagnie
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.radiocontinu.nl/listen/listen.pls:GR%3A%20Radio%20Continu
 #DESCRIPTION GR: Radio Continu
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//radiocontinu.ic-stream.nl%3A7062:Radio%20Continu
+#DESCRIPTION Radio Continu
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.rwkfm.nl%3A8098/listen.pls:GR%3A%20Radio%20Westerkwartier
 #DESCRIPTION GR: Radio Westerkwartier
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//178.19.114.74%3A10024/listen.pls:GR%3A%20Regio%20FM
@@ -129,8 +131,6 @@
 #DESCRIPTION LB: Rtv Maas en Mergelland
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.power1054.nl/2009/stream.m3u:NB%3A%20Avulo%20FM
 #DESCRIPTION NB: Avulo FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//blos.shoutcaststream.com/stream.m3u:NB%3A%20BLOS%20RTV
-#DESCRIPTION NB: BLOS RTV
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//server-10.stream-server.nl%3A8132/listen.pls:NB%3A%20Boschtion%20FM
 #DESCRIPTION NB: Boschtion FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//82.201.100.10%3A8000/WEB07_Efteling_mp3.m3u:NB%3A%20Efteling%20Radio
@@ -147,8 +147,6 @@
 #DESCRIPTION NB: Maasland
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//82.94.204.67%3A8060/listen.pls:NB%3A%20MoerdijkFM
 #DESCRIPTION NB: MoerdijkFM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//88.159.208.118%3A8000/omroep.mp3:NB%3A%20Omroep%20Best
-#DESCRIPTION NB: Omroep Best
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.pmedia70.kpnstreaming.nl/omroepbrabantlive-OmroepBrabantLq:NB%3A%20Omroep%20Brabant
 #DESCRIPTION NB: Omroep Brabant
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.pmedia70.kpnstreaming.nl/omroepbrabantlive-OmroepBrabantHq:NB%3A%20Omroep%20Brabant%20HQ
@@ -191,8 +189,6 @@
 #DESCRIPTION NB: Stadsradio Helmond
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.studio040.nl/livefeed.m3u:NB%3A%20Studio040
 #DESCRIPTION NB: Studio040
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//streams.movemedia.eu%3A8310/listen.pls:NB%3A%20SUC6%20FM
-#DESCRIPTION NB: SUC6 FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.vestingstadfm.nl%3A9730/listen.pls:NB%3A%20Vestingstad%20FM%20107.1
 #DESCRIPTION NB: Vestingstad FM 107.1
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//213.193.236.7%3A9032/listen.pls:NB%3A%20VLOH%20Radio
@@ -201,20 +197,14 @@
 #DESCRIPTION NH: AB Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//radioheiloo.no-ip.info%3A8010/listen.pls:NH%3A%20Beat%20FM
 #DESCRIPTION NH: Beat FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.compleetfm.nl/content/16271/download/clnt/32629_wa_128kbps.pls:NH%3A%20Compleet%20FM
-#DESCRIPTION NH: Compleet FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//streams.fresh.fm%3A8100/listen.pls:NH%3A%20Fresh%20FM
 #DESCRIPTION NH: Fresh FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.haarlem105.nl/live/haarlem105/streams/haarlem105stream.m3u:NH%3A%20Haarlem%20105%20RTV
-#DESCRIPTION NH: Haarlem 105 RTV
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream2.heerhugowaardalife.nl%3A8310/listen.pls:NH%3A%20Heerhugowaard%20a%20life
 #DESCRIPTION NH: Heerhugowaard a life
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream01.gethost.nl%3A8050/listen.pls:NH%3A%20LOS%20Den%20Helder
 #DESCRIPTION NH: LOS Den Helder
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//stream.zxp.nl%3A8000/loveradio.m3u:NH%3A%20LOVE%20Radio
 #DESCRIPTION NH: LOVE Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.meerradio.nl%3A8000/listen.pls:NH%3A%20Meer%20Radio
-#DESCRIPTION NH: Meer Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.mix724.nl%3A9168/listen.pls:NH%3A%20MIX%20724
 #DESCRIPTION NH: MIX 724
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.6fm.nl/listen.m3u:NH%3A%20Radio%206FM
@@ -245,8 +235,6 @@
 #DESCRIPTION NH: Zaanradio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streams.error418.com/zfmzandvoort_high.mp3.m3u:NH%3A%20ZFM
 #DESCRIPTION NH: ZFM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//78.159.97.159%3A8160/listen.pls:NH%3A%20Zuiderzee%20FM
-#DESCRIPTION NH: Zuiderzee FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.airplayradio.nl/64k.pls:OV%3A%20Airplay%20Radio
 #DESCRIPTION OV: Airplay Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//autodj.nl/tunein.php/deventerradio/playlist.pls:OV%3A%20Deventer%20Radio
@@ -271,8 +259,6 @@
 #DESCRIPTION OV: Twente FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.idpromotions.nl%3A8014/listen.pls:OV%3A%20Twickelstad%20FM
 #DESCRIPTION OV: Twickelstad FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.live-streams.nl/streams/soulradio.pls:Soul%20Radio
-#DESCRIPTION Soul Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.6fm.nl/listen.m3u:UT%3A%206FM
 #DESCRIPTION UT: 6FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//eemlandrtv.nl/BfmStreamLaag.m3u:UT%3A%20BaarnFM
@@ -283,8 +269,6 @@
 #DESCRIPTION UT: Groot nieuws radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//losradio.shoutcaststream.com/stream.m3u:UT%3A%20Lokale%20Omroep%20Spakenburg
 #DESCRIPTION UT: Lokale Omroep Spakenburg
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.radio90fm.nl/streaming/winamp.m3u:UT%3A%20Radio%2090FM
-#DESCRIPTION UT: Radio 90FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//icecast.rtvutrecht.nl/radiomutrecht_hi:UT%3A%20Radio%20M
 #DESCRIPTION UT: Radio M
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.rosafm.nl%3A8020/listen.pls:UT%3A%20ROSAFM
@@ -321,18 +305,12 @@
 #DESCRIPTION ZH: RTV Hollands Midden
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//rtw.shoutcaststream.com/stream.m3u:ZH%3A%20RTW%20FM
 #DESCRIPTION ZH: RTW FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//rtw.shoutcaststream.com/stream.m3u:ZH%3A%20RTW%20FM
-#DESCRIPTION ZH: RTW FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//icecast.mediadesign.nl%3A8000/sleutelstad.m3u:ZH%3A%20Sleutelstad
-#DESCRIPTION ZH: Sleutelstad
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//studiodelft.dnsalias.org/broadwave.mp3:ZH%3A%20Stads%20Radio%20Delft
-#DESCRIPTION ZH: Stads Radio Delft
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//stream.kabelfoon.nl%3A8000/wos876.m3u:ZH%3A%20WOS%20Radio
 #DESCRIPTION ZH: WOS Radio
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:rtsp%3A//Kippingmultimediaal.nl/ZoetermeerFM:ZH%3A%20ZoetermeerFM
+#DESCRIPTION ZH: ZoetermeerFM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.zapfm.nl/zapfm1.pls:ZH%3A%20Zap!%20FM
 #DESCRIPTION ZH: Zap! FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.kippingmultimediaal.nl/zfm.m3u:ZH%3A%20Zoetermeer%20FM
-#DESCRIPTION ZH: Zoetermeer FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.omroeptholen.nl/public/upload/files/ot.m3u:ZL%3A%20Omroep%20Tholen
 #DESCRIPTION ZL: Omroep Tholen
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//breedband.hollandio.nl%3A8600/:ZL%3A%20Radio%20Hollandio%20Zeeland
@@ -345,6 +323,10 @@
 #DESCRIPTION ZZ NB: Lokale Omroep Schijndel
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//zwartewaterfm.shoutcaststream.com/stream.m3u:ZZ%20OV%3A%20Zwartewater%20FM
 #DESCRIPTION ZZ OV: Zwartewater FM
+#SERVICE 1:64:453:0:0:0:0:0:0:0:
+#DESCRIPTION ---algemeen---
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//stream.hollanddata.eu/bfm-128:BrightFM
+#DESCRIPTION BrightFM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//81.23.249.40%3A8004/listen.pls:WWW%3A%20Double%20Z%20Radio
 #DESCRIPTION WWW: Double Z Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream2.kickradio.nl%3A9000/listen.pls:WWW%3A%20KickRadio
@@ -361,7 +343,7 @@
 #DESCRIPTION WWW: Pinguin Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//62.75.191.185%3A8000/listen.pls:WWW%3A%20Radio%20Holland%20Online
 #DESCRIPTION WWW: Radio Holland Online
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//87.233.180.73%3A8000/listen.pls:WWW%3A%20Radio%20Maria
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:pls%3A//87.233.180.73%3A8000/listen.pls:WWW%3A%20Radio%20Maria
 #DESCRIPTION WWW: Radio Maria
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//stream.click2.nl%3A8888/listen.pls:WWW%3A%20Reflex%20FM
 #DESCRIPTION WWW: Reflex FM
