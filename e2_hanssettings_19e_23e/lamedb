@@ -126,6 +126,9 @@ transponders
 00eb0000:00c1:0003
 	s 12642000:2170000:0:3:235:2:0
 /
+00eb0000:0c85:0003
+	s 11797000:27500000:0:3:235:2:0:1:2:0:2
+/
 00eb0000:0c27:0003
 	s 10862000:22000000:0:0:235:2:0
 /
@@ -170,9 +173,6 @@ transponders
 /
 00eb0000:0c84:0003
 	s 11778000:27500000:1:9:235:2:0:1:1:0
-/
-00eb0000:0c85:0003
-	s 11797000:27500000:0:3:235:2:0:1:2:0:2
 /
 00eb0000:0c95:0003
 	s 12109000:27500000:0:3:235:2:0:1:2:2:2
@@ -357,9 +357,6 @@ transponders
 00c00000:03f5:0001
 	s 11391000:22000000:0:4:192:2:0
 /
-00c00000:03f9:0001
-	s 11464000:22000000:0:2:192:2:0:1:2:0:2
-/
 00c00000:0446:0001
 	s 12285000:27500000:1:3:192:2:0
 /
@@ -512,6 +509,9 @@ transponders
 /
 00c00000:03f3:0001
 	s 11361000:22000000:0:2:192:2:0:1:2:0:2
+/
+00c00000:03f9:0001
+	s 11464000:22000000:0:2:192:2:0:1:2:0:2
 /
 00c00000:041f:0001
 	s 10802000:22000000:0:3:192:2:0:1:2:0:2
@@ -1211,6 +1211,96 @@ p:Skylink
 0c1c:00eb0000:00c1:0003:1:0
 TV 2000
 p:Bavaria BPS
+1420:00eb0000:0c85:0003:1:0
+History HD HU
+p:Skylink
+1422:00eb0000:0c85:0003:1:0
+Eurosport HD HU
+p:Skylink
+1425:00eb0000:0c85:0003:1:0
+Nickelodeon HU
+p:Skylink
+1426:00eb0000:0c85:0003:1:0
+TV Paprika HU
+p:Skylink
+13af:00eb0000:0c85:0003:1:0
+CT sport HD
+p:Skylink
+13ba:00eb0000:0c85:0003:1:0
+Filmbox Family
+p:Skylink
+13bb:00eb0000:0c85:0003:1:0
+Filmbox Extra 1
+p:Skylink
+13bc:00eb0000:0c85:0003:1:0
+Retro Music TV
+p:Skylink,c:050001
+13bd:00eb0000:0c85:0003:1:0
+Nickelodeon CZ
+p:Skylink
+13ab:00eb0000:0c85:0003:22:0
+HBO Comedy
+p:Skylink
+13ac:00eb0000:0c85:0003:22:0
+Golf Channel
+p:Skylink
+13ad:00eb0000:0c85:0003:22:0
+Sport 2
+p:Skylink
+13ae:00eb0000:0c85:0003:22:0
+TV Paprika
+p:Skylink
+141f:00eb0000:0c85:0003:25:0
+History HD DUT
+p:Skylink,c:050001,c:090202
+1420:00eb0000:0c85:0003:25:0
+History HD BG
+p:SatelliteBG
+1421:00eb0000:0c85:0003:25:0
+Eurosport HD DUT
+p:Skylink
+1422:00eb0000:0c85:0003:25:0
+Eurosport HD BG
+p:SatelliteBG
+13a6:00eb0000:0c85:0003:25:0
+Nova HD
+p:Skylink
+13a7:00eb0000:0c85:0003:25:0
+Nova Sport HD
+p:Skylink
+13a8:00eb0000:0c85:0003:25:0
+Prima HD
+p:Skylink
+13a9:00eb0000:0c85:0003:25:0
+Eurosport HD
+p:Skylink
+13aa:00eb0000:0c85:0003:25:0
+History HD
+p:Skylink
+13ab:00eb0000:0c85:0003:25:0
+HBO Comedy Hungary & Czech
+p:SkyLink
+13ac:00eb0000:0c85:0003:25:0
+The Golf Channel
+p:SkyLink
+13ad:00eb0000:0c85:0003:25:0
+Sport 2 Czechia
+p:SkyLink
+13ae:00eb0000:0c85:0003:25:0
+TV Paprika
+p:SkyLink
+13af:00eb0000:0c85:0003:25:0
+CT Sport HD
+p:CS Link
+13ba:00eb0000:0c85:0003:25:0
+Filmbox Family
+p:SkyLink
+13bb:00eb0000:0c85:0003:25:0
+FilmBox Extra
+p:SkyLink
+13bc:00eb0000:0c85:0003:25:0
+Retro Music Television
+p:SkyLink
 f226:00eb0000:0c27:0003:1:0
 Ocko TV 
 p:OCKO TV
@@ -1512,7 +1602,7 @@ p:CANALDIGITAAL
 TV Gelderland
 p:CANALDIGITAAL
 5156:00eb0000:0c8b:0003:1:0
-Sport1 (promo)
+Test
 p:CANALDIGITAAL
 515b:00eb0000:0c8b:0003:1:0
 Crime Inv
@@ -1558,13 +1648,13 @@ Arrow Jazz
 p:canaldigitaal
 5142:00eb0000:0c8b:0003:22:0
 L1MBURG
-p:CANALDIGITAAL,c:050001
+p:CANALDIGITAAL
 5144:00eb0000:0c8b:0003:22:0
 TV West
 p:CANALDIGITAAL
 5146:00eb0000:0c8b:0003:22:0
 AT5
-p:CANALDIGITAAL,c:050001
+p:CANALDIGITAAL
 514a:00eb0000:0c8b:0003:22:0
 TV Noord
 p:CANALDIGITAAL
@@ -1573,7 +1663,7 @@ TV Drenthe
 p:CANALDIGITAAL
 5152:00eb0000:0c8b:0003:22:0
 Omroep Zeeland Televisie
-p:CANALDIGITAAL,c:050001
+p:CANALDIGITAAL
 5154:00eb0000:0c8b:0003:22:0
 Omroep Brabant Televisie
 p:CANALDIGITAAL,c:050001
@@ -1582,10 +1672,7 @@ iConcerts
 p:CANALDIGITAAL
 515a:00eb0000:0c8b:0003:22:0
 ComedyCentral/Kindernet
-p:CANALDIGITAAL,c:050001
-5157:00eb0000:0c8b:0003:25:0
-iConcerts
-p:CANALDIGITAAL,c:050001
+p:CANALDIGITAAL
 5158:00eb0000:0c8b:0003:25:0
 iConcerts CZ
 p:CANALDIGITAAL
@@ -1718,84 +1805,6 @@ p:<None>
 14c1:00eb0000:0c84:0003:1:0
 High TV 3D
 p:SES ASTRA,c:050001
-13af:00eb0000:0c85:0003:1:0
-CT sport HD
-p:Skylink
-13ba:00eb0000:0c85:0003:1:0
-Filmbox Family
-p:Skylink
-13bb:00eb0000:0c85:0003:1:0
-Filmbox Extra 1
-p:Skylink
-13bc:00eb0000:0c85:0003:1:0
-Retro Music TV
-p:Skylink,c:050001
-13bd:00eb0000:0c85:0003:1:0
-Nickelodeon CZ
-p:Skylink
-13ab:00eb0000:0c85:0003:22:0
-HBO Comedy
-p:Skylink
-13ac:00eb0000:0c85:0003:22:0
-Golf Channel
-p:Skylink
-13ad:00eb0000:0c85:0003:22:0
-Sport 2
-p:Skylink
-13ae:00eb0000:0c85:0003:22:0
-TV Paprika
-p:Skylink
-141f:00eb0000:0c85:0003:25:0
-History HD DUT
-p:Skylink,c:050001,c:090202
-1420:00eb0000:0c85:0003:25:0
-History HD BG
-p:SatelliteBG
-1421:00eb0000:0c85:0003:25:0
-Eurosport HD DUT
-p:Skylink
-1422:00eb0000:0c85:0003:25:0
-Eurosport HD BG
-p:SatelliteBG
-13a6:00eb0000:0c85:0003:25:0
-Nova HD
-p:Skylink
-13a7:00eb0000:0c85:0003:25:0
-Nova Sport HD
-p:Skylink
-13a8:00eb0000:0c85:0003:25:0
-Prima HD
-p:Skylink
-13a9:00eb0000:0c85:0003:25:0
-Eurosport HD
-p:Skylink
-13aa:00eb0000:0c85:0003:25:0
-History HD
-p:Skylink
-13ab:00eb0000:0c85:0003:25:0
-HBO Comedy Hungary & Czech
-p:SkyLink
-13ac:00eb0000:0c85:0003:25:0
-The Golf Channel
-p:SkyLink
-13ad:00eb0000:0c85:0003:25:0
-Sport 2 Czechia
-p:SkyLink
-13ae:00eb0000:0c85:0003:25:0
-TV Paprika
-p:SkyLink
-13af:00eb0000:0c85:0003:25:0
-CT Sport HD
-p:CS Link
-13ba:00eb0000:0c85:0003:25:0
-Filmbox Family
-p:SkyLink
-13bb:00eb0000:0c85:0003:25:0
-FilmBox Extra
-p:SkyLink
-13bc:00eb0000:0c85:0003:25:0
-Retro Music Television
-p:SkyLink
 13b2:00eb0000:0c95:0003:1:0
 Slovak Sport
 p:Skylink
@@ -1846,7 +1855,7 @@ Eurosport 2 HD DUT
 p:Skylink
 02bd:00eb0000:0c9a:0003:1:0
 Nat Geo HD
-p:OVERON
+p:OVERON,c:050001
 02c5:00eb0000:0c9a:0003:1:0
 Nat Geo Wild HD DUT
 p:Overon,c:050001
@@ -2041,13 +2050,13 @@ TLC
 p:Canaldigitaal
 51db:00eb0000:0c96:0003:25:0
 Film1 Premiere HD
-p:CANALDIGITAAL
+p:CANALDIGITAAL,c:050001
 51e0:00eb0000:0c96:0003:25:0
 Sport1 SELECT HD
 p:Canaldigitaal
 51e5:00eb0000:0c96:0003:25:0
 NGC HD
-p:CANALDIGITAAL
+p:CANALDIGITAAL,c:050001
 177a:00eb0000:0c82:0003:22:0
 Politiek24/Best24
 p:CANALDIGITAAL,c:050001
@@ -2104,7 +2113,7 @@ SBS6 HD
 p:CANALDIGITAAL,c:050001
 17cc:00eb0000:0c82:0003:25:0
 FOX Sports EDL 1 HD
-p:CANALDIGITAAL
+p:CANALDIGITAAL,c:050001
 5212:00eb0000:0c99:0003:25:0
 RTL7 HD
 p:CANALDIGITAAL,c:050001
@@ -2122,7 +2131,7 @@ Canvas HD
 p:CANALDIGITAAL,c:050001,c:098800
 522b:00eb0000:0c99:0003:25:0
 Veronica/DisneyXD HD
-p:CANALDIGITAAL,c:050001
+p:CANALDIGITAAL,f:0008,c:050001
 5230:00eb0000:0c99:0003:25:0
 Nederland 3 HD
 p:CANALDIGITAAL,f:0008,c:050001
@@ -2144,12 +2153,15 @@ p:CANALDIGITAAL,c:050001
 1b72:00eb0000:0c88:0003:25:0
 Brava HDTV CZ
 p:CANALDIGITAAL
+1b73:00eb0000:0c88:0003:25:0
+RTL7 HD
+p:CANALDIGITAAL,c:050001
 1b76:00eb0000:0c88:0003:25:0
 VTM HD
 p:CANALDIGITAAL,c:050001
 1b7b:00eb0000:0c88:0003:25:0
 Nederland 1 HD
-p:Canaldigitaal,f:0008,c:050001,c:098800
+p:Canaldigitaal,f:0008,c:050001
 1b7c:00eb0000:0c88:0003:25:0
 RTL8 HD
 p:CANALDIGITAAL,c:050001
@@ -3598,7 +3610,7 @@ Plug-RTL
 p:Telesat,c:050001
 3251:00c00000:045f:0035:22:0
 Planet
-p:CANALDIGITAAL
+p:CANALDIGITAAL,c:050001
 3252:00c00000:045f:0035:22:0
 Dorcel TV
 p:CANALDIGITAAL,c:050001
@@ -3610,7 +3622,7 @@ Hustler TV CZ
 p:CANALDIGITAAL
 325d:00c00000:045f:0035:22:0
 TestNGC
-p:TV Vlaanderen,c:050001
+p:TV Vlaanderen
 3233:00c00000:045f:0035:25:0
 La Une HD
 p:Telesat,c:050001
@@ -3804,7 +3816,7 @@ p:ORF
 GoTV
 p:GoTV
 332f:00c00000:045b:0001:1:0
-Service 13103
+Welt der Wunder
 p:-
 3330:00c00000:045b:0001:1:0
 LT1-OOE
@@ -3825,7 +3837,7 @@ p:ServusTV
 L-TV/TVM
 p:-
 3355:00c00000:045b:0001:1:0
-Tirol TV
+BTV
 p:-
 3341:00c00000:045b:0001:2:0
 OE1
@@ -3872,21 +3884,18 @@ p:U1 Tirol
 3354:00c00000:045b:0001:2:0
 RADIO MARIA
 p:Radio Maria Österreich
-33c5:00c00000:045b:0001:12:0
-Opentech OTA1
-p:ORS
-33c6:00c00000:045b:0001:12:0
-Opentech OTA2
-p:ORS
-33c7:00c00000:045b:0001:12:0
-Opentech OTA3
-p:ORS
-33c8:00c00000:045b:0001:12:0
-Opentech OTA4
-p:-
+33b4:00c00000:045b:0001:129:0
+SMIT OTA
+p:Provider
 33c3:00c00000:045b:0001:129:0
 Arion OTA1
 p:ORS
+33c4:00c00000:045b:0001:129:0
+Arion OTA 2
+p:ORS
+33c9:00c00000:045b:0001:129:0
+Neotion estro OTA
+p:-
 6e2d:00c00000:0431:0001:1:0
 rbb Brandenburg
 p:ARD
@@ -5159,21 +5168,6 @@ p:CSAT
 3070:00c00000:03f5:0001:1:0
 RTL 2 CH
 p:BetaDigital
-ef78:00c00000:03f9:0001:1:0
-11464H SID 0xef78
-p:DVB-S2 8PSK 11464H 19.2Â°E
-ef74:00c00000:03f9:0001:25:0
-SAT.1 HD
-p:ProSiebenSat.1,c:050001
-ef75:00c00000:03f9:0001:25:0
-ProSieben HD
-p:ProSiebenSat.1,c:050001
-ef76:00c00000:03f9:0001:25:0
-kabel eins HD
-p:ProSiebenSat.1,c:050001
-ef77:00c00000:03f9:0001:25:0
-SIXX HD
-p:ProSiebenSat.1,c:050001
 427c:00c00000:0446:0001:1:0
 AB MOTEURS
 p:ABSAT
@@ -6255,7 +6249,7 @@ p:-
 ATV2
 p:ATV
 33a8:00c00000:03eb:0001:1:0
-Service 13224
+Bibel TV HD
 p:ORS
 33a9:00c00000:03eb:0001:1:0
 Schau TV
@@ -6270,8 +6264,8 @@ p:-
 MELODIE TV
 p:ORS
 33ae:00c00000:03eb:0001:1:0
-Service 13230
-p:ORS
+rhein main tv.
+p:-
 33af:00c00000:03eb:0001:1:0
 LOKALEINS
 p:ORS
@@ -6280,12 +6274,6 @@ LOKALZWEI
 p:ORS
 33b1:00c00000:03eb:0001:1:0
 Service 13233
-p:ORS
-33b1:00c00000:03eb:0001:2:0
-.
-p:ORS
-33b2:00c00000:03eb:0001:2:0
-.
 p:ORS
 33b3:00c00000:03eb:0001:2:0
 .
@@ -6296,6 +6284,9 @@ p:ORS
 33ac:00c00000:03eb:0001:25:0
 ATV HD
 p:ATV
+33b2:00c00000:03eb:0001:129:0
+Strong OTA
+p:ORS
 33b4:00c00000:03eb:0001:129:0
 SMIT OTA
 p:Provider
@@ -7361,6 +7352,21 @@ p:ZDFvision
 2b84:00c00000:03f3:0001:25:0
 zdf.kultur HD
 p:ZDFvision,c:050001
+ef74:00c00000:03f9:0001:25:0
+SAT.1 HD
+p:ProSiebenSat.1
+ef75:00c00000:03f9:0001:25:0
+ProSieben HD
+p:ProSiebenSat.1,c:050001
+ef76:00c00000:03f9:0001:25:0
+kabel eins HD
+p:ProSiebenSat.1
+ef77:00c00000:03f9:0001:25:0
+SIXX HD
+p:ProSiebenSat.1
+ef78:00c00000:03f9:0001:25:0
+ProSieben MAXX HD
+p:ProSiebenSat.1
 157c:00c00000:041f:0001:25:0
 HD+ SmartTV Demo
 p:BetaDigital
@@ -7543,7 +7549,7 @@ MA CHAINE SPORT HD
 p:CSAT
 24c6:00c00000:043c:0001:25:0
 OCS NOVO HD
-p:
+p:,c:050001
 24c7:00c00000:043c:0001:25:0
 NON STOP PEOPLE HD
 p:CSAT
@@ -7680,8 +7686,8 @@ p:Delta
 VH1 Classic
 p:UPC NL
 4b04:ffff0000:080e:0600:1:0
-762 SID 0x4b04
-p:
+Russia Today
+p:UPC NL
 4b05:ffff0000:080e:0600:1:0
 Evenementenkanaal
 p:UPC NL
@@ -8301,7 +8307,7 @@ p:UPC NL
 iTV Shorts
 p:UPC NL
 4526:ffff0000:081b:0600:1:0
-iTV Placeholder Nachtlounge
+iTV Nachtlounge COD
 p:UPC NL
 4527:ffff0000:081b:0600:1:0
 iTV Filmfestival COD
@@ -9710,6 +9716,12 @@ p:UPC NL
 44c6:ffff0000:083c:0600:1:0
 iTV Buzz 
 p:UPC NL
+44c7:ffff0000:083c:0600:1:0
+iTV TV Portal 3
+p:UPC NL
+44c8:ffff0000:083c:0600:1:0
+iTV General Messaging 4
+p:UPC NL
 3cf1:ffff0000:083c:0600:1:0
 iTV Games 01 new
 p:UPC NL
@@ -10615,7 +10627,7 @@ Film1 Comedy & Kids
 p:UPC NL
 4bdd:ffff0000:0833:0600:25:0
 Nederland 3 HD
-p:UPC NL
+p:UPC NL,c:050001
 4bde:ffff0000:0833:0600:25:0
 RTL 8 HD
 p:UPC NL
