@@ -33,6 +33,8 @@
 #DESCRIPTION Concertzender Raakvlakken
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streams.greenhost.nl%3A8080/live.m3u:Concertzender
 #DESCRIPTION Concertzender
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//mp3.live.tv-radio.com/francemusique/all/francemusiquehautdebit.mp3:France%20Musique
+#DESCRIPTION France Musique
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//metafiles.gl-systemhaus.de/hr/hr2_2.m3u:HR2
 #DESCRIPTION HR2
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:m3u%3A//edge.live.mp3.mdn.newmedia.nacamar.net/klassikradioopera128/livestream.mp3.m3u:Klassik%20Opera
@@ -81,12 +83,16 @@
 #DESCRIPTION Radio 4
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//broadcast.infomaniak.ch/radioclassique-high.mp3.m3u:Radio%20Classique
 #DESCRIPTION Radio Classique
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//str20.creacast.com%3A443:Radio%20Classique%20(Bas%20debit)
+#DESCRIPTION Radio Classique (Bas debit)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.swissradio.ch/streams/6034.m3u:Radio%20Crazy%20Classical
 #DESCRIPTION Radio Crazy Classical
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.swissradio.ch/streams/6060.m3u:Radio%20Crazy%20Opera
 #DESCRIPTION Radio Crazy Opera
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//onair.100fmlive.dk/klassisk_live.mp3.m3u:Radio%20Klassisk
 #DESCRIPTION Radio Klassisk
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//91.121.92.167%3A8900/;stream.nsv:Radio%20Polskie%20-%20Klasycznie
+#DESCRIPTION Radio Polskie - Klasycznie
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//srvhost24.serverhosting.apa.net%3A8000/rsdstream32.m3u:Radio%20Stephansdom
 #DESCRIPTION Radio Stephansdom
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.kulturradio.de/live.m3u:RBB%20Kulturradio
@@ -97,6 +103,26 @@
 #DESCRIPTION RMF Classic
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//radioclasica.rtve.stream.flumotion.com/rtve/radioclasica.mp3.m3u:RNE%20Radio%20Clasica
 #DESCRIPTION RNE Radio Clasica
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/rsr-espace2-low.mp3:RSR%20Espace%202
+#DESCRIPTION RSR Espace 2
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/rsr-espace2-high.aac:RSR%20Espace%202%20AAC+
+#DESCRIPTION RSR Espace 2 AAC+
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//musiq3.ice.infomaniak.ch/musiq3.mp3:RTBF%20Musiq3
+#DESCRIPTION RTBF Musiq3
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-high.aac:RTS%20(ex-RSR)%20-%20Espace%202%20(AAC)
+#DESCRIPTION RTS (ex-RSR) - Espace 2 (AAC)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-low.mp3:RTS%20(ex-RSR)%20-%20Espace%202%20(MP3)%20(Bas%20d%E9bit)
+#DESCRIPTION RTS (ex-RSR) - Espace 2 (MP3) (Bas débit)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-high.mp3:RTS%20(ex-RSR)%20-%20Espace%202%20(MP3)%20(Haut%20d%E9bit)
+#DESCRIPTION RTS (ex-RSR) - Espace 2 (MP3) (Haut débit)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//pub6.sky.fm/sky_guitar:SKY.FM%20Classical%20Guitar
+#DESCRIPTION SKY.FM Classical Guitar
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//pub7.sky.fm/sky_classicalpianotrios:SKY.FM%20Classical%20Piano%20Trios
+#DESCRIPTION SKY.FM Classical Piano Trios
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//pub4.sky.fm/sky_classical:SKY.FM%20Mostly%20Classical
+#DESCRIPTION SKY.FM Mostly Classical
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//pub6.sky.fm/sky_solopiano:SKY.FM%20Solo%20Piano
+#DESCRIPTION SKY.FM Solo Piano
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//streaming01.sr-online.de/sr2_1.m3u:SR2%20KulturRadio
 #DESCRIPTION SR2 KulturRadio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//live.slovakradio.sk%3A8000/Devin_32.mp3.m3u:SRO%20Radio%20Devin
@@ -121,31 +147,15 @@
 #DESCRIPTION VRT Klara Continuo
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.listenlive.eu/vrtklara-low.m3u:VRT%20Radio%20Klara
 #DESCRIPTION VRT Radio Klara
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//mp3.live.tv-radio.com/francemusique/all/francemusiquehautdebit.mp3:France%20Musique
-#DESCRIPTION France Musique
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//str20.creacast.com%3A443:Radio%20Classique%20(Bas%20debit)
-#DESCRIPTION Radio Classique (Bas debit)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/rsr-espace2-low.mp3:RSR%20Espace%202
-#DESCRIPTION RSR Espace 2
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.net/rsr-espace2-high.aac:RSR%20Espace%202%20AAC+
-#DESCRIPTION RSR Espace 2 AAC+
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//musiq3.ice.infomaniak.ch/musiq3.mp3:RTBF%20Musiq3
-#DESCRIPTION RTBF Musiq3
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-high.aac:RTS%20(ex-RSR)%20-%20Espace%202%20(AAC)
-#DESCRIPTION RTS (ex-RSR) - Espace 2 (AAC)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-low.mp3:RTS%20(ex-RSR)%20-%20Espace%202%20(MP3)%20(Bas%20d%E9bit)
-#DESCRIPTION RTS (ex-RSR) - Espace 2 (MP3) (Bas débit)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//broadcast.infomaniak.ch/rsr-espace2-high.mp3:RTS%20(ex-RSR)%20-%20Espace%202%20(MP3)%20(Haut%20d%E9bit)
-#DESCRIPTION RTS (ex-RSR) - Espace 2 (MP3) (Haut débit)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//mp3stream3.apasf.apa.at%3A8000/:%D61%20(MP3)
 #DESCRIPTION Ö1 (MP3)
-#SERVICE 1:64:551:0:0:0:0:0:0:0:
+#SERVICE 1:64:558:0:0:0:0:0:0:0:
 #DESCRIPTION Rusland
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//46.160.36.66%3A8000/rmf_classic.mp3:Radio%20RMF%20Classic%20RMF%20Classic
 #DESCRIPTION Radio RMF Classic RMF Classic
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A//46.160.36.66%3A8000/zvezda.mp3:Radio%20Zvezda%20?????%20(English)
 #DESCRIPTION Radio Zvezda ????? (English)
-#SERVICE 1:64:552:0:0:0:0:0:0:0:
+#SERVICE 1:64:559:0:0:0:0:0:0:0:
 #DESCRIPTION Spanje
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//195.10.10.221%3A80/rtve/radioclasica.mp3?GKID=e00cf78c97c511df973200163ea2c743:RNE%20Radio%20Clasica%20(ex-Radio%202)
 #DESCRIPTION RNE Radio Clasica (ex-Radio 2)

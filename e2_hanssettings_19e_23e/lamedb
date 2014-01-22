@@ -144,6 +144,9 @@ transponders
 00eb0000:0ca4:0003
 	s 12402000:30000000:1:3:235:2:0:1:0:0
 /
+00eb0000:0c8b:0003
+	s 11914000:27500000:0:3:235:2:0
+/
 00eb0000:0c93:0003
 	s 12070000:27500000:0:3:235:2:0
 /
@@ -186,11 +189,11 @@ transponders
 00ebb174:ffff:ffff
 	s 12660000:477000:1:1:235:2:0
 /
-00eb0000:0c8b:0003
-	s 11914000:27500000:0:3:235:2:0
-/
 00eb0000:0c90:0003
 	s 12012000:27500000:1:3:235:2:0
+/
+00eb0000:0c99:0003
+	s 12187000:27500000:0:2:235:2:0:1:2:1:2
 /
 00eb0000:0c96:0003
 	s 12129000:27500000:1:2:235:2:0:1:2:1:2
@@ -200,9 +203,6 @@ transponders
 /
 00eb0000:0c88:0003
 	s 11856000:27500000:1:2:235:2:0:1:2:0:2
-/
-00eb0000:0c99:0003
-	s 12187000:27500000:0:2:235:2:0:1:2:1:2
 /
 00c00000:0449:0035
 	s 12343000:27500000:0:3:192:2:0
@@ -330,6 +330,9 @@ transponders
 00c00000:0453:0001
 	s 12544000:22000000:0:4:192:2:0
 /
+00c00000:045f:0035
+	s 12721000:22000000:0:3:192:2:0:1:2:0:2
+/
 00c00000:041a:0001
 	s 10729000:22000000:1:2:192:2:0:1:2:0:2
 /
@@ -450,9 +453,6 @@ transponders
 00c00000:0404:0001
 	s 11626000:22000000:1:2:192:2:0:1:2:0:2
 /
-00c00000:045f:0035
-	s 12721000:22000000:0:3:192:2:0:1:2:0:2
-/
 00c00000:0444:0001
 	s 12246000:29700000:1:2:192:2:0:1:2:0:2
 /
@@ -527,6 +527,9 @@ transponders
 /
 00c00000:0414:0001
 	s 11126000:22000000:1:2:192:2:0:1:2:0:2
+/
+00c00000:0008:0085
+	s 11552000:22000000:0:3:192:2:0:1:1:0
 /
 00c00000:040f:0001
 	s 11053000:22000000:0:2:192:2:0:1:2:0:2
@@ -1046,9 +1049,6 @@ p:MEDIA BROADCAST
 36d8:00eb0000:0c8c:0003:1:0
 MAZ new 2
 p:MEDIA BROADCAST
-36d9:00eb0000:0c8c:0003:1:0
-Win Race
-p:MEDIA BROADCAST,c:050001
 36e2:00eb0000:0c8c:0003:1:0
 FIGHTBOX
 p:MEDIA BROADCAST
@@ -1057,7 +1057,7 @@ DOCUBOX
 p:MEDIA BROADCAST
 36e4:00eb0000:0c8c:0003:1:0
 EROX
-p:MEDIA BROADCAST,c:050001
+p:MEDIA BROADCAST
 36e5:00eb0000:0c8c:0003:1:0
 FASHIONBOX
 p:MEDIA BROADCAST
@@ -1066,7 +1066,7 @@ p:MEDIA BROADCAST
 p:MEDIA BROADCAST
 36e7:00eb0000:0c8c:0003:1:0
 EROXXX
-p:MEDIA BROADCAST,c:050001
+p:MEDIA BROADCAST
 0001:00eb315c:0000:0000:1:0
 Service 1
 p:Unnamed
@@ -1147,10 +1147,10 @@ MB LOGO 1
 p:MEDIA BROADCAST
 025f:00eb0000:0c8e:0003:1:0
 DW Europe
-p:MEDIA BRODCAST
+p:MEDIA BRODCAST,f:0040
 0262:00eb0000:0c8e:0003:1:0
 HB-FEED
-p:MEDIA BRODCAST
+p:MEDIA BRODCAST,f:0040
 36f7:00eb0000:0c8e:0003:1:0
 Nova Sport
 p:MEDIA BROADCAST
@@ -1327,16 +1327,16 @@ TV 2000
 p:Bavaria BPS
 1420:00eb0000:0c85:0003:1:0
 History HD HU
-p:Skylink
+p:Skylink,f:0040
 1422:00eb0000:0c85:0003:1:0
 Eurosport HD HU
-p:Skylink
+p:Skylink,f:0040
 1425:00eb0000:0c85:0003:1:0
 Nickelodeon HU
-p:Skylink
+p:Skylink,f:0040
 1426:00eb0000:0c85:0003:1:0
 TV Paprika HU
-p:Skylink
+p:Skylink,f:0040
 13af:00eb0000:0c85:0003:1:0
 CT sport HD
 p:Skylink
@@ -1351,7 +1351,7 @@ Retro Music TV
 p:Skylink,c:050001
 13bd:00eb0000:0c85:0003:1:0
 Nickelodeon CZ
-p:Skylink
+p:Skylink,f:0040
 13ab:00eb0000:0c85:0003:22:0
 HBO Comedy
 p:Skylink
@@ -1706,6 +1706,114 @@ p:
 1651:00eb0000:0ca4:0003:1:0
 Penthouse HD2
 p:,c:050001
+5149:00eb0000:0c8b:0003:1:0
+Eurosport
+p:CANALDIGITAAL,f:0040
+5178:00eb0000:0c8b:0003:1:0
+Eurosport 2 CZ
+p:CANALDIGITAAL,f:0040
+517b:00eb0000:0c8b:0003:1:0
+Eurosport CZ
+p:CANALDIGITAAL,f:0040
+517f:00eb0000:0c8b:0003:1:0
+Film+ CZ
+p:CANALDIGITAAL,f:0040
+5181:00eb0000:0c8b:0003:1:0
+MGM CZ
+p:CANALDIGITAAL,f:0040
+516c:00eb0000:0c8b:0003:2:0
+Radio Oost
+p:CANALDIGITAAL
+516e:00eb0000:0c8b:0003:2:0
+Radio Gelderland
+p:CANALDIGITAAL
+5186:00eb0000:0c8b:0003:2:0
+Radio Veronica
+p:canaldigitaal
+5188:00eb0000:0c8b:0003:2:0
+Sky Radio
+p:canaldigitaal
+518a:00eb0000:0c8b:0003:2:0
+Classic FM
+p:canaldigitaal
+518c:00eb0000:0c8b:0003:2:0
+Radio 538
+p:canaldigitaal
+518e:00eb0000:0c8b:0003:2:0
+Radio 10 gold
+p:canaldigitaal
+5190:00eb0000:0c8b:0003:2:0
+Slam FM
+p:canaldigitaal
+5192:00eb0000:0c8b:0003:2:0
+BNR Nieuwsradio
+p:canaldigitaal
+519a:00eb0000:0c8b:0003:2:0
+100% NL
+p:canaldigitaal
+519c:00eb0000:0c8b:0003:2:0
+Arrow Classic Rock
+p:canaldigitaal
+519e:00eb0000:0c8b:0003:2:0
+Arrow Jazz
+p:canaldigitaal
+5142:00eb0000:0c8b:0003:22:0
+L1MBURG (oud)
+p:CANALDIGITAAL,f:0008,c:050001
+5144:00eb0000:0c8b:0003:22:0
+TV West
+p:CANALDIGITAAL
+5146:00eb0000:0c8b:0003:22:0
+AT5 (oud)
+p:CANALDIGITAAL,f:0008,c:050001
+5148:00eb0000:0c8b:0003:22:0
+Omrop Fryslan Televisie
+p:CANALDIGITAAL
+514a:00eb0000:0c8b:0003:22:0
+TV Noord
+p:CANALDIGITAAL
+514c:00eb0000:0c8b:0003:22:0
+TV Drenthe
+p:CANALDIGITAAL,c:050001
+514e:00eb0000:0c8b:0003:22:0
+TV Oost
+p:CANALDIGITAAL
+5150:00eb0000:0c8b:0003:22:0
+TV Gelderland
+p:CANALDIGITAAL
+5152:00eb0000:0c8b:0003:22:0
+Omroep Zeeland Televisie
+p:CANALDIGITAAL,c:050001
+5154:00eb0000:0c8b:0003:22:0
+Omroep Brabant Televisie
+p:CANALDIGITAAL,c:050001
+5156:00eb0000:0c8b:0003:22:0
+SyFy
+p:CANALDIGITAAL
+5157:00eb0000:0c8b:0003:22:0
+iConcerts
+p:CANALDIGITAAL,c:050001
+5158:00eb0000:0c8b:0003:22:0
+iConcerts CZ
+p:CANALDIGITAAL,f:0040
+515a:00eb0000:0c8b:0003:22:0
+ComedyCentral/Kindernet
+p:CANALDIGITAAL,c:050001
+515b:00eb0000:0c8b:0003:22:0
+Crime Inv
+p:CANALDIGITAAL
+515c:00eb0000:0c8b:0003:22:0
+Crime Inv CZ
+p:CANALDIGITAAL
+5158:00eb0000:0c8b:0003:25:0
+iConcerts CZ
+p:CANALDIGITAAL
+515e:00eb0000:0c8b:0003:25:0
+Hustler HD
+p:CANALDIGITAAL,c:050001
+515f:00eb0000:0c8b:0003:25:0
+Hustler HD CZ
+p:CANALDIGITAAL
 334a:00eb0000:0c93:0003:1:0
 Filmbox
 p:Skylink
@@ -1813,7 +1921,7 @@ LX9SES
 p:SES ASTRA
 c350:00eb0000:04b0:0064:1:0
 RTS SAT
-p:Telekom Srbija
+p:Telekom Srbija,f:0040
 c351:00eb0000:04b0:0064:2:0
 Radio Beograd
 p:Telekom Srbija,f:0040
@@ -1897,7 +2005,7 @@ Eurosport 2 HD DUT
 p:Skylink
 02bd:00eb0000:0c9a:0003:1:0
 Nat Geo HD
-p:OVERON
+p:OVERON,c:050001
 02c5:00eb0000:0c9a:0003:1:0
 Nat Geo Wild HD DUT
 p:Overon
@@ -1929,7 +2037,7 @@ p:M7
 Viasat 3
 p:M7
 02d3:00eb0000:0c9a:0003:1:0
-RTL II
+RTL2
 p:M7
 02d7:00eb0000:0c9a:0003:1:0
 Cool
@@ -1942,10 +2050,13 @@ MTV Europe CZ
 p:M7
 02da:00eb0000:0c9a:0003:1:0
 iConcerts
-p:M7
+p:M7,c:050001
 02db:00eb0000:0c9a:0003:1:0
 Sport 1 CZ
 p:M7
+02dc:00eb0000:0c9a:0003:1:0
+brava hd
+p:M7,c:050001
 02dd:00eb0000:0c9a:0003:1:0
 iConcerts CZ
 p:M7
@@ -1957,7 +2068,7 @@ Nat Geo HD CZ
 p:OVERON
 02f9:00eb0000:0c9a:0003:1:0
 Nat Geo Wild HD
-p:Overon,c:050001
+p:Overon
 31d8:00eb0000:7623:0003:1:0
 GIGA
 p:Scopus Network Technologies
@@ -1972,7 +2083,7 @@ Deluxe Music HD
 p:BetaDigital,c:050001
 17d5:00eb0000:0c91:0003:25:0
 UNITEL CLASSICA HD
-p:BetaDigital
+p:BetaDigital,c:050001
 17d6:00eb0000:0c91:0003:25:0
 .
 p:BetaDigital
@@ -2009,111 +2120,45 @@ p:unknown
 03e8:00ebb174:ffff:ffff:2:0
 Antenne Bayern
 p:unknown
-516c:00eb0000:0c8b:0003:2:0
-Radio Oost
-p:CANALDIGITAAL
-516e:00eb0000:0c8b:0003:2:0
-Radio Gelderland
-p:CANALDIGITAAL
-5186:00eb0000:0c8b:0003:2:0
-Radio Veronica
-p:canaldigitaal
-5188:00eb0000:0c8b:0003:2:0
-Sky Radio
-p:canaldigitaal
-518a:00eb0000:0c8b:0003:2:0
-Classic FM
-p:canaldigitaal
-518c:00eb0000:0c8b:0003:2:0
-Radio 538
-p:canaldigitaal
-518e:00eb0000:0c8b:0003:2:0
-Radio 10 gold
-p:canaldigitaal
-5190:00eb0000:0c8b:0003:2:0
-Slam FM
-p:canaldigitaal
-5192:00eb0000:0c8b:0003:2:0
-BNR Nieuwsradio
-p:canaldigitaal
-519a:00eb0000:0c8b:0003:2:0
-100% NL
-p:canaldigitaal
-519c:00eb0000:0c8b:0003:2:0
-Arrow Classic Rock
-p:canaldigitaal
-519e:00eb0000:0c8b:0003:2:0
-Arrow Jazz
-p:canaldigitaal
-5142:00eb0000:0c8b:0003:22:0
-L1MBURG
-p:CANALDIGITAAL
-5144:00eb0000:0c8b:0003:22:0
-TV West
-p:CANALDIGITAAL
-5146:00eb0000:0c8b:0003:22:0
-AT5
-p:CANALDIGITAAL
-5148:00eb0000:0c8b:0003:22:0
-Omrop Fryslan Televisie
-p:CANALDIGITAAL
-514a:00eb0000:0c8b:0003:22:0
-TV Noord
-p:CANALDIGITAAL
-514c:00eb0000:0c8b:0003:22:0
-TV Drenthe
-p:CANALDIGITAAL,c:050001
-514e:00eb0000:0c8b:0003:22:0
-TV Oost
-p:CANALDIGITAAL
-5150:00eb0000:0c8b:0003:22:0
-TV Gelderland
-p:CANALDIGITAAL
-5152:00eb0000:0c8b:0003:22:0
-Omroep Zeeland Televisie
-p:CANALDIGITAAL
-5154:00eb0000:0c8b:0003:22:0
-Omroep Brabant Televisie
-p:CANALDIGITAAL
-5156:00eb0000:0c8b:0003:22:0
-SyFy
-p:CANALDIGITAAL
-5157:00eb0000:0c8b:0003:22:0
-iConcerts
-p:CANALDIGITAAL
-515a:00eb0000:0c8b:0003:22:0
-ComedyCentral/Kindernet
-p:CANALDIGITAAL
-515b:00eb0000:0c8b:0003:22:0
-Crime Inv
-p:CANALDIGITAAL
-515c:00eb0000:0c8b:0003:22:0
-Crime Inv CZ
-p:CANALDIGITAAL
-5158:00eb0000:0c8b:0003:25:0
-iConcerts CZ
-p:CANALDIGITAAL
-515e:00eb0000:0c8b:0003:25:0
-Hustler HD
-p:CANALDIGITAAL
-515f:00eb0000:0c8b:0003:25:0
-Hustler HD CZ
-p:CANALDIGITAAL
 1d83:00eb0000:0c90:0003:12:0
 SRV_11
 p:SES ASTRA
 1d84:00eb0000:0c90:0003:12:0
 SRV_12
 p:SES ASTRA
+5214:00eb0000:0c99:0003:22:0
+AT5
+p:CANALDIGITAAL,c:050001
+521c:00eb0000:0c99:0003:25:0
+NET5 HD
+p:CANALDIGITAAL,c:050001
+5221:00eb0000:0c99:0003:25:0
+een HD
+p:CANALDIGITAAL,c:050001
+5225:00eb0000:0c99:0003:25:0
+Nederland 1 HD
+p:CANALDIGITAAL,f:0008,c:050001
+5226:00eb0000:0c99:0003:25:0
+Canvas HD
+p:CANALDIGITAAL,c:050001
+522b:00eb0000:0c99:0003:25:0
+Veronica/DisneyXD HD
+p:CANALDIGITAAL,f:0008,c:050001
+5230:00eb0000:0c99:0003:25:0
+Nederland 3 HD
+p:CANALDIGITAAL,f:0008,c:050001
+5235:00eb0000:0c99:0003:25:0
+FOX Sports 2 HD int
+p:CANALDIGITAAL
 5276:00eb0000:0c96:0003:22:0
 JIM
-p:TV Vlaanderen
+p:TV Vlaanderen,c:050001
 527c:00eb0000:0c96:0003:22:0
 VTMKazoom/Kanaal Z
 p:TV Vlaanderen,c:050001
 5280:00eb0000:0c96:0003:22:0
 Vitaya
-p:TV Vlaanderen
+p:TV Vlaanderen,c:050001
 5282:00eb0000:0c96:0003:22:0
 Acht
 p:TV Vlaanderen
@@ -2158,7 +2203,7 @@ p:Canaldigitaal
 p:Canaldigitaal
 51db:00eb0000:0c96:0003:25:0
 Film1 Premiere HD
-p:CANALDIGITAAL
+p:CANALDIGITAAL,c:050001
 51e0:00eb0000:0c96:0003:25:0
 Sport1 SELECT HD
 p:Canaldigitaal
@@ -2225,6 +2270,9 @@ p:CANALDIGITAAL,c:050001
 1b82:00eb0000:0c88:0003:22:0
 RTL lounge
 p:CANALDIGITAAL,c:050001
+1b8a:00eb0000:0c88:0003:22:0
+L1MBURG
+p:CANALDIGITAAL,f:0040,c:050001
 1b62:00eb0000:0c88:0003:25:0
 Discovery HD
 p:CANALDIGITAAL,c:050001
@@ -2254,27 +2302,6 @@ RTL8 HD
 p:CANALDIGITAAL,c:050001
 1b80:00eb0000:0c88:0003:25:0
 Viasat HD
-p:CANALDIGITAAL
-521c:00eb0000:0c99:0003:25:0
-NET5 HD
-p:CANALDIGITAAL,c:050001
-5221:00eb0000:0c99:0003:25:0
-een HD
-p:CANALDIGITAAL,c:050001
-5225:00eb0000:0c99:0003:25:0
-Nederland 1 HD
-p:CANALDIGITAAL,f:0008,c:050001
-5226:00eb0000:0c99:0003:25:0
-Canvas HD
-p:CANALDIGITAAL,c:050001,c:098800
-522b:00eb0000:0c99:0003:25:0
-Veronica/DisneyXD HD
-p:CANALDIGITAAL,f:0008,c:050001
-5230:00eb0000:0c99:0003:25:0
-Nederland 3 HD
-p:CANALDIGITAAL,f:0008,c:050001
-5235:00eb0000:0c99:0003:25:0
-FOX Sports 2 HD int
 p:CANALDIGITAAL
 0803:00c00000:0449:0035:0:0
 
@@ -2358,11 +2385,11 @@ p:CSAT
 NUMERO 23
 p:CSAT
 2138:00c00000:0400:0001:1:0
-PLANETE+THALASSA
+PLANETE+ THALASSA
 p:CSAT
 2139:00c00000:0400:0001:1:0
-ESPN CLASSIC
-p:CSAT
+11567V SID 0x2139
+p:DVB-S QPSK 11567V 19.2Â°E,f:0040
 213a:00c00000:0400:0001:1:0
 11567V SID 0x213a
 p:DVB-S QPSK 11567V 19.2Â°E
@@ -2573,6 +2600,15 @@ p:CSAT
 2197:00c00000:0400:0001:193:0
 DATA SYSTEM[24]
 p:CSAT
+213e:00c00000:0400:0001:198:0
+RADIOS 2
+p:CSAT,f:0040
+213f:00c00000:0400:0001:198:0
+RADIOS 3
+p:CSAT,f:0040
+2146:00c00000:0400:0001:198:0
+RF
+p:CSAT,f:0040
 0300:00c00000:0007:0085:1:0
 RNF
 p:BetaDigital
@@ -2765,6 +2801,9 @@ p:GlobeCast
 1aff:00c00000:03fe:0001:1:0
 Fashion One
 p:GlobeCast Asia
+1b58:00c00000:03fe:0001:12:0
+DATASYSTEM
+p:,f:0040
 1b58:00c00000:03fe:0001:193:0
 DATA SYSTEM[76]
 p:CSAT
@@ -2866,34 +2905,34 @@ DATASYSTEM
 p:CSAT
 2b00:00c00000:0417:0001:1:0
 ORANGE SPORT INFO
-p:GlobeCast France
+p:GlobeCast France,f:0040
 2b01:00c00000:0417:0001:1:0
 KIDS CO
-p:OrangeSAT
+p:OrangeSAT,f:0040
 2b02:00c00000:0417:0001:1:0
 SPORT365
-p:OrangeSAT
+p:OrangeSAT,f:0040
 2b17:00c00000:0417:0001:1:0
 OCS MAX HD
-p:Globecast
+p:Globecast,f:0040
 2b33:00c00000:0417:0001:1:0
 KIDSCO
-p:OrangeSAT
+p:OrangeSAT,f:0040
 2afb:00c00000:0417:0001:1:0
 OCS HAPPY
-p:GlobeCast France
+p:GlobeCast France,f:0040
 2afc:00c00000:0417:0001:1:0
 OCS CHOC
-p:GlobeCast France
+p:GlobeCast France,f:0040
 2afd:00c00000:0417:0001:1:0
 OCS NOVO
-p:GlobeCast France
+p:GlobeCast France,f:0040
 2afe:00c00000:0417:0001:1:0
 OCS GEANTS
-p:GlobeCast France
+p:GlobeCast France,f:0040
 2aff:00c00000:0417:0001:1:0
 TV FESTIVAL DE CANNES
-p:GlobeCast France
+p:GlobeCast France,f:0040
 7d00:00c00000:0405:0001:1:0
 1TWOJ
 p:BetaDigital
@@ -3298,7 +3337,7 @@ p:SKY
 p:SKY
 000f:00c00000:0011:0085:1:0
 .
-p:SKY
+p:SKY,f:0040
 0013:00c00000:0011:0085:1:0
 Junior
 p:SKY
@@ -3751,7 +3790,7 @@ Cartoon Network (S)
 p:SKY
 0037:00c00000:000f:0085:1:0
 .
-p:BetaDigital
+p:BetaDigital,f:0040
 0038:00c00000:000f:0085:1:0
 Boomerang
 p:SKY
@@ -3795,7 +3834,7 @@ p:ProSiebenSat.1
 SAT.1 RhlPf/Hessen
 p:ProSiebenSat.1
 4e2b:00c00000:043a:0001:1:0
-Deutsches Wetterfernsehen
+.
 p:ProSiebenSat.1
 7729:00c00000:0416:0001:1:0
 CINEMAGIC
@@ -3810,7 +3849,7 @@ p:CAZPES
 BIO
 p:DIGITAL+
 772e:00c00000:0416:0001:1:0
-TRACE SPORTS
+Trace S. Stars
 p:
 7730:00c00000:0416:0001:1:0
 COSMOPOLITAN
@@ -4042,7 +4081,7 @@ ORF2 HD
 p:ORF,c:050001
 1331:00c00000:03ef:0001:1:0
 ServusTV HD Oesterreich
-p:ServusTV
+p:ServusTV,c:050001
 1332:00c00000:03ef:0001:1:0
 ServusTV HD Deutschland
 p:ServusTV,c:050001
@@ -4132,7 +4171,7 @@ Radio Horeb
 p:Eurociel
 1c7c:00c00000:0457:0001:2:0
 Radio neue Hoffnung
-p:RADIO Neue Hoffnung
+p:RADIO Neue Hoffnung,c:01050c,c:03050c
 1c21:00c00000:0457:0001:12:0
 ROVI Guide
 p:ROVI corporation
@@ -4329,7 +4368,7 @@ p:MEDIA BROADCAST
 ALT - SUCHLAUF STARTEN
 p:MEDIA BROADCAST
 3164:00c00000:0459:0001:1:0
-multithek-Test
+multithek (Internet)
 p:MEDIA BROADCAST
 316b:00c00000:0459:0001:2:0
 Inselradio
@@ -4659,8 +4698,8 @@ p:CSAT
 F3 CORSEVIASTELL
 p:CSAT
 125c:00c00000:03f7:0001:1:0
-HD+ SmartTV Demo
-p:BetaDigital
+.
+p:BetaDigital,f:0040
 125d:00c00000:03f7:0001:1:0
 SAT.1 emotions
 p:ProSiebenSat.1
@@ -4684,6 +4723,9 @@ Fashion One
 p:BetaDigital
 1264:00c00000:03f7:0001:1:0
 SES 09
+p:BetaDigital
+1266:00c00000:03f7:0001:1:0
+.
 p:BetaDigital
 1267:00c00000:03f7:0001:1:0
 .
@@ -4820,6 +4862,111 @@ p:ProSiebenSat.1
 4464:00c00000:0453:0001:1:0
 SAT.1 NRW
 p:ProSiebenSat.1
+325d:00c00000:045f:0035:1:0
+Discovery Channel
+p:CANALDIGITAAL
+323d:00c00000:045f:0035:2:0
+Pure FM
+p:CANALDIGITAAL
+323e:00c00000:045f:0035:2:0
+Classic21
+p:CANALDIGITAAL
+323f:00c00000:045f:0035:2:0
+VivaCite
+p:CANALDIGITAAL
+3240:00c00000:045f:0035:2:0
+Musiq 3
+p:CANALDIGITAAL
+3241:00c00000:045f:0035:2:0
+La Premiere
+p:CANALDIGITAAL
+3244:00c00000:045f:0035:2:0
+Mint
+p:Telesat
+3245:00c00000:045f:0035:2:0
+Bel RTL
+p:CANALDIGITAAL
+3246:00c00000:045f:0035:2:0
+Radio Contact
+p:CANALDIGITAAL
+31ea:00c00000:045f:0035:2:0
+VRT Radio1
+p:TV Vlaanderen
+31eb:00c00000:045f:0035:2:0
+VRT Radio2
+p:TV Vlaanderen
+31ec:00c00000:045f:0035:2:0
+MNM
+p:TV Vlaanderen
+31ed:00c00000:045f:0035:2:0
+Studio Brussel
+p:TV Vlaanderen
+31ee:00c00000:045f:0035:2:0
+Klara
+p:TV Vlaanderen
+31f2:00c00000:045f:0035:2:0
+Q-music
+p:TV Vlaanderen
+31f3:00c00000:045f:0035:2:0
+JOEfm
+p:TV Vlaanderen
+31f5:00c00000:045f:0035:2:0
+Nostalgie
+p:TV Vlaanderen
+3201:00c00000:045f:0035:22:0
+een
+p:TV Vlaanderen
+3202:00c00000:045f:0035:22:0
+Canvas
+p:TV Vlaanderen,c:050001
+3208:00c00000:045f:0035:22:0
+KetOp12
+p:TV Vlaanderen
+320a:00c00000:045f:0035:22:0
+VTM
+p:TV Vlaanderen
+320c:00c00000:045f:0035:22:0
+2BE
+p:TV Vlaanderen
+320e:00c00000:045f:0035:22:0
+VIER
+p:TV Vlaanderen
+3214:00c00000:045f:0035:22:0
+VIJF
+p:TV Vlaanderen
+3234:00c00000:045f:0035:22:0
+La Deux
+p:Telesat
+3235:00c00000:045f:0035:22:0
+La Trois
+p:Telesat
+3239:00c00000:045f:0035:22:0
+Club-RTL
+p:Telesat
+323a:00c00000:045f:0035:22:0
+Plug-RTL
+p:Telesat
+3251:00c00000:045f:0035:22:0
+Planet
+p:CANALDIGITAAL
+3252:00c00000:045f:0035:22:0
+Dorcel TV
+p:CANALDIGITAAL,c:050001
+3253:00c00000:045f:0035:22:0
+Hustler TV
+p:CANALDIGITAAL,c:050001
+3254:00c00000:045f:0035:22:0
+Hustler TV CZ
+p:CANALDIGITAAL
+325f:00c00000:045f:0035:22:0
+Sportdigital
+p:M7group
+3233:00c00000:045f:0035:25:0
+La Une HD
+p:Telesat
+3238:00c00000:045f:0035:25:0
+RTL-TVi HD
+p:Telesat
 785f:00c00000:041a:0001:1:0
 10729V SID 0x785f
 p:DVB-S2 8PSK 10729V 19.2Â°E
@@ -4879,7 +5026,7 @@ C+LCAMPEON3
 p:PRISA TV
 7861:00c00000:041a:0001:25:0
 C+ TOROS HD
-p:PRISA TV
+p:PRISA TV,f:0040
 1b60:00c00000:03fc:0001:1:0
 Cubavision Internacional
 p:GlobeCast
@@ -4992,7 +5139,7 @@ p:DIGITAL+
 11097V SID 0x7564
 p:DVB-S QPSK 11097V 19.2Â°E
 1465:00c00000:040d:0001:1:0
-Test
+SES
 p:ASTRA
 146e:00c00000:040d:0001:1:0
 RTS SAT
@@ -5141,12 +5288,6 @@ p:Arqiva
 6f87:00c00000:042c:0001:1:0
 Cherie 25
 p:Arqiva
-6fb8:00c00000:042c:0001:25:0
-MTV Live HD
-p:MTV Networks Europe
-6fb9:00c00000:042c:0001:25:0
-MTV Live HD
-p:MTV Networks Europe
 6f71:00c00000:042c:0001:193:0
 DATA_SYS_68
 p:DT CSAT
@@ -5194,7 +5335,7 @@ p:CSAT
 p:CSAT
 3070:00c00000:03f5:0001:1:0
 RTL 2 CH
-p:BetaDigital
+p:BetaDigital,f:0040
 1072:00c00000:03ee:0001:1:0
 Rai HD
 p:Telespazio
@@ -5302,7 +5443,7 @@ HISTOIRE
 p:CSAT
 2582:00c00000:0458:0001:1:0
 OCS CHOC
-p:
+p:,f:0040
 2583:00c00000:0458:0001:1:0
 MA CHAINE SPORT
 p:CSAT
@@ -6148,7 +6289,7 @@ RT Esp HD
 p:Globecast
 18f8:00c00000:03f4:0001:1:0
 RT Esp HD
-p:Harmonic
+p:Harmonic,c:050001
 189d:00c00000:03f4:0001:25:0
 beIN SPORT1 HD
 p:GlobeCast
@@ -6181,16 +6322,16 @@ BVN
 p:CANALDIGITAAL
 0fcc:00c00000:0451:0035:1:0
 RTL4
-p:CANALDIGITAAL
+p:CANALDIGITAAL,f:0040
 0fcd:00c00000:0451:0035:1:0
 RTL5
-p:CANALDIGITAAL
+p:CANALDIGITAAL,f:0040
 0fcf:00c00000:0451:0035:1:0
 RTL7
-p:CANALDIGITAAL
+p:CANALDIGITAAL,f:0040
 0fd0:00c00000:0451:0035:1:0
 RTL8
-p:CANALDIGITAAL
+p:CANALDIGITAAL,f:0040
 0fc3:00c00000:0451:0035:2:0
 FunX
 p:CANALDIGITAAL
@@ -6319,7 +6460,7 @@ Neotion estro OTA
 p:ORS
 33a8:00c00000:03eb:0001:25:0
 Bibel TV HD
-p:ORS
+p:ORS,f:0040
 33ac:00c00000:03eb:0001:25:0
 ATV HD
 p:ATV
@@ -6788,108 +6929,6 @@ p:DIGITAL+
 1130:00c00000:0404:0001:25:0
 SES Launches
 p:ASTRA
-323d:00c00000:045f:0035:2:0
-Pure FM
-p:CANALDIGITAAL
-323e:00c00000:045f:0035:2:0
-Classic21
-p:CANALDIGITAAL
-323f:00c00000:045f:0035:2:0
-VivaCite
-p:CANALDIGITAAL
-3240:00c00000:045f:0035:2:0
-Musiq 3
-p:CANALDIGITAAL
-3241:00c00000:045f:0035:2:0
-La Premiere
-p:CANALDIGITAAL
-3244:00c00000:045f:0035:2:0
-Mint
-p:Telesat
-3245:00c00000:045f:0035:2:0
-Bel RTL
-p:CANALDIGITAAL
-3246:00c00000:045f:0035:2:0
-Radio Contact
-p:CANALDIGITAAL
-31ea:00c00000:045f:0035:2:0
-VRT Radio1
-p:TV Vlaanderen
-31eb:00c00000:045f:0035:2:0
-VRT Radio2
-p:TV Vlaanderen
-31ec:00c00000:045f:0035:2:0
-MNM
-p:TV Vlaanderen
-31ed:00c00000:045f:0035:2:0
-Studio Brussel
-p:TV Vlaanderen
-31ee:00c00000:045f:0035:2:0
-Klara
-p:TV Vlaanderen
-31f2:00c00000:045f:0035:2:0
-Q-music
-p:TV Vlaanderen
-31f3:00c00000:045f:0035:2:0
-JOEfm
-p:TV Vlaanderen
-31f5:00c00000:045f:0035:2:0
-Nostalgie
-p:TV Vlaanderen
-3201:00c00000:045f:0035:22:0
-een
-p:TV Vlaanderen,c:050001
-3202:00c00000:045f:0035:22:0
-Canvas
-p:TV Vlaanderen
-3208:00c00000:045f:0035:22:0
-KetOp12
-p:TV Vlaanderen,c:050001
-320a:00c00000:045f:0035:22:0
-VTM
-p:TV Vlaanderen
-320c:00c00000:045f:0035:22:0
-2BE
-p:TV Vlaanderen,c:050001
-320e:00c00000:045f:0035:22:0
-VIER
-p:TV Vlaanderen,c:050001,c:098800
-3214:00c00000:045f:0035:22:0
-VIJF
-p:TV Vlaanderen,c:050001
-3234:00c00000:045f:0035:22:0
-La Deux
-p:Telesat,c:050001
-3235:00c00000:045f:0035:22:0
-La Trois
-p:Telesat,c:050001
-3239:00c00000:045f:0035:22:0
-Club-RTL
-p:Telesat
-323a:00c00000:045f:0035:22:0
-Plug-RTL
-p:Telesat
-3251:00c00000:045f:0035:22:0
-Planet
-p:CANALDIGITAAL
-3252:00c00000:045f:0035:22:0
-Dorcel TV
-p:CANALDIGITAAL,c:050001
-3253:00c00000:045f:0035:22:0
-Hustler TV
-p:CANALDIGITAAL,c:050001
-3254:00c00000:045f:0035:22:0
-Hustler TV CZ
-p:CANALDIGITAAL
-325f:00c00000:045f:0035:22:0
-Sportdigital
-p:M7group
-3233:00c00000:045f:0035:25:0
-La Une HD
-p:Telesat,c:050001
-3238:00c00000:045f:0035:25:0
-RTL-TVi HD
-p:Telesat
 1a2b:00c00000:0444:0001:12:0
 DATASYSTEM
 p:
@@ -6979,7 +7018,7 @@ MGM HD
 p:SKY
 007e:00c00000:000c:0085:25:0
 Syfy HD
-p:SKY
+p:SKY,c:050001
 00f2:00c00000:000c:0085:211:0
 Sky Sport News HD
 p:SKY
@@ -7123,7 +7162,7 @@ Universal HD
 p:SKY,c:050001
 006a:00c00000:000e:0085:25:0
 Pro7 FUN HD
-p:SKY
+p:SKY,c:050001
 006d:00c00000:000e:0085:25:0
 Eurosport 2 HD
 p:SKY
@@ -7168,7 +7207,7 @@ RTL HD
 p:CBC,c:050001
 ef11:00c00000:0421:0001:25:0
 VOX HD
-p:CBC
+p:CBC,c:050001
 ef12:00c00000:0421:0001:25:0
 .
 p:BetaDigital
@@ -7195,7 +7234,7 @@ p:SKY
 p:SKY
 006e:00c00000:000d:0085:25:0
 Sky Atlantic HD
-p:SKY
+p:SKY,c:050001
 006f:00c00000:000d:0085:25:0
 Disney Cinemagic HD
 p:SKY
@@ -7537,7 +7576,7 @@ CINE+ FRISSON HD
 p:CSAT
 2270:00c00000:0438:0001:25:0
 CINE+ PREMIER HD
-p:CSAT
+p:CSAT,f:0040
 2275:00c00000:0438:0001:25:0
 CANAL+ HD
 p:CSAT
@@ -7564,7 +7603,7 @@ CANAL+ HD
 p:CSAT
 2284:00c00000:0438:0001:25:0
 CINE+ PREMIER HD
-p:CSAT
+p:CSAT,f:0040
 2289:00c00000:0438:0001:25:0
 CANAL+ HD
 p:CSAT
@@ -7579,22 +7618,22 @@ zdf.kultur HD
 p:ZDFvision,c:050001
 286e:00c00000:0425:0001:25:0
 rbb Brandenburg HD
-p:ARD
+p:ARD,f:0040
 286f:00c00000:0425:0001:25:0
 rbb Berlin HD
-p:ARD
+p:ARD,f:0040
 2870:00c00000:0425:0001:25:0
 MDR Sachsen HD
-p:ARD
+p:ARD,f:0040
 2871:00c00000:0425:0001:25:0
 MDR S-Anhalt HD
-p:ARD
+p:ARD,f:0040
 2872:00c00000:0425:0001:25:0
 MDR Thüringen HD
-p:ARD
+p:ARD,f:0040
 2873:00c00000:0425:0001:25:0
 hr-fernsehen HD
-p:ARD
+p:ARD,f:0040
 ef74:00c00000:03f9:0001:25:0
 SAT.1 HD
 p:ProSiebenSat.1
@@ -7612,7 +7651,7 @@ ProSieben MAXX HD
 p:ProSiebenSat.1
 157c:00c00000:041f:0001:25:0
 Disney Channel HD
-p:BetaDigital
+p:BetaDigital,c:050001
 157d:00c00000:041f:0001:25:0
 HSE24 EXTRA HD
 p:BetaDigital
@@ -7621,7 +7660,7 @@ p:BetaDigital
 p:BetaDigital
 157f:00c00000:041f:0001:25:0
 Deluxe Music HD
-p:BetaDigital
+p:BetaDigital,c:050001
 1580:00c00000:041f:0001:25:0
 QVC PLUS HD
 p:BetaDigital
@@ -7661,15 +7700,30 @@ p:
 788b:00c00000:0414:0001:25:0
 DISNEY CH HD
 p:DIGITAL+
+0086:00c00000:0008:0085:25:0
+MTV Live HD
+p:SKY,f:0040
+0087:00c00000:0008:0085:25:0
+.
+p:SKY,f:0040
+0088:00c00000:0008:0085:25:0
+.
+p:SKY,f:0040
+0089:00c00000:0008:0085:25:0
+.
+p:SKY,f:0040
+008a:00c00000:0008:0085:25:0
+.
+p:SKY,f:0040
 2887:00c00000:040f:0001:25:0
 tagesschau24 HD
-p:ARD,c:050001
+p:ARD,f:0040,c:050001
 2888:00c00000:040f:0001:25:0
 Einsfestival HD
-p:ARD
+p:ARD,f:0040,c:050001
 2889:00c00000:040f:0001:25:0
 EinsPlus HD
-p:ARD
+p:ARD,f:0040,c:050001
 2b8e:00c00000:03f2:0001:25:0
 3sat HD
 p:ZDFvision,c:050001
@@ -7813,19 +7867,19 @@ DISCOVERY SCIENCE HD
 p:CSAT
 24cf:00c00000:043c:0001:25:0
 MA CHAINE SPORT HD
-p:CSAT
+p:CSAT,f:0040
 24e1:00c00000:043c:0001:25:0
 DISNEY XD HD
-p:CSAT
+p:CSAT,f:0040
 24e2:00c00000:043c:0001:25:0
 DISNEY MAGIC HD
-p:CSAT
+p:CSAT,f:0040
 24f5:00c00000:043c:0001:25:0
 DISNEY XD HD
-p:CSAT
+p:CSAT,f:0040
 24f6:00c00000:043c:0001:25:0
 DISNEY MAGIC HD
-p:CSAT
+p:CSAT,f:0040
 74cc:00c00000:03f8:0001:25:0
 CANAL+1 HD
 p:DIGITAL+
@@ -7861,46 +7915,46 @@ p:DIGITAL+
 p:DVB-S2 8PSK 11435V 19.2Â°E
 2b00:ffff0000:000b:10ef:1:0
 Syfy Universal
-p:Delta
+p:Delta,f:0040
 2af9:ffff0000:000b:10ef:1:0
 Cultura 24
-p:Delta
+p:Delta,f:0040
 2afb:ffff0000:000b:10ef:1:0
 101 TV
-p:Delta West
+p:Delta West,f:0040
 2afc:ffff0000:000b:10ef:1:0
 NostalgieNet
-p:Delta
+p:Delta,f:0040
 2afd:ffff0000:000b:10ef:1:0
 Nick Hits
-p:Delta
+p:Delta,f:0040
 2afe:ffff0000:000b:10ef:1:0
 Nick Toons
-p:Delta
+p:Delta,f:0040
 2aff:ffff0000:000b:10ef:1:0
 MGM Channel
-p:Delta
+p:Delta,f:0040
 0001:ffff0000:0063:10ef:1:0
 Test NL 1
-p:DELTA
+p:DELTA,f:0040
 0002:ffff0000:0063:10ef:25:0
 Test NL 1 HD
-p:DELTA
+p:DELTA,f:0040
 0101:ffff0000:0003:03e8:1:0
 FOX Sports Informatie
-p:Ziggo
+p:Ziggo,f:0040
 0009:ffff0000:0003:03e8:1:0
 Net 5
-p:Ziggo
+p:Ziggo,f:0040
 0016:ffff0000:0003:03e8:1:0
 Eén
-p:Ziggo
+p:Ziggo,f:0040
 0017:ffff0000:0003:03e8:1:0
 Canvas
-p:Ziggo
+p:Ziggo,f:0040
 0027:ffff0000:0003:03e8:1:0
 Crime & Investigation Network
-p:Ziggo
+p:Ziggo,f:0040
 0273:ffff0000:0003:03e8:2:0
 Radio Gelderland
 p:Ziggo,f:0040
@@ -7948,49 +8002,49 @@ BBC World Service
 p:Ziggo,f:0040
 00a7:ffff0000:0003:03e8:25:0
 Eurosport HD
-p:Ziggo
+p:Ziggo,f:0040
 0cab:ffff0000:0003:03e8:25:0
 Eurosport 2 HD
-p:Ziggo
+p:Ziggo,f:0040
 0101:ffff0000:0003:01f4:1:0
 FOX Sports Informatie
-p:Ziggo
+p:Ziggo,f:0040
 0bbb:ffff0000:0003:01f4:1:0
 Crime & Investigation Network
-p:Ziggo,c:090202
+p:Ziggo,f:0040,c:090202
 0bbf:ffff0000:0003:01f4:1:0
 Travel Channel
-p:Ziggo,c:099100
+p:Ziggo,f:0040,c:099100
 00ff:ffff0000:0003:01f4:1:0
 FOX Sports 5 Eredivisie
-p:Ziggo
+p:Ziggo,f:0040
 00cf:ffff0000:0003:01f4:25:0
 RTL 7 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 00d2:ffff0000:0003:01f4:25:0
 RTL 8 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 2b01:ffff0000:0012:10ef:1:0
 13TH STREET
-p:Delta
+p:Delta,f:0040
 0709:ffff0000:0012:10ef:1:0
 Sport1 Select
-p:Delta Noord
+p:Delta Noord,f:0040
 070a:ffff0000:0012:10ef:1:0
 Sport1 Golf
-p:Delta Zuid
+p:Delta Zuid,f:0040
 070b:ffff0000:0012:10ef:1:0
 Sport1 Tennis
-p:Delta West
+p:Delta West,f:0040
 070c:ffff0000:0012:10ef:1:0
 Sport1 Extra 1
-p:Delta
+p:Delta,f:0040
 070d:ffff0000:0012:10ef:1:0
 Sport1 Extra 2
-p:Delta
+p:Delta,f:0040
 070f:ffff0000:0012:10ef:1:0
 Sport1 Voetbal
-p:Delta
+p:Delta,f:0040
 4b01:ffff0000:080e:0600:1:0
 VH1 Classic
 p:UPC NL
@@ -8011,76 +8065,76 @@ SBS 6 HD
 p:UPC NL
 0102:ffff0000:000c:03e8:1:0
 100% NL TV
-p:Cable
+p:Cable,f:0040
 00b2:ffff0000:000c:03e8:1:0
 Film1 Action
-p:Ziggo
+p:Ziggo,f:0040
 00c5:ffff0000:000c:03e8:1:0
 RTL Lounge
-p:Ziggo
+p:Ziggo,f:0040
 2ee1:ffff0000:000c:03e8:1:0
 CNBC Europe
-p:Ziggo
+p:Ziggo,f:0040
 2ee2:ffff0000:000c:03e8:1:0
 BBC World News
-p:Ziggo
+p:Ziggo,f:0040
 2ee5:ffff0000:000c:03e8:1:0
 Politiek 24
-p:Ziggo
+p:Ziggo,f:0040
 2ee7:ffff0000:000c:03e8:1:0
 Journaal 24
-p:Ziggo
+p:Ziggo,f:0040
 2eea:ffff0000:000c:03e8:1:0
 Euronews
-p:Ziggo
+p:Ziggo,f:0040
 02cd:ffff0000:000c:03e8:2:0
 Efteling Radio
 p:Ziggo,f:0040
 0102:ffff0000:000c:01f4:1:0
 100% NL TV
-p:Ziggo
+p:Ziggo,f:0040
 00dd:ffff0000:000c:01f4:1:0
 538
-p:Ziggo
+p:Ziggo,f:0040
 2ee2:ffff0000:000c:01f4:1:0
 BBC World News
-p:Ziggo
+p:Ziggo,f:0040
 2ee3:ffff0000:000c:01f4:1:0
 CNN International
-p:Ziggo
+p:Ziggo,f:0040
 00cb:ffff0000:000c:01f4:25:0
 Nederland 3 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 0202:ffff0000:0a8c:03e8:1:0
 Brabant10
-p:Ziggo
+p:Ziggo,f:0040
 01f4:ffff0000:0a8c:03e8:1:0
 Boschtion TV
-p:Ziggo
+p:Ziggo,f:0040
 01f5:ffff0000:0a8c:03e8:1:0
 D-TV Oss
-p:Ziggo
+p:Ziggo,f:0040
 01f6:ffff0000:0a8c:03e8:1:0
 Klik Televisie Regio Oss
-p:Ziggo
+p:Ziggo,f:0040
 01f7:ffff0000:0a8c:03e8:1:0
 ROS-Kabelkrant
-p:Ziggo
+p:Ziggo,f:0040
 01f8:ffff0000:0a8c:03e8:1:0
 TV73
-p:Ziggo
+p:Ziggo,f:0040
 01f9:ffff0000:0a8c:03e8:1:0
 LTV
-p:Ziggo
+p:Ziggo,f:0040
 01fa:ffff0000:0a8c:03e8:1:0
 Omroep Walraven
-p:Ziggo
+p:Ziggo,f:0040
 01fb:ffff0000:0a8c:03e8:1:0
 Omroep Dommelland
-p:Ziggo
+p:Ziggo,f:0040
 01fc:ffff0000:0a8c:03e8:1:0
 WanTV
-p:Ziggo
+p:Ziggo,f:0040
 1518:ffff0000:0a8c:03e8:2:0
 Lokale radio
 p:Ziggo,f:0040
@@ -8125,55 +8179,55 @@ FOX Sports 3 HD Ere.
 p:UPC NL
 520b:ffff0000:0015:01f4:1:0
 Weer en Verkeer
-p:Ziggo
+p:Ziggo,f:0040
 003e:ffff0000:0015:01f4:1:0
 Zappelin / Zapp 24
-p:Ziggo
+p:Ziggo,f:0040
 008b:ffff0000:0015:01f4:1:0
 PassieTV/Dusk!
-p:Ziggo
+p:Ziggo,f:0040
 00bf:ffff0000:0015:01f4:1:0
 FOX Sports 4
-p:Ziggo
+p:Ziggo,f:0040
 5209:ffff0000:0015:01f4:25:0
 Sport1 Select HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 520b:ffff0000:001b:10ef:1:0
 Zender van de Maand
-p:Delta
+p:Delta,f:0040
 697d:ffff0000:001b:10ef:25:0
 RTL7 HD
-p:Delta
+p:Delta,f:0040
 697e:ffff0000:001b:10ef:25:0
 RTL8 HD
-p:DELTA
+p:DELTA,f:0040
 000c:ffff0000:0004:03e8:1:0
 Zenderoverzicht
-p:Ziggo
+p:Ziggo,f:0040
 0fa1:ffff0000:0004:03e8:1:0
 Nat Geo Wild
-p:Ziggo
+p:Ziggo,f:0040
 0fa4:ffff0000:0004:03e8:1:0
 Discovery World
-p:Ziggo
+p:Ziggo,f:0040
 0fa5:ffff0000:0004:03e8:1:0
 Discovery Science
-p:Ziggo
+p:Ziggo,f:0040
 0fa6:ffff0000:0004:03e8:1:0
 Investigation Discovery
-p:Ziggo
+p:Ziggo,f:0040
 0fa7:ffff0000:0004:03e8:1:0
 Travel Channel
-p:Ziggo
+p:Ziggo,f:0040
 0fa8:ffff0000:0004:03e8:1:0
 Discovery Channel
-p:Ziggo
+p:Ziggo,f:0040
 0fa9:ffff0000:0004:03e8:1:0
 National Geographic Channel
-p:Ziggo
+p:Ziggo,f:0040
 0fb5:ffff0000:0004:03e8:1:0
 CNN International
-p:Ziggo
+p:Ziggo,f:0040
 027f:ffff0000:0004:03e8:2:0
 100% NL
 p:Ziggo,f:0040
@@ -8185,22 +8239,22 @@ Tweede kamerlijn
 p:Ziggo,f:0040
 000c:ffff0000:0007:01f4:1:0
 Zenderoverzicht
-p:Ziggo
+p:Ziggo,f:0040
 1b6c:ffff0000:0007:01f4:1:0
 Motors TV
-p:Ziggo,c:098900
+p:Ziggo,f:0040,c:098900
 1b6d:ffff0000:0007:01f4:1:0
 Nickelodeon
-p:Ziggo
+p:Ziggo,f:0040
 1b6e:ffff0000:0007:01f4:1:0
 WDR
-p:Ziggo
+p:Ziggo,f:0040
 1b70:ffff0000:0007:01f4:1:0
 Holland Doc 24
-p:Ziggo
+p:Ziggo,f:0040
 00c5:ffff0000:0007:01f4:1:0
 RTL Lounge
-p:Ziggo
+p:Ziggo,f:0040
 1b8a:ffff0000:0007:01f4:2:0
 Arrow Classic Rock
 p:Ziggo,f:0040
@@ -8272,16 +8326,16 @@ Sport1 Voetbal HD
 p:UPC NL
 520c:ffff0000:0015:10ef:1:0
 Etalagekanaal
-p:DELTA
+p:DELTA,f:0040
 520d:ffff0000:0015:10ef:1:0
 FOX NL
-p:Delta
+p:Delta,f:0040
 5209:ffff0000:0015:10ef:25:0
 Nederland 1 HD
-p:Delta
+p:Delta,f:0040
 520a:ffff0000:0015:10ef:25:0
 NGC HD
-p:DELTA
+p:DELTA,f:0040
 c60d:ffff0000:081c:0600:1:0
 Test TV 1
 p:UPC NL
@@ -8308,22 +8362,22 @@ Dorcel XXX HD (Xotix
 p:UPC NL,c:050001
 0010:ffff0000:0006:03e8:1:0
 Nickelodeon
-p:Ziggo
+p:Ziggo,f:0040
 0011:ffff0000:0006:03e8:1:0
 Eurosport
-p:Ziggo
+p:Ziggo,f:0040
 0013:ffff0000:0006:03e8:1:0
 MTV
-p:Ziggo
+p:Ziggo,f:0040
 0014:ffff0000:0006:03e8:1:0
 Comedy Central/Kindernet
-p:Ziggo
+p:Ziggo,f:0040
 1771:ffff0000:0006:03e8:1:0
 Sport1 Select
-p:Ziggo
+p:Ziggo,f:0040
 1772:ffff0000:0006:03e8:1:0
 Sport1 Voetbal
-p:Ziggo
+p:Ziggo,f:0040
 17a3:ffff0000:0006:03e8:2:0
 70s
 p:Ziggo,f:0040
@@ -8371,25 +8425,25 @@ Rewind
 p:Ziggo,f:0040
 0328:ffff0000:0006:03e8:25:0
 Zenderoverzicht HD
-p:Ziggo
+p:Ziggo,f:0040
 2711:ffff0000:000a:03e8:1:0
 Nederland 1
-p:Ziggo
+p:Ziggo,f:0040
 2712:ffff0000:000a:03e8:1:0
 Nederland 2
-p:Ziggo
+p:Ziggo,f:0040
 2713:ffff0000:000a:03e8:1:0
 Nederland 3
-p:Ziggo
+p:Ziggo,f:0040
 2714:ffff0000:000a:03e8:1:0
 RTL 4
-p:Ziggo
+p:Ziggo,f:0040
 0023:ffff0000:000a:03e8:1:0
 Film 1 Family
-p:Ziggo
+p:Ziggo,f:0040
 00fe:ffff0000:000a:03e8:1:0
 FOX
-p:Ziggo
+p:Ziggo,f:0040
 026e:ffff0000:000a:03e8:2:0
 RTV Noord radio
 p:Ziggo,f:0040
@@ -8425,19 +8479,19 @@ Radio zeeland
 p:Ziggo,f:0040
 2711:ffff0000:000a:01f4:1:0
 Journaal 24
-p:Ziggo
+p:Ziggo,f:0040
 2714:ffff0000:000a:01f4:1:0
 TV Oranje
-p:Ziggo
+p:Ziggo,f:0040
 004b:ffff0000:000a:01f4:1:0
 MTV Music 24
-p:Ziggo
+p:Ziggo,f:0040
 004d:ffff0000:000a:01f4:1:0
 192 TV
-p:Ziggo
+p:Ziggo,f:0040
 2713:ffff0000:000a:01f4:25:0
 Film1 Premiere HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 2711:ffff0000:0065:0600:1:0
 Lokale Omroep Landsmeer
 p:UPC NL
@@ -8578,7 +8632,7 @@ Radio Vlaardingen
 p:UPC NL
 2732:ffff0000:0065:0600:2:0
 Radio Studio 040
-p:UPC NL
+p:UPC NL,c:011f65,c:031f65
 2735:ffff0000:0065:0600:2:0
 DrechtstadFM
 p:UPC NL
@@ -8629,97 +8683,97 @@ RTV Arnhem Radio
 p:UPC NL
 4511:ffff0000:081b:0600:1:0
 Ajax TV
-p:UPC NL
+p:UPC NL,f:0040
 4512:ffff0000:081b:0600:1:0
 iTV NGC On Demand
-p:UPC NL
+p:UPC NL,f:0040
 4513:ffff0000:081b:0600:1:0
 iTV Disney On Demand
-p:UPC NL
+p:UPC NL,f:0040
 4514:ffff0000:081b:0600:1:0
 iTV Discovery On Demand
-p:UPC NL
+p:UPC NL,f:0040
 4516:ffff0000:081b:0600:1:0
 iTV Comedy Central On Demand
-p:UPC NL
+p:UPC NL,f:0040
 4517:ffff0000:081b:0600:1:0
 iTV FOX Life On Demand
-p:UPC NL
+p:UPC NL,f:0040
 4518:ffff0000:081b:0600:1:0
 iTV Ero TV
-p:UPC NL
+p:UPC NL,f:0040
 4519:ffff0000:081b:0600:1:0
 iTV Nickelodeon On Demand
-p:upc
+p:upc,f:0040
 451a:ffff0000:081b:0600:1:0
 iTV MTV On Demand
-p:UPC NL
+p:UPC NL,f:0040
 451b:ffff0000:081b:0600:1:0
 iTV Nostalgie
-p:UPC NL
+p:UPC NL,f:0040
 451c:ffff0000:081b:0600:1:0
 iTV SyFy
-p:UPC NL
+p:UPC NL,f:0040
 451d:ffff0000:081b:0600:1:0
 iTV Sport 1 ondemand
-p:UPC NL
+p:UPC NL,f:0040
 451e:ffff0000:081b:0600:1:0
 iTV 13th street
-p:UPC NL
+p:UPC NL,f:0040
 451f:ffff0000:081b:0600:1:0
 iTV CoD een
-p:UPC NL
+p:UPC NL,f:0040
 4520:ffff0000:081b:0600:1:0
 iTV CoD Canvas
-p:UPC NL
+p:UPC NL,f:0040
 4521:ffff0000:081b:0600:1:0
 iTV CoD Ketnet
-p:UPC NL
+p:UPC NL,f:0040
 4522:ffff0000:081b:0600:1:0
 Place Holder Application
-p:UPC NL
+p:UPC NL,f:0040
 4523:ffff0000:081b:0600:1:0
 EU1
-p:UPC NL
+p:UPC NL,f:0040
 4524:ffff0000:081b:0600:1:0
 iTV CoD BBC Ent.
-p:UPC NL
+p:UPC NL,f:0040
 4525:ffff0000:081b:0600:1:0
 iTV Shorts
-p:UPC NL
+p:UPC NL,f:0040
 4526:ffff0000:081b:0600:1:0
 iTV Nachtlounge COD
-p:UPC NL
+p:UPC NL,f:0040
 4527:ffff0000:081b:0600:1:0
 iTV Filmfestival COD
-p:UPC NL
+p:UPC NL,f:0040
 4ce2:ffff0000:081b:0600:1:0
 Baby TV
-p:UPC NL
+p:UPC NL,f:0040
 4ce4:ffff0000:081b:0600:1:0
 538
-p:UPC NL
+p:UPC NL,f:0040
 2712:ffff0000:000a:10ef:1:0
 Holland Doc 24
-p:Delta
+p:Delta,f:0040
 2715:ffff0000:000a:10ef:1:0
 Humor TV 24
-p:Delta Zuid
+p:Delta Zuid,f:0040
 2716:ffff0000:000a:10ef:1:0
 Journaal 24
-p:Delta Zuid
+p:Delta Zuid,f:0040
 2717:ffff0000:000a:10ef:1:0
 Politiek 24
-p:Delta Zuid
+p:Delta Zuid,f:0040
 2718:ffff0000:000a:10ef:1:0
 Best 24
-p:Delta Zuid
+p:Delta Zuid,f:0040
 271b:ffff0000:000a:10ef:1:0
 24Kitchen
-p:DELTA
+p:DELTA,f:0040
 271c:ffff0000:000a:10ef:1:0
 HBO 3
-p:DELTA
+p:DELTA,f:0040
 4115:ffff0000:081a:0600:1:0
 Code Download HZN ISTB
 p:UPC NL
@@ -8755,7 +8809,7 @@ Mijn Berichten iTV Portal
 p:UPC NL
 4cd1:ffff0000:081a:0600:25:0
 myZen.tv HD
-p:UPC NL
+p:UPC NL,c:050001
 4cd6:ffff0000:081a:0600:25:0
 UPC Live Horizon portal
 p:UPC NL
@@ -8779,160 +8833,160 @@ Discovery HD
 p:UPC NL
 0219:ffff0000:0001:01f4:1:0
 DJAZZ.tv
-p:Ziggo
+p:Ziggo,f:0040
 00d4:ffff0000:0001:01f4:1:0
 24 Kitchen
-p:Ziggo
+p:Ziggo,f:0040
 03e9:ffff0000:0001:01f4:1:0
 Eventkanaal
-p:Ziggo
+p:Ziggo,f:0040
 00fc:ffff0000:0001:01f4:1:0
 Penthouse
-p:Ziggo
+p:Ziggo,f:0040
 00cd:ffff0000:0001:01f4:25:0
 RTL 5 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 0219:ffff0000:001e:03e8:1:0
 DJAZZ.tv
-p:Ziggo
+p:Ziggo,f:0040
 7542:ffff0000:001e:03e8:1:0
 TLC
-p:Ziggo
+p:Ziggo,f:0040
 00d6:ffff0000:001e:03e8:1:0
 Disney XD 24
-p:Ziggo
+p:Ziggo,f:0040
 00de:ffff0000:001e:03e8:1:0
 MTV Music 24
-p:Ziggo
+p:Ziggo,f:0040
 00fc:ffff0000:001e:03e8:1:0
 Penthouse
-p:Ziggo
+p:Ziggo,f:0040
 00d8:ffff0000:001e:03e8:25:0
 BBC 2 HD
-p:Ziggo
+p:Ziggo,f:0040
 00e0:ffff0000:001e:03e8:25:0
 Nat Geo Wild HD
-p:Ziggo
+p:Ziggo,f:0040
 2719:ffff0000:0009:10ef:1:0
 Z@ppelin/Z@pp 24
-p:Delta
+p:Delta,f:0040
 025b:ffff0000:0009:10ef:1:0
 RTL 7
-p:Delta
+p:Delta,f:0040
 025f:ffff0000:0009:10ef:1:0
 VRT Eén
-p:Delta
+p:Delta,f:0040
 0260:ffff0000:0009:10ef:1:0
 VRT Canvas
-p:Delta
+p:Delta,f:0040
 038d:ffff0000:0009:10ef:1:0
 Arte
-p:Delta
+p:Delta,f:0040
 038e:ffff0000:0009:10ef:1:0
 Pebble TV
-p:Delta
+p:Delta,f:0040
 038f:ffff0000:0009:10ef:1:0
 Brava NL
-p:Delta
+p:Delta,f:0040
 4c19:ffff0000:0836:0600:1:0
 CNBC
-p:UPC NL
+p:UPC NL,f:0040
 4c1a:ffff0000:0836:0600:1:0
 TV West
-p:UPC NL
+p:UPC NL,f:0040
 4c1b:ffff0000:0836:0600:1:0
 RTL Crime
-p:UPC NL
+p:UPC NL,f:0040
 4c1c:ffff0000:0836:0600:1:0
 Cultura 24
-p:UPC NL
+p:UPC NL,f:0040
 4c1d:ffff0000:0836:0600:1:0
 Travel Channel
-p:UPC NL
+p:UPC NL,f:0040
 4c1e:ffff0000:0836:0600:1:0
 MTV Brand New
-p:UPC NL
+p:UPC NL,f:0040
 4c1f:ffff0000:0836:0600:1:0
 DanceTrippin TV
-p:UPC NL
+p:UPC NL,f:0040
 4c20:ffff0000:0836:0600:1:0
 Passie TV
-p:UPC NL
+p:UPC NL,f:0040
 4c21:ffff0000:0836:0600:1:0
 UPC Live TV
-p:UPC NL
+p:UPC NL,f:0040
 4c22:ffff0000:0836:0600:1:0
 EDV Minibill
-p:UPC NL
+p:UPC NL,f:0040
 4c23:ffff0000:0836:0600:1:0
 TV Games 34
-p:UPC NL
+p:UPC NL,f:0040
 4c24:ffff0000:0836:0600:1:0
 TV Games 35
-p:UPC NL
+p:UPC NL,f:0040
 7919:ffff0000:001f:01f4:1:0
 Planet Turk
-p:Ziggo
+p:Ziggo,f:0040
 791a:ffff0000:001f:01f4:1:0
 MAX
-p:Ziggo
+p:Ziggo,f:0040
 791b:ffff0000:001f:01f4:1:0
 Zee Cinema
-p:Ziggo
+p:Ziggo,f:0040
 791c:ffff0000:001f:01f4:1:0
 Zee TV
-p:Ziggo
+p:Ziggo,f:0040
 791d:ffff0000:001f:01f4:1:0
 X-MO
-p:Ziggo
+p:Ziggo,f:0040
 791f:ffff0000:001f:01f4:1:0
 Aljazeera English
-p:Ziggo
+p:Ziggo,f:0040
 007f:ffff0000:001f:01f4:1:0
 LIG TV
-p:Ziggo
+p:Ziggo,f:0040
 0080:ffff0000:001f:01f4:1:0
 Türkmax
-p:Ziggo
+p:Ziggo,f:0040
 0082:ffff0000:001f:01f4:1:0
 SET Asia
-p:Ziggo
+p:Ziggo,f:0040
 00f9:ffff0000:001f:01f4:1:0
 Star Plus
-p:Ziggo
+p:Ziggo,f:0040
 00fa:ffff0000:001f:01f4:1:0
 Star Gold
-p:Ziggo
+p:Ziggo,f:0040
 021a:ffff0000:001d:03e8:1:0
 538
-p:Ziggo
+p:Ziggo,f:0040
 08a4:ffff0000:001d:03e8:1:0
 24 Kitchen
-p:Ziggo
+p:Ziggo,f:0040
 00dd:ffff0000:001d:03e8:1:0
 538
-p:Ziggo
+p:Ziggo,f:0040
 00c9:ffff0000:001d:03e8:25:0
 Nederland 1 HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 00ca:ffff0000:001d:03e8:25:0
 Nederland 2 HD
-p:Ziggo
+p:Ziggo,f:0040
 0020:ffff0000:0010:03e8:1:0
 Film 1 Series
-p:Ziggo
+p:Ziggo,f:0040
 0042:ffff0000:0010:03e8:1:0
 Nick Toons
-p:Ziggo
+p:Ziggo,f:0040
 0043:ffff0000:0010:03e8:1:0
 Nick Hits
-p:Ziggo
+p:Ziggo,f:0040
 0044:ffff0000:0010:03e8:1:0
 Baby TV
-p:Ziggo
+p:Ziggo,f:0040
 00b8:ffff0000:0010:03e8:1:0
 Syfy Universal
-p:Ziggo
+p:Ziggo,f:0040
 027a:ffff0000:0010:03e8:2:0
 RADIONL
 p:Ziggo,f:0040
@@ -8959,40 +9013,40 @@ BBC World Service
 p:Ziggo,f:0040
 3e82:ffff0000:0010:03e8:25:0
 Sport1 Select HD
-p:Ziggo
+p:Ziggo,f:0040
 0021:ffff0000:0021:03e8:1:0
 Film 1 Premiere
-p:Ziggo
+p:Ziggo,f:0040
 00ea:ffff0000:0021:03e8:25:0
 HBO HD
-p:Ziggo
+p:Ziggo,f:0040
 00eb:ffff0000:0021:03e8:25:0
 HBO 2 HD
-p:Ziggo
+p:Ziggo,f:0040
 00ec:ffff0000:0021:03e8:25:0
 HBO 3 HD
-p:Ziggo
+p:Ziggo,f:0040
 0321:ffff0000:0008:10ef:1:0
 ARD
-p:Delta
+p:Delta,f:0040
 0322:ffff0000:0008:10ef:1:0
 ZDF
-p:Delta
+p:Delta,f:0040
 0323:ffff0000:0008:10ef:1:0
 WDR
-p:Delta
+p:Delta,f:0040
 0324:ffff0000:0008:10ef:1:0
 NDR
-p:Delta
+p:Delta,f:0040
 0325:ffff0000:0008:10ef:1:0
 SWF
-p:Delta
+p:Delta,f:0040
 0326:ffff0000:0008:10ef:1:0
 RTL Television
-p:Delta
+p:Delta,f:0040
 0327:ffff0000:0008:10ef:1:0
 Pro7
-p:Delta
+p:Delta,f:0040
 3f21:ffff0000:0838:0600:1:0
 RTL Crime CoD
 p:UPC NL
@@ -9040,100 +9094,100 @@ Eurosport 2 HD
 p:UPC NL
 4e21:ffff0000:0801:0600:1:0
 24Kitchen
-p:UPC NL
+p:UPC NL,f:0040
 4e23:ffff0000:0801:0600:1:0
 BBC Entertainment
-p:UPC NL
+p:UPC NL,f:0040
 4e25:ffff0000:0801:0600:1:0
 TVM Int
-p:UPC NL
+p:UPC NL,f:0040
 4e26:ffff0000:0801:0600:1:0
 FOX
 p:UPC NL,f:0008
 4e27:ffff0000:0801:0600:1:0
 522 SID 0x4e27
-p:
+p:,f:0040
 4e22:ffff0000:0801:0600:25:0
 Animal Planet HD
-p:UPC NL,c:050001,c:090202
+p:UPC NL,f:0040,c:050001,c:090202
 4e24:ffff0000:0801:0600:25:0
 FOX Sports 5 HD
-p:UPC NL,f:0008,c:050001
+p:UPC NL,f:0048,c:050001
 4e23:ffff0000:0014:10ef:1:0
 OUT TV
-p:DELTA
+p:DELTA,f:0040
 4e24:ffff0000:0014:10ef:1:0
 FOXlife
-p:Delta
+p:Delta,f:0040
 4e25:ffff0000:0014:10ef:1:0
 192 TV
-p:DELTA
+p:DELTA,f:0040
 4e26:ffff0000:0014:10ef:2:0
 Efteling Radio
 p:DELTA,f:0040
 4e21:ffff0000:0014:10ef:25:0
 Eurosport HD
-p:Delta
+p:Delta,f:0040
 4e22:ffff0000:0014:10ef:25:0
 Animal Planet HD
-p:Delta
+p:Delta,f:0040
 4e23:ffff0000:0014:01f4:1:0
 E! Entertainment
-p:Ziggo,c:099006
+p:Ziggo,f:0040,c:099006
 4e24:ffff0000:0014:01f4:1:0
 TVE
-p:Ziggo
+p:Ziggo,f:0040
 4e25:ffff0000:0014:01f4:1:0
 Private Spice
-p:Ziggo,c:090202
+p:Ziggo,f:0040,c:090202
 4e28:ffff0000:0014:01f4:1:0
 Best 24
-p:Ziggo
+p:Ziggo,f:0040
 4e27:ffff0000:0014:01f4:25:0
 National Geographic Channel HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 0024:ffff0000:000d:03e8:1:0
 Film 1 Sundance
-p:Ziggo
+p:Ziggo,f:0040
 004d:ffff0000:000d:03e8:1:0
 192TV
-p:Ziggo
+p:Ziggo,f:0040
 0050:ffff0000:000d:03e8:1:0
 Mezzo
-p:Ziggo
+p:Ziggo,f:0040
 33a2:ffff0000:000d:03e8:1:0
 RTL Crime
-p:Ziggo
+p:Ziggo,f:0040
 00b7:ffff0000:000d:03e8:1:0
 13TH STREET
-p:Ziggo
+p:Ziggo,f:0040
 00c3:ffff0000:000d:03e8:1:0
 SLAM!TV
-p:Ziggo
+p:Ziggo,f:0040
 32c9:ffff0000:000d:03e8:1:0
 VH-1
-p:Ziggo
+p:Ziggo,f:0040
 32ca:ffff0000:000d:03e8:1:0
 VH-1 Classic
-p:Ziggo
+p:Ziggo,f:0040
 32cf:ffff0000:000d:03e8:1:0
 TV Oranje
-p:Ziggo
+p:Ziggo,f:0040
 00f5:ffff0000:000d:03e8:1:0
 RTL Telekids
-p:Ziggo
+p:Ziggo,f:0040
 0026:ffff0000:0018:01f4:1:0
 Humor TV 24
-p:Ziggo,c:090001
+p:Ziggo,f:0040,c:090001
 00a1:ffff0000:0018:01f4:1:0
 brava nl klassiek
-p:Ziggo
+p:Ziggo,f:0040
 5dc1:ffff0000:0018:01f4:1:0
 Nat Geo Wild
-p:Ziggo
+p:Ziggo,f:0040
 5dc6:ffff0000:0018:01f4:1:0
 RTL Television
-p:Ziggo
+p:Ziggo,f:0040
 026f:ffff0000:0018:01f4:2:0
 Omrop Fryslân radio
 p:Ziggo,f:0040
@@ -9151,25 +9205,25 @@ NDR Kultur
 p:Ziggo,f:0040
 00d3:ffff0000:0018:01f4:25:0
 FOX Sports 1 Eredivisie HD
-p:Ziggo,c:050001,c:098800
+p:Ziggo,f:0040,c:050001,c:098800
 2329:ffff0000:0009:03e8:1:0
 Sport1 Golf
-p:Ziggo
+p:Ziggo,f:0040
 232a:ffff0000:0009:03e8:1:0
 Sport1 Tennis
-p:Ziggo
+p:Ziggo,f:0040
 232b:ffff0000:0009:03e8:1:0
 Sport1 Extra 1
-p:Ziggo
+p:Ziggo,f:0040
 232c:ffff0000:0009:03e8:1:0
 Sport1 Extra 2
-p:Ziggo
+p:Ziggo,f:0040
 008b:ffff0000:0009:03e8:1:0
 PassieTV/Dusk!
-p:Ziggo
+p:Ziggo,f:0040
 00c7:ffff0000:0009:03e8:1:0
 PassieXXX
-p:Ziggo
+p:Ziggo,f:0040
 02cf:ffff0000:0009:03e8:2:0
 XLnt Dance
 p:Ziggo,f:0040
@@ -9214,16 +9268,16 @@ WDR 5
 p:Ziggo,f:0040
 2329:ffff0000:0009:01f4:1:0
 Ziggo TV
-p:Ziggo
+p:Ziggo,f:0040
 00d5:ffff0000:0009:01f4:1:0
 Disney Channel
-p:Ziggo
+p:Ziggo,f:0040
 00d6:ffff0000:0009:01f4:1:0
 Disney XD
-p:Ziggo
+p:Ziggo,f:0040
 00dc:ffff0000:0009:01f4:1:0
 Disney Junior
-p:Ziggo
+p:Ziggo,f:0040
 235a:ffff0000:0009:01f4:2:0
 Radio 6
 p:Ziggo,f:0040
@@ -9265,7 +9319,7 @@ Efteling Radio
 p:Ziggo,f:0040
 00e1:ffff0000:0009:01f4:25:0
 MTV Live HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 4b29:ffff0000:0810:0600:1:0
 Nat. Geo. Wild
 p:UPC NL
@@ -9283,22 +9337,22 @@ Discovery World
 p:UPC NL
 4b2b:ffff0000:0810:0600:25:0
 TLC HD
-p:UPC NL
+p:UPC NL,c:050001
 4b30:ffff0000:0810:0600:25:0
 24Kitchen HD
 p:UPC NL
 002b:ffff0000:0016:03e8:1:0
 E! Entertainment
-p:Ziggo
+p:Ziggo,f:0040
 0065:ffff0000:0016:03e8:1:0
 Weer en Verkeer
-p:Ziggo
+p:Ziggo,f:0040
 55f3:ffff0000:0016:03e8:1:0
 Humor TV 24
-p:Ziggo
+p:Ziggo,f:0040
 55f4:ffff0000:0016:03e8:1:0
 CBS Reality
-p:Ziggo
+p:Ziggo,f:0040
 0259:ffff0000:0016:03e8:2:0
 Radio 1
 p:Ziggo,f:0040
@@ -9331,109 +9385,109 @@ Radio Veronica
 p:Ziggo,f:0040
 55f1:ffff0000:0016:03e8:25:0
 Film1 Premiere HD
-p:Ziggo
+p:Ziggo,f:0040
 012c:ffff0000:0064:01f4:1:0
 Omroep Drimmelen
-p:Ziggo
+p:Ziggo,f:0040
 0064:ffff0000:0064:01f4:1:0
 StadsTV Breda
-p:Ziggo
+p:Ziggo,f:0040
 0190:ffff0000:0064:01f4:1:0
 SLOG TV
-p:Ziggo
+p:Ziggo,f:0040
 012d:ffff0000:0003:10ef:1:0
 FOX Sports 1 Eredivisie
-p:Delta
+p:Delta,f:0040
 012e:ffff0000:0003:10ef:1:0
 FOX Sports 2
-p:Delta
+p:Delta,f:0040
 012f:ffff0000:0003:10ef:1:0
 FOX Sports 3 Eredivisie
-p:Delta
+p:Delta,f:0040
 0130:ffff0000:0003:10ef:1:0
 FOX Sports 4 International
-p:Delta
+p:Delta,f:0040
 0132:ffff0000:0003:10ef:1:0
 Eurosport
-p:Del
+p:Del,f:0040
 0133:ffff0000:0003:10ef:1:0
 Eurosport 2
-p:Delta
+p:Delta,f:0040
 0134:ffff0000:0003:10ef:1:0
 Extreme Sports
-p:Delta
+p:Delta,f:0040
 0135:ffff0000:0003:10ef:1:0
 Nautical Channel
-p:Del
+p:Del,f:0040
 002f:ffff0000:000b:01f4:1:0
 101 TV
-p:Ziggo,c:090001
+p:Ziggo,f:0040,c:090001
 00ab:ffff0000:000b:01f4:1:0
 JimJam
-p:Ziggo
+p:Ziggo,f:0040
 2af9:ffff0000:000b:01f4:1:0
 BBC 3 / CBBC
-p:Ziggo
+p:Ziggo,f:0040
 2afb:ffff0000:000b:01f4:1:0
 Sport1 Tennis
-p:Ziggo
+p:Ziggo,f:0040
 2afc:ffff0000:000b:01f4:1:0
 Sport1 Golf
-p:Ziggo
+p:Ziggo,f:0040
 2afd:ffff0000:000b:01f4:1:0
 Sport1 Voetbal
-p:Ziggo
+p:Ziggo,f:0040
 2afe:ffff0000:000b:01f4:1:0
 Sport1 Select
-p:Ziggo
+p:Ziggo,f:0040
 00f0:ffff0000:000b:01f4:25:0
 Comedy Central HD / Kindernet
-p:Ziggo
+p:Ziggo,f:0040
 0131:ffff0000:0006:10ef:1:0
 Film1 Action
-p:Delta
+p:Delta,f:0040
 0259:ffff0000:0006:10ef:1:0
 RTL 4
-p:Delta
+p:Delta,f:0040
 025a:ffff0000:0006:10ef:1:0
 RTL 5
-p:Delta
+p:Delta,f:0040
 0067:ffff0000:0006:10ef:1:0
 Nederland 3
-p:Delta
+p:Delta,f:0040
 02aa:ffff0000:0006:10ef:1:0
 HUMAX iHRD-5000C CDL
-p:Delta
+p:Delta,f:0040
 02ae:ffff0000:0006:10ef:1:0
 HUMAX iHDR-5050C CDL
-p:Delta
+p:Delta,f:0040
 02b3:ffff0000:0006:10ef:1:0
 SAMSUNG SMT-C7140 CDL
-p:Delta
+p:Delta,f:0040
 02b4:ffff0000:0006:10ef:1:0
 SAMSUNG DCB-9401R (L001) CDL
-p:Delta
+p:Delta,f:0040
 02b5:ffff0000:0006:10ef:1:0
 HUMAX iHRD-5100C CDL
-p:Delta
+p:Delta,f:0040
 02b6:ffff0000:0006:10ef:1:0
 SAMSUNG DCB-H380R CDL
-p:Delta
+p:Delta,f:0040
 02b7:ffff0000:0006:10ef:1:0
 HUMAX iPVR-9200C CDL
-p:Delta
+p:Delta,f:0040
 02b8:ffff0000:0006:10ef:1:0
 SAMSUNG DCB-H360R CDL
-p:Delta
+p:Delta,f:0040
 02b9:ffff0000:0006:10ef:1:0
 HUMAX IR-FOX-C CDL
-p:Delta
+p:Delta,f:0040
 02ba:ffff0000:0006:10ef:1:0
 HUMAX iHRD-5200C CDL
-p:Delta
+p:Delta,f:0040
 02bb:ffff0000:0006:10ef:1:0
 SAMSUNG DCB-9401R (L100) CDL
-p:Delta
+p:Delta,f:0040
 1771:ffff0000:0006:10ef:2:0
 VRT MNM
 p:Delta,f:0040
@@ -9511,10 +9565,10 @@ Film1 Action HD
 p:UPC NL
 0039:ffff0000:0019:03e8:1:0
 HISTORY
-p:Ziggo
+p:Ziggo,f:0040
 003a:ffff0000:0019:03e8:1:0
 NostalgieNet
-p:Ziggo
+p:Ziggo,f:0040
 02c3:ffff0000:0019:03e8:2:0
 XLnt Hits
 p:Ziggo,f:0040
@@ -9547,10 +9601,10 @@ XLnt Dance Classics
 p:Ziggo,f:0040
 00d1:ffff0000:0019:03e8:25:0
 Net 5 HD
-p:Ziggo
+p:Ziggo,f:0040
 00d2:ffff0000:0019:03e8:25:0
 RTL 8 HD
-p:Ziggo
+p:Ziggo,f:0040
 4039:ffff0000:0834:0600:1:0
 Code Download D4A UID2
 p:UPC NL
@@ -9652,91 +9706,91 @@ Concertzender
 p:UPC NL
 003a:ffff0000:0016:01f4:1:0
 NostalgieNet
-p:Ziggo
+p:Ziggo,f:0040
 00b2:ffff0000:0016:01f4:1:0
 Film1 Action
-p:Ziggo
+p:Ziggo,f:0040
 00b3:ffff0000:0016:01f4:1:0
 Comedy Central Family
-p:Ziggo
+p:Ziggo,f:0040
 00d7:ffff0000:0016:01f4:25:0
 Animal Planet HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 00ef:ffff0000:0016:01f4:25:0
 Discovery Channel HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 4a3a:ffff0000:0013:03e8:1:0
 TVE
-p:Ziggo
+p:Ziggo,f:0040
 4a3b:ffff0000:0013:03e8:1:0
 Rai Uno
-p:Ziggo
+p:Ziggo,f:0040
 4a3d:ffff0000:0013:03e8:1:0
 TV5 Monde
-p:Ziggo
+p:Ziggo,f:0040
 4a40:ffff0000:0013:03e8:1:0
 TRT Türk
-p:Ziggo
+p:Ziggo,f:0040
 0075:ffff0000:0013:03e8:1:0
 France 2
-p:Ziggo
+p:Ziggo,f:0040
 00d3:ffff0000:0013:03e8:25:0
 FOX Sports 1 HD
-p:Ziggo,f:0008
+p:Ziggo,f:0048
 00ef:ffff0000:0013:03e8:25:0
 Discovery Channel HD
-p:Ziggo
+p:Ziggo,f:0040
 003c:ffff0000:000e:03e8:1:0
 Etalagekanaal
-p:Ziggo
+p:Ziggo,f:0040
 0085:ffff0000:000e:03e8:1:0
 Eventkanaal
-p:Ziggo
+p:Ziggo,f:0040
 36b1:ffff0000:000e:03e8:1:0
 Dusk! Deluxe
-p:Ziggo
+p:Ziggo,f:0040
 36b3:ffff0000:000e:03e8:1:0
 MTV Brand New
-p:Ziggo
+p:Ziggo,f:0040
 36b8:ffff0000:000e:03e8:1:0
 MGM Movie Channel
-p:Ziggo
+p:Ziggo,f:0040
 00e7:ffff0000:000e:03e8:1:0
 HBO
-p:Ziggo
+p:Ziggo,f:0040
 4a3c:ffff0000:0013:10ef:1:0
 BBC World News
-p:Delta
+p:Delta,f:0040
 4a3d:ffff0000:0013:10ef:1:0
 France2
-p:Delta
+p:Delta,f:0040
 4a3e:ffff0000:0013:10ef:1:0
 HBO
-p:DELTA
+p:DELTA,f:0040
 4a3f:ffff0000:0013:10ef:1:0
 HBO 2
-p:DELTA
+p:DELTA,f:0040
 4a41:ffff0000:0013:10ef:1:0
 HISTORY
-p:Delta
+p:Delta,f:0040
 4a3a:ffff0000:0013:10ef:25:0
 FOX Sports 1 Eredivisie HD
-p:DELTA
+p:DELTA,f:0040
 003d:ffff0000:000e:01f4:1:0
 Cultura 24
-p:Ziggo
+p:Ziggo,f:0040
 0050:ffff0000:000e:01f4:1:0
 Mezzo
-p:Ziggo
+p:Ziggo,f:0040
 0062:ffff0000:000e:01f4:1:0
 Politiek 24
-p:Ziggo
+p:Ziggo,f:0040
 0072:ffff0000:000e:01f4:1:0
 Arte
-p:Ziggo
+p:Ziggo,f:0040
 0078:ffff0000:000e:01f4:1:0
 TRT Türk
-p:Ziggo
+p:Ziggo,f:0040
 3701:ffff0000:000e:01f4:2:0
 Rock 'n' Roll
 p:Ziggo,f:0040
@@ -9859,7 +9913,7 @@ Classical Calm
 p:Ziggo,f:0040
 36b1:ffff0000:000e:01f4:25:0
 Net 5 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 4b3d:ffff0000:0812:0600:1:0
 Syfy
 p:UPC NL
@@ -9889,85 +9943,85 @@ Nat Geo Wild HD
 p:UPC NL
 003e:ffff0000:0008:03e8:1:0
 Zappelin / Zapp 24
-p:Ziggo
+p:Ziggo,f:0040
 1f48:ffff0000:0008:03e8:1:0
 Film1 Family
-p:Ziggo
+p:Ziggo,f:0040
 1f49:ffff0000:0008:03e8:1:0
 Film1 Sundance
-p:Ziggo
+p:Ziggo,f:0040
 1f4a:ffff0000:0008:03e8:1:0
 Film1 Premiere
-p:Ziggo
+p:Ziggo,f:0040
 1f51:ffff0000:0008:03e8:1:0
 Film1 Series
-p:Ziggo
+p:Ziggo,f:0040
 00f3:ffff0000:0008:03e8:25:0
 Eurosport 2 HD
-p:Ziggo
+p:Ziggo,f:0040
 4a40:ffff0000:000f:10ef:1:0
 Phoenix CNE
-p:Delta
+p:Delta,f:0040
 3a99:ffff0000:000f:10ef:1:0
 TRT Turk
-p:Delta
+p:Delta,f:0040
 3a9b:ffff0000:000f:10ef:1:0
 RTL Lounge
-p:Delta
+p:Delta,f:0040
 3a9c:ffff0000:000f:10ef:1:0
 NGC Wild
-p:DELTA
+p:DELTA,f:0040
 3a9f:ffff0000:000f:10ef:1:0
 Eurostar
-p:Delta
+p:Delta,f:0040
 3aa0:ffff0000:000f:10ef:1:0
 TVEi
-p:Delta
+p:Delta,f:0040
 3aa1:ffff0000:000f:10ef:1:0
 ERT World
-p:Delta
+p:Delta,f:0040
 3a9a:ffff0000:000f:10ef:25:0
 SBS6 HD
-p:DELTA
+p:DELTA,f:0040
 0041:ffff0000:0019:01f4:1:0
 Nick Jr.
-p:Ziggo
+p:Ziggo,f:0040
 00b6:ffff0000:0019:01f4:1:0
 OUTTV
-p:Ziggo
+p:Ziggo,f:0040
 09c5:ffff0000:0019:01f4:1:0
 NDR
-p:Ziggo
+p:Ziggo,f:0040
 00a6:ffff0000:0019:01f4:25:0
 Eurosport HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 0041:ffff0000:001a:03e8:1:0
 Nick Jr.
-p:Ziggo
+p:Ziggo,f:0040
 00b4:ffff0000:001a:03e8:1:0
 Family 7
-p:Ziggo
+p:Ziggo,f:0040
 089c:ffff0000:001a:03e8:25:0
 RTL 4 HD
-p:Ziggo
+p:Ziggo,f:0040
 00cb:ffff0000:001a:03e8:25:0
 Nederland 3 HD
-p:Ziggo
+p:Ziggo,f:0040
 0042:ffff0000:0004:01f4:1:0
 Nick Toons
-p:Ziggo
+p:Ziggo,f:0040
 0fa2:ffff0000:0004:01f4:1:0
 TLC
-p:Ziggo
+p:Ziggo,f:0040
 0fa4:ffff0000:0004:01f4:1:0
 Discovery World
-p:Ziggo,c:098507
+p:Ziggo,f:0040,c:098507
 0fa5:ffff0000:0004:01f4:1:0
 Discovery Science
-p:Ziggo,c:098507
+p:Ziggo,f:0040,c:098507
 0fa6:ffff0000:0004:01f4:1:0
 Investigation Discovery
-p:Ziggo,c:099506
+p:Ziggo,f:0040,c:099506
 0fd2:ffff0000:0004:01f4:2:0
 VRT Radio 1
 p:Ziggo,f:0040
@@ -9988,19 +10042,19 @@ BBC Radio 4
 p:Ziggo,f:0040
 00cc:ffff0000:0004:01f4:25:0
 RTL 4 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 1f42:ffff0000:0008:01f4:1:0
 MGM Movie Channel
-p:Ziggo,c:098800
+p:Ziggo,f:0040,c:098800
 1f46:ffff0000:0008:01f4:1:0
 Rai Uno
-p:Ziggo
+p:Ziggo,f:0040
 0043:ffff0000:0005:01f4:1:0
 Nick Hits
-p:Ziggo
+p:Ziggo,f:0040
 0049:ffff0000:0005:01f4:1:0
 MTV Brand New
-p:Ziggo
+p:Ziggo,f:0040
 13ba:ffff0000:0005:01f4:2:0
 Eins Live
 p:Ziggo,f:0040
@@ -10018,40 +10072,40 @@ RNE Radio
 p:Ziggo,f:0040
 00d0:ffff0000:0005:01f4:25:0
 Veronica HD/Disney XD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 0045:ffff0000:0012:01f4:1:0
 Lite TV
-p:Ziggo
+p:Ziggo,f:0040
 4653:ffff0000:0012:01f4:1:0
 Baby TV
-p:Ziggo
+p:Ziggo,f:0040
 4654:ffff0000:0012:01f4:1:0
 Boomerang
-p:Ziggo
+p:Ziggo,f:0040
 4657:ffff0000:0012:01f4:1:0
 VH-1
-p:Ziggo
+p:Ziggo,f:0040
 4659:ffff0000:0012:01f4:1:0
 ZDF
-p:Ziggo
+p:Ziggo,f:0040
 00b8:ffff0000:0012:01f4:1:0
 Syfy Universal
-p:Ziggo,c:090202
+p:Ziggo,f:0040,c:090202
 00bd:ffff0000:0012:01f4:1:0
 FOX Sports 2
-p:Ziggo
+p:Ziggo,f:0040
 0045:ffff0000:0020:03e8:1:0
 Lite TV
-p:Ziggo
+p:Ziggo,f:0040
 00db:ffff0000:0020:03e8:1:0
 Pebble TV
-p:Ziggo
+p:Ziggo,f:0040
 08a0:ffff0000:0020:03e8:25:0
 Veronica HD/Disney XD
-p:Ziggo
+p:Ziggo,f:0040
 00cf:ffff0000:0020:03e8:25:0
 RTL 7 HD
-p:Ziggo
+p:Ziggo,f:0040
 4e4c:ffff0000:0803:0600:1:0
 brava nl klassiek
 p:UPC NL
@@ -10153,55 +10207,55 @@ Net 5 HD
 p:UPC NL
 044e:ffff0000:0007:03e8:1:0
 Aljazeera English
-p:Ziggo
+p:Ziggo,f:0040
 1b5d:ffff0000:0007:03e8:1:0
 Zee TV
-p:Ziggo
+p:Ziggo,f:0040
 1b5e:ffff0000:0007:03e8:1:0
 SET Asia
-p:Ziggo
+p:Ziggo,f:0040
 0086:ffff0000:0007:03e8:1:0
 Phoenix CNE
-p:Ziggo
+p:Ziggo,f:0040
 00a2:ffff0000:0007:03e8:1:0
 MAX
-p:Ziggo
+p:Ziggo,f:0040
 00a4:ffff0000:0007:03e8:1:0
 Zee Cinema
-p:Ziggo
+p:Ziggo,f:0040
 00a5:ffff0000:0007:03e8:1:0
 Phoenix InfoNews
-p:Ziggo
+p:Ziggo,f:0040
 00b5:ffff0000:0007:03e8:1:0
 X-MO
-p:Ziggo
+p:Ziggo,f:0040
 1bd7:ffff0000:0007:03e8:1:0
 LIG TV
-p:Ziggo
+p:Ziggo,f:0040
 1bd8:ffff0000:0007:03e8:1:0
 Türk Max
-p:Ziggo
+p:Ziggo,f:0040
 1bdc:ffff0000:0007:03e8:1:0
 Planet Türk
-p:Ziggo
+p:Ziggo,f:0040
 00f9:ffff0000:0007:03e8:1:0
 Star Plus
-p:Ziggo
+p:Ziggo,f:0040
 00fa:ffff0000:0007:03e8:1:0
 Star Gold
-p:Ziggo
+p:Ziggo,f:0040
 4651:ffff0000:0012:03e8:1:0
 Cartoon Network
-p:Home
+p:Home,f:0040
 4656:ffff0000:0012:03e8:1:0
 Boomerang
-p:Home
+p:Home,f:0040
 00d7:ffff0000:0012:03e8:25:0
 Animal Planet HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 00f0:ffff0000:0012:03e8:25:0
 Comedy Central HD / Kindernet
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 4b51:ffff0000:0813:0600:1:0
 SAT.1
 p:UPC NL
@@ -10282,25 +10336,25 @@ Canvas HD
 p:UPC NL,c:050001
 0061:ffff0000:0002:01f4:1:0
 Euronews
-p:Ziggo
+p:Ziggo,f:0040
 07d2:ffff0000:0002:01f4:1:0
 Cartoon Network
-p:Ziggo
+p:Ziggo,f:0040
 07d4:ffff0000:0002:01f4:1:0
 BBC Entertainment
-p:Ziggo
+p:Ziggo,f:0040
 07d7:ffff0000:0002:01f4:1:0
 Dusk! Deluxe
-p:Ziggo
+p:Ziggo,f:0040
 00f5:ffff0000:0002:01f4:1:0
 RTL Telekids
-p:Ziggo
+p:Ziggo,f:0040
 0100:ffff0000:0002:01f4:25:0
 FOX HD
-p:Ziggo
+p:Ziggo,f:0040
 00df:ffff0000:0002:01f4:25:0
 FOXlife HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 4a61:ffff0000:0807:0600:1:0
 Nederland 1
 p:UPC NL
@@ -10342,31 +10396,31 @@ HBO HD
 p:UPC NL
 6d61:ffff0000:001c:01f4:1:0
 HaberTürk
-p:Ziggo
+p:Ziggo,f:0040
 6d62:ffff0000:001c:01f4:1:0
 Kral TV
-p:Ziggo
+p:Ziggo,f:0040
 0079:ffff0000:001c:01f4:1:0
 Euro D
-p:Ziggo
+p:Ziggo,f:0040
 007a:ffff0000:001c:01f4:1:0
 ATV Avrupa
-p:Ziggo
+p:Ziggo,f:0040
 007b:ffff0000:001c:01f4:1:0
 TGRT EU
-p:Ziggo
+p:Ziggo,f:0040
 007c:ffff0000:001c:01f4:1:0
 Samanyolu Avrupa
-p:Ziggo
+p:Ziggo,f:0040
 007d:ffff0000:001c:01f4:1:0
 Euro Star
-p:Ziggo
+p:Ziggo,f:0040
 007e:ffff0000:001c:01f4:1:0
 Show TV
-p:Ziggo
+p:Ziggo,f:0040
 00fd:ffff0000:001c:01f4:1:0
 Horse & Country
-p:Ziggo
+p:Ziggo,f:0040
 7764:ffff0000:083a:0600:1:0
 Fox Sports 4 PPV
 p:UPC NL
@@ -10384,16 +10438,16 @@ FOX HD
 p:UPC NL
 0065:ffff0000:0001:10ef:1:0
 Nederland 1
-p:Delta
+p:Delta,f:0040
 0066:ffff0000:0001:10ef:1:0
 Nederland 2
-p:Delta
+p:Delta,f:0040
 0068:ffff0000:0001:10ef:1:0
 SBS 6
-p:Delta
+p:Delta,f:0040
 0069:ffff0000:0001:10ef:1:0
 NET 5
-p:Delta
+p:Delta,f:0040
 03e9:ffff0000:0001:10ef:2:0
 Radio 1
 p:Delta,f:0040
@@ -10444,46 +10498,46 @@ MvH Hard (Xotix)
 p:UPC NL
 4269:ffff0000:0011:10ef:1:0
 MTV Brand New
-p:Delta
+p:Delta,f:0040
 426c:ffff0000:0011:10ef:1:0
 MTV Rocks
-p:Delt
+p:Delt,f:0040
 426e:ffff0000:0011:10ef:1:0
 SLAM!TV
-p:Delta
+p:Delta,f:0040
 426f:ffff0000:0011:10ef:1:0
 MTV VH 1
-p:Delta
+p:Delta,f:0040
 4270:ffff0000:0011:10ef:1:0
 MTV VH 1 Classic
-p:Delt
+p:Delt,f:0040
 4271:ffff0000:0011:10ef:1:0
 Mezzo
-p:Del
+p:Del,f:0040
 4272:ffff0000:0011:10ef:25:0
 FOX Sports 2 International HD
-p:Delta
+p:Delta,f:0040
 006a:ffff0000:0002:10ef:1:0
 DisneyXD/Veronica
-p:Delta
+p:Delta,f:0040
 00cb:ffff0000:0002:10ef:1:0
 Weer en Verkeer
-p:Delt
+p:Delt,f:0040
 00cc:ffff0000:0002:10ef:1:0
 Goed TV
-p:Delta
+p:Delta,f:0040
 00ce:ffff0000:0002:10ef:1:0
 NGC
-p:Delta
+p:Delta,f:0040
 00cf:ffff0000:0002:10ef:1:0
 Euronews
-p:Delta
+p:Delta,f:0040
 00d1:ffff0000:0002:10ef:1:0
 CNN
-p:Delt
+p:Delt,f:0040
 00d2:ffff0000:0002:10ef:1:0
 MTV
-p:Delt
+p:Delt,f:0040
 3f71:ffff0000:083c:0600:1:0
 HZN Code Download2
 p:UPC NL
@@ -10621,13 +10675,13 @@ Syfy HD
 p:UPC NL
 0072:ffff0000:000f:03e8:1:0
 Arte
-p:Ziggo
+p:Ziggo,f:0040
 3aa2:ffff0000:000f:03e8:1:0
 RTL 8
-p:Ziggo
+p:Ziggo,f:0040
 00b6:ffff0000:000f:03e8:1:0
 OUTTV
-p:Ziggo
+p:Ziggo,f:0040
 0263:ffff0000:000f:03e8:2:0
 Radio 10 Gold
 p:Ziggo,f:0040
@@ -10657,7 +10711,7 @@ FunX
 p:Ziggo,f:0040
 3a99:ffff0000:000f:03e8:25:0
 National Geographic Channel HD
-p:Ziggo
+p:Ziggo,f:0040
 7672:ffff0000:0815:0600:1:0
 Sport1 Select PPV
 p:UPC NL
@@ -10774,58 +10828,58 @@ HBO 2 HD
 p:UPC NL
 0079:ffff0000:001c:03e8:1:0
 Euro D
-p:Ziggo
+p:Ziggo,f:0040
 007a:ffff0000:001c:03e8:1:0
 ATV Avrupa
-p:Ziggo
+p:Ziggo,f:0040
 007b:ffff0000:001c:03e8:1:0
 TGRT EU
-p:Ziggo
+p:Ziggo,f:0040
 007c:ffff0000:001c:03e8:1:0
 Samanyola Avrupa
-p:Ziggo
+p:Ziggo,f:0040
 007d:ffff0000:001c:03e8:1:0
 Euro Star
-p:Ziggo
+p:Ziggo,f:0040
 007e:ffff0000:001c:03e8:1:0
 Show TV
-p:Ziggo
+p:Ziggo,f:0040
 0083:ffff0000:001c:03e8:1:0
 Kral TV
-p:Ziggo
+p:Ziggo,f:0040
 009a:ffff0000:001c:03e8:1:0
 GoedTV
-p:Ziggo
+p:Ziggo,f:0040
 00a3:ffff0000:001c:03e8:1:0
 Habertürk
-p:Ziggo
+p:Ziggo,f:0040
 00fd:ffff0000:001c:03e8:1:0
 Horse & Country TV
-p:Ziggo
+p:Ziggo,f:0040
 6979:ffff0000:001b:03e8:1:0
 BBC 3 / CBBC
-p:Ziggo
+p:Ziggo,f:0040
 697a:ffff0000:001b:03e8:1:0
 BBC 4 / CBeebies
-p:Ziggo
+p:Ziggo,f:0040
 697b:ffff0000:001b:03e8:1:0
 BBC 1
-p:Ziggo
+p:Ziggo,f:0040
 697c:ffff0000:001b:03e8:1:0
 BBC 2
-p:Ziggo
+p:Ziggo,f:0040
 697d:ffff0000:001b:03e8:1:0
 BBC Entertainment
-p:Ziggo
+p:Ziggo,f:0040
 697e:ffff0000:001b:03e8:1:0
 ZDF
-p:Ziggo
+p:Ziggo,f:0040
 00ab:ffff0000:001b:03e8:1:0
 JimJam
-p:Ziggo
+p:Ziggo,f:0040
 00dc:ffff0000:001b:03e8:1:0
 Disney Junior
-p:Ziggo
+p:Ziggo,f:0040
 0295:ffff0000:001b:03e8:2:0
 Radio France International
 p:Ziggo,f:0040
@@ -10852,67 +10906,67 @@ The alternative
 p:Ziggo,f:0040
 00f2:ffff0000:001b:03e8:25:0
 Canvas HD
-p:Ziggo
+p:Ziggo,f:0040
 6979:ffff0000:001b:01f4:1:0
 Zender vd Maand
-p:Ziggo
+p:Ziggo,f:0040
 697a:ffff0000:001b:01f4:1:0
 SLAM!TV
-p:Ziggo
+p:Ziggo,f:0040
 00c9:ffff0000:001b:01f4:25:0
 Nederland 1 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 00ca:ffff0000:001b:01f4:25:0
 Nederland 2 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 507e:ffff0000:00ce:03e8:1:0
 Ziggo TV
-p:Ziggo
+p:Ziggo,f:0040
 00a1:ffff0000:00ce:03e8:1:0
 BravaNL
-p:Ziggo
+p:Ziggo,f:0040
 089e:ffff0000:00ce:03e8:25:0
 SBS 6 HD
-p:Ziggo
+p:Ziggo,f:0040
 00cd:ffff0000:00ce:03e8:25:0
 RTL 5 HD
-p:Ziggo
+p:Ziggo,f:0040
 3e81:ffff0000:0010:10ef:1:0
 Private Spice
-p:DELTA
+p:DELTA,f:0040
 3e82:ffff0000:0010:10ef:1:0
 ESPN Classic Sport
-p:DELTA
+p:DELTA,f:0040
 3e83:ffff0000:0010:10ef:1:0
 Motors TV
-p:DELTA
+p:DELTA,f:0040
 3e84:ffff0000:0010:10ef:1:0
 Boomerang
-p:DELTA
+p:DELTA,f:0040
 3e86:ffff0000:0010:10ef:1:0
 JimJam
-p:DELTA
+p:DELTA,f:0040
 3e87:ffff0000:0010:10ef:1:0
 Duck TV
-p:DELTA
+p:DELTA,f:0040
 3e88:ffff0000:0010:10ef:1:0
 Cartoon Netw./TCM
-p:Del
+p:Del,f:0040
 3e85:ffff0000:0010:10ef:25:0
 MTV HD
-p:Delta
+p:Delta,f:0040
 3e81:ffff0000:0010:01f4:1:0
 Pebble TV
-p:Ziggo
+p:Ziggo,f:0040
 3e82:ffff0000:0010:01f4:1:0
 Film1 Series
-p:Ziggo
+p:Ziggo,f:0040
 3e84:ffff0000:0010:01f4:1:0
 Film1 Family
-p:Ziggo
+p:Ziggo,f:0040
 3e85:ffff0000:0010:01f4:1:0
 Film1 Sundance
-p:Ziggo
+p:Ziggo,f:0040
 7686:ffff0000:0816:0600:1:0
 Sport1 Tennis PPV
 p:UPC NL
@@ -10948,46 +11002,46 @@ HBO 3 HD
 p:UPC NL
 1389:ffff0000:0005:03e8:1:0
 Comedy Central Family
-p:Ziggo
+p:Ziggo,f:0040
 008a:ffff0000:0005:03e8:1:0
 Private Spice
-p:Ziggo
+p:Ziggo,f:0040
 138a:ffff0000:0005:03e8:1:0
 Eurosport 2
-p:Ziggo
+p:Ziggo,f:0040
 138c:ffff0000:0005:03e8:1:0
 Motors TV
-p:Ziggo
+p:Ziggo,f:0040
 138e:ffff0000:0005:03e8:1:0
 ESPN America
-p:Ziggo
+p:Ziggo,f:0040
 00c4:ffff0000:0005:03e8:1:0
 FOXlife
-p:Ziggo
+p:Ziggo,f:0040
 00e2:ffff0000:0005:03e8:1:0
 Comedy Central Extra
-p:Ziggo
+p:Ziggo,f:0040
 00f7:ffff0000:0005:03e8:1:0
 Star Plus
-p:Ziggo
+p:Ziggo,f:0040
 00f8:ffff0000:0005:03e8:1:0
 Star Gold
-p:Ziggo
+p:Ziggo,f:0040
 00ff:ffff0000:0005:03e8:1:0
 FOX Sports 5 Eredivisie
-p:Ziggo
+p:Ziggo,f:0040
 00f6:ffff0000:0005:03e8:25:0
 Sport1 Voetbal HD
-p:Ziggo
+p:Ziggo,f:0040
 3e89:ffff0000:0018:10ef:1:0
 ESPN America
-p:Delta
+p:Delta,f:0040
 5dc4:ffff0000:0018:10ef:1:0
 Food Network
-p:Delta
+p:Delta,f:0040
 32ca:ffff0000:0018:10ef:1:0
 Lite TV
-p:Delta Zuid
+p:Delta Zuid,f:0040
 5dd4:ffff0000:0018:10ef:2:0
 XLnt Kleuterliedjes
 p:Delta,f:0040
@@ -11020,10 +11074,10 @@ XLnt Seasons
 p:Delta,f:0040
 5dc2:ffff0000:0018:10ef:25:0
 HISTORY HD
-p:Delta
+p:Delta,f:0040
 5dc3:ffff0000:0018:10ef:25:0
 Discovery HD
-p:Delta
+p:Delta,f:0040
 4a89:ffff0000:0809:0600:1:0
 RTL 4
 p:UPC NL
@@ -11047,19 +11101,19 @@ p:UPC NL
 p:UPC NL
 048a:ffff0000:000b:03e8:1:0
 Zappelin / Zapp 24
-p:Ziggo
+p:Ziggo,f:0040
 2af9:ffff0000:000b:03e8:1:0
 Veronica/Disney XD
-p:Ziggo
+p:Ziggo,f:0040
 2afc:ffff0000:000b:03e8:1:0
 SBS 6
-p:Ziggo
+p:Ziggo,f:0040
 2afd:ffff0000:000b:03e8:1:0
 RTL 5
-p:Ziggo
+p:Ziggo,f:0040
 2afe:ffff0000:000b:03e8:1:0
 RTL 7
-p:Ziggo
+p:Ziggo,f:0040
 0291:ffff0000:000b:03e8:2:0
 WDR 2
 p:Ziggo,f:0040
@@ -11089,31 +11143,31 @@ MNM
 p:Ziggo,f:0040
 008c:ffff0000:01f7:01f4:1:0
 Omroep Zeeland
-p:Ziggo
+p:Ziggo,f:0040
 0092:ffff0000:01f7:01f4:1:0
 L1 Limburg
-p:Ziggo
+p:Ziggo,f:0040
 0093:ffff0000:01f7:01f4:1:0
 RTV Utrecht
-p:Ziggo
+p:Ziggo,f:0040
 0094:ffff0000:01f7:01f4:1:0
 TV Gelderland
-p:Ziggo
+p:Ziggo,f:0040
 0095:ffff0000:01f7:01f4:1:0
 Omroep Brabant TV
-p:Ziggo
+p:Ziggo,f:0040
 0098:ffff0000:01f7:01f4:1:0
 TV Rijnmond
-p:Ziggo
+p:Ziggo,f:0040
 0099:ffff0000:01f7:01f4:1:0
 TV West
-p:Ziggo
+p:Ziggo,f:0040
 0191:ffff0000:0004:10ef:1:0
 Playboy TV
-p:Delta
+p:Delta,f:0040
 0192:ffff0000:0004:10ef:1:0
 Adult Channel
-p:Delta
+p:Delta,f:0040
 276c:ffff0000:0004:10ef:2:0
 BBC Radio 3
 p:Delta,f:0040
@@ -11128,10 +11182,10 @@ FunX
 p:Delta,f:0040
 0193:ffff0000:0004:10ef:25:0
 Nederland 2 HD
-p:DELTA
+p:DELTA,f:0040
 0194:ffff0000:0004:10ef:25:0
 Nederland 3 HD
-p:DELTA
+p:DELTA,f:0040
 5295:ffff0000:080c:0600:1:0
 RTV Utrecht
 p:UPC NL
@@ -11182,43 +11236,43 @@ E! Entertainment HD
 p:UPC NL
 3a99:ffff0000:000f:01f4:1:0
 Sport1 Extra 1
-p:Ziggo
+p:Ziggo,f:0040
 3a9a:ffff0000:000f:01f4:1:0
 Sport1 Extra 2
-p:Ziggo
+p:Ziggo,f:0040
 00b7:ffff0000:000f:01f4:1:0
 13TH STREET
-p:Ziggo,c:090202
+p:Ziggo,f:0040,c:090202
 00da:ffff0000:000f:01f4:1:0
 RTL Crime
-p:Ziggo
+p:Ziggo,f:0040
 00f2:ffff0000:000f:01f4:25:0
 Canvas HD
-p:Ziggo
+p:Ziggo,f:0040
 4a9d:ffff0000:080a:0600:1:0
 ARD
-p:UPC NL
+p:UPC NL,f:0040
 4a9e:ffff0000:080a:0600:1:0
 ZDF
-p:UPC NL
+p:UPC NL,f:0040
 4a9f:ffff0000:080a:0600:1:0
 SBS 6
-p:UPC NL
+p:UPC NL,f:0040
 4aa0:ffff0000:080a:0600:1:0
 Arte
-p:UPC NL
+p:UPC NL,f:0040
 4aa1:ffff0000:080a:0600:1:0
 Eurosport
-p:UPC NL
+p:UPC NL,f:0040
 4aa2:ffff0000:080a:0600:1:0
 Extreme Sports
-p:UPC NL
+p:UPC NL,f:0040
 4aa3:ffff0000:080a:0600:1:0
 Lite TV
-p:UPC NL
+p:UPC NL,f:0040
 42cd:ffff0000:080a:0600:1:0
 iTV CoD Nieuw
-p:UPC NL
+p:UPC NL,f:0040
 4ba1:ffff0000:0817:0600:1:0
 Film1 Premiere
 p:UPC NL
@@ -11305,70 +11359,70 @@ Comedy Central HD
 p:UPC NL,c:050001
 61a9:ffff0000:0019:10ef:1:0
 BBC1
-p:Delta
+p:Delta,f:0040
 61aa:ffff0000:0019:10ef:1:0
 BBC2
-p:Delta
+p:Delta,f:0040
 61ab:ffff0000:0019:10ef:1:0
 BBC3 / CBBC
-p:Delta
+p:Delta,f:0040
 61ac:ffff0000:0019:10ef:25:0
 HBO HD
-p:DELTA
+p:DELTA,f:0040
 26ad:ffff0000:0007:10ef:1:0
 DELTA Test
-p:Delta
+p:Delta,f:0040
 26ae:ffff0000:0007:10ef:1:0
 DELTA Testkanaal
-p:Delta
+p:Delta,f:0040
 02bd:ffff0000:0007:10ef:1:0
 Discovery
-p:Delta
+p:Delta,f:0040
 02be:ffff0000:0007:10ef:1:0
 Disc. Ch. World
-p:Delta
+p:Delta,f:0040
 02bf:ffff0000:0007:10ef:1:0
 Disc. Ch. Science
-p:Delta
+p:Delta,f:0040
 02c0:ffff0000:0007:10ef:1:0
 Discovery ID
-p:Delta
+p:Delta,f:0040
 02c1:ffff0000:0007:10ef:25:0
 RTL4 HD
-p:Delta
+p:Delta,f:0040
 00ae:ffff0000:0018:03e8:1:0
 Eredivisie Live 1
-p:Ziggo
+p:Ziggo,f:0040
 00af:ffff0000:0018:03e8:1:0
 FOX Sports 2
-p:Ziggo,f:0008
+p:Ziggo,f:0048
 00b0:ffff0000:0018:03e8:1:0
 Fox Sports 3
-p:Ziggo,f:0008
+p:Ziggo,f:0048
 00b1:ffff0000:0018:03e8:1:0
 FOX Sports 4
-p:Ziggo,f:0008
+p:Ziggo,f:0048
 5dc1:ffff0000:0018:03e8:25:0
 HISTORY HD
-p:Ziggo
+p:Ziggo,f:0040
 36b1:ffff0000:000e:10ef:1:0
 Nick Jr.
-p:Delta
+p:Delta,f:0040
 36b2:ffff0000:000e:10ef:1:0
 Film1 Premiere
-p:Delta Noord
+p:Delta Noord,f:0040
 36b3:ffff0000:000e:10ef:1:0
 Film1 Family
-p:Delta Zuid
+p:Delta Zuid,f:0040
 36b4:ffff0000:000e:10ef:1:0
 Film1 Sundance
-p:Delta West
+p:Delta West,f:0040
 36b5:ffff0000:000e:10ef:1:0
 Film1 Series
-p:Delta
+p:Delta,f:0040
 36b7:ffff0000:000e:10ef:1:0
 Baby TV
-p:Delta
+p:Delta,f:0040
 4ab1:ffff0000:080b:0600:1:0
 RTL 8
 p:UPC NL
@@ -11392,22 +11446,22 @@ HBO
 p:UPC NL
 00b4:ffff0000:0017:01f4:1:0
 Family 7
-p:Ziggo
+p:Ziggo,f:0040
 59d9:ffff0000:0017:01f4:1:0
 TV 5 Monde Europe
-p:Ziggo
+p:Ziggo,f:0040
 59da:ffff0000:0017:01f4:1:0
 Sat. 1
-p:Ziggo
+p:Ziggo,f:0040
 59dc:ffff0000:0017:01f4:1:0
 CBS Reality
-p:Ziggo,c:090202
+p:Ziggo,f:0040,c:090202
 59e0:ffff0000:0017:01f4:1:0
 VH-1 Classic
-p:Ziggo
+p:Ziggo,f:0040
 00ce:ffff0000:0017:01f4:25:0
 SBS 6 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 4bb5:ffff0000:0831:0600:1:0
 Film1 Spotlight
 p:UPC NL
@@ -11425,13 +11479,13 @@ Film1 Premiere HD
 p:UPC NL
 36b8:ffff0000:001c:10ef:1:0
 Family 7
-p:Delta
+p:Delta,f:0040
 6d61:ffff0000:001c:10ef:25:0
 NET5 HD
-p:Delta
+p:Delta,f:0040
 6d62:ffff0000:001c:10ef:25:0
 DisneyXD/Veronica HD
-p:Delta
+p:Delta,f:0040
 4cb9:ffff0000:0819:0600:1:0
 RTV-7
 p:UPC NL
@@ -11461,34 +11515,34 @@ Film1 Spotlight HD
 p:UPC NL
 00ba:ffff0000:001a:01f4:1:0
 France 2
-p:Ziggo
+p:Ziggo,f:0040
 00c7:ffff0000:001a:01f4:1:0
 PassieXXX
-p:Ziggo
+p:Ziggo,f:0040
 00ed:ffff0000:001a:01f4:1:0
 Ketnet/OP12
-p:Ziggo
+p:Ziggo,f:0040
 001f:ffff0000:001a:01f4:25:0
 HISTORY HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 00be:ffff0000:000d:01f4:1:0
 FOX Sports 3 Eredivisie
-p:Ziggo
+p:Ziggo,f:0040
 32c9:ffff0000:000d:01f4:1:0
 ARD
-p:Ziggo
+p:Ziggo,f:0040
 32ca:ffff0000:000d:01f4:1:0
 BBC 4 / CBeebies
-p:Ziggo
+p:Ziggo,f:0040
 32cb:ffff0000:000d:01f4:1:0
 BBC 1
-p:Ziggo
+p:Ziggo,f:0040
 32cc:ffff0000:000d:01f4:1:0
 BBC 2
-p:Ziggo
+p:Ziggo,f:0040
 00f1:ffff0000:000d:01f4:25:0
 één HD
-p:Ziggo
+p:Ziggo,f:0040
 4bcb:ffff0000:0832:0600:1:0
 RTL Lounge
 p:UPC NL
@@ -11506,67 +11560,67 @@ Nederland 1 HD
 p:UPC NL,c:050001
 4bca:ffff0000:0832:0600:25:0
 Nederland 2 HD
-p:UPC NL
+p:UPC NL,c:050001
 00d5:ffff0000:001f:03e8:1:0
 Disney Channel
-p:Ziggo
+p:Ziggo,f:0040
 00da:ffff0000:001f:03e8:1:0
 RTL Crime
-p:Ziggo
+p:Ziggo,f:0040
 0100:ffff0000:001f:03e8:25:0
 FOX HD
-p:Ziggo
+p:Ziggo,f:0040
 00df:ffff0000:001f:03e8:25:0
 Foxlife HD
-p:Ziggo
+p:Ziggo,f:0040
 00e1:ffff0000:001f:03e8:25:0
 MTV Live HD
-p:Ziggo
+p:Ziggo,f:0040
 59d9:ffff0000:0017:03e8:1:0
 Holland Doc 24
-p:Ziggo
+p:Ziggo,f:0040
 59db:ffff0000:0017:03e8:1:0
 Cultura 24
-p:Ziggo
+p:Ziggo,f:0040
 59dc:ffff0000:0017:03e8:1:0
 Erotiek Pakket
-p:Ziggo
+p:Ziggo,f:0040
 59de:ffff0000:0017:03e8:1:0
 101 TV
-p:Ziggo
+p:Ziggo,f:0040
 59e0:ffff0000:0017:03e8:1:0
 Best 24
-p:Ziggo
+p:Ziggo,f:0040
 00e9:ffff0000:0017:03e8:1:0
 HBO 3
-p:Ziggo
+p:Ziggo,f:0040
 00ed:ffff0000:0017:03e8:1:0
 Ketnet/OP12
-p:Ziggo
+p:Ziggo,f:0040
 00ee:ffff0000:0017:03e8:1:0
 Ziggo Xite
-p:Ziggo
+p:Ziggo,f:0040
 50dd:ffff0000:00cf:03e8:1:0
 TV Gelderland
-p:Ziggo
+p:Ziggo,f:0040
 50de:ffff0000:00cf:03e8:1:0
 Omroep Zeeland
-p:Ziggo
+p:Ziggo,f:0040
 50df:ffff0000:00cf:03e8:1:0
 L1 Limburg
-p:Ziggo
+p:Ziggo,f:0040
 50e0:ffff0000:00cf:03e8:1:0
 Omroep Brabant TV
-p:Ziggo
+p:Ziggo,f:0040
 50e1:ffff0000:00cf:03e8:1:0
 TV Rijnmond
-p:Ziggo
+p:Ziggo,f:0040
 50e2:ffff0000:00cf:03e8:1:0
 TV West
-p:Ziggo
+p:Ziggo,f:0040
 50fa:ffff0000:00cf:03e8:1:0
 Omroep Brabant TV
-p:Ziggo
+p:Ziggo,f:0040
 4bdf:ffff0000:0833:0600:1:0
 Film1 Comedy & Kids
 p:UPC NL
@@ -11581,31 +11635,31 @@ p:UPC NL
 p:UPC NL
 2ee1:ffff0000:000c:10ef:1:0
 Comedy Centr. Family
-p:Delta
+p:Delta,f:0040
 2ee2:ffff0000:000c:10ef:1:0
 BBC4/Cbeebies
-p:DELTA
+p:DELTA,f:0040
 2ee3:ffff0000:000c:10ef:1:0
 Travel Channel
-p:Delta
+p:Delta,f:0040
 2ee5:ffff0000:000c:10ef:1:0
 Fashion TV
-p:Delta Zuid
+p:Delta Zuid,f:0040
 2ee6:ffff0000:000c:10ef:1:0
 Rai Uno
-p:Delta West
+p:Delta West,f:0040
 2ee7:ffff0000:000c:10ef:1:0
 TV5
-p:DELTA
+p:DELTA,f:0040
 2ee8:ffff0000:000c:10ef:1:0
 CBS Reality
-p:Delta
+p:Delta,f:0040
 2eea:ffff0000:000c:10ef:1:0
 FOX Sports 5 Eredivisie
-p:Delta
+p:Delta,f:0040
 59e2:ffff0000:0017:10ef:1:0
 Horse & Country
-p:DELTA
+p:DELTA,f:0040
 59df:ffff0000:0017:10ef:2:0
 BNR Nieuwsradio
 p:Delta,f:0040
@@ -11650,31 +11704,31 @@ RNE Radio 1
 p:Delta,f:0040
 59dc:ffff0000:0017:10ef:25:0
 Film1 Premiere HD
-p:Delta
+p:Delta,f:0040
 59de:ffff0000:0017:10ef:25:0
 Sport1 Select HD
-p:Delta
+p:Delta,f:0040
 00e8:ffff0000:0001:03e8:1:0
 HBO 2
-p:Ziggo
+p:Ziggo,f:0040
 03e9:ffff0000:0001:03e8:1:0
 ARD
-p:Ziggo
+p:Ziggo,f:0040
 03ed:ffff0000:0001:03e8:1:0
 NDR
-p:Home
+p:Home,f:0040
 03ee:ffff0000:0001:03e8:1:0
 RTL Television
-p:Home
+p:Home,f:0040
 03f0:ffff0000:0001:03e8:1:0
 Sat. 1
-p:Home
+p:Home,f:0040
 03f1:ffff0000:0001:03e8:1:0
 WDR
-p:Ziggo
+p:Ziggo,f:0040
 00f1:ffff0000:0001:03e8:25:0
 Eén HD
-p:Ziggo
+p:Ziggo,f:0040
 4aef:ffff0000:0840:0600:1:0
 Disney Channel
 p:UPC NL
@@ -11710,37 +11764,37 @@ HISTORY HD
 p:UPC NL
 55f1:ffff0000:0016:10ef:1:0
 RTL 8
-p:DELTA
+p:DELTA,f:0040
 55f2:ffff0000:0016:10ef:1:0
 TLC
-p:DELTA
+p:DELTA,f:0040
 55f3:ffff0000:0016:10ef:1:0
 Kindernet / Comedy Central
-p:DELTA
+p:DELTA,f:0040
 55f4:ffff0000:0016:10ef:1:0
 SAT 1
-p:DELTA
+p:DELTA,f:0040
 01f5:ffff0000:0005:10ef:1:0
 CTV Zeeland
-p:Delta Noord
+p:Delta Noord,f:0040
 01f7:ffff0000:0005:10ef:1:0
 VRT Ketnet/OP12
-p:DELTA
+p:DELTA,f:0040
 01f8:ffff0000:0005:10ef:1:0
 Nickelodeon
-p:Delta
+p:Delta,f:0040
 01f9:ffff0000:0005:10ef:1:0
 TV Rijnmond
-p:Delta
+p:Delta,f:0040
 01fb:ffff0000:0005:10ef:1:0
 Omroep Brabant
-p:Delta
+p:Delta,f:0040
 01fc:ffff0000:0005:10ef:1:0
 TV Oranje
-p:Delt
+p:Delt,f:0040
 01fd:ffff0000:0005:10ef:1:0
 Omroep Zeeland 
-p:Delta
+p:Delta,f:0040
 1389:ffff0000:0005:10ef:2:0
 Omroep Zeeland
 p:Delta,f:0040
@@ -11869,18 +11923,18 @@ XLnt NL luisterliedjes
 p:Delta,f:0040
 697c:ffff0000:000d:10ef:25:0
 RTL5 HD
-p:Delta
+p:Delta,f:0040
 32ce:ffff0000:000d:10ef:25:0
 TLC HD
-p:Delta
+p:Delta,f:0040
 00ea:ffff0000:001d:01f4:25:0
 HBO HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 00eb:ffff0000:001d:01f4:25:0
 HBO 2 HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 00ec:ffff0000:001d:01f4:25:0
 HBO 3 HD
-p:Ziggo,c:050001
+p:Ziggo,f:0040,c:050001
 end
 Editor:DreamSet 2.39 - http://www.dreamset-editor.com
