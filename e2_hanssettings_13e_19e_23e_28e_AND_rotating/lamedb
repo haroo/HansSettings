@@ -1111,7 +1111,7 @@ transponders
 	s 11895000:27500000:1:4:235:2:0
 /
 00eb0000:0c8b:0003
-	s 11914000:27500000:0:3:235:2:0
+	s 11914000:27500000:0:4:235:2:0
 /
 00eb0000:0c8c:0003
 	s 11934000:27500000:1:3:235:2:0:1:2:0:2
@@ -1698,7 +1698,7 @@ transponders
 00820000:2d50:013e
 	s 10834000:27500000:1:3:130:2:0:1:2:0:2
 /
-00822a65:0001:0001
+00820000:2db4:013e
 	s 10853000:29900000:0:2:130:2:0:1:2:0:2
 /
 00820000:2e18:00b0
@@ -1992,6 +1992,9 @@ transponders
 0082b00f:1f40:013e
 	s 12303000:27500000:1:2:130:2:0:1:2:0:2
 /
+00822a65:0001:0001
+	s 10853000:29900000:0:2:130:2:0:1:2:0:2
+/
 0082abbe:3458:0000
 	s 11198000:27502000:1:3:130:0:0
 /
@@ -2165,9 +2168,6 @@ transponders
 /
 005a0000:21fc:009c
 	s 12437000:27500000:0:2:90:2:0:1:2:0:2
-/
-005a2de3:13ec:009e
-	s 11747000:27500000:0:3:90:2:0:1:2:0:2
 /
 005aae8f:1770:0064
 	s 11919000:27500000:1:0:90:2:0
@@ -13996,13 +13996,13 @@ Disney Channel
 p:CANALDIGITAAL,f:0040
 1773:00eb0000:0c82:0003:22:0
 JimJam
-p:CANAALDIGITAAL,f:0040
+p:CANALDIGITAAL,f:0040,c:050001
 17ac:00eb0000:0c82:0003:22:0
 BiB
 p:CANALDIGITAAL,f:0040
 17a7:00eb0000:0c82:0003:22:0
 TVL/ATV/TV Oost
-p:CANALDIGITAAL,f:0040
+p:CANALDIGITAAL,f:0040,c:050001
 17b8:00eb0000:0c82:0003:22:0
 Brazzers.tv
 p:CANALDIGITAAL,f:0040
@@ -14324,12 +14324,6 @@ p:CS Link
 1415:00eb0000:0c8a:0003:1:0
 duck tv DUT
 p:Canal Digitaal
-1419:00eb0000:0c8a:0003:1:0
-NG Wild DUT
-p:Skylink,f:0040
-13d8:00eb0000:0c8a:0003:1:0
-FOOOR
-p:Skylink,f:0040
 5144:00eb0000:0c8b:0003:1:0
 TV West
 p:Canal Digitaal
@@ -14461,9 +14455,6 @@ Crime Inv
 p:CANALDIGITAAL,f:0040
 5156:00eb0000:0c8b:0003:22:0
 SyFy
-p:CANALDIGITAAL,f:0040,c:050001
-5157:00eb0000:0c8b:0003:22:0
-iConcerts
 p:CANALDIGITAAL,f:0040
 515c:00eb0000:0c8b:0003:22:0
 Crime Inv CZ
@@ -14473,9 +14464,6 @@ Hustler HD
 p:CANALDIGITAAL,f:0040
 515f:00eb0000:0c8b:0003:25:0
 Hustler HD CZ
-p:CANALDIGITAAL,f:0040
-5158:00eb0000:0c8b:0003:22:0
-iConcerts CZ
 p:CANALDIGITAAL,f:0040
 36ba:00eb0000:0c8c:0003:25:0
 Parlamentsfernsehen
@@ -14788,7 +14776,7 @@ TLC
 p:Canaldigitaal,f:0040
 51c7:00eb0000:0c96:0003:22:0
 FOX Sports EDL 3
-p:Canaldigitaal,f:0040
+p:Canaldigitaal,f:0040,c:050001
 51c2:00eb0000:0c96:0003:22:0
 Sport1 Golf
 p:Canaldigitaal,f:0040
@@ -14921,6 +14909,15 @@ p:M7
 02d3:00eb0000:0c9a:0003:25:0
 RTL 2 Hungary
 p:M7
+02d4:00eb0000:0c9a:0003:25:0
+Fishing & Hunting
+p:M7
+02d5:00eb0000:0c9a:0003:25:0
+HBO 2 Central Europe
+p:M7
+02d6:00eb0000:0c9a:0003:25:0
+Cinemax East Europe
+p:M7
 02d7:00eb0000:0c9a:0003:25:0
 Cool TV
 p:M7
@@ -14953,13 +14950,19 @@ Nat Geo HD CZ
 p:Skylink
 02dc:00eb0000:0c9a:0003:1:0
 brava hd
-p:M7,f:0040,c:050001
+p:M7,f:0040
 02da:00eb0000:0c9a:0003:1:0
 iConcerts
-p:M7,f:0040,c:050001
+p:M7,f:0040
 02c5:00eb0000:0c9a:0003:1:0
 Nat Geo Wild HD DUT
 p:Overon,f:0040
+02d6:00eb0000:0c9a:0003:1:0
+Cinemax
+p:M7,f:0040
+02d5:00eb0000:0c9a:0003:1:0
+HBO2
+p:M7,f:0040
 02d9:00eb0000:0c9a:0003:1:0
 MTV Europe CZ
 p:M7,f:0040
@@ -15011,6 +15014,9 @@ p:M7,f:0040
 15ed:00eb0000:0c9a:0003:1:0
 Nat Geo HD CZ
 p:OVERON,f:0040
+02d4:00eb0000:0c9a:0003:1:0
+Fishing and Hunting
+p:M7,f:0040
 02dd:00eb0000:0c9a:0003:1:0
 iConcerts CZ
 p:M7,f:0040
@@ -19543,7 +19549,7 @@ Radio Contact
 p:Mobistar
 325d:00c00000:045f:0035:1:0
 Discovery Channel
-p:CANALDIGITAAL,f:0040
+p:CANALDIGITAAL,f:0040,c:050001
 3208:00c00000:045f:0035:22:0
 KetOp12
 p:TV Vlaanderen,f:0040
@@ -19576,7 +19582,7 @@ Club-RTL
 p:Telesat,f:0040
 323a:00c00000:045f:0035:22:0
 Plug-RTL
-p:Telesat,f:0040
+p:Telesat,f:0040,c:050001
 325f:00c00000:045f:0035:22:0
 sportdigital
 p:M7group,f:0040
@@ -21926,27 +21932,21 @@ p:nc+,f:0040
 0dc4:00820000:2d50:013e:1:0
 TVP Historia
 p:nc+,f:0040
-03e9:00822a65:0001:0001:25:0
+03e9:00820000:2db4:013e:25:0
 Satlink
 p:Satlink
-03ea:00822a65:0001:0001:25:0
+03ea:00820000:2db4:013e:25:0
 Satlink Promo
 p:Satlink
-03eb:00822a65:0001:0001:25:0
+03eb:00820000:2db4:013e:25:0
 Test
 p:Satlink
-07d1:00822a65:0001:0001:25:0
+07d1:00820000:2db4:013e:25:0
 FTV HD
 p:Satlink
-0bb9:00822a65:0001:0001:25:0
+0bb9:00820000:2db4:013e:25:0
 Fashion TV
 p:Satlink
-0bb9:00822a65:0001:0001:1:0
-FTV_SD
-p:Satlink,f:0040
-07d1:00822a65:0001:0001:1:0
-FTV HD
-p:Satlink,f:0040
 0001:00820000:2e18:00b0:1:0
 Al Maghribia
 p:SNRT
@@ -28157,6 +28157,12 @@ p:Globecast,f:0040
 4479:0082b00f:1f40:013e:1:0
 TCM CINEMA HD
 p:Globecast,f:0040
+0bb9:00822a65:0001:0001:1:0
+FTV_SD
+p:Satlink,f:0040
+07d1:00822a65:0001:0001:1:0
+FTV HD
+p:Satlink,f:0040
 128c:0082abbe:3458:0000:1:0
 infolisat
 p:T-Systems/MTI,f:0040
@@ -28490,6 +28496,57 @@ p:eVision
 0014:005a0000:13ec:009e:25:0
 TV 2 HD (Hungary)
 p:eVision
+0013:005a0000:13ec:009e:1:0
+RTL Klub HD
+p:eVision,f:0040
+0012:005a0000:13ec:009e:1:0
+Sport 1 HD
+p:eVision,f:0040
+0014:005a0000:13ec:009e:1:0
+TV2 HD
+p:eVision,f:0040
+0005:005a0000:13ec:009e:1:0
+ATV
+p:eVision,f:0040
+0003:005a0000:13ec:009e:1:0
+Comedy Central
+p:eVision,f:0040
+0011:005a0000:13ec:009e:1:0
+Digisport 1 HD
+p:eVision,f:0040
+0006:005a0000:13ec:009e:1:0
+Digisport 2
+p:eVision,f:0040
+0001:005a0000:13ec:009e:1:0
+Discovery
+p:eVision,f:0040
+0007:005a0000:13ec:009e:1:0
+DoQ
+p:eVision,f:0040
+0004:005a0000:13ec:009e:1:0
+FEM3
+p:eVision,f:0040
+0008:005a0000:13ec:009e:1:0
+Megamax
+p:eVision,f:0040
+0002:005a0000:13ec:009e:1:0
+National Geographic
+p:eVision,f:0040,c:050001
+000a:005a0000:13ec:009e:1:0
+Prizma
+p:eVision,f:0040
+000b:005a0000:13ec:009e:1:0
+Sport 2
+p:eVision,f:0040
+0009:005a0000:13ec:009e:1:0
+SportKlub
+p:eVision,f:0040
+0010:005a0000:13ec:009e:1:0
+Story4
+p:eVision,f:0040
+000e:005a0000:13ec:009e:1:0
+Super TV2
+p:eVision,f:0040
 000b:005a0000:0191:000a:1:0
 AFN Sports HD
 p:MEDIA BROADCAST
@@ -29234,9 +29291,6 @@ p:eVision
 183d:005a0000:1838:009e:1:0
 d1 TV
 p:eVision,f:0040
-189b:005a0000:1838:009e:1:0
-DuckTV HD
-p:eVision,f:0040
 0071:005a0000:1838:009e:1:0
 Duna HD (Europa)
 p:eVision,f:0040
@@ -29254,7 +29308,7 @@ M2 HD (Europa)
 p:eVision,f:0040
 0065:005a0000:1838:009e:1:0
 M1 HD
-p:eVision,f:0040,c:050001
+p:eVision,f:0040
 0066:005a0000:1838:009e:1:0
 M2 HD
 p:eVision,f:0040
@@ -30149,66 +30203,6 @@ p:KabelKiosk,f:0040
 4ee9:005a0000:21fc:009c:1:0
 yourfamily
 p:KabelKiosk,f:0040
-0013:005a2de3:13ec:009e:1:0
-RTL Klub HD
-p:eVision,f:0040
-0012:005a2de3:13ec:009e:1:0
-Sport 1 HD
-p:eVision,f:0040
-0014:005a2de3:13ec:009e:1:0
-TV2 HD
-p:eVision,f:0040
-0005:005a2de3:13ec:009e:1:0
-ATV
-p:eVision,f:0040
-0003:005a2de3:13ec:009e:1:0
-Comedy Central
-p:eVision,f:0040
-0011:005a2de3:13ec:009e:1:0
-Digisport 1 HD
-p:eVision,f:0040
-0006:005a2de3:13ec:009e:1:0
-Digisport 2
-p:eVision,f:0040
-0001:005a2de3:13ec:009e:1:0
-Discovery
-p:eVision,f:0040
-0007:005a2de3:13ec:009e:1:0
-DoQ
-p:eVision,f:0040
-0004:005a2de3:13ec:009e:1:0
-FEM3
-p:eVision,f:0040
-0008:005a2de3:13ec:009e:1:0
-Megamax
-p:eVision,f:0040
-0002:005a2de3:13ec:009e:1:0
-National Geographic
-p:eVision,f:0040
-000a:005a2de3:13ec:009e:1:0
-Prizma
-p:eVision,f:0040
-000c:005a2de3:13ec:009e:1:0
-Pro 4
-p:eVision,f:0040
-000d:005a2de3:13ec:009e:1:0
-Sorozat+
-p:eVision,f:0040
-000b:005a2de3:13ec:009e:1:0
-Sport 2
-p:eVision,f:0040
-0009:005a2de3:13ec:009e:1:0
-SportKlub
-p:eVision,f:0040
-0010:005a2de3:13ec:009e:1:0
-Story4
-p:eVision,f:0040
-000e:005a2de3:13ec:009e:1:0
-Super TV2
-p:eVision,f:0040
-000f:005a2de3:13ec:009e:1:0
-Viasat 6
-p:eVision,f:0040
 000d:005aae8f:1770:0064:1:0
 Radio Eden
 p:RRSat,f:0040
@@ -31067,6 +31061,9 @@ p:Digitürk
 1d08:00460000:c738:007e:1:0
 METRO FM
 p:Digitürk
+1d09:00460000:c738:007e:1:0
+TRT Radyo 3
+p:Digitürk
 1d0a:00460000:c738:007e:1:0
 SÜPER FM
 p:Digitürk
@@ -31102,6 +31099,9 @@ p:Digitürk
 p:Digitürk
 1d16:00460000:c738:007e:1:0
 VIRGIN RADIO
+p:Digitürk
+1d17:00460000:c738:007e:1:0
+TRT Radyo 4
 p:Digitürk
 1d3c:00460000:c738:007e:1:0
 JOY FM
@@ -32720,6 +32720,9 @@ p:VisionTV
 1cde:00300000:0013:0055:1:0
 English Club HD
 p:VisionTV
+1c84:00300000:0013:0055:2:0
+Shanson.ua
+p:Shanson
 0004:00303082:0065:0001:1:0
 VBC TEMP
 p:
