@@ -1,15 +1,31 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:410:0:0:0:0:0:0:0:
+#SERVICE 1:64:426:0:0:0:0:0:0:0:
 #DESCRIPTION Publieke zenders
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio1-bb-mp3:Radio%201
 #DESCRIPTION Radio 1
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio2-bb-mp3:Radio%202
 #DESCRIPTION Radio 2
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/radio2-top2000-aac:Radio%202
+#DESCRIPTION Radio 2
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio2-inconcert-mp3:Radio%202%20Concert
 #DESCRIPTION Radio 2 Concert
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2jss.omroep.nl%3A80/radio2-liedkunst-mp3:Radio%202%20Liedkunst
+#DESCRIPTION Radio 2 Liedkunst
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/radio2-top2000-aac:Radio%202%20Top%202000
+#DESCRIPTION Radio 2 Top 2000
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//ics2pss.omroep.nl/3fm-bb-mp3?q=/npo/mp3/3fm-bb.pls&stream=ok:3%20FM
 #DESCRIPTION 3 FM
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/3fm-bb-mp3:3FM
+#DESCRIPTION 3FM
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2hss.omroep.nl%3A80/3fm-alternative-mp3:3FM%20Alternative
+#DESCRIPTION 3FM Alternative
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2iss.omroep.nl%3A80/3fm-live-mp3:3FM%20Live
+#DESCRIPTION 3FM Live
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/3fm-serioustalent-mp3:3FM%20Serious%20Talent
+#DESCRIPTION 3FM Serious Talent
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio4-bb-mp3:Radio%204
+#DESCRIPTION Radio 4
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2tss.omroep.nl%3A80/radio4-bb-mp3:Radio%204
 #DESCRIPTION Radio 4
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl/radio4-baroque-bb-mp3?non_cache=1359878918265:Radio%204%20Baroque
 #DESCRIPTION Radio 4 Baroque
@@ -27,19 +43,25 @@
 #DESCRIPTION Radio 4 Musicareligiosa
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl/radio4-orgelradio-bb-mp3?non_cache=1359878835117:Radio%204%20Orgelradio
 #DESCRIPTION Radio 4 Orgelradio
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2nss.omroep.nl%3A80/radio5-bb-mp3:Radio%205
+#DESCRIPTION Radio 5
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio5-bb-mp3:Radio%205
 #DESCRIPTION Radio 5
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2nss.omroep.nl%3A80/radio5-nostalgia-mp3:Radio%205%20Nostalgia
+#DESCRIPTION Radio 5 Nostalgia
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2dss.omroep.nl%3A80/radio6-bb-mp3:Radio%206
+#DESCRIPTION Radio 6
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio6-bb-mp3:Radio%206%20Soul%20&%20Jazz
 #DESCRIPTION Radio 6 Soul & Jazz
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:rtsp%3A//91.213.69.140/radionl:Studio%20RadioNL
 #DESCRIPTION Studio RadioNL
-#SERVICE 1:64:411:0:0:0:0:0:0:0:
+#SERVICE 1:64:427:0:0:0:0:0:0:0:
 #DESCRIPTION Radio met beeld
 #SERVICE 4097:0:1:0:80000:0:0:0:0:0:rtmp%3A//82.201.53.52%3A80/livestream%20playpath=live%20swfUrl=http%3A//www.538.nl/jwplayer/player.swf%20pageUrl=http%3A//www.watchfomny.com/Video/Web-cam/Radio-538-Cam-Netherlands/Radio-538-Cam-Netherlands.htm:Radio%20538
 #DESCRIPTION Radio 538
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3A//wowza-bnr.cdp.triple-it.nl/bnr/BNRstudio1:BNR%20Nieuwsradio
 #DESCRIPTION BNR Nieuwsradio
-#SERVICE 1:64:412:0:0:0:0:0:0:0:
+#SERVICE 1:64:428:0:0:0:0:0:0:0:
 #DESCRIPTION Overige
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//stream.100p.nl/100pctnl.mp3:100%25%20NL
 #DESCRIPTION 100% NL
@@ -57,6 +79,8 @@
 #DESCRIPTION 538-L8
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//82.201.100.9%3A8000/radio538:538
 #DESCRIPTION 538
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//2.trafficstream.nl/allsports_main.mp3:Allsportsradio
+#DESCRIPTION Allsportsradio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:pls%3A//www.arrow.nl/streams/Rock32kmp3.pls:Arrows%20Classic%20Rock
 #DESCRIPTION Arrows Classic Rock
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//icecast.omroep.nl%3A80/radio6-oldschool-bb-mp3:AVRO%20Back%20to%20the%20Oldschool
@@ -117,12 +141,16 @@
 #DESCRIPTION Nostalgia
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//173.236.29.52%3A80/:Nova%20Classic%20Rock
 #DESCRIPTION Nova Classic Rock
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//vip2.str.reasonnet.com%3A80/qmusic.mp3.96:Q%20Music
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//vip2.str.reasonnet.com%3A80/qmusic.mp3.96:Q%20Music
 #DESCRIPTION Q Music
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/WEB20:Radio%2010%20Disco%20Classics
+#DESCRIPTION Radio 10 Disco Classics
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD05_R10_80s:Radio%2010%20Gold%2080s
 #DESCRIPTION Radio 10 Gold 80s
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//82.201.100.9%3A8000/Radio10Gold:Radio%2010%20Gold
-#DESCRIPTION Radio 10 Gold
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD09_Radio10Gold_60s70s:Radio%2010%20Gold%2060/70s
+#DESCRIPTION Radio 10 Gold 60/70s
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD10_Radio10Gold_90s_Hits:Radio%2010%20Gold%2090s
+#DESCRIPTION Radio 10 Gold 90s
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:m3u%3A//82.201.100.10%3A8000/WEB03.m3u:Radio%2010%20Top%204000
 #DESCRIPTION Radio 10 Top 4000
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//178.19.127.5%3A80:Radio%20NL%20(Ik%20luister%20hollands)
@@ -157,56 +185,22 @@
 #DESCRIPTION Top 4000
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.stream-server.nl/streams/Veronica675.pls:Veronica192
 #DESCRIPTION Veronica192
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//server-07.stream-server.nl%3A8030:Veronica192
+#DESCRIPTION Veronica192
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/wereldmuziek:Wereldmuziek
 #DESCRIPTION Wereldmuziek
-#SERVICE 1:64:413:0:0:0:0:0:0:0:
-#DESCRIPTION +++test+++
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//81.23.249.40%3A8004/listen.pls:Double%20Z%20Radio
-#DESCRIPTION Double Z Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:m3u%3A//www.listenlive.eu/bingofm.m3u:Bingo%20FM
-#DESCRIPTION Bingo FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.omroepflevoland.nl%3A8000/flevoland128k:Omroep%20Flevoland
-#DESCRIPTION Omroep Flevoland
+#SERVICE 1:64:429:0:0:0:0:0:0:0:
+#DESCRIPTION +++test regionaal+++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:pls%3A//radio.optimaal.fm/optimaal.pls:Optimaal%20FM
 #DESCRIPTION Optimaal FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//shoutcast.streamone.nl%3A9036/listen.pls:Radio%20Ideaal
 #DESCRIPTION Radio Ideaal
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.skyradio.nl/player/skyradiolovesongs.pls:Sky%20radio%20lovesongs
-#DESCRIPTION Sky radio lovesongs
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:pls%3A//www.skyradio.nl/player/seasonal.pls:Sky%20Radio%20Christmas
-#DESCRIPTION Sky Radio Christmas
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//89.105.200.190%3A9002:Spiel%20mir%20einer!%20Radio
-#DESCRIPTION Spiel mir einer! Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//6fm.nl%3A8000/mp3live:FM%20Huizen,%20Blaricum,%20Eemnes%20en%20Laren
 #DESCRIPTION FM Huizen, Blaricum, Eemnes en Laren
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//server-16.stream-server.nl%3A8468/:Radio81
 #DESCRIPTION Radio81
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.pi4vrz.nl%3A9000/webstream.mp3:PI4VR
 #DESCRIPTION PI4VR
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2sss.omroep.nl%3A80/radio1-bb-mp3:Radio%201
-#DESCRIPTION Radio 1
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.100p.nl/100pctnl.mp3:100%25NL
-#DESCRIPTION 100%NL
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/3fm-bb-mp3:3FM
-#DESCRIPTION 3FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2hss.omroep.nl%3A80/3fm-alternative-mp3:3FM%20Alternative
-#DESCRIPTION 3FM Alternative
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2iss.omroep.nl%3A80/3fm-live-mp3:3FM%20Live
-#DESCRIPTION 3FM Live
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/3fm-serioustalent-mp3:3FM%20Serious%20Talent
-#DESCRIPTION 3FM Serious Talent
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD01_538_Dancedepartment:538%20Dance%20Department
-#DESCRIPTION 538 Dance Department
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/WEB11:538%20Hitzone
-#DESCRIPTION 538 Hitzone
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.9%3A8000/juizefm:538%20Juize
-#DESCRIPTION 538 Juize
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD02_NonStop40:538%20Non%20Stop%2040
-#DESCRIPTION 538 Non Stop 40
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/WEB16:538%20Party%20Radio
-#DESCRIPTION 538 Party Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/WEB21:538L8
-#DESCRIPTION 538L8
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.click2.nl%3A8058/:AB%20Radio
 #DESCRIPTION AB Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//icecast.streamone.nl%3A80/h7MniPPz5a:Achterhoek%20FM
@@ -243,40 +237,8 @@
 #DESCRIPTION Boschtion FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.hollanddata.eu/bfm-128:Bright%20FM
 #DESCRIPTION Bright FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ice1.streamzilla.jet-stream.nl%3A8000/ilsemedia=ice7:Candlelight
-#DESCRIPTION Candlelight
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//5633.live.streamtheworld.com%3A80/CLASSICFMAAC_SC:Classic%20FM
-#DESCRIPTION Classic FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//94.100.18.171%3A9012:Compleet%20FM
 #DESCRIPTION Compleet FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/live:Concertzender
-#DESCRIPTION Concertzender
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/gehoordestilte:Concertzender%20De%20Gehoorde%20Stilte
-#DESCRIPTION Concertzender De Gehoorde Stilte
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/folkit:Concertzender%20Folk%20it!
-#DESCRIPTION Concertzender Folk it!
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/gregoriaans:Concertzender%20Gregoriaans
-#DESCRIPTION Concertzender Gregoriaans
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/hardbop:Concertzender%20Hard%20Bop
-#DESCRIPTION Concertzender Hard Bop
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/jazz:Concertzender%20Jazz
-#DESCRIPTION Concertzender Jazz
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/klassiek:Concertzender%20Klassieke%20Muziek
-#DESCRIPTION Concertzender Klassieke Muziek
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/nieuwemuziek:Concertzender%20Nieuwe%20Muziek
-#DESCRIPTION Concertzender Nieuwe Muziek
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/novembermusic:Concertzender%20November%20Music
-#DESCRIPTION Concertzender November Music
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/oudemuziek:Concertzender%20Oude%20Muziek
-#DESCRIPTION Concertzender Oude Muziek
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/pop:Concertzender%20Pop
-#DESCRIPTION Concertzender Pop
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/raakvlakken:Concertzender%20Raakvlakken
-#DESCRIPTION Concertzender Raakvlakken
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/wereldmuziek:Concertzender%20Wereldmuziek
-#DESCRIPTION Concertzender Wereldmuziek
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//streams.greenhost.nl%3A8080/youngprofessionals:Concertzender%20Young%20Professionals
-#DESCRIPTION Concertzender Young Professionals
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//sc-01.deep.fm/:Deep%20FM
 #DESCRIPTION Deep FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//81.26.220.16%3A20092/:Dollard%20Radio
@@ -429,42 +391,12 @@
 #DESCRIPTION ORTS
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//81.173.3.20%3A80/:Pinguin%20Radio
 #DESCRIPTION Pinguin Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//vip2.str.reasonnet.com%3A80/qmusic.mp3.96:Q%20Music
-#DESCRIPTION Q Music
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/WEB20:Radio%2010%20Disco%20Classics
-#DESCRIPTION Radio 10 Disco Classics
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.9%3A8000/Radio10Gold:Radio%2010%20Gold
-#DESCRIPTION Radio 10 Gold
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD09_Radio10Gold_60s70s:Radio%2010%20Gold%2060/70s
-#DESCRIPTION Radio 10 Gold 60/70s
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD05_R10_80s:Radio%2010%20Gold%2080s
-#DESCRIPTION Radio 10 Gold 80s
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.10%3A8000/RD10_Radio10Gold_90s_Hits:Radio%2010%20Gold%2090s
-#DESCRIPTION Radio 10 Gold 90s
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//http%3A//82.201.100.10%3A8000/WEB03.m3u:Radio%2010%20Top4000
-#DESCRIPTION Radio 10 Top4000
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/radio2-top2000-aac:Radio%202
-#DESCRIPTION Radio 2
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2jss.omroep.nl%3A80/radio2-liedkunst-mp3:Radio%202%20Liedkunst
-#DESCRIPTION Radio 2 Liedkunst
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2ess.omroep.nl%3A80/radio2-top2000-aac:Radio%202%20Top%202000
-#DESCRIPTION Radio 2 Top 2000
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//server-06.stream-server.nl%3A8010/:Radio%20227
-#DESCRIPTION Radio 227
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.radio350.nl%3A8000/radio350:Radio%20350
 #DESCRIPTION Radio 350
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2tss.omroep.nl%3A80/radio4-bb-mp3:Radio%204
-#DESCRIPTION Radio 4
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2nss.omroep.nl%3A80/radio5-bb-mp3:Radio%205
-#DESCRIPTION Radio 5
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2nss.omroep.nl%3A80/radio5-nostalgia-mp3:Radio%205%20Nostalgia
-#DESCRIPTION Radio 5 Nostalgia
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.9%3A8000/radio538:Radio%20538
 #DESCRIPTION Radio 538
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//81.173.3.143%3A80/:Radio%205FM
 #DESCRIPTION Radio 5FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//ics2dss.omroep.nl%3A80/radio6-bb-mp3:Radio%206
-#DESCRIPTION Radio 6
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//6fm.nl%3A8000/mp3live:Radio%206FM
 #DESCRIPTION Radio 6FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//81.26.220.16%3A20078/:Radio%20794
@@ -615,14 +547,6 @@
 #DESCRIPTION Seaport FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//simonefm.ic-stream.nl%3A7082/:Simone%20FM
 #DESCRIPTION Simone FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//5633.live.streamtheworld.com%3A80/SKYRADIO_SC:Sky%20Radio
-#DESCRIPTION Sky Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//5593.live.streamtheworld.com%3A80/SKYLOVE_SC:Sky%20Radio%20Love%20Songs
-#DESCRIPTION Sky Radio Love Songs
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//5583.live.streamtheworld.com%3A80/SKYNL_SC:Sky%20Radio%20NL
-#DESCRIPTION Sky Radio NL
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//5703.live.streamtheworld.com%3A80/SEASONAL_SC:Sky%20Radio%20Seasonal%20Station
-#DESCRIPTION Sky Radio Seasonal Station
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//213.193.236.8%3A9048/live:SkyLine%20FM
 #DESCRIPTION SkyLine FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//82.201.100.23%3A80/slamfm:Slam!FM
@@ -659,10 +583,6 @@
 #DESCRIPTION Veluwe FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.rtv-veluwezoom.nl%3A8000/stream:Veluwezoom%20FM
 #DESCRIPTION Veluwezoom FM
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//5643.live.streamtheworld.com%3A80/VERONICA_ROCK_SC:Veronica%20Rock%20Radio
-#DESCRIPTION Veronica Rock Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//server-07.stream-server.nl%3A8030:Veronica192
-#DESCRIPTION Veronica192
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//stream.vestingstadfm.nl%3A9730/:Vestingstad%20FM%20107.1
 #DESCRIPTION Vestingstad FM 107.1
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A//178.19.127.7%3A80/:Waterstad%20FM
