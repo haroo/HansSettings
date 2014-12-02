@@ -105,9 +105,6 @@ ffff0000:000a:10ef
 ffff0000:081a:0600
 	c 156000:6900000:2:5:0:d
 /
-ffff0000:080f:0600
-	c 594750:6900000:2:5:0:d
-/
 ffff0000:0001:01f4
 	c 802000:6875000:2:3:15:d
 /
@@ -267,6 +264,9 @@ ffff0000:0005:01f4
 ffff0000:0012:01f4
 	c 474000:6875000:2:5:0:d
 /
+ffff0000:080f:0600
+	c 594750:6900000:2:5:0:d
+/
 ffff0000:0081:08c9
 	c 584000:6900000:2:3:0:d
 /
@@ -317,9 +317,6 @@ ffff0000:006b:08c9
 /
 ffff0000:008b:08c9
 	c 688000:6900000:2:3:0:d
-/
-ffff0000:083a:0600
-	c 706750:6900000:2:5:0:d
 /
 ffff0000:0001:10ef
 	c 674000:6875000:2:3:0:d
@@ -426,9 +423,6 @@ ffff0000:007e:08c9
 ffff0000:080a:0600
 	c 506750:6900000:2:5:0:d
 /
-ffff0000:0817:0600
-	c 714750:6900000:2:5:0:d
-/
 ffff0000:080d:0600
 	c 522750:6900000:2:5:0:d
 /
@@ -459,11 +453,11 @@ ffff0000:007d:08c9
 ffff0000:0017:01f4
 	c 578000:6875000:2:3:0:d
 /
-ffff0000:0831:0600
-	c 762750:6900000:2:5:0:d
-/
 ffff0000:001c:10ef
 	c 842000:6875000:2:3:0:d
+/
+ffff0000:0831:0600
+	c 762750:6900000:2:5:0:d
 /
 ffff0000:0819:0600
 	c 148000:6900000:2:5:0:d
@@ -491,9 +485,6 @@ ffff0000:0017:03e8
 /
 ffff0000:00cf:03e8
 	c 698750:6875000:2:3:0:d
-/
-ffff0000:0833:0600
-	c 610750:6900000:2:5:0:d
 /
 ffff0000:0087:08c9
 	c 656000:6900000:2:3:0:d
@@ -531,11 +522,20 @@ ffff0000:008f:08c9
 ffff0000:0802:0600
 	c 642750:6900000:2:5:0:d
 /
+ffff0000:083a:0600
+	c 706750:6900000:2:5:0:d
+/
 ffff0000:008c:08c9
 	c 696000:6900000:2:3:0:d
 /
+ffff0000:0817:0600
+	c 714750:6900000:2:5:0:d
+/
 ffff0000:0086:08c9
 	c 388000:6900000:2:3:0:d
+/
+ffff0000:0833:0600
+	c 610750:6900000:2:5:0:d
 /
 ffff0000:081c:0600
 	c 562750:6900000:2:5:0:d
@@ -802,7 +802,7 @@ Eurosport HD
 p:UPC NL
 4b03:ffff0000:080e:0600:25:0
 SBS 6 HD
-p:UPC NL,c:050001
+p:UPC NL,c:050001,c:090202
 0102:ffff0000:000c:03e8:1:0
 100% NL TV
 p:Cable
@@ -1397,27 +1397,39 @@ p:UPC NL
 2764:ffff0000:0065:0600:1:0
 LO-Oirschot Radio
 p:UPC NL
+2765:ffff0000:0065:0600:1:0
+LOCO TV
+p:UPC NL
+2767:ffff0000:0065:0600:1:0
+TV Meierij
+p:UPC NL
+2768:ffff0000:0065:0600:1:0
+CentraalTV
+p:UPC NL
+2769:ffff0000:0065:0600:1:0
+CentraalFM
+p:UPC NL
 3071:ffff0000:0065:0600:1:0
 MLATV
 p:UPC NL
 3072:ffff0000:0065:0600:1:0
-132 SID 0x3072
-p:
+Studio040
+p:,f:0008
 3073:ffff0000:0065:0600:1:0
 132 SID 0x3073
 p:
 3074:ffff0000:0065:0600:1:0
-132 SID 0x3074
-p:
+Hellmond
+p:,f:0008
 3075:ffff0000:0065:0600:1:0
-132 SID 0x3075
-p:
+Veldhoven
+p:,f:0008
 3076:ffff0000:0065:0600:1:0
 132 SID 0x3076
 p:
 3077:ffff0000:0065:0600:1:0
-132 SID 0x3077
-p:
+Grenskoerier TV
+p:,f:0008
 3078:ffff0000:0065:0600:1:0
 132 SID 0x3078
 p:
@@ -1558,6 +1570,12 @@ Radio Nunspeet
 p:UPC NL
 2762:ffff0000:0065:0600:2:0
 RTV Betuwe Radio
+p:UPC NL
+2764:ffff0000:0065:0600:2:0
+LO-Oirschot Radio
+p:UPC NL
+2766:ffff0000:0065:0600:2:0
+LOCO FM
 p:UPC NL
 3779:ffff0000:0065:0600:2:0
 Radio Purmerend
@@ -1839,7 +1857,7 @@ p:UPC NL
 iTV FOX Life On Demand
 p:UPC NL
 4518:ffff0000:081b:0600:1:0
-iTV Ero TV
+iTV FOX Sport COD
 p:UPC NL
 4519:ffff0000:081b:0600:1:0
 iTV Nickelodeon On Demand
@@ -1871,9 +1889,6 @@ p:UPC NL
 4522:ffff0000:081b:0600:1:0
 Place Holder Application
 p:UPC NL
-4523:ffff0000:081b:0600:1:0
-EU1
-p:UPC NL
 4524:ffff0000:081b:0600:1:0
 iTV CoD BBC Ent.
 p:UPC NL
@@ -1886,11 +1901,17 @@ p:UPC NL
 4527:ffff0000:081b:0600:1:0
 iTV Filmfestival COD
 p:UPC NL
-4ce2:ffff0000:081b:0600:1:0
-Baby TV
+4ce5:ffff0000:081b:0600:1:0
+Film1 Comedy & Kids
 p:UPC NL
-4ce4:ffff0000:081b:0600:1:0
-538
+4ce6:ffff0000:081b:0600:1:0
+Film1 Premiere
+p:UPC NL,c:050001
+4ce7:ffff0000:081b:0600:1:0
+Film1 Spotlight
+p:UPC NL,c:050001
+4ce8:ffff0000:081b:0600:1:0
+Al Jazeera
 p:UPC NL
 2712:ffff0000:000a:10ef:1:0
 Holland Doc 24
@@ -1921,6 +1942,9 @@ Code Download HZN ISTB
 p:UPC NL
 4116:ffff0000:081a:0600:1:0
 Code Download HZN UID2
+p:UPC NL
+4117:ffff0000:081a:0600:1:0
+Code Download HZN UID0
 p:UPC NL
 4ccd:ffff0000:081a:0600:1:0
 UPC On Demand
@@ -1957,34 +1981,7 @@ UPC Live Horizon portal
 p:UPC NL
 44fe:ffff0000:081a:0600:193:0
 MH_System_Data_Service
-p:UPC NL,f:0040
-4b17:ffff0000:080f:0600:1:0
-Sky News
 p:UPC NL
-4b18:ffff0000:080f:0600:1:0
-Mediaset Italia
-p:UPC NL
-4b19:ffff0000:080f:0600:1:0
-RTL Television
-p:UPC NL
-4345:ffff0000:080f:0600:1:0
-iTV CoD History
-p:UPC NL
-4b15:ffff0000:080f:0600:25:0
-Nat. Geo. HD
-p:UPC NL
-4b16:ffff0000:080f:0600:25:0
-Discovery HD
-p:UPC NL
-4b1a:ffff0000:080f:0600:25:0
-Canvas HD
-p:UPC NL,c:050001
-4b1b:ffff0000:080f:0600:25:0
-FOX Sports 5 HD Ere.
-p:UPC NL
-4b1c:ffff0000:080f:0600:25:0
-HBO 2 HD
-p:UPC NL,c:050001
 0219:ffff0000:0001:01f4:1:0
 DJAZZ.tv
 p:Ziggo
@@ -2276,14 +2273,20 @@ p:UPC NL
 3f30:ffff0000:0838:0600:1:0
 VOD2 Dual Barker 2
 p:UPC NL
+3f31:ffff0000:0838:0600:1:0
+UPC On Demand
+p:UPC NL
+4c41:ffff0000:0838:0600:1:0
+Goed TV
+p:UPC NL,c:050001
 4c42:ffff0000:0838:0600:1:0
-C&I
-p:UPC NL
+Sky News
+p:UPC NL,c:050001
 4c43:ffff0000:0838:0600:1:0
-CNN
+MBC
 p:UPC NL
-4c41:ffff0000:0838:0600:25:0
-Eurosport 2 HD
+4c44:ffff0000:0838:0600:1:0
+Shorts TV HD
 p:UPC NL
 4e21:ffff0000:0801:0600:1:0
 24Kitchen
@@ -2291,6 +2294,9 @@ p:UPC NL
 4e23:ffff0000:0801:0600:1:0
 BBC Entertainment
 p:UPC NL
+4e24:ffff0000:0801:0600:1:0
+SBS9
+p:UPC NL,f:0048,c:050001
 4e25:ffff0000:0801:0600:1:0
 TVM Int
 p:UPC NL
@@ -2298,13 +2304,16 @@ p:UPC NL
 FOX
 p:UPC NL,f:0008
 4e27:ffff0000:0801:0600:1:0
-522 SID 0x4e27
-p:
+538TV
+p:UPC NL,f:0008
+4e28:ffff0000:0801:0600:1:0
+Baby TV
+p:UPC NL,f:0040
 4e22:ffff0000:0801:0600:25:0
 Animal Planet HD
 p:UPC NL,c:050001,c:090202
 4e24:ffff0000:0801:0600:25:0
-FOX Sports 5 HD
+SBS9
 p:UPC NL,f:0008,c:050001
 7922:ffff0000:0083:08c9:1:0
 RTL Television
@@ -2590,9 +2599,6 @@ Discovery World
 p:UPC NL
 4b30:ffff0000:0810:0600:1:0
 DjazzTV
-p:UPC NL,f:0040
-4b2b:ffff0000:0810:0600:25:0
-TLC HD
 p:UPC NL
 4e2a:ffff0000:0078:08c9:1:0
 RTL Telekids
@@ -2894,6 +2900,9 @@ p:UPC NL
 3f3f:ffff0000:0839:0600:1:0
 HZN Code Download
 p:UPC NL
+3f40:ffff0000:0839:0600:1:0
+Code Download UID2
+p:UPC NL
 3f42:ffff0000:0839:0600:1:0
 TV Search
 p:UPC NL
@@ -2903,6 +2912,9 @@ p:UPC NL
 3f44:ffff0000:0839:0600:1:0
 One Way Still
 p:UPC NL
+3f45:ffff0000:0839:0600:1:0
+UPC Live TV
+p:UPC NL,c:050001
 3f46:ffff0000:0839:0600:1:0
 Standby Application
 p:UPC NL
@@ -2972,9 +2984,15 @@ p:UPC NL
 4bf4:ffff0000:0834:0600:1:0
 Boomerang
 p:UPC NL
+4bf6:ffff0000:0834:0600:1:0
+C&I
+p:UPC NL,f:0040
+4bf7:ffff0000:0834:0600:1:0
+CNN
+p:UPC NL,f:0040
 76e9:ffff0000:0834:0600:25:0
 FOX Sports 1 HD Ere. PPV
-p:UPC NL
+p:UPC NL,c:050001,c:098800
 4bf1:ffff0000:0834:0600:25:0
 FOX Sports 1 HD Ere.
 p:UPC NL,c:050001
@@ -3001,9 +3019,6 @@ BBC World News
 p:UPC NL
 4a3e:ffff0000:0805:0600:1:0
 NPO Zapp Xtra
-p:UPC NL
-4a3f:ffff0000:0805:0600:1:0
-Zing
 p:UPC NL
 2775:ffff0000:0805:0600:2:0
 Classical Greats
@@ -3375,8 +3390,8 @@ p:Ziggo
 Syfy
 p:UPC NL
 4b3e:ffff0000:0812:0600:1:0
-MGM
-p:UPC NL
+AMC
+p:UPC NL,c:090202
 4b3f:ffff0000:0812:0600:1:0
 E! Entertainment
 p:UPC NL
@@ -3394,9 +3409,6 @@ NPO Humor TV
 p:UPC NL,c:098800
 4b44:ffff0000:0812:0600:1:0
 Motors TV
-p:UPC NL
-4b46:ffff0000:0812:0600:25:0
-Travel Channel HD
 p:UPC NL
 003e:ffff0000:0008:03e8:1:0
 Zappelin / Zapp 24
@@ -3662,6 +3674,24 @@ p:Ziggo
 00ee:ffff0000:0012:01f4:1:0
 Ziggo Xite
 p:Ziggo
+4345:ffff0000:080f:0600:1:0
+iTV CoD History
+p:UPC NL
+4b15:ffff0000:080f:0600:25:0
+Nat. Geo. HD
+p:UPC NL
+4b16:ffff0000:080f:0600:25:0
+Discovery HD
+p:UPC NL
+4b1a:ffff0000:080f:0600:25:0
+Canvas HD
+p:UPC NL,c:050001,c:098800
+4b1b:ffff0000:080f:0600:25:0
+FOX Sports 5 HD Ere.
+p:UPC NL
+4b1c:ffff0000:080f:0600:25:0
+HBO 2 HD
+p:UPC NL,c:050001
 7148:ffff0000:0081:08c9:1:0
 TVE Internaçional
 p:CAIW Media
@@ -3704,6 +3734,12 @@ p:UPC NL
 4e4e:ffff0000:0803:0600:1:0
 CCTV News
 p:UPC NL
+4e50:ffff0000:0803:0600:1:0
+NPO Zapp Xtra
+p:UPC NL,c:050001
+4e51:ffff0000:0803:0600:1:0
+Zing
+p:UPC NL,c:050001
 2b21:ffff0000:0803:0600:2:0
 WDR 1
 p:UPC NL
@@ -3734,12 +3770,9 @@ p:UPC NL
 2b2a:ffff0000:0803:0600:2:0
 FiP
 p:UPC NL
-4e49:ffff0000:0803:0600:25:0
-BBC 2 HD
-p:UPC NL
-4e4a:ffff0000:0803:0600:25:0
-FOXlife HD
-p:UPC NL
+4e4f:ffff0000:0803:0600:25:0
+SBS 9 HD
+p:UPC NL,c:050001
 714c:ffff0000:001d:01f4:1:0
 Zender vd Maand
 p:Ziggo
@@ -3763,9 +3796,6 @@ HBO 3 HD
 p:Ziggo,c:050001
 4a4d:ffff0000:0806:0600:1:0
 Net 5
-p:UPC NL
-4a4e:ffff0000:0806:0600:1:0
-MTV
 p:UPC NL
 4a51:ffff0000:0806:0600:1:0
 Ketnet
@@ -3961,7 +3991,7 @@ OUTtv
 p:UPC NL
 4c7d:ffff0000:083b:0600:1:0
 140 SID 0x4c7d
-p:,f:0040
+p:
 4c7e:ffff0000:083b:0600:1:0
 Omroep Zeeland
 p:UPC NL
@@ -3979,10 +4009,13 @@ TV Oranje
 p:UPC NL
 4c85:ffff0000:083b:0600:1:0
 Zender van de Maand
-p:UPC NL
+p:UPC NL,c:090202
+4c7d:ffff0000:083b:0600:25:0
+Eurosport 2 HD
+p:UPC NL,c:050001
 40c5:ffff0000:083b:0600:100:0
 140 SID 0x40c5
-p:,f:0040
+p:
 40c5:ffff0000:083b:0600:193:0
 MH_System_Data_Service
 p:UPC NL
@@ -3996,8 +4029,8 @@ p:Delta
 VRT Eén HD
 p:Delta
 4e5d:ffff0000:0804:0600:1:0
-554 SID 0x4e5d
-p:,f:0040
+EU1
+p:UPC NL
 4e5e:ffff0000:0804:0600:1:0
 Investigation Disc.
 p:UPC NL
@@ -4015,7 +4048,7 @@ Mediaset Italia
 p:UPC NL
 4e63:ffff0000:0804:0600:1:0
 Pebble TV
-p:UPC NL,f:0040
+p:UPC NL
 4e64:ffff0000:0804:0600:1:0
 UPC On Demand
 p:UPC NL
@@ -4024,7 +4057,7 @@ Star Life OK
 p:UPC NL
 4e66:ffff0000:0804:0600:1:0
 TGRT Europe
-p:UPC NL,f:0040
+p:UPC NL
 4e5d:ffff0000:0804:0600:25:0
 Canvas HD
 p:UPC NL,c:050001,c:098800
@@ -4075,7 +4108,7 @@ FOXlife HD
 p:Ziggo,c:050001
 4a61:ffff0000:0807:0600:1:0
 NPO 1
-p:UPC NL
+p:UPC NL,c:090202
 4a62:ffff0000:0807:0600:1:0
 NPO 2
 p:UPC NL
@@ -4107,8 +4140,8 @@ p:UPC NL
 Slam FM
 p:UPC NL
 4681:ffff0000:0807:0600:2:0
-659 SID 0x4681
-p:
+Punjabi
+p:,f:0008
 4a65:ffff0000:0807:0600:25:0
 Spare TS07
 p:UPC NL
@@ -4175,27 +4208,6 @@ p:CAIW Media
 9880:ffff0000:008b:08c9:25:0
 FOX HD
 p:CAIW Media,c:050001
-7764:ffff0000:083a:0600:1:0
-Fox Sports 4 PPV
-p:UPC NL
-4c6c:ffff0000:083a:0600:1:0
-FOX Sports 4
-p:UPC NL
-4c69:ffff0000:083a:0600:25:0
-FOX Sports 2 HD
-p:UPC NL,c:050001
-4c6a:ffff0000:083a:0600:25:0
-FOX Sports 4 HD
-p:UPC NL
-4c6b:ffff0000:083a:0600:25:0
-FOX HD
-p:UPC NL,c:050001
-4c6d:ffff0000:083a:0600:25:0
-Film1 Premiere HD
-p:UPC NL,f:0040
-4c6e:ffff0000:083a:0600:25:0
-TLC HD
-p:UPC NL,f:0040
 0065:ffff0000:0001:10ef:1:0
 Nederland 1
 p:Delta
@@ -4384,18 +4396,36 @@ iTV Games 04
 p:UPC NL
 4c92:ffff0000:083c:0600:1:0
 Al Jazeera English
-p:UPC NL
+p:UPC NL,f:0040
+4c9a:ffff0000:083c:0600:1:0
+HBO
+p:UPC NL,c:050001
 3f9b:ffff0000:083c:0600:1:0
 eTV Standard Application 1
 p:UPC NL
+4c9b:ffff0000:083c:0600:1:0
+HBO 2
+p:UPC NL,c:050001
 3f9c:ffff0000:083c:0600:1:0
 eTV Standard Application 3
+p:UPC NL
+4c9c:ffff0000:083c:0600:1:0
+HBO 3
+p:UPC NL
+4c9d:ffff0000:083c:0600:1:0
+Film1 Action
 p:UPC NL
 3f9e:ffff0000:083c:0600:1:0
 eTV Standard Application 2
 p:UPC NL
+4c9e:ffff0000:083c:0600:1:0
+Al Arabiya
+p:UPC NL
 3f9f:ffff0000:083c:0600:1:0
 eTV Standard Application 4
+p:UPC NL
+4c9f:ffff0000:083c:0600:1:0
+TVM Europe
 p:UPC NL
 3fa0:ffff0000:083c:0600:1:0
 eTV Standard Application 5
@@ -4448,9 +4478,15 @@ p:UPC NL
 44c8:ffff0000:083c:0600:1:0
 iTV General Messaging 4
 p:UPC NL
-4c91:ffff0000:083c:0600:25:0
-Syfy HD
+44c9:ffff0000:083c:0600:1:0
+Self Care Application
 p:UPC NL
+44c7:ffff0000:083c:0600:100:0
+842 SID 0x44c7
+p:
+44c9:ffff0000:083c:0600:100:0
+842 SID 0x44c9
+p:,f:0040
 0072:ffff0000:000f:03e8:1:0
 Arte
 p:Ziggo
@@ -4513,7 +4549,7 @@ Sport1 Golf PPV
 p:UPC NL
 7674:ffff0000:0815:0600:1:0
 Fox Sports 4 PPV
-p:UPC NL,f:0040
+p:UPC NL
 4b7a:ffff0000:0815:0600:1:0
 Sport1 Select
 p:UPC NL
@@ -4522,7 +4558,7 @@ Sport1 Golf
 p:UPC NL
 4b7c:ffff0000:0815:0600:1:0
 Fox Sports 4
-p:UPC NL,f:0040
+p:UPC NL
 4b7d:ffff0000:0815:0600:1:0
 Comedy Central Extra
 p:UPC NL
@@ -4628,9 +4664,6 @@ p:UPC NL
 2854:ffff0000:0808:0600:2:0
 Omroep Zeeland
 p:UPC NL
-4a79:ffff0000:0808:0600:25:0
-HBO 2 HD
-p:UPC NL,c:050001
 0079:ffff0000:001c:03e8:1:0
 Euro D
 p:Ziggo
@@ -4913,9 +4946,6 @@ p:UPC NL
 4b92:ffff0000:0816:0600:1:0
 HaberTurk
 p:UPC NL
-4b93:ffff0000:0816:0600:25:0
-HBO 3 HD
-p:UPC NL,c:050001
 1388:ffff0000:0069:08c9:1:0
 Best 24
 p:CAIW Media
@@ -4993,7 +5023,7 @@ RTL 7
 p:UPC NL
 4a8c:ffff0000:0809:0600:1:0
 MTV
-p:UPC NL,f:0040
+p:UPC NL
 4a8d:ffff0000:0809:0600:1:0
 NPO Politiek / Sport
 p:UPC NL,c:098800
@@ -5164,7 +5194,7 @@ L1
 p:UPC NL
 529a:ffff0000:080c:0600:1:0
 Omroep Brabant
-p:UPC NL
+p:UPC NL,c:098800
 529b:ffff0000:080c:0600:1:0
 Omroep Gelderland
 p:UPC NL
@@ -5191,9 +5221,6 @@ Omroep Gelderland
 p:UPC NL
 4acc:ffff0000:080c:0600:1:0
 AT5
-p:UPC NL
-4acd:ffff0000:080c:0600:1:0
-HBO 2
 p:UPC NL
 4ac9:ffff0000:080c:0600:25:0
 E! Entertainment HD
@@ -5276,48 +5303,6 @@ p:UPC NL
 42ce:ffff0000:080a:0600:100:0
 506 SID 0x42ce
 p:
-4ba1:ffff0000:0817:0600:1:0
-Film1 Premiere
-p:UPC NL
-4ba4:ffff0000:0817:0600:1:0
-TGRT Europe
-p:UPC NL
-4ba5:ffff0000:0817:0600:1:0
-Pebble TV
-p:UPC NL
-4ba6:ffff0000:0817:0600:1:0
-DjazzTV
-p:UPC NL
-47b9:ffff0000:0817:0600:2:0
-VRT 1
-p:UPC NL
-47ba:ffff0000:0817:0600:2:0
-VRT 2
-p:UPC NL
-47bb:ffff0000:0817:0600:2:0
-VRT Klara
-p:UPC NL
-47bc:ffff0000:0817:0600:2:0
-Studio Brussel
-p:UPC NL
-47bd:ffff0000:0817:0600:2:0
-VRT MNM
-p:UPC NL
-4ba2:ffff0000:0817:0600:25:0
-een HD
-p:UPC NL,c:050001,c:098800
-4ba3:ffff0000:0817:0600:25:0
-MTV HD
-p:UPC NL
-4ba7:ffff0000:0817:0600:25:0
-HBO 3 HD
-p:UPC NL,f:0040
-4ba8:ffff0000:0817:0600:25:0
-Foxlife HD
-p:UPC NL,f:0040
-4ba9:ffff0000:0817:0600:25:0
-BBC 2 HD
-p:UPC NL,f:0040
 52a9:ffff0000:080d:0600:1:0
 RTV Noord-Holland
 p:UPC NL
@@ -5368,7 +5353,7 @@ Radio 8FM
 p:UPC NL
 4ade:ffff0000:080d:0600:25:0
 Comedy Central HD
-p:UPC NL
+p:UPC NL,c:050001
 61a9:ffff0000:0019:10ef:1:0
 BBC1
 p:Delta
@@ -5516,9 +5501,6 @@ p:UPC NL
 4ab6:ffff0000:080b:0600:1:0
 Nickelodeon
 p:UPC NL
-4ab7:ffff0000:080b:0600:1:0
-HBO
-p:UPC NL
 61b2:ffff0000:007d:08c9:1:0
 FOX Sports International 2
 p:CAIW Media
@@ -5558,21 +5540,6 @@ p:Ziggo,c:050001,c:090202
 59e2:ffff0000:0017:01f4:25:0
 FOX Sports 4 HD
 p:Ziggo
-4bb5:ffff0000:0831:0600:1:0
-Film1 Spotlight
-p:UPC NL
-4bb7:ffff0000:0831:0600:1:0
-Film1 Action
-p:UPC NL
-4bb8:ffff0000:0831:0600:1:0
-Comedy Central Family
-p:UPC NL
-4bb9:ffff0000:0831:0600:1:0
-HBO 3
-p:UPC NL
-4bb6:ffff0000:0831:0600:25:0
-Film1 Premiere HD
-p:UPC NL,c:050001
 36b8:ffff0000:001c:10ef:1:0
 Family 7
 p:Delta
@@ -5582,6 +5549,18 @@ p:Delta
 6d62:ffff0000:001c:10ef:25:0
 DisneyXD/Veronica HD
 p:Delta
+4bb8:ffff0000:0831:0600:1:0
+Comedy Central Family
+p:UPC NL
+4bba:ffff0000:0831:0600:25:0
+E! Entertainment HD
+p:UPC NL,c:050001
+4bbb:ffff0000:0831:0600:25:0
+SyFy HD
+p:UPC NL,c:050001
+4bbc:ffff0000:0831:0600:25:0
+Travel Channel HD
+p:UPC NL,c:050001
 4cb9:ffff0000:0819:0600:1:0
 RTV-7
 p:UPC NL
@@ -5605,10 +5584,10 @@ Zee TV
 p:UPC NL
 4cc1:ffff0000:0819:0600:1:0
 Zee Cinema
-p:UPC NL
+p:UPC NL,c:098808
 4cbd:ffff0000:0819:0600:25:0
 Film1 Spotlight HD
-p:UPC NL
+p:UPC NL,c:050001
 00be:ffff0000:000d:01f4:1:0
 FOX Sports 3 Eredivisie
 p:Ziggo
@@ -5657,12 +5636,15 @@ p:UPC NL
 4bce:ffff0000:0832:0600:1:0
 HZN Barker 2
 p:UPC NL
+4bcf:ffff0000:0832:0600:1:0
+Comedy Central Family
+p:UPC NL
 4bc9:ffff0000:0832:0600:25:0
 NPO 1 HD
 p:UPC NL,c:050001,c:090202
 4bca:ffff0000:0832:0600:25:0
 NPO 2 HD
-p:UPC NL,c:050001
+p:UPC NL,c:050001,c:090202
 0bcc:ffff0000:0067:08c9:1:0
 SBS 6
 p:CAIW Media
@@ -5774,18 +5756,6 @@ p:Ziggo
 50fa:ffff0000:00cf:03e8:1:0
 Omroep Brabant TV
 p:Ziggo
-4bdf:ffff0000:0833:0600:1:0
-Film1 Comedy & Kids
-p:UPC NL
-4bdd:ffff0000:0833:0600:25:0
-NPO 3 HD
-p:UPC NL,c:050001,c:098800
-4bde:ffff0000:0833:0600:25:0
-RTL 8 HD
-p:UPC NL
-4be0:ffff0000:0833:0600:25:0
-13th Street HD
-p:UPC NL
 88e0:ffff0000:0087:08c9:1:0
 Caiway informatie SD
 p:CAIW Media
@@ -5909,9 +5879,6 @@ p:Ziggo
 80eb:ffff0000:0021:01f4:25:0
 HBO 3 HD
 p:Ziggo
-4aee:ffff0000:0840:0600:1:0
-Film1 Premiere
-p:UPC NL,f:0040
 4aef:ffff0000:0840:0600:1:0
 Disney Channel
 p:UPC NL
@@ -5938,22 +5905,22 @@ BBC Worldservice
 p:UPC NL
 470a:ffff0000:0840:0600:2:0
 VRT 1
-p:UPC NL,f:0040
+p:UPC NL
 470b:ffff0000:0840:0600:2:0
 VRT 2
-p:UPC NL,f:0040
+p:UPC NL
 470c:ffff0000:0840:0600:2:0
 VRT Klara
-p:UPC NL,f:0040
+p:UPC NL
 470d:ffff0000:0840:0600:2:0
 Studio Brussel
-p:UPC NL,f:0040
+p:UPC NL
 470e:ffff0000:0840:0600:2:0
 VRT MNM
-p:UPC NL,f:0040
+p:UPC NL
 4aed:ffff0000:0840:0600:25:0
 RTL 7 HD
-p:UPC NL
+p:UPC NL,c:050001
 55f1:ffff0000:0016:10ef:1:0
 RTL 8
 p:DELTA
@@ -6160,7 +6127,7 @@ BBC One HD
 p:CAIW Media
 4e36:ffff0000:0802:0600:25:0
 BBC 1 HD
-p:UPC NL,c:050001
+p:UPC NL,c:050001,c:090101
 4e38:ffff0000:0802:0600:25:0
 FashionTV HD
 p:UPC NL
@@ -6173,12 +6140,42 @@ p:UPC NL
 4e3c:ffff0000:0802:0600:25:0
 ZDF HD
 p:UPC NL
+4c69:ffff0000:083a:0600:25:0
+FOX Sports 2 HD
+p:UPC NL,c:050001
+4c6a:ffff0000:083a:0600:25:0
+FOX Sports 4 HD
+p:UPC NL
+4c6b:ffff0000:083a:0600:25:0
+FOX HD
+p:UPC NL,c:050001
+4c6d:ffff0000:083a:0600:25:0
+Film1 Premiere HD
+p:UPC NL,c:050001
+4c6e:ffff0000:083a:0600:25:0
+TLC HD
+p:UPC NL,c:050001
 9c7c:ffff0000:008c:08c9:25:0
 Arte HD
 p:CAIW Media
 9c86:ffff0000:008c:08c9:25:0
 ZDF HD
 p:CAIW Media
+4ba2:ffff0000:0817:0600:25:0
+een HD
+p:UPC NL,c:050001,c:098800
+4ba3:ffff0000:0817:0600:25:0
+MTV HD
+p:UPC NL,c:050001
+4ba7:ffff0000:0817:0600:25:0
+HBO 3 HD
+p:UPC NL,c:050001
+4ba8:ffff0000:0817:0600:25:0
+FOXlife HD
+p:UPC NL
+4ba9:ffff0000:0817:0600:25:0
+BBC 2 HD
+p:UPC NL,c:050001,c:090101
 84da:ffff0000:0086:08c9:25:0
 Caiway Informatie HD
 p:CAIW Media
@@ -6188,6 +6185,15 @@ p:CAIW Netwerken,c:050001
 84ee:ffff0000:0086:08c9:25:0
 RTL5 HD
 p:CAIW Netwerken,c:050001
+4bdd:ffff0000:0833:0600:25:0
+NPO 3 HD
+p:UPC NL,c:050001,c:098800
+4bde:ffff0000:0833:0600:25:0
+RTL 8 HD
+p:UPC NL
+4be0:ffff0000:0833:0600:25:0
+13th Street HD
+p:UPC NL,c:050001
 4cf5:ffff0000:081c:0600:25:0
 24Kitchen HD
 p:UPC NL
