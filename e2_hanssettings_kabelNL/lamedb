@@ -39,6 +39,9 @@ ffff0000:0066:08c9
 ffff0000:006f:08c9
 	c 674000:6900000:2:3:0:0
 /
+ffff0000:2ee5:0000
+	c 474750:6900000:2:5:0:0
+/
 ffff0000:0020:03e8
 	c 578750:6875000:2:5:0:0
 /
@@ -291,6 +294,9 @@ ffff0000:0806:0600
 ffff0000:0007:03e8
 	c 538750:6875000:2:5:0:0
 /
+ffff0000:083b:0600
+	c 140000:6900000:2:5:0:0
+/
 ffff0000:0076:08c9
 	c 698000:6900000:2:3:0:0
 /
@@ -299,9 +305,6 @@ ffff0000:0012:03e8
 /
 ffff0000:0813:0600
 	c 778750:6900000:2:5:0:0
-/
-ffff0000:083b:0600
-	c 140000:6900000:2:5:0:0
 /
 ffff0000:001d:10ef
 	c 738000:6875000:2:3:0:0
@@ -408,6 +411,9 @@ ffff0000:0809:0600
 ffff0000:000b:03e8
 	c 498750:6875000:2:5:0:0
 /
+ffff0000:0819:0600
+	c 148000:6900000:2:5:0:0
+/
 ffff0000:01f7:01f4
 	c 842000:6875000:2:3:0:0
 /
@@ -471,9 +477,6 @@ ffff0000:0017:01f4
 ffff0000:001c:10ef
 	c 842000:6875000:2:3:0:0
 /
-ffff0000:0819:0600
-	c 148000:6900000:2:5:0:0
-/
 ffff0000:000d:01f4
 	c 396000:6875000:2:5:0:0
 /
@@ -491,6 +494,9 @@ ffff0000:007c:08c9
 /
 ffff0000:001f:03e8
 	c 594750:6875000:2:5:0:0
+/
+ffff0000:0833:0600
+	c 610750:6900000:2:5:0:0
 /
 ffff0000:0017:03e8
 	c 610750:6875000:2:5:0:0
@@ -522,6 +528,9 @@ ffff0000:0016:10ef
 ffff0000:0005:10ef
 	c 394000:6875000:2:3:0:0
 /
+ffff0000:081c:0600
+	c 562750:6900000:2:5:0:0
+/
 ffff0000:000d:10ef
 	c 458000:6875000:2:3:0:0
 /
@@ -542,12 +551,6 @@ ffff0000:0831:0600
 /
 ffff0000:0086:08c9
 	c 586000:6900000:2:3:0:0
-/
-ffff0000:0833:0600
-	c 610750:6900000:2:5:0:0
-/
-ffff0000:081c:0600
-	c 562750:6900000:2:5:0:0
 /
 end
 services
@@ -986,6 +989,9 @@ p:CAIW Media
 2b75:ffff0000:006f:08c9:2:0
 XLnt Party
 p:CAIW Media
+0003:ffff0000:2ee5:0000:1:0
+474 SID 0x03
+p:,f:0040
 7d04:ffff0000:0020:03e8:1:0
 FOXlife
 p:ziggo
@@ -1057,25 +1063,25 @@ Fun X
 p:CAIW Media
 2706:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26ac:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26b6:ffff0000:00c7:08c9:1:0
 CAIW Testbeeld
-p:CAIW Media
+p:CAIW Media,f:0040
 26de:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26e8:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26f2:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26fc:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 4c07:ffff0000:0835:0600:1:0
 Film1 Sundance
 p:UPC NL
@@ -1111,22 +1117,22 @@ Sport1 Golf
 p:CAIW Media
 ac08:ffff0000:0090:08c9:1:0
 STAR One
-p:CAIW Media
+p:CAIW Media,f:0040
 ac12:ffff0000:0090:08c9:1:0
 SBS9
-p:CAIW Media
+p:CAIW Media,f:0040
 abea:ffff0000:0090:08c9:1:0
 STAR Plus
-p:CAIW Media
+p:CAIW Media,f:0040
 abf4:ffff0000:0090:08c9:1:0
 STAR Gold
-p:CAIW Media
+p:CAIW Media,f:0040
 abfe:ffff0000:0090:08c9:1:0
 Star Jalsha
-p:CAIW Media
+p:CAIW Media,f:0040
 ac1c:ffff0000:0090:08c9:25:0
 SBS9 HD
-p:CAIW Media
+p:CAIW Media,f:0040
 7d0a:ffff0000:0084:08c9:1:0
 Horse & Country
 p:CAIW Media
@@ -2032,7 +2038,7 @@ MH_System_Data_Service
 p:UPC NL
 a816:ffff0000:008f:08c9:1:0
 TV Stichtse Vecht
-p:CAIW Media
+p:CAIW Media,f:0040
 a80c:ffff0000:008f:08c9:25:0
 BBC One HD
 p:CAIW Media
@@ -2132,6 +2138,9 @@ p:UPC NL
 4c24:ffff0000:0836:0600:1:0
 TV Games 35
 p:UPC NL
+53ea:ffff0000:0836:0600:1:0
+746 SID 0x53ea
+p:,f:0040
 7919:ffff0000:001f:01f4:1:0
 Planet Turk
 p:Ziggo
@@ -2342,6 +2351,9 @@ p:UPC NL
 4c44:ffff0000:0838:0600:1:0
 Shorts TV HD
 p:UPC NL,c:050001,c:090202
+4c44:ffff0000:0838:0600:25:0
+Shorts TV HD
+p:UPC NL,f:0040
 4e21:ffff0000:0801:0600:1:0
 24Kitchen
 p:UPC NL
@@ -2350,7 +2362,7 @@ BBC Entertainment
 p:UPC NL
 4e24:ffff0000:0801:0600:1:0
 SBS9
-p:UPC NL,f:0008,c:050001
+p:UPC NL,f:0048,c:050001
 4e26:ffff0000:0801:0600:1:0
 FOX
 p:UPC NL,f:0008
@@ -2359,7 +2371,7 @@ p:UPC NL,f:0008
 p:UPC NL,f:0008
 4e28:ffff0000:0801:0600:1:0
 Baby TV
-p:UPC NL
+p:UPC NL,f:0040
 4e22:ffff0000:0801:0600:25:0
 Animal Planet HD
 p:UPC NL,c:050001,c:090202
@@ -2651,6 +2663,9 @@ p:UPC NL
 4b30:ffff0000:0810:0600:1:0
 DjazzTV
 p:UPC NL
+4b31:ffff0000:0810:0600:1:0
+690 SID 0x4b31
+p:
 4e2a:ffff0000:0078:08c9:1:0
 RTL Telekids
 p:CAIW Media
@@ -2737,13 +2752,13 @@ AVS
 p:Delta
 0a2c:ffff0000:001a:10ef:1:0
 Scheldemond TV
-p:Delta
+p:Delta,f:0040
 0a2d:ffff0000:001a:10ef:1:0
 Omroep Hulst TV
-p:Delta
+p:Delta,f:0040
 0a2e:ffff0000:001a:10ef:1:0
 Omroep Tholen TV
-p:DELTA
+p:DELTA,f:0040
 0a29:ffff0000:001a:10ef:2:0
 WFM
 p:Delta
@@ -2752,22 +2767,22 @@ Radio Reimerswaal
 p:Delta
 0a2f:ffff0000:001a:10ef:2:0
 Scheldemond FM
-p:Delta
+p:Delta,f:0040
 0a30:ffff0000:001a:10ef:2:0
 Terneuzen FM
-p:Delta
+p:Delta,f:0040
 0a31:ffff0000:001a:10ef:2:0
 Radio Schouwen-Duiveland
-p:Delta
+p:Delta,f:0040
 0a32:ffff0000:001a:10ef:2:0
 Omroep Tholen Radio
-p:Delta
+p:Delta,f:0040
 0a33:ffff0000:001a:10ef:2:0
 RTBF La Premiere
-p:Delta
+p:Delta,f:0040
 0a34:ffff0000:001a:10ef:2:0
 Puur NL
-p:Delta
+p:Delta,f:0040
 012c:ffff0000:0064:01f4:1:0
 Omroep Drimmelen
 p:Ziggo
@@ -3064,10 +3079,10 @@ Boomerang
 p:UPC NL
 4bf6:ffff0000:0834:0600:1:0
 C&I
-p:UPC NL
+p:UPC NL,f:0040
 4bf7:ffff0000:0834:0600:1:0
 CNN
-p:UPC NL
+p:UPC NL,f:0040
 76e9:ffff0000:0834:0600:25:0
 FOX Sports 1 HD Ere. PPV
 p:UPC NL,c:050001,c:098800
@@ -3172,7 +3187,7 @@ France 2
 p:Ziggo
 4e4f:ffff0000:0013:01f4:25:0
 SBS 9 HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,f:0040,c:050001,c:090202
 003a:ffff0000:0016:01f4:1:0
 NostalgieNet
 p:Ziggo
@@ -3818,6 +3833,9 @@ p:UPC NL,c:050001
 4e51:ffff0000:0803:0600:1:0
 Zing
 p:UPC NL,c:050001
+4e52:ffff0000:0803:0600:1:0
+100% NL TV
+p:UPC NL
 2b21:ffff0000:0803:0600:2:0
 WDR 1
 p:UPC NL
@@ -3977,6 +3995,42 @@ p:Ziggo
 00fa:ffff0000:0007:03e8:1:0
 Star Gold
 p:Ziggo
+544f:ffff0000:083b:0600:1:0
+140 SID 0x544f
+p:,f:0040
+5451:ffff0000:083b:0600:1:0
+OUTtv
+p:UPC NL
+4c7d:ffff0000:083b:0600:1:0
+140 SID 0x4c7d
+p:
+4c7e:ffff0000:083b:0600:1:0
+Omroep Zeeland
+p:UPC NL
+4c7f:ffff0000:083b:0600:1:0
+RTV Noord
+p:UPC NL
+4c81:ffff0000:083b:0600:1:0
+OUTtv
+p:UPC NL
+4c82:ffff0000:083b:0600:1:0
+Mezzo
+p:UPC NL
+4c83:ffff0000:083b:0600:1:0
+TV Oranje
+p:UPC NL
+4c85:ffff0000:083b:0600:1:0
+Zender van de Maand
+p:UPC NL,c:090202
+4c7d:ffff0000:083b:0600:25:0
+Eurosport 2 HD
+p:UPC NL,c:050001
+40c5:ffff0000:083b:0600:100:0
+140 SID 0x40c5
+p:
+40c5:ffff0000:083b:0600:193:0
+MH_System_Data_Service
+p:UPC NL
 4650:ffff0000:0076:08c9:1:0
 Phoenix CNE
 p:CAIW Media
@@ -4061,39 +4115,6 @@ p:UPC NL
 4b58:ffff0000:0813:0600:1:0
 Disney XD
 p:UPC NL
-5451:ffff0000:083b:0600:1:0
-OUTtv
-p:UPC NL
-4c7d:ffff0000:083b:0600:1:0
-140 SID 0x4c7d
-p:
-4c7e:ffff0000:083b:0600:1:0
-Omroep Zeeland
-p:UPC NL
-4c7f:ffff0000:083b:0600:1:0
-RTV Noord
-p:UPC NL
-4c81:ffff0000:083b:0600:1:0
-OUTtv
-p:UPC NL
-4c82:ffff0000:083b:0600:1:0
-Mezzo
-p:UPC NL
-4c83:ffff0000:083b:0600:1:0
-TV Oranje
-p:UPC NL
-4c85:ffff0000:083b:0600:1:0
-Zender van de Maand
-p:UPC NL,c:090202
-4c7d:ffff0000:083b:0600:25:0
-Eurosport 2 HD
-p:UPC NL,c:050001
-40c5:ffff0000:083b:0600:100:0
-140 SID 0x40c5
-p:
-40c5:ffff0000:083b:0600:193:0
-MH_System_Data_Service
-p:UPC NL
 0b57:ffff0000:001d:10ef:1:0
 NGC
 p:Delta
@@ -4133,6 +4154,12 @@ p:UPC NL
 4e66:ffff0000:0804:0600:1:0
 TGRT Europe
 p:UPC NL
+4e67:ffff0000:0804:0600:1:0
+Horse & Country
+p:UPC NL,f:0040
+4e68:ffff0000:0804:0600:1:0
+Show TV
+p:UPC NL,f:0040
 4e5d:ffff0000:0804:0600:25:0
 Canvas HD
 p:UPC NL,c:050001,c:098800
@@ -4366,7 +4393,7 @@ Mezzo
 p:Del
 4273:ffff0000:0011:10ef:1:0
 Mediaset
-p:Delta
+p:Delta,f:0040
 4272:ffff0000:0011:10ef:25:0
 FOX Sports 2 International HD
 p:Delta
@@ -4651,7 +4678,7 @@ Sport1 Select HD
 p:UPC NL
 9c72:ffff0000:008c:08c9:1:0
 Beek TV
-p:CAIW Media
+p:CAIW Media,f:0040
 9c7c:ffff0000:008c:08c9:25:0
 Arte HD
 p:CAIW Media
@@ -4906,7 +4933,7 @@ Cartoon Netw./TCM
 p:Del
 3e89:ffff0000:0010:10ef:1:0
 FOX Sports 6
-p:Delta
+p:Delta,f:0040
 3e85:ffff0000:0010:10ef:25:0
 MTV HD
 p:Delta
@@ -5159,6 +5186,36 @@ p:Ziggo
 2997:ffff0000:000b:03e8:2:0
 MNM
 p:Ziggo
+548b:ffff0000:0819:0600:1:0
+148 SID 0x548b
+p:,f:0040
+548c:ffff0000:0819:0600:1:0
+148 SID 0x548c
+p:,f:0040
+4cb9:ffff0000:0819:0600:1:0
+RTV-7
+p:UPC NL
+4cba:ffff0000:0819:0600:1:0
+StarPlus
+p:UPC NL
+4cbb:ffff0000:0819:0600:1:0
+RTV Drenthe
+p:UPC NL
+4cbc:ffff0000:0819:0600:1:0
+RTV Oost
+p:UPC NL
+4cc0:ffff0000:0819:0600:1:0
+Zee TV
+p:UPC NL
+4cc1:ffff0000:0819:0600:1:0
+Zee Cinema
+p:UPC NL,c:098808
+4cc2:ffff0000:0819:0600:1:0
+Set Asia
+p:UPC NL,f:0040
+4cbd:ffff0000:0819:0600:25:0
+Film1 Spotlight HD
+p:UPC NL,c:050001
 008c:ffff0000:01f7:01f4:1:0
 Omroep Zeeland
 p:Ziggo
@@ -5386,19 +5443,19 @@ p:UPC NL
 p:
 3aa2:ffff0000:0073:08c9:1:0
 WOS
-p:CAIW Media
+p:CAIW Media,f:0040
 3aac:ffff0000:0073:08c9:1:0
 HOS
-p:CAIW Media
+p:CAIW Media,f:0040
 3ab6:ffff0000:0073:08c9:1:0
 Den Haag TV
-p:CAIW Media
+p:CAIW Media,f:0040
 3ad4:ffff0000:0073:08c9:1:0
 RTV9
-p:CAIW Media
+p:CAIW Media,f:0040
 3ae8:ffff0000:0073:08c9:1:0
 LOOK TV
-p:CAIW Media
+p:CAIW Media,f:0040
 3af2:ffff0000:0073:08c9:1:0
 Regio TV InfoThuis
 p:CAIW Media
@@ -5545,7 +5602,7 @@ Portaal van Zeeland
 p:Delta
 02c4:ffff0000:0007:10ef:1:0
 Comedy Central Extra
-p:Delta
+p:Delta,f:0040
 02c1:ffff0000:0007:10ef:25:0
 RTL4 HD
 p:Delta
@@ -5669,27 +5726,6 @@ p:Delta
 6d62:ffff0000:001c:10ef:25:0
 DisneyXD/Veronica HD
 p:Delta
-4cb9:ffff0000:0819:0600:1:0
-RTV-7
-p:UPC NL
-4cba:ffff0000:0819:0600:1:0
-StarPlus
-p:UPC NL
-4cbb:ffff0000:0819:0600:1:0
-RTV Drenthe
-p:UPC NL
-4cbc:ffff0000:0819:0600:1:0
-RTV Oost
-p:UPC NL
-4cc0:ffff0000:0819:0600:1:0
-Zee TV
-p:UPC NL
-4cc1:ffff0000:0819:0600:1:0
-Zee Cinema
-p:UPC NL,c:098808
-4cbd:ffff0000:0819:0600:25:0
-Film1 Spotlight HD
-p:UPC NL,c:050001
 00be:ffff0000:000d:01f4:1:0
 FOX Sports 3 Eredivisie
 p:Ziggo
@@ -5810,6 +5846,21 @@ p:Ziggo
 00e1:ffff0000:001f:03e8:25:0
 MTV Live HD
 p:Ziggo
+76d7:ffff0000:0833:0600:1:0
+FOX Sports 6 PPV
+p:UPC NL
+4bdf:ffff0000:0833:0600:1:0
+FOX Sports 6 International
+p:UPC NL
+4bdd:ffff0000:0833:0600:25:0
+NPO 3 HD
+p:UPC NL,c:050001,c:098800
+4bde:ffff0000:0833:0600:25:0
+RTL 8 HD
+p:UPC NL
+4be0:ffff0000:0833:0600:25:0
+13th Street HD
+p:UPC NL,c:050001
 59d9:ffff0000:0017:03e8:1:0
 Holland Doc 24
 p:Ziggo
@@ -5896,7 +5947,7 @@ FOX Sports 5 Eredivisie
 p:Delta
 2eeb:ffff0000:000c:10ef:1:0
 SBS9
-p:Delta
+p:Delta,f:0040
 59e2:ffff0000:0017:10ef:1:0
 Horse & Country
 p:DELTA
@@ -5987,9 +6038,15 @@ p:Ziggo
 4aef:ffff0000:0840:0600:1:0
 Disney Channel
 p:UPC NL
+4af1:ffff0000:0840:0600:1:0
+Kral TV
+p:UPC NL,f:0040
 4af2:ffff0000:0840:0600:1:0
 NDR
 p:UPC NL
+4af3:ffff0000:0840:0600:1:0
+Penthouse
+p:UPC NL,f:0040
 4705:ffff0000:0840:0600:2:0
 BBC Radio 1
 p:UPC NL
@@ -6020,6 +6077,12 @@ p:UPC NL
 470e:ffff0000:0840:0600:2:0
 VRT MNM
 p:UPC NL
+470f:ffff0000:0840:0600:2:0
+RNE
+p:UPC NL,f:0040
+4710:ffff0000:0840:0600:2:0
+578 SID 0x4710
+p:,f:0040
 4aed:ffff0000:0840:0600:25:0
 RTL 7 HD
 p:UPC NL,c:050001
@@ -6074,6 +6137,24 @@ p:Delta
 138a:ffff0000:0005:10ef:2:0
 100% NL
 p:Delta
+4cfb:ffff0000:081c:0600:1:0
+test
+p:UPC NL,f:0040
+4cf5:ffff0000:081c:0600:25:0
+24Kitchen HD
+p:UPC NL,c:050001
+4cf6:ffff0000:081c:0600:25:0
+Film1 Comedy & Kids HD
+p:UPC NL
+4cf8:ffff0000:081c:0600:25:0
+HBO HD
+p:UPC NL,c:050001
+4cf9:ffff0000:081c:0600:25:0
+HISTORY HD
+p:UPC NL,c:050001,c:090202
+4cfa:ffff0000:081c:0600:25:0
+Nat Geo Wild HD
+p:UPC NL,c:050001
 32cf:ffff0000:000d:10ef:2:0
 XLnt Nostalgie
 p:Delta
@@ -6205,10 +6286,10 @@ TLC HD
 p:Delta
 a424:ffff0000:008e:08c9:25:0
 Penthouse HD1
-p:CAIW Media
+p:CAIW Media,f:0040
 a42e:ffff0000:008e:08c9:25:0
 Penthouse HD2
-p:CAIW Media
+p:CAIW Media,f:0040
 4e36:ffff0000:0802:0600:25:0
 BBC 1 HD
 p:UPC NL,c:050001,c:090101
@@ -6254,6 +6335,9 @@ p:UPC NL,c:050001
 4ba9:ffff0000:0817:0600:25:0
 BBC 2 HD
 p:UPC NL,c:050001,c:090101
+4bb9:ffff0000:0831:0600:25:0
+FOX Sports 6 International HD
+p:UPC NL,f:0040
 4bba:ffff0000:0831:0600:25:0
 E! Entertainment HD
 p:UPC NL,c:050001,c:090202
@@ -6263,6 +6347,9 @@ p:UPC NL,c:050001
 4bbc:ffff0000:0831:0600:25:0
 Travel Channel HD
 p:UPC NL,c:050001,c:090202
+4bbd:ffff0000:0831:0600:25:0
+MTV Live HD
+p:UPC NL,f:0040
 84da:ffff0000:0086:08c9:25:0
 Caiway Informatie HD
 p:CAIW Media
@@ -6272,29 +6359,5 @@ p:CAIW Netwerken,c:050001
 84ee:ffff0000:0086:08c9:25:0
 RTL5 HD
 p:CAIW Netwerken,c:050001
-4bdd:ffff0000:0833:0600:25:0
-NPO 3 HD
-p:UPC NL,c:050001,c:098800
-4bde:ffff0000:0833:0600:25:0
-RTL 8 HD
-p:UPC NL
-4be0:ffff0000:0833:0600:25:0
-13th Street HD
-p:UPC NL,c:050001
-4cf5:ffff0000:081c:0600:25:0
-24Kitchen HD
-p:UPC NL,c:050001
-4cf6:ffff0000:081c:0600:25:0
-Film1 Comedy & Kids HD
-p:UPC NL
-4cf8:ffff0000:081c:0600:25:0
-HBO HD
-p:UPC NL,c:050001
-4cf9:ffff0000:081c:0600:25:0
-HISTORY HD
-p:UPC NL,c:050001,c:090202
-4cfa:ffff0000:081c:0600:25:0
-Nat Geo Wild HD
-p:UPC NL,c:050001
 end
 Editor:DreamSet 2.4.3 - http://www.dreamset-editor.com
