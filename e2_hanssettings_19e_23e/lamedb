@@ -154,7 +154,7 @@ transponders
 	s 12581000:22000000:1:0:192:2:0
 /
 00c00000:0021:0085
-	s 12480000:27500000:1:3:192:2:0
+	s 12480000:27500000:1:0:192:2:0
 /
 00c00000:000f:0085
 	s 10920000:22000000:0:5:192:2:0
@@ -470,6 +470,9 @@ ffff0000:0837:0600
 /
 ffff0000:0015:10ef
 	c 730000:6875000:2:3:0:0
+/
+ffff0000:2ee5:0000
+	c 474750:6900000:2:5:0:0
 /
 ffff0000:0065:0600
 	c 132000:6900000:2:5:0:0
@@ -931,7 +934,7 @@ JimJam
 p:M7 Group
 13cd:00eb0000:0c95:0003:1:0
 Brazzers TV CZ
-p:M7 Group,c:050001
+p:M7 Group
 13b1:00eb0000:0c95:0003:25:0
 Eurosport 2 HD
 p:M7 Group
@@ -943,13 +946,13 @@ Markiza HD
 p:M7 Group
 13b7:00eb0000:0c95:0003:25:0
 Eurosport HD
-p:M7 Group,c:050001
+p:M7 Group
 13b8:00eb0000:0c95:0003:25:0
 Travel Channel HD CE
-p:M7 Group,c:050001
+p:M7 Group
 13c0:00eb0000:0c95:0003:25:0
 Travel Channel HD WE
-p:M7 Group,c:050001,c:090202
+p:M7 Group
 13c1:00eb0000:0c95:0003:25:0
 Travel Channel CDUPC
 p:M7 Group
@@ -979,7 +982,7 @@ KinoSvet
 p:M7 Group
 1422:00eb0000:0c85:0003:1:0
 Nautical HD
-p:M7 Group
+p:M7 Group,c:050001
 1423:00eb0000:0c85:0003:1:0
 CS Film/CS Mini
 p:M7 Group
@@ -1175,6 +1178,9 @@ p:M7 Group
 3374:00eb0000:0c93:0003:12:0
 GOSAT7056
 p:M7 Group
+3377:00eb0000:0c93:0003:12:0
+Linkbox
+p:M7 Group,f:0040
 3380:00eb0000:0c93:0003:12:0
 Topfield TF S3000RHD
 p:M7 Group
@@ -1322,27 +1328,30 @@ p:M7 Group
 5165:00eb0000:0c8b:0003:22:0
 Food Network CZ
 p:M7 Group
+5179:00eb0000:0c8b:0003:22:0
+Event kanaal
+p:M7 Group
 519d:00eb0000:0c8b:0003:22:0
 Food Network HD
-p:M7 Group,c:050001,c:090202
+p:M7 Group
 519e:00eb0000:0c8b:0003:22:0
 Food Network HD CZ
 p:M7 Group
 515e:00eb0000:0c8b:0003:25:0
 Hustler HD
-p:M7 Group
+p:M7 Group,c:050001
 515f:00eb0000:0c8b:0003:25:0
 Hustler HD CZ
 p:M7 Group
 519f:00eb0000:0c8b:0003:25:0
 Travel Channel HD
-p:M7 Group,c:050001,c:090202
+p:M7 Group
 51a1:00eb0000:0c8b:0003:25:0
 Travel Channel HD CZ
 p:M7 Group
 51a2:00eb0000:0c8b:0003:25:0
 Travel Channel HD NL
-p:M7 Group,c:050001,c:090202
+p:M7 Group
 1388:00eb0000:04b0:0064:1:0
 TEST
 p:Telekom Serbia,c:050001
@@ -1630,7 +1639,7 @@ Acht
 p:M7 Group,c:050001
 5284:00eb0000:0c96:0003:22:0
 Man-X
-p:M7 Group
+p:M7 Group,c:050001
 5286:00eb0000:0c96:0003:22:0
 VIJF
 p:
@@ -1642,7 +1651,7 @@ Film1 Sundance
 p:M7 Group
 51b5:00eb0000:0c96:0003:22:0
 Penthouse
-p:M7 Group
+p:M7 Group,c:050001
 51b8:00eb0000:0c96:0003:22:0
 Film1 Action
 p:M7 Group
@@ -1654,7 +1663,7 @@ Sport1 Golf
 p:M7 Group
 51c7:00eb0000:0c96:0003:22:0
 FOX Sports EDL 3
-p:M7 Group
+p:M7 Group,c:050001
 51cc:00eb0000:0c96:0003:22:0
 Cartoon
 p:M7 Group
@@ -1699,7 +1708,7 @@ een HD
 p:M7 Group,c:050001
 5225:00eb0000:0c99:0003:25:0
 NPO1 HD
-p:M7 Group,f:0008,c:050001
+p:M7 Group,c:050001,c:098800
 5226:00eb0000:0c99:0003:25:0
 Canvas HD
 p:M7 Group,c:050001,c:098800
@@ -1708,7 +1717,7 @@ Veronica/DisneyXD HD
 p:M7 Group,c:050001
 5230:00eb0000:0c99:0003:25:0
 NPO3 HD
-p:M7 Group,f:0008,c:050001
+p:M7 Group,c:050001
 5235:00eb0000:0c99:0003:25:0
 FOX Sports 2 HD int
 p:M7 Group
@@ -1738,7 +1747,7 @@ Boomerang CZ
 p:M7 Group
 1798:00eb0000:0c82:0003:22:0
 Animal Planet
-p:M7 Group
+p:M7 Group,c:050001,c:090202
 1799:00eb0000:0c82:0003:22:0
 Animal Planet CZ
 p:M7 Group
@@ -1765,13 +1774,13 @@ EDGE CZ
 p:M7 Group
 17c0:00eb0000:0c82:0003:25:0
 NPO2 HD
-p:M7 Group,f:0008,c:050001
+p:M7 Group,c:050001
 17ca:00eb0000:0c82:0003:25:0
 SBS6 HD
 p:M7 Group,c:050001
 17cc:00eb0000:0c82:0003:25:0
 FOX Sports EDL 1 HD
-p:M7 Group
+p:M7 Group,c:050001
 17ce:00eb0000:0c82:0003:25:0
 the QYOU
 p:M7 Group
@@ -1782,17 +1791,17 @@ p:M7 Group
 EDGE
 p:M7 Group
 1b80:00eb0000:0c88:0003:22:0
-Test RK
-p:M7 Group
+Reality Kings
+p:M7 Group,c:050001
 1b81:00eb0000:0c88:0003:22:0
-Test RK CZ
+Reality Kings CZ
 p:M7 Group
 1b82:00eb0000:0c88:0003:22:0
 RTL lounge
 p:M7 Group
 1b8a:00eb0000:0c88:0003:22:0
 L1MBURG
-p:M7 Group,c:050001
+p:M7 Group
 1b8c:00eb0000:0c88:0003:22:0
 Crime Invest.
 p:M7 Group
@@ -1810,19 +1819,19 @@ VTM HD
 p:M7 Group,c:050001
 1b7c:00eb0000:0c88:0003:25:0
 RTL8 HD
-p:M7 Group,c:050001
+p:M7 Group
 1b8d:00eb0000:0c88:0003:25:0
 Crime and Invest. CZ
 p:M7 Group
 1b8e:00eb0000:0c88:0003:25:0
 SyFy
-p:M7 Group
+p:M7 Group,c:050001
 1b90:00eb0000:0c88:0003:25:0
 2BE HD
-p:,c:050001
+p:
 1b91:00eb0000:0c88:0003:25:0
 VIER HD
-p:,c:050001
+p:
 6f6f:00c00000:042c:0001:0:0
 
 p:
@@ -1966,9 +1975,6 @@ p:BetaDigital
 p:BetaDigital
 1400:00c00000:0403:0001:1:0
 TURKSHOW TV
-p:
-1401:00c00000:0403:0001:1:0
-TWOJ TV
 p:
 13ed:00c00000:0403:0001:1:0
 ASTRA 3D demo
@@ -2176,7 +2182,7 @@ DATASYSTEM
 p:CSAT
 3400:00c00000:03ed:0001:1:0
 R9 Oesterreich HD
-p:ORS
+p:ORS,c:050001
 3401:00c00000:03ed:0001:1:0
 Service 13313
 p:ORF
@@ -2189,6 +2195,9 @@ p:ORS
 33ff:00c00000:03ed:0001:22:0
 Aristo.TV
 p:ORF
+3400:00c00000:03ed:0001:25:0
+R9 Oesterreich HD
+p:ORS,f:0040
 33f5:00c00000:03ed:0001:25:0
 ORF2St HD
 p:ORF
@@ -2272,25 +2281,25 @@ p:DVB-S QPSK 11798H 19.2Â°E
 p:DVB-S QPSK 11798H 19.2Â°E
 0105:00c00000:0002:0085:211:0
 Sky Select 2
-p:
+p:,C:1861
 0106:00c00000:0002:0085:211:0
 Sky Bundesliga 2
-p:
+p:,C:1861
 0107:00c00000:0002:0085:211:0
 Sky Sport 3
-p:
+p:,C:1861
 00fb:00c00000:0002:0085:211:0
 Sky Select 1
-p:
+p:,C:1861
 00fc:00c00000:0002:0085:211:0
 Sky Bundesliga 10
-p:
+p:,C:1861
 00fd:00c00000:0002:0085:211:0
 Sky Sport 11
-p:
+p:,C:1861
 00fe:00c00000:0002:0085:211:0
 Sky Select Event A
-p:
+p:,C:1861
 0701:00c00000:0005:0085:1:0
 Disney Channel
 p:BetaDigital
@@ -2905,13 +2914,13 @@ p:DVB-S QPSK 12070H 19.2ÂE
 p:DVB-S QPSK 12070H 19.2ÂE
 0159:00c00000:0001:0085:211:0
 Blue Movie 1
-p:
+p:,C:1861,C:1810
 0163:00c00000:0001:0085:211:0
 Blue Movie 2
-p:
+p:,C:1861,C:1810
 016d:00c00000:0001:0085:211:0
 Blue Movie 3
-p:
+p:,C:1861,C:1810
 251e:00c00000:0456:0001:1:0
 COMEDIE+
 p:CSAT
@@ -2961,7 +2970,7 @@ p:BetaDigital
 DMAX
 p:BetaDigital
 004c:00c00000:0021:0085:1:0
-EBRU TV
+QLAR
 p:BetaDigital
 004d:00c00000:0021:0085:1:0
 HSE24 TREND
@@ -3826,7 +3835,7 @@ eUrotic
 p:SES ASTRA
 2f67:00c00000:0454:0001:1:0
 8 MONT-BLANC
-p:SES ASTRA
+p:SES ASTRA,f:0040
 2f84:00c00000:0454:0001:1:0
 NT1
 p:
@@ -4063,7 +4072,7 @@ L EQUIPE 21
 p:Telefonica Serviciosn Audiovisuales
 7ab1:00c00000:0410:0001:1:0
 L EQUIPE 21
-p:Telefonica Serviciosn Audiovisuales
+p:Telefonica Serviciosn Audiovisuales,f:0040
 1f49:00c00000:042e:0001:1:0
 D8 HD (test)
 p:DVB-S2 8PSK 11817V 19.2Â°E,f:0008
@@ -4456,7 +4465,7 @@ SES
 p:ASTRA
 14b2:00c00000:040d:0001:1:0
 HEVC UHD
-p:swissaudec
+p:swissaudec,f:0040
 14a1:00c00000:040d:0001:2:0
 NL-Radio 1
 p:M7 Group
@@ -4477,7 +4486,7 @@ NL-Radio 6
 p:M7 Group
 14b3:00c00000:040d:0001:2:0
 ECMA-407
-p:swissaudec
+p:swissaudec,f:0040
 6d66:00c00000:0437:0001:1:0
 ZDF
 p:ZDFvision
@@ -4612,28 +4621,28 @@ Rai 3 HD
 p:Telespazio
 2276:00c00000:0438:0001:1:0
 12012V SID 0x2276
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 2277:00c00000:0438:0001:1:0
 12012V SID 0x2277
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 2278:00c00000:0438:0001:1:0
 12012V SID 0x2278
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 2279:00c00000:0438:0001:1:0
 12012V SID 0x2279
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 227a:00c00000:0438:0001:1:0
 12012V SID 0x227a
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 227b:00c00000:0438:0001:1:0
 12012V SID 0x227b
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 227f:00c00000:0438:0001:1:0
 12012V SID 0x227f
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 2289:00c00000:0438:0001:1:0
 12012V SID 0x2289
-p:DVB-S2 8PSK 12012V 19.2Â°E
+p:DVB-S2 8PSK 12012V 19.2Â°E,f:0040
 22c3:00c00000:0438:0001:12:0
 DATASYSTEM
 p:
@@ -5413,13 +5422,13 @@ NET5
 p:M7 Group
 0fab:00c00000:0451:0035:1:0
 NPO1
-p:M7 Group,f:0008
+p:M7 Group
 0fac:00c00000:0451:0035:1:0
 NPO2
-p:M7 Group,f:0008
+p:M7 Group
 0fad:00c00000:0451:0035:1:0
 NPO3
-p:M7 Group,f:0008
+p:M7 Group
 0fb0:00c00000:0451:0035:1:0
 CD/TVV info&nieuws
 p:M7 Group
@@ -5911,7 +5920,7 @@ F3 MIDI PYRENEES
 p:CSAT
 6fec:00c00000:042a:0001:1:0
 Test Channel 2 (ex MTV FRANCE)
-p:MTV Networks Europe
+p:MTV Networks Europe,f:0040
 6fee:00c00000:042a:0001:1:0
 MTV Hits
 p:MTV Networks Europe
@@ -5935,7 +5944,7 @@ NICKELODEON Iberia
 p:MTV Networks Europe
 6ff5:00c00000:042a:0001:1:0
 Test Channel 1 (Ex MTV BASE FRANCE)
-p:MTV Networks Europe
+p:MTV Networks Europe,f:0040
 6ff7:00c00000:042a:0001:1:0
 GAME ONE
 p:MTV Networks Europe
@@ -6001,19 +6010,16 @@ VTM
 p:M7 Group,c:050001
 320c:00c00000:045f:0035:22:0
 2BE
-p:M7 Group,c:050001
+p:M7 Group
 320e:00c00000:045f:0035:22:0
 VIER
 p:M7 Group,c:050001
-3214:00c00000:045f:0035:22:0
-VIJF
-p:M7 Group,c:050001
 3234:00c00000:045f:0035:22:0
 La Deux
-p:M7 Group,c:050001
+p:M7 Group
 3235:00c00000:045f:0035:22:0
 La Trois
-p:M7 Group,c:050001
+p:M7 Group
 3239:00c00000:045f:0035:22:0
 Club-RTL
 p:M7 Group
@@ -6024,7 +6030,7 @@ p:M7 Group
 Planet
 p:M7 Group
 3252:00c00000:045f:0035:22:0
-Dorcel TV
+Brazzers TV
 p:M7 Group,c:050001
 3253:00c00000:045f:0035:22:0
 Hustler TV
@@ -6039,11 +6045,11 @@ p:M7 Group
 Eurosport 2 Int.
 p:M7 Group
 3262:00c00000:045f:0035:22:0
-Eurosport 2 GER
+Test ESP2
 p:M7 Group
 3233:00c00000:045f:0035:25:0
 La Une HD
-p:M7 Group,c:050001
+p:M7 Group
 3238:00c00000:045f:0035:25:0
 RTL-TVi HD
 p:M7 Group
@@ -6790,19 +6796,19 @@ p:PRISAT TV
 p:DVB-S2 8PSK 11435V 19.2Â°E
 30d4:00c00000:0413:0001:25:0
 SAT.1 Gold HD
-p:ProSiebenSat.1
+p:ProSiebenSat.1,f:0040
 30d5:00c00000:0413:0001:25:0
 .
-p:.
+p:.,f:0040
 30d6:00c00000:0413:0001:25:0
 .
-p:.
+p:.,f:0040
 30d7:00c00000:0413:0001:25:0
 .
-p:.
+p:.,f:0040
 30d8:00c00000:0413:0001:25:0
 .
-p:.
+p:.,f:0040
 2b00:ffff0000:000b:10ef:1:0
 Syfy Universal
 p:Delta
@@ -7054,25 +7060,25 @@ Fun X
 p:CAIW Media
 2706:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26ac:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26b6:ffff0000:00c7:08c9:1:0
 CAIW Testbeeld
-p:CAIW Media
+p:CAIW Media,f:0040
 26de:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26e8:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26f2:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 26fc:ffff0000:00c7:08c9:1:0
 Regionale/Lokale omroep
-p:CAIW Media
+p:CAIW Media,f:0040
 4c07:ffff0000:0835:0600:1:0
 Film1 Sundance
 p:UPC NL
@@ -7108,22 +7114,22 @@ Sport1 Golf
 p:CAIW Media
 ac08:ffff0000:0090:08c9:1:0
 STAR One
-p:CAIW Media
+p:CAIW Media,f:0040
 ac12:ffff0000:0090:08c9:1:0
 SBS9
-p:CAIW Media
+p:CAIW Media,f:0040
 abea:ffff0000:0090:08c9:1:0
 STAR Plus
-p:CAIW Media
+p:CAIW Media,f:0040
 abf4:ffff0000:0090:08c9:1:0
 STAR Gold
-p:CAIW Media
+p:CAIW Media,f:0040
 abfe:ffff0000:0090:08c9:1:0
 Star Jalsha
-p:CAIW Media
+p:CAIW Media,f:0040
 ac1c:ffff0000:0090:08c9:25:0
 SBS9 HD
-p:CAIW Media
+p:CAIW Media,f:0040
 7d0a:ffff0000:0084:08c9:1:0
 Horse & Country
 p:CAIW Media
@@ -7196,6 +7202,9 @@ p:Delta
 520a:ffff0000:0015:10ef:25:0
 NGC HD
 p:DELTA
+000d:ffff0000:2ee5:0000:1:0
+474 SID 0x0d
+p:,f:0040
 300d:ffff0000:0065:0600:1:0
 SmartRTV
 p:UPC NL
@@ -7768,13 +7777,13 @@ MyZen HD
 p:UPC NL,c:050001
 4cd6:ffff0000:081a:0600:25:0
 Ziggo Live Events
-p:UPC NL
+p:UPC NL,c:050001
 44fe:ffff0000:081a:0600:193:0
 MH_System_Data_Service
 p:UPC NL
 a816:ffff0000:008f:08c9:1:0
 TV Stichtse Vecht
-p:CAIW Media
+p:CAIW Media,f:0040
 a80c:ffff0000:008f:08c9:25:0
 BBC One HD
 p:CAIW Media
@@ -7927,7 +7936,7 @@ BBC Entertainment
 p:UPC NL
 4e24:ffff0000:0801:0600:1:0
 SBS9
-p:UPC NL,f:0008,c:050001
+p:UPC NL,f:0048,c:050001
 4e26:ffff0000:0801:0600:1:0
 FOX
 p:UPC NL,f:0008
@@ -7936,7 +7945,7 @@ p:UPC NL,f:0008
 p:UPC NL,f:0008
 4e28:ffff0000:0801:0600:1:0
 Baby TV
-p:UPC NL
+p:UPC NL,f:0040
 4e22:ffff0000:0801:0600:25:0
 Animal Planet HD
 p:UPC NL,c:050001,c:090202
@@ -8053,13 +8062,13 @@ AVS
 p:Delta
 0a2c:ffff0000:001a:10ef:1:0
 Scheldemond TV
-p:Delta
+p:Delta,f:0040
 0a2d:ffff0000:001a:10ef:1:0
 Omroep Hulst TV
-p:Delta
+p:Delta,f:0040
 0a2e:ffff0000:001a:10ef:1:0
 Omroep Tholen TV
-p:DELTA
+p:DELTA,f:0040
 0a29:ffff0000:001a:10ef:2:0
 WFM
 p:Delta
@@ -8068,22 +8077,22 @@ Radio Reimerswaal
 p:Delta
 0a2f:ffff0000:001a:10ef:2:0
 Scheldemond FM
-p:Delta
+p:Delta,f:0040
 0a30:ffff0000:001a:10ef:2:0
 Terneuzen FM
-p:Delta
+p:Delta,f:0040
 0a31:ffff0000:001a:10ef:2:0
 Radio Schouwen-Duiveland
-p:Delta
+p:Delta,f:0040
 0a32:ffff0000:001a:10ef:2:0
 Omroep Tholen Radio
-p:Delta
+p:Delta,f:0040
 0a33:ffff0000:001a:10ef:2:0
 RTBF La Premiere
-p:Delta
+p:Delta,f:0040
 0a34:ffff0000:001a:10ef:2:0
 Puur NL
-p:Delta
+p:Delta,f:0040
 012d:ffff0000:0003:10ef:1:0
 FOX Sports 1 Eredivisie
 p:Delta
@@ -8242,10 +8251,10 @@ Boomerang
 p:UPC NL
 4bf6:ffff0000:0834:0600:1:0
 CI
-p:UPC NL,c:090202
+p:UPC NL,f:0040,c:090202
 4bf7:ffff0000:0834:0600:1:0
 CNN
-p:UPC NL
+p:UPC NL,f:0040
 76e9:ffff0000:0834:0600:25:0
 FOX Sports 1 HD Ere. PPV
 p:UPC NL,c:050001,c:098800
@@ -8965,7 +8974,7 @@ Mezzo
 p:Del
 4273:ffff0000:0011:10ef:1:0
 Mediaset
-p:Delta
+p:Delta,f:0040
 4272:ffff0000:0011:10ef:25:0
 FOX Sports 2 International HD
 p:Delta
@@ -9187,7 +9196,7 @@ Sport1 Select HD
 p:UPC NL
 9c72:ffff0000:008c:08c9:1:0
 Beek TV
-p:CAIW Media
+p:CAIW Media,f:0040
 9c7c:ffff0000:008c:08c9:25:0
 Arte HD
 p:CAIW Media
@@ -9337,7 +9346,7 @@ Cartoon Netw./TCM
 p:Del
 3e89:ffff0000:0010:10ef:1:0
 FOX Sports 6
-p:Delta
+p:Delta,f:0040
 3e85:ffff0000:0010:10ef:25:0
 MTV HD
 p:Delta
@@ -9703,19 +9712,19 @@ p:UPC NL
 p:
 3aa2:ffff0000:0073:08c9:1:0
 WOS
-p:CAIW Media
+p:CAIW Media,f:0040
 3aac:ffff0000:0073:08c9:1:0
 HOS
-p:CAIW Media
+p:CAIW Media,f:0040
 3ab6:ffff0000:0073:08c9:1:0
 Den Haag TV
-p:CAIW Media
+p:CAIW Media,f:0040
 3ad4:ffff0000:0073:08c9:1:0
 RTV9
-p:CAIW Media
+p:CAIW Media,f:0040
 3ae8:ffff0000:0073:08c9:1:0
 LOOK TV
-p:CAIW Media
+p:CAIW Media,f:0040
 3af2:ffff0000:0073:08c9:1:0
 Regio TV InfoThuis
 p:CAIW Media
@@ -9862,7 +9871,7 @@ Portaal van Zeeland
 p:Delta
 02c4:ffff0000:0007:10ef:1:0
 Comedy Central Extra
-p:Delta
+p:Delta,f:0040
 02c1:ffff0000:0007:10ef:25:0
 RTL4 HD
 p:Delta
@@ -10027,7 +10036,7 @@ NPO 3 HD
 p:UPC NL,c:050001,c:098800
 4bde:ffff0000:0833:0600:25:0
 RTL 8 HD
-p:UPC NL
+p:UPC NL,c:050001,c:090202
 4be0:ffff0000:0833:0600:25:0
 13TH Street HD
 p:UPC NL,c:050001
@@ -10069,7 +10078,7 @@ FOX Sports 5 Eredivisie
 p:Delta
 2eeb:ffff0000:000c:10ef:1:0
 SBS9
-p:Delta
+p:Delta,f:0040
 59e2:ffff0000:0017:10ef:1:0
 Horse & Country
 p:DELTA
@@ -10168,10 +10177,10 @@ RNE Radio Uno
 p:UPC NL
 4710:ffff0000:0840:0600:2:0
 578 SID 0x4710
-p:
+p:,f:0040
 4aed:ffff0000:0840:0600:25:0
 RTL 7 HD
-p:UPC NL,c:050001
+p:UPC NL,c:050001,c:090202
 55f1:ffff0000:0016:10ef:1:0
 RTL 8
 p:DELTA
@@ -10225,7 +10234,7 @@ p:Delta
 p:Delta
 4cfb:ffff0000:081c:0600:1:0
 test
-p:UPC NL
+p:UPC NL,f:0040
 4cf5:ffff0000:081c:0600:25:0
 24Kitchen HD
 p:UPC NL,c:050001
@@ -10372,10 +10381,10 @@ TLC HD
 p:Delta
 a424:ffff0000:008e:08c9:25:0
 Penthouse HD1
-p:CAIW Media
+p:CAIW Media,f:0040
 a42e:ffff0000:008e:08c9:25:0
 Penthouse HD2
-p:CAIW Media
+p:CAIW Media,f:0040
 4e36:ffff0000:0802:0600:25:0
 BBC One HD
 p:UPC NL,c:050001,c:090101
