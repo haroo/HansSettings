@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:162:0:0:0:0:0:0:0:
+#SERVICE 1:64:154:0:0:0:0:0:0:0:
 #DESCRIPTION Publieke zenders
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Ficecast.omroep.nl%3A80%2Fradio1-bb-mp3:NPO%20Radio%201
 #DESCRIPTION NPO Radio 1
@@ -73,11 +73,11 @@
 #DESCRIPTION NPO Radio 6 Zwarte Lijst
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Ficecast.omroep.nl%3A80%2Fnieuws24-bb-mp3:NPO%20Nieuws%2024
 #DESCRIPTION NPO Nieuws 24
-#SERVICE 1:64:163:0:0:0:0:0:0:0:
+#SERVICE 1:64:155:0:0:0:0:0:0:0:
 #DESCRIPTION Radio met beeld
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3A%2F%2Fwowza-bnr.cdp.triple-it.nl%2Fbnr%2FBNRstudio1:BNR%20Nieuwsradio%20(met%20webcam)
 #DESCRIPTION BNR Nieuwsradio (met webcam)
-#SERVICE 1:64:164:0:0:0:0:0:0:0:
+#SERVICE 1:64:156:0:0:0:0:0:0:0:
 #DESCRIPTION Overige
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fstream.100p.nl%2F100pctnl.mp3:100%25%20NL
 #DESCRIPTION 100% NL
@@ -103,6 +103,8 @@
 #DESCRIPTION BNN FM  +++++++++
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A%2F%2Ficecast-bnr.cdp.triple-it.nl%2Fbnr_mp3_128_03:BNR%20Nieuwsradio%20(alleen%20audio)
 #DESCRIPTION BNR Nieuwsradio (alleen audio)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fcandlelight.live-streams.nl%2Fcandlelight:Candlelight
+#DESCRIPTION Candlelight
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2F8603.live.streamtheworld.com%2FCLASSICFMAAC%3Fstreamtheworld_user%3D1%26nobuf%3D1431600380342:Classic%20FM
 #DESCRIPTION Classic FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fstreams.greenhost.nl%3A8080%2Fgehoordestilte:Concertzender%20De%20Gehoorde%20Stilte
@@ -151,8 +153,16 @@
 #DESCRIPTION Concertzender X-Rated
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fstreams.greenhost.nl%3A8080%2Flive:Concertzender
 #DESCRIPTION Concertzender
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fsc.deep.fm%2Fsd:Deep%20FM
+#DESCRIPTION Deep FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fvip-icecast.538.lw.triple-it.nl%2FWEB07_MP3:Efteling%20Kids%20Radio
 #DESCRIPTION Efteling Kids Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fserver-23.stream-server.nl%3A8306%2F%3Bstream.nsv%26type%3Dmp3:Gooisch%20Music
+#DESCRIPTION Gooisch Music
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fstream.kxclassikx.nl%2F:KXclassics
+#DESCRIPTION KXclassics
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fplay.lxclassics.com%3A4004%2F%3Bstream.nsv%20:LXClassics
+#DESCRIPTION LXClassics
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Ficecast.omroep.nl%3A80%2Fnieuws24-bb-mp3:Nieuws%2024
 #DESCRIPTION Nieuws 24
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Ficecast.omroep.nl%3A80%2Fradio5-nostalgia-mp3:Nostalgia
@@ -187,6 +197,10 @@
 #DESCRIPTION Radio 10 Gold Love songs
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3A%2F%2Fstream.radiocorp.nl%2Fr10_rock_mp3:Radio%2010%20Rock%20Hits
 #DESCRIPTION Radio 10 Rock Hits
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fserver-14.stream-server.nl%3A8030%2F:Radio%20192
+#DESCRIPTION Radio 192
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fserver-25.stream-server.nl%3A8008%2F:Radio%20Extra%20Gold
+#DESCRIPTION Radio Extra Gold
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2F178.19.127.5%3A80:Radio%20NL%20(Ik%20luister%20hollands)
 #DESCRIPTION Radio NL (Ik luister hollands)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3A%2F%2Fserver-07.stream-server.nl%3A8030:Radio%20Veronica192
@@ -207,5 +221,9 @@
 #DESCRIPTION Sky Radio Hits
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Flive.icecast.kpnstreaming.nl%2Fskyradiolive-Lounge.mp3:Sky%20Radio%20Lounge
 #DESCRIPTION Sky Radio Lounge
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Fsoulradio02.live-streams.nl%2FAAC64%3Ftype%3D.flv:Soul%20Radio
+#DESCRIPTION Soul Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2Ficecast.omroep.nl%3A80%2Fradio2-top2000-mp3:Top%202000
 #DESCRIPTION Top 2000
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3A%2F%2F2.trafficstream.nl%2Ftraffic_main.mp3:Traffic%20Radio
+#DESCRIPTION Traffic Radio
