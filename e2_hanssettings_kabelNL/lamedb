@@ -318,9 +318,6 @@ ffff0000:0016:10ef
 ffff0000:0005:10ef
 	c 394000:6875000:2:1:0:0
 /
-ffff0000:081c:0600
-	c 562750:6900000:2:5:0:0
-/
 ffff0000:000d:10ef
 	c 458000:6875000:2:1:0:0
 /
@@ -344,6 +341,9 @@ ffff0000:001e:10ef
 /
 ffff0000:0086:08c9
 	c 586000:6900000:2:3:0:0
+/
+ffff0000:081c:0600
+	c 562750:6900000:2:5:0:0
 /
 eeee0000:08a3:2210
 	t 697999000:0:5:5:3:2:4:4:2:0
@@ -1298,15 +1298,6 @@ p:Ziggo
 4ce3:ffff0000:081b:0600:1:0
 TVM Europe
 p:Ziggo
-4ce5:ffff0000:081b:0600:1:0
-Film1 Comedy & Kids
-p:Ziggo
-4ce6:ffff0000:081b:0600:1:0
-Film1 Premiere
-p:Ziggo,c:050001
-4ce7:ffff0000:081b:0600:1:0
-Film1 Spotlight
-p:Ziggo,c:050001
 4ce8:ffff0000:081b:0600:1:0
 Aljazeera
 p:Ziggo
@@ -1341,7 +1332,7 @@ ac1c:ffff0000:0090:08c9:25:0
 SBS9 HD
 p:CAIW Media,f:0040,c:050001
 4115:ffff0000:081a:0600:1:0
-Code Download HZN Migration
+Code Download HZN
 p:Ziggo
 4116:ffff0000:081a:0600:1:0
 Code Download HZN UID2
@@ -1370,6 +1361,9 @@ p:Ziggo
 44fd:ffff0000:081a:0600:1:0
 CDT app
 p:Ziggo
+4ccd:ffff0000:081a:0600:25:0
+Ziggo Sport HD
+p:Ziggo,f:0040
 4cd1:ffff0000:081a:0600:25:0
 MyZen HD
 p:Ziggo,c:050001
@@ -1615,7 +1609,7 @@ JimJam
 p:Ziggo
 4b2c:ffff0000:0810:0600:1:0
 ONS
-p:Ziggo,c:08fffb
+p:Ziggo
 4b2d:ffff0000:0810:0600:1:0
 690 SID 0x4b2d
 p:,c:090202
@@ -2018,23 +2012,11 @@ p:Ziggo
 3f7e:ffff0000:083c:0600:1:0
 iTV Games 04
 p:Ziggo
-4c9a:ffff0000:083c:0600:1:0
-HBO
-p:Ziggo,c:050001
 3f9b:ffff0000:083c:0600:1:0
 eTV Standard Application 1
 p:Ziggo
-4c9b:ffff0000:083c:0600:1:0
-HBO2
-p:Ziggo,c:050001
 3f9c:ffff0000:083c:0600:1:0
 eTV Standard Application 3
-p:Ziggo
-4c9c:ffff0000:083c:0600:1:0
-HBO3
-p:Ziggo
-4c9d:ffff0000:083c:0600:1:0
-Film1 Action
 p:Ziggo
 3f9e:ffff0000:083c:0600:1:0
 eTV Standard Application 2
@@ -2051,6 +2033,9 @@ p:Ziggo
 3fa0:ffff0000:083c:0600:1:0
 eTV Standard Application 5
 p:Ziggo
+4ca0:ffff0000:083c:0600:1:0
+842 SID 0x4ca0
+p:,f:0040
 3fa1:ffff0000:083c:0600:1:0
 iTV Feature 3
 p:Ziggo
@@ -2450,12 +2435,6 @@ p:Ziggo
 4e68:ffff0000:0804:0600:1:0
 Show TV
 p:Ziggo
-4e69:ffff0000:0804:0600:1:0
-Zenderwijziging
-p:UPC NL
-4e6a:ffff0000:0804:0600:1:0
-Zenderwijziging
-p:UPC NL
 4e5d:ffff0000:0804:0600:25:0
 Canvas HD
 p:UPC NL,c:050001,c:098800
@@ -2467,7 +2446,7 @@ NPO 2
 p:Ziggo
 4a63:ffff0000:0807:0600:1:0
 NPO 3
-p:Ziggo
+p:Ziggo,c:090202
 4a67:ffff0000:0807:0600:1:0
 2M
 p:Ziggo,f:0040
@@ -2490,7 +2469,7 @@ p:Ziggo
 Radio Decibel
 p:Ziggo
 4680:ffff0000:0807:0600:2:0
-SLAM!FM
+SLAM!
 p:Ziggo
 4681:ffff0000:0807:0600:2:0
 Punjabi
@@ -2499,7 +2478,7 @@ p:,f:0008
 Spare TS07
 p:Ziggo
 4a66:ffff0000:0807:0600:25:0
-Nickelodeon HD
+Nickelodeon HD / Spike Channel
 p:Ziggo
 1b62:ffff0000:006b:08c9:1:0
 TLC
@@ -3489,11 +3468,11 @@ p:CAIW Media,f:0040,c:050001
 RTL8 HD
 p:CAIW Media,f:0040,c:050001
 4bcb:ffff0000:0832:0600:1:0
-RTL Lounge
-p:Ziggo
+602 SID 0x4bcb
+p:
 4bcc:ffff0000:0832:0600:1:0
-TVE
-p:Ziggo
+602 SID 0x4bcc
+p:
 4bcd:ffff0000:0832:0600:1:0
 HZN Barker 1
 p:UPC NL
@@ -3501,14 +3480,17 @@ p:UPC NL
 HZN Barker 2
 p:UPC NL
 4bcf:ffff0000:0832:0600:1:0
-Comedy Central Family
-p:Ziggo
+602 SID 0x4bcf
+p:
 4bc9:ffff0000:0832:0600:25:0
 NPO 1 HD
 p:Ziggo,c:050001,c:098800
 4bca:ffff0000:0832:0600:25:0
 NPO 2 HD
 p:Ziggo,c:050001,c:098800
+4bcd:ffff0000:0832:0600:25:0
+NPO 3 HD
+p:Ziggo,c:050001,c:090202
 0bcc:ffff0000:0067:08c9:1:0
 SBS 6
 p:CAIW Media,f:0040
@@ -3557,21 +3539,21 @@ p:CAIW Netwerken,f:0040,c:050001
 76d7:ffff0000:0833:0600:1:0
 Ziggo Live Events FOX Sports
 p:Ziggo
+4bdd:ffff0000:0833:0600:1:0
+610 SID 0x4bdd
+p:
 4bdf:ffff0000:0833:0600:1:0
 FOX Sports 6
 p:Ziggo
 4be1:ffff0000:0833:0600:1:0
-610 SID 0x4be1
-p:,f:0040
+Comedy Central Family
+p:Ziggo
 4be3:ffff0000:0833:0600:1:0
-610 SID 0x4be3
-p:,f:0040
+RTL Lounge
+p:Ziggo
 4be4:ffff0000:0833:0600:1:0
-610 SID 0x4be4
-p:,f:0040
-4bdd:ffff0000:0833:0600:25:0
-NPO 3 HD
-p:Ziggo,c:050001,c:098800
+TVE
+p:Ziggo,c:090202
 4bde:ffff0000:0833:0600:25:0
 RTL 8 HD
 p:Ziggo,c:050001,c:090202
@@ -3770,24 +3752,6 @@ p:Delta,f:0040
 138a:ffff0000:0005:10ef:2:0
 100% NL
 p:Delta,f:0040
-4cfb:ffff0000:081c:0600:1:0
-test
-p:UPC NL,f:0040
-4cf5:ffff0000:081c:0600:25:0
-24Kitchen HD
-p:Ziggo,c:050001
-4cf6:ffff0000:081c:0600:25:0
-Film1 Comedy & Kids HD
-p:Ziggo
-4cf8:ffff0000:081c:0600:25:0
-HBO HD
-p:Ziggo,c:050001
-4cf9:ffff0000:081c:0600:25:0
-HISTORY HD
-p:Ziggo,c:050001,c:090202
-4cfa:ffff0000:081c:0600:25:0
-Nat Geo Wild HD
-p:Ziggo,c:050001,c:090101
 32cf:ffff0000:000d:10ef:2:0
 Nostalgie
 p:Delta,f:0040
@@ -4004,6 +3968,21 @@ p:CAIW Netwerken,f:0040,c:050001
 84ee:ffff0000:0086:08c9:25:0
 RTL5 HD
 p:CAIW Netwerken,f:0040,c:050001
+4cf5:ffff0000:081c:0600:25:0
+24Kitchen HD
+p:Ziggo,c:050001
+4cf6:ffff0000:081c:0600:25:0
+Film1 Comedy & Kids HD
+p:Ziggo
+4cf8:ffff0000:081c:0600:25:0
+HBO HD
+p:Ziggo,c:050001
+4cf9:ffff0000:081c:0600:25:0
+HISTORY HD
+p:Ziggo,c:050001,c:090202
+4cfa:ffff0000:081c:0600:25:0
+Nat Geo Wild HD
+p:Ziggo,c:050001,c:090101
 000b:eeee0000:08a3:2210:1:0
 RTL 4
 p:Digitenne
