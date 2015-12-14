@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:6636:0:0:0:0:0:0:0:
+#SERVICE 1:64:6603:0:0:0:0:0:0:0:
 #DESCRIPTION Publieke zenders
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio1-bb-mp3:NPO Radio 1
 #DESCRIPTION NPO Radio 1
@@ -71,11 +71,11 @@
 #DESCRIPTION NPO Radio 6 Zwarte Lijst
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/nieuws24-bb-mp3:NPO Nieuws 24
 #DESCRIPTION NPO Nieuws 24
-#SERVICE 1:64:6637:0:0:0:0:0:0:0:
+#SERVICE 1:64:6604:0:0:0:0:0:0:0:
 #DESCRIPTION Radio met beeld
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//wowza-bnr.cdp.triple-it.nl/bnr/BNRstudio1:BNR Nieuwsradio (met webcam)
 #DESCRIPTION BNR Nieuwsradio (met webcam)
-#SERVICE 1:64:6638:0:0:0:0:0:0:0:
+#SERVICE 1:64:6605:0:0:0:0:0:0:0:
 #DESCRIPTION Overige
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.100p.nl/100pctnl.mp3:100%25 NL
 #DESCRIPTION 100% NL
@@ -157,6 +157,8 @@
 #DESCRIPTION Efteling Kids Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-23.stream-server.nl%3a8306/;stream.nsv&type=mp3:Gooisch Music
 #DESCRIPTION Gooisch Music
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//highvolume04.streampartner.nl%3a80/grootnieuws_ipad/live.stream:Groot Nieuws Radio
+#DESCRIPTION Groot Nieuws Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.kxclassikx.nl/:KXclassics
 #DESCRIPTION KXclassics
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/nieuws24-bb-mp3:Nieuws 24
@@ -209,6 +211,12 @@
 #DESCRIPTION Radio Veronica Top 1000 Allertijden
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8603.live.streamtheworld.com%3a80/VERONICA_ROCK_SC:Radio Veronica Rock
 #DESCRIPTION Radio Veronica Rock
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/400.m3u8:Radio Veronica WebCam (LQ)
+#DESCRIPTION Radio Veronica WebCam (LQ)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/800.m3u8:Radio Veronica WebCam (MQ)
+#DESCRIPTION Radio Veronica WebCam (MQ)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/1600.m3u8:Radio Veronica WebCam (HQ)
+#DESCRIPTION Radio Veronica WebCam (HQ)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8623.live.streamtheworld.com%3a80/SKYRADIO_SC:Sky Radio
 #DESCRIPTION Sky Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.icecast.kpnstreaming.nl/skyradiolive-SRGSTR06.mp3:Sky Radio '00s Hits
@@ -235,11 +243,11 @@
 #DESCRIPTION Top 2000
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//2.trafficstream.nl/traffic_main.mp3:Traffic Radio
 #DESCRIPTION Traffic Radio
-#SERVICE 1:64:6639:0:0:0:0:0:0:0:
+#SERVICE 1:64:6606:0:0:0:0:0:0:0:
 #DESCRIPTION +++Tweede Kamer plenair+++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.wowza.kpnstreaming.nl/tweedekamerlive/plenairezaal.smil/chunklist_b64000_ao.m3u8:plenaire zaal
 #DESCRIPTION plenaire zaal
-#SERVICE 1:64:6640:0:0:0:0:0:0:0:
+#SERVICE 1:64:6607:0:0:0:0:0:0:0:
 #DESCRIPTION +++Tweede Kamer commissiezalen+++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.wowza.kpnstreaming.nl/tweedekamerlive/thorbeckezaal.smil/chunklist_b64000_ao.m3u8:thorbeckezaal
 #DESCRIPTION thorbeckezaal
@@ -255,9 +263,47 @@
 #DESCRIPTION Suze Groenewegzaal
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.wowza.kpnstreaming.nl/tweedekamerlive/wvstoetwegenzaal.smil/chunklist_b64000_ao.m3u8:Wttewaall van Stoetwegenzaal
 #DESCRIPTION Wttewaall van Stoetwegenzaal
-#SERVICE 1:64:6641:0:0:0:0:0:0:0:
+#SERVICE 1:64:6608:0:0:0:0:0:0:0:
 #DESCRIPTION +++Tweede Kamer incidenteel+++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.wowza.kpnstreaming.nl/tweedekamerlive/evenementenkanaal.smil/chunklist_b64000_ao.m3u8:Evenementenkanaal
 #DESCRIPTION Evenementenkanaal
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.wowza.kpnstreaming.nl/tweedekamerlive/enquetezaal.smil/chunklist_b64000_ao.m3u8:Enquêtezaal
 #DESCRIPTION Enquêtezaal
+#SERVICE 1:64:6609:0:0:0:0:0:0:0:
+#DESCRIPTION +++streams NPO-radio sommige receivers+++
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cmd7f26b0e7f005667f8a4000000.5c83c476c5a4b144.kpnsmoote1d.npostreaming.nl/d/live/npo/visualradio/radio1/radio1.isml/radio1-audio=128000-video=500000.m3u8:NPO Radio1 5K
+#DESCRIPTION NPO Radio1 5K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cmd7f26b0e7f005667f8a4000000.5c83c476c5a4b144.kpnsmoote1d.npostreaming.nl/d/live/npo/visualradio/radio1/radio1.isml/radio1-audio=128000-video=700000.m3u8:NPO Radio1 7K
+#DESCRIPTION NPO Radio1 7K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cmd7f26b0e7f005667f8a4000000.5c83c476c5a4b144.kpnsmoote1d.npostreaming.nl/d/live/npo/visualradio/radio1/radio1.isml/radio1-audio=128000-video=1000000.m3u8:NPO Radio1 10K
+#DESCRIPTION NPO Radio1 10K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cm712243f475005667f41e000000.25fbc82dac1677e8.kpnsmoote2d.npostreaming.nl/d/live/npo/visualradio/radio2/radio2.isml/radio2-audio=128000-video=500000.m3u8:NPO Radio2 5K
+#DESCRIPTION NPO Radio2 5K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cm712243f475005667f41e000000.25fbc82dac1677e8.kpnsmoote2d.npostreaming.nl/d/live/npo/visualradio/radio2/radio2.isml/radio2-audio=128000-video=700000.m3u8:NPO Radio2 7K
+#DESCRIPTION NPO Radio2 7K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cm712243f475005667f41e000000.25fbc82dac1677e8.kpnsmoote2d.npostreaming.nl/d/live/npo/visualradio/radio2/radio2.isml/radio2-audio=128000-video=1000000.m3u8:NPO Radio2 10K
+#DESCRIPTION NPO Radio2 10K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cma4a19c3ab3005667f9a9000000.0a69f901ed736514.kpnsmoote1h.npostreaming.nl/d/live/npo/visualradio/3fm/3fm.isml/3fm-audio=128000-video=500000.m3u8:NPO Radio3 5K
+#DESCRIPTION NPO Radio3 5K
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//l2cma4a19c3ab3005667f9a9000000.0a69f901ed736514.kpnsmoote1h.npostreaming.nl/d/live/npo/visualradio/3fm/3fm.isml/3fm-audio=128000-video=700000.m3u8:NPO Radio3 7K
+#DESCRIPTION NPO Radio3 7K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cma4a19c3ab3005667f9a9000000.0a69f901ed736514.kpnsmoote1h.npostreaming.nl/d/live/npo/visualradio/3fm/3fm.isml/3fm-audio=128000-video=1000000.m3u8:NPO Radio3 10K
+#DESCRIPTION NPO Radio3 10K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cme1ab68324e005667fd2d000000.4b00f75cf9094aae.kpnsmoote2f.npostreaming.nl/d/live/npo/visualradio/radio4/radio4.isml/radio4-audio=128000-video=500000.m3u8:NPO Radio4 5K
+#DESCRIPTION NPO Radio4 5K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cme1ab68324e005667fd2d000000.4b00f75cf9094aae.kpnsmoote2f.npostreaming.nl/d/live/npo/visualradio/radio4/radio4.isml/radio4-audio=128000-video=700000.m3u8:NPO Radio4 7K
+#DESCRIPTION NPO Radio4 7K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cme1ab68324e005667fd2d000000.4b00f75cf9094aae.kpnsmoote2f.npostreaming.nl/d/live/npo/visualradio/radio4/radio4.isml/radio4-audio=128000-video=900000.m3u8:NPO Radio4 9K
+#DESCRIPTION NPO Radio4 9K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cm5e5fde883a005667fe7b000000.1158a60e71ec54d3.kpnsmoote1d.npostreaming.nl/d/live/npo/visualradio/radio6/radio6.isml/radio6-audio=128000-video=500000.m3u8:NPO Radio6 5K
+#DESCRIPTION NPO Radio6 5K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cm5e5fde883a005667fe7b000000.1158a60e71ec54d3.kpnsmoote1d.npostreaming.nl/d/live/npo/visualradio/radio6/radio6.isml/radio6-audio=128000-video=700000.m3u8:NPO Radio6 7K
+#DESCRIPTION NPO Radio6 7K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cm5e5fde883a005667fe7b000000.1158a60e71ec54d3.kpnsmoote1d.npostreaming.nl/d/live/npo/visualradio/radio6/radio6.isml/radio6-audio=128000-video=1000000.m3u8:NPO Radio6 10K
+#DESCRIPTION NPO Radio6 10K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cmb5cb4f5204005667ff44000000.7b2921699e2f2d54.kpnsmoote1c.npostreaming.nl/d/live/npo/visualradio/funx/funx.isml/funx-audio=128000-video=500000.m3u8:NPO FUNX 5K
+#DESCRIPTION NPO FUNX 5K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cmb5cb4f5204005667ff44000000.7b2921699e2f2d54.kpnsmoote1c.npostreaming.nl/d/live/npo/visualradio/funx/funx.isml/funx-audio=128000-video=700000.m3u8:NPO FUNX 7K
+#DESCRIPTION NPO FUNX 7K
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//l2cmb5cb4f5204005667ff44000000.7b2921699e2f2d54.kpnsmoote1c.npostreaming.nl/d/live/npo/visualradio/funx/funx.isml/funx-audio=128000-video=1000000.m3u8:NPO FUNX 10K 
+#DESCRIPTION NPO FUNX 10K 

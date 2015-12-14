@@ -1,6 +1,10 @@
 #NAME Stream NL regionaal
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//stream.rtvdrenthe.nl/tv/tvstream1:DR%3a RTV Drenthe
 #DESCRIPTION DR: RTV Drenthe
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdn25.streampartner.nl%3a1935/rtvemmen_tv/livestream/playlist.m3u8:DR%3a RTV Emmen
+#DESCRIPTION DR: RTV Emmen
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//cdn25.streampartner.nl%3a1935/rtvemmen_cam/livestream:DR%3a RTV Emmen webcam radio
+#DESCRIPTION DR: RTV Emmen webcam radio
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//edge02.streamgate.nl%3a80/live/omroepflevoland/mp4%3alivestream1.mp4:FL%3a Omroep Flevoland
 #DESCRIPTION FL: Omroep Flevoland
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream3.paystream.tv/live/test/playlist.m3u8:FR%3a GPTV
@@ -39,6 +43,8 @@
 #DESCRIPTION Lim: 3ML (Heythuysen)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//flash1.streamone.nl/livestream playpath=2s3K8as2bC swfUrl=http%3a//content.streamone.nl/flashplayer/mediaplayer.swf pageUrl=http%3a//www.loo-tv.nl/livestream:Lim%3a LOO-tv
 #DESCRIPTION Lim: LOO-tv
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//iphone-streaming.ustream.tv/ustreamVideo/5310948/streams/live/playlist.m3u8:Lim%3a Maasland Radio
+#DESCRIPTION Lim: Maasland Radio
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/u2SioS02Af77:Lim%3a MLATV (Ospel)
 #DESCRIPTION Lim: MLATV (Ospel)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/Te2hGwCkkiOp:Lim%3a Omroep Venlo
@@ -63,10 +69,16 @@
 #DESCRIPTION NB: Omroep Brabant Radio - Webcam
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/s4fa9kmgzp:NB%3a ORTS TV Oosterhout
 #DESCRIPTION NB: ORTS TV Oosterhout
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/h73LV1zXh4:NB%3a RTV SLOS (Steenbergen)
+#DESCRIPTION NB: RTV SLOS (Steenbergen)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//lb-at5-live.streamgate.nl/at5/live/playlist.m3u8:NH%3a AT5
 #DESCRIPTION NH: AT5
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//iphone-streaming.ustream.tv/ustreamVideo/16115481/streams/live/playlist.m3u8:NH%3a Bergen
 #DESCRIPTION NH: Bergen
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls1.heerhugowaardalife.nl/hhw-alife/kanaal1.m3u8:NH%3a Heerhugowaard A Life TV (LQ)
+#DESCRIPTION NH: Heerhugowaard A Life TV (LQ)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls1.heerhugowaardalife.nl/hhw-alife/kanaal2.m3u8:NH%3a Heerhugowaard A Life (HQ)
+#DESCRIPTION NH: Heerhugowaard A Life (HQ)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/fDa32BaPi9r3:NH%3a LOOW Enkhuizen
 #DESCRIPTION NH: LOOW Enkhuizen
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/jD29DqaZA21P:NH%3a Omroep PIM (Westland)
@@ -91,8 +103,8 @@
 #DESCRIPTION OV: NOOS (Hardenberg)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//145.58.83.153/tv/smil%3alive.smil/playlist.m3u8:OV%3a RTV OOST
 #DESCRIPTION OV: RTV OOST
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/h73LV1zXh4:OV%3a RTV SLOS (Steenwijkerland)
-#DESCRIPTION OV: RTV SLOS (Steenwijkerland)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:mms%3a//wmlive.dotpoint.nl/rtvslos:OV%3a RTV SLOS tv (Steenwijkerland)
+#DESCRIPTION OV: RTV SLOS tv (Steenwijkerland)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//mediaserv19.video-streams.nl%3a80/slotstadrtv/slotstadrtv:UT%3a Slotstad RTV (Zeist)
 #DESCRIPTION UT: Slotstad RTV (Zeist)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//cdn15.streampartner.nl%3a80/streektv/livestream:UT%3a STREEK TV
@@ -105,12 +117,6 @@
 #DESCRIPTION ZH: LOOK TV (Schiedam)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//fm-live.prostream.nl/merwertv/live:ZH%3a Merwe RTV Sliedrecht
 #DESCRIPTION ZH: Merwe RTV Sliedrecht
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//midvliet.com%3a1234/:ZH%3a Midvliet TV
-#DESCRIPTION ZH: Midvliet TV
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:mms%3a//midvliet.com%3a1234:ZH%3a Midvliet TV
-#DESCRIPTION ZH: Midvliet TV
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdn.stream.bbvms.com/live/omroepwest/tv-high/playlist.m3u8:ZH%3a Omroep West (HQ)
-#DESCRIPTION ZH: Omroep West (HQ)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/r2Dg7AiHkp:ZH%3a RTV Dordrecht
 #DESCRIPTION ZH: RTV Dordrecht
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//live.streamone.nl/livestream/j8SD2tzAlF:ZH%3a RTV Ridderkerk
