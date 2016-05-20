@@ -1,17 +1,27 @@
 #NAME Stream NL nationaal 2 
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//538hls.lswcdn.triple-it.nl/content/538tv/538tv_1.m3u8: 538 TV.NL
-#DESCRIPTION  538 TV.NL
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//538hls.lswcdn.triple-it.nl/content/538tv/538tv.m3u8:538 TV
+#DESCRIPTION 538 TV
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//538hls.lswcdn.triple-it.nl/content/538webcam/538webcam.m3u8:538 webcam
+#DESCRIPTION 538 webcam
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//wowza-bnr.cdp.triple-it.nl/bnr/BNRstudio1:BNR Nieuwsradio (met webcam)
 #DESCRIPTION BNR Nieuwsradio (met webcam)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//wowza-bnr.cdp.triple-it.nl/bnr/ playpath=BNRstudio1 swfUrl=http%3a//www.bnr.nl/template/framework/jwplayer/jwplayer.flash.swf pageUrl=http%3a//www.bnr.nl/?service=player&type=liveradio:BNR Nieuwsradio Studiocam
 #DESCRIPTION BNR Nieuwsradio Studiocam
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls2.slamfm.nl/content/slamtv/slamtv_2.m3u8:SLAM TV
 #DESCRIPTION SLAM TV
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hls2.slamfm.nl/content/slamtv/slamtv.m3u8:Slam TV
+#DESCRIPTION Slam TV
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//hls2.slamfm.nl/content/slamwebcam/slamwebcam.m3u8:Slam webcam
+#DESCRIPTION Slam webcam
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//server-26.stream-server.nl%3a1935/Norderney192/Norderney192:Norderney 192 video stream
 #DESCRIPTION Norderney 192 video stream
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//highvolume02.streampartner.nl%3a1935/vleugels/livestream:Xite TV
 #DESCRIPTION Xite TV
-#SERVICE 1:64:5799:0:0:0:0:0:0:0:
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//highvolume03.streampartner.nl%3a1935/vleugels_hd2/livestream:Xite.nl
+#DESCRIPTION Xite.nl
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//highvolume03.streampartner.nl%3a1935/vleugels_hd4/livestream:XITE
+#DESCRIPTION XITE
+#SERVICE 1:64:5788:0:0:0:0:0:0:0:
 #DESCRIPTION +++NPO, soms haperende beelden 20150907+++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//l2cm233116cc800055e9cb47000000.cb4668514487d8d4.kpnsmoote1c.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8:NPO1
 #DESCRIPTION NPO1
