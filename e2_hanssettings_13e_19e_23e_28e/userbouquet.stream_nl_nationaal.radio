@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:516:0:0:0:0:0:0:0:
+#SERVICE 1:64:1fc:0:0:0:0:0:0:0:
 #DESCRIPTION Publieke zenders
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio1-bb-mp3:NPO Radio 1
 #DESCRIPTION NPO Radio 1
@@ -17,6 +17,8 @@
 #DESCRIPTION NPO 3FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2hss.omroep.nl%3a80/3fm-alternative-mp3:NPO 3FM Alternative
 #DESCRIPTION NPO 3FM Alternative
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/3fm-serioustalent-mp3:NPO 3FM KXradio
+#DESCRIPTION NPO 3FM KXradio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2iss.omroep.nl%3a80/3fm-live-mp3:NPO 3FM Live
 #DESCRIPTION NPO 3FM Live
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2ess.omroep.nl%3a80/3fm-serioustalent-mp3:NPO 3FM Serious Talent
@@ -39,7 +41,7 @@
 #DESCRIPTION NPO Radio 6
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio6-bb-mp3:NPO Radio 6 Soul & Jazz
 #DESCRIPTION NPO Radio 6 Soul & Jazz
-#SERVICE 1:64:517:0:0:0:0:0:0:0:
+#SERVICE 1:64:1fd:0:0:0:0:0:0:0:
 #DESCRIPTION Radio met beeld
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//bnr-cache.cdp.triple-it.nl/studio/1465914783-fast-1240-720-900000-index.m3u8:BNR Nieuwsradio high q.
 #DESCRIPTION BNR Nieuwsradio high q.
@@ -47,7 +49,15 @@
 #DESCRIPTION BNR Nieuwsradio medium q.
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//bnr-cache.cdp.triple-it.nl/studio/1465914783-fast-480-272-400000-index.m3u8:BNR Nieuwsradio low q.
 #DESCRIPTION BNR Nieuwsradio low q.
-#SERVICE 1:64:518:0:0:0:0:0:0:0:
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//skyradio.rr.kpnstreaming.nl/b2b/live/skyradio/veronica/index.m3u8:Radio Veronica webcam
+#DESCRIPTION Radio Veronica webcam
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/400.m3u8:Radio Veronica WebCam (LQ)
+#DESCRIPTION Radio Veronica WebCam (LQ)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/800.m3u8:Radio Veronica WebCam (MQ)
+#DESCRIPTION Radio Veronica WebCam (MQ)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/1600.m3u8:Radio Veronica WebCam (HQ)
+#DESCRIPTION Radio Veronica WebCam (HQ)
+#SERVICE 1:64:1fe:0:0:0:0:0:0:0:
 #DESCRIPTION Overige
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.100p.nl/100pctnl.mp3:100%25 NL
 #DESCRIPTION 100% NL
@@ -61,12 +71,20 @@
 #DESCRIPTION 100% NL Groots met een zachte G
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//2.trafficstream.nl/allsports_main.mp3:Allsportsradio
 #DESCRIPTION Allsportsradio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//91.221.151.155/;:Arrow Classic Rock
+#DESCRIPTION Arrow Classic Rock
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//icecast-bnr.cdp.triple-it.nl/bnr_mp3_128_03:BNR Nieuwsradio (alleen audio)
 #DESCRIPTION BNR Nieuwsradio (alleen audio)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//candlelight.live-streams.nl/candlelight:Candlelight
 #DESCRIPTION Candlelight
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8603.live.streamtheworld.com/CLASSICFMAAC?streamtheworld_user=1&nobuf=1431600380342:Classic FM
 #DESCRIPTION Classic FM
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8563.live.streamtheworld.com/SRGSTR25.mp3?tdsdk=js-2.8&pname=TdPlayerApi&pversion=2.8&sbmid=68b64143-8d63-4cf8-a24d-bb77bce4c726:ClassicFM Chill out
+#DESCRIPTION ClassicFM Chill out
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8603.live.streamtheworld.com/SRGSTR27.mp3?tdsdk=js-2.8&pname=TdPlayerApi&pversion=2.8&sbmid=ccbbc7fb-7c0e-4979-c282-36631aa2e08a:ClassicFm Opera
+#DESCRIPTION ClassicFm Opera
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8633.live.streamtheworld.com/SRGSTR26.mp3?tdsdk=js-2.8&pname=TdPlayerApi&pversion=2.8&sbmid=af2a6392-ca76-4258-8fd2-f46eab8d9f92:ClassicFM Soundtrack
+#DESCRIPTION ClassicFM Soundtrack
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/gehoordestilte:Concertzender De Gehoorde Stilte
 #DESCRIPTION Concertzender De Gehoorde Stilte
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/film:Concertzender Filmmuziek
@@ -115,6 +133,10 @@
 #DESCRIPTION Deep FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//vip-icecast.538.lw.triple-it.nl/WEB07_MP3:Efteling Kids Radio
 #DESCRIPTION Efteling Kids Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//178.19.127.9/:FREEZ FM POP & ROCK
+#DESCRIPTION FREEZ FM POP & ROCK
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:rtmp%3a//streams.freshfmonline.com/shoutcast/FreshFMAACHighT.stream:Fresh FM
+#DESCRIPTION Fresh FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/funx-arab-bb-mp3:FUN X Arab
 #DESCRIPTION FUN X Arab
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/funx-dance-bb-mp3:FUN X Dance
@@ -137,18 +159,26 @@
 #DESCRIPTION FUN X Rotterdam
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/funx-utrecht-bb-mp3:FUN X Utrecht
 #DESCRIPTION FUN X Utrecht
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//highvolume04.streampartner.nl/grootnieuws_ipad/live.stream/chunklist_w1189577065.m3u8:Groot nieuws radio
+#DESCRIPTION Groot nieuws radio
+#SERVICE 4097:0:0:0:0:0:2:0:0:0:http%3a//178.19.127.6/:Joy Radio
+#DESCRIPTION Joy Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.kxclassikx.nl/:KXclassics
 #DESCRIPTION KXclassics
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//2.trafficstream.nl/proxy/business_main?mp=/stream:New Business Radio
 #DESCRIPTION New Business Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//178.20.171.156/;stream.mp3:Olympia radio
 #DESCRIPTION Olympia radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-43.stream-server.nl/;:Puur NL
+#DESCRIPTION Puur NL
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_32.aac:Q-Music
 #DESCRIPTION Q-Music
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_fouteuur_32.aac:Q-Music - Het Foute Uur Non-Sto
 #DESCRIPTION Q-Music - Het Foute Uur Non-Sto
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_32.aac?rnd=3885139600267132:Q-Music - Hot Now
 #DESCRIPTION Q-Music - Hot Now
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_qlmb_32.aac?rnd=5831675429940277:Qmusic Limburg
+#DESCRIPTION Qmusic Limburg
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_nonstop_32.aac:Q-Music - Non-Stop
 #DESCRIPTION Q-Music - Non-Stop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_classics_32.aac?rnd=3215139144578989:Q-Music - Summer
@@ -181,12 +211,20 @@
 #DESCRIPTION Radio 40UP
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-14.stream-server.nl%3a8030/:Radio 192
 #DESCRIPTION Radio 192
+#SERVICE 4097:0:0:0:0:0:2:0:0:0:http%3a//server-33.stream-server.nl/;:Radio 8FM
+#DESCRIPTION Radio 8FM
+#SERVICE 4097:0:0:0:0:0:2:0:0:0:http%3a//radiocontinu.ic-stream.nl/:Radio Continu 
+#DESCRIPTION Radio Continu 
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream-nederland.decibel.nl/;:Radio Decibel Nederland
+#DESCRIPTION Radio Decibel Nederland
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.extragold.nl%3a8080:Radio Extra Gold
 #DESCRIPTION Radio Extra Gold
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.omroepstreaming.nl%3a8784/:Radio JND
 #DESCRIPTION Radio JND
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//87.233.180.73%3a8000/;stream.mp3:Radio Maria NL
 #DESCRIPTION Radio Maria NL
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//87.118.64.218%3a8010/;mp3:Radio Mi Amigo International
+#DESCRIPTION Radio Mi Amigo International
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//178.19.127.5%3a80:Radio NL (Ik luister hollands)
 #DESCRIPTION Radio NL (Ik luister hollands)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8543.live.streamtheworld.com%3a80/VERONICA_SC:Radio Veronica
@@ -199,14 +237,8 @@
 #DESCRIPTION Radio Veronica Rock
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8563.live.streamtheworld.com/SRGSTR18.mp3?tdsdk=js-2.6&pname=TdPlayerApi&pversion=2.6&banners=:Radio Veronica Wave Radio
 #DESCRIPTION Radio Veronica Wave Radio
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//skyradio.rr.kpnstreaming.nl/b2b/live/skyradio/veronica/index.m3u8:Radio Veronica webcam
-#DESCRIPTION Radio Veronica webcam
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/400.m3u8:Radio Veronica WebCam (LQ)
-#DESCRIPTION Radio Veronica WebCam (LQ)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/800.m3u8:Radio Veronica WebCam (MQ)
-#DESCRIPTION Radio Veronica WebCam (MQ)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/1600.m3u8:Radio Veronica WebCam (HQ)
-#DESCRIPTION Radio Veronica WebCam (HQ)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.stream.delivery/simonefm:Simone FM  Hits & Classics
+#DESCRIPTION Simone FM  Hits & Classics
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//8623.live.streamtheworld.com%3a80/SKYRADIO_SC:Sky Radio
 #DESCRIPTION Sky Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.icecast.kpnstreaming.nl/skyradiolive-SRGSTR06.mp3:Sky Radio '00s Hits
@@ -229,5 +261,7 @@
 #DESCRIPTION Sky Radio Summerhits
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//soulradio02.live-streams.nl/AAC64?type=.flv:Soul Radio
 #DESCRIPTION Soul Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream02.sublimefm.nl/SublimeFM_mp3:Sublime FM
+#DESCRIPTION Sublime FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//2.trafficstream.nl/traffic_main.mp3:Traffic Radio
 #DESCRIPTION Traffic Radio
