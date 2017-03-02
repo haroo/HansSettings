@@ -1,13 +1,19 @@
 #NAME Stream webcams NL
-#SERVICE 1:64:4c:0:0:0:0:0:0:0:
+#SERVICE 1:64:4d:0:0:0:0:0:0:0:
 #DESCRIPTION --Amsterdam--
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//video2.earthcam.com/fecnetwork/4098.flv.flv pageUrl=http%3a//www.earthcam.com swfUrl=http%3a//www.earthcam.com/swf/cam_player_v2/ecnPlayer.swf?20120504_a live=1:Amsterdam Netherlands HD
 #DESCRIPTION Amsterdam Netherlands HD
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserver2.dyndns-remote.com%3a1935/live/amsterdam3.stream/&amp;mp4%3aplaylist.m3u8:Amsterdam - Het IJ (richting CS)
+#DESCRIPTION Amsterdam - Het IJ (richting CS)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserver2.dyndns-remote.com%3a1935/live/amsterdam1.stream/&mp4%3aplaylist.m3u8:Amsterdam - Het IJ (oost)
+#DESCRIPTION Amsterdam - Het IJ (oost)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserver2.dyndns-remote.com%3a1935/live/amsterdam2.stream/&amp;mp4%3aplaylist.m3u8:Amsterdam - Het IJ (west)
+#DESCRIPTION Amsterdam - Het IJ (west)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//srv13.arkasis.nl%3a/242/default.stream:Amsterdam - Passenger Terminal
 #DESCRIPTION Amsterdam - Passenger Terminal
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//srv13.arkasis.nl%3a80/480/default.stream:Amsterdam - Port of Amsterdam
 #DESCRIPTION Amsterdam - Port of Amsterdam
-#SERVICE 1:64:4d:0:0:0:0:0:0:0:
+#SERVICE 1:64:4e:0:0:0:0:0:0:0:
 #DESCRIPTION --Eindhoven--
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming.onsplatform.tv/rtplive/18sp.stream:Eindhoven - Centrum%3a 18 Septemberplein
 #DESCRIPTION Eindhoven - Centrum: 18 Septemberplein
@@ -19,7 +25,7 @@
 #DESCRIPTION Eindhoven - Milieustraat Gabriël Metsulaan
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming.onsplatform.tv/rtplive/cureldst.stream:Eindhoven - Milieustraat Lodewijkstraat
 #DESCRIPTION Eindhoven - Milieustraat Lodewijkstraat
-#SERVICE 1:64:4e:0:0:0:0:0:0:0:
+#SERVICE 1:64:4f:0:0:0:0:0:0:0:
 #DESCRIPTION --Rotterdam--
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming2.camvista.com%3a1935/rtplive/paulmartens101453.stream/playlist.m3u8:Rotterdam - Blaak
 #DESCRIPTION Rotterdam - Blaak
@@ -43,16 +49,22 @@
 #DESCRIPTION Rotterdam - Erasmusbrug Maasoever
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming2.camvista.com%3a1935/rtplive/paulmartens101034.stream:Rotterdam - Erasmusbrug Maasoever
 #DESCRIPTION Rotterdam - Erasmusbrug Maasoever
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming3.camvista.com%3a1935/encoder/paulmartens101650.stream/chunklist_w237114347.m3u8:Rotterdam - Hefbrug
+#DESCRIPTION Rotterdam - Hefbrug
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//565c3c746b763.streamlock.net/live/rotterdam1.stream/playlist.m3u8:Rotterdam - Holland Americalijn
+#DESCRIPTION Rotterdam - Holland Americalijn
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming2.camvista.com%3a1935/rtplive/paulmartens100930.stream/playlist.m3u8:Rotterdam - Waterplein Benthemplein
 #DESCRIPTION Rotterdam - Waterplein Benthemplein
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming2.camvista.com%3a1935/rtplive/paulmartens100930.stream:Rotterdam - Waterplein Benthemplein
 #DESCRIPTION Rotterdam - Waterplein Benthemplein
-#SERVICE 1:64:4f:0:0:0:0:0:0:0:
+#SERVICE 1:64:50:0:0:0:0:0:0:0:
 #DESCRIPTION --overige steden NL--
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming3.webcam.nl/flevoland3/flevoland3.stream/playlist.m3u8:Almere Stad (soms)
 #DESCRIPTION Almere Stad (soms)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:rtsp%3a//streaming3.webcam.nl%3a80/n224/n224.stream:Arnhem Papendal
 #DESCRIPTION Arnhem Papendal
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//webcamserverdh.dyndns-remote.com%3a1935/live/denoever.stream/&mp4%3aplaylist.m3u8:Den Oever - haven
+#DESCRIPTION Den Oever - haven
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/flevoland/flevoland.stream swfUrl=http%3a//hdtv.webcam.nl/flevoland/player.swf pageUrl=http%3a//hdtv.webcam.nl/flevoland/:Dronten - LIVE camera in Flevoland
 #DESCRIPTION Dronten - LIVE camera in Flevoland
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/vencogroep/vencogroep.stream swfUrl=http%3a//hdtv.webcam.nl/vencogroep/player.swf pageUrl=http%3a//hdtv.webcam.nl/vencogroep/:Eersel - LIVE beelden van de Rondeel kippenstal
@@ -63,20 +75,24 @@
 #DESCRIPTION Emmeloord
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/flevoweer/flevoweer.stream swfUrl=http%3a//hdtv.webcam.nl/flevoweer/player.swf pageUrl=http%3a//hdtv.webcam.nl/flevoweer/:Flevoland - LIVE camera Flevoland
 #DESCRIPTION Flevoland - LIVE camera Flevoland
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamservervlie.dyndns-remote.com%3a1935/live/galamadammen.stream/&mp4%3aplaylist.m3u8:Friese meren - Galamadammen
+#DESCRIPTION Friese meren - Galamadammen
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamservervlie.dyndns-remote.com%3a1935/live/oudeschouw.stream/&mp4%3aplaylist.m3u8:Friese meren - Oude Schouw
+#DESCRIPTION Friese meren - Oude Schouw
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamservervlie.dyndns-remote.com%3a1935/live/woudfennen.stream/&mp4%3aplaylist.m3u8:Friese meren - Woudfennen
+#DESCRIPTION Friese meren - Woudfennen
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/genemuiden/genemuiden.stream swfUrl=http%3a//hdtv.webcam.nl/genemuiden/player.swf pageUrl=http%3a//hdtv.webcam.nl/genemuiden/:Genemuiden - havenplein Genemuiden
 #DESCRIPTION Genemuiden - havenplein Genemuiden
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/jancodejong/jancodejong.stream swfUrl=http%3a//hdtv.webcam.nl/jancodejong/player.swf pageUrl=http%3a//hdtv.webcam.nl/jancodejong/:Gorredijk - showroom van Janco de Jong
 #DESCRIPTION Gorredijk - showroom van Janco de Jong
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/n794b/n794b.stream swfUrl=http%3a//webcam.prvgld.nl/site/player.swf pageUrl=http%3a//webcam.prvgld.nl/site/n794b.html:Heerde - traffic cam op het Transferium
 #DESCRIPTION Heerde - traffic cam op het Transferium
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming4.webcam.nl%3a1935/ijmuiden01/ijmuiden01.stream:IJmuiden Marina seaport
-#DESCRIPTION IJmuiden Marina seaport
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//srv13.arkasis.nl%3a/566/default.stream:IJmuiden zeesluis
-#DESCRIPTION IJmuiden zeesluis
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/n346/n346.stream swfUrl=http%3a//webcam.prvgld.nl/site/player.swf pageUrl=http%3a//webcam.prvgld.nl/site/n346.html:Lochem - LIVE beeld van de N346 verkeerscamera
 #DESCRIPTION Lochem - LIVE beeld van de N346 verkeerscamera
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/geldersepoort/geldersepoort.stream swfUrl=http%3a//hdtv.webcam.nl/geldersepoort/player.swf pageUrl=http%3a//hdtv.webcam.nl/geldersepoort/:Millingen aan de Rijn - vanaf de Gelderse Poort
 #DESCRIPTION Millingen aan de Rijn - vanaf de Gelderse Poort
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserverdh.dyndns-remote.com%3a1935/live/marina.stream/&mp4%3aplaylist.m3u8:Monnickendam - Haven
+#DESCRIPTION Monnickendam - Haven
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//88.159.1.72%3a1935/lon/De_koppelaar.stream_720p:Nuenen - De Koppelaar
 #DESCRIPTION Nuenen - De Koppelaar
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//88.159.1.72%3a1935/lon/De_koppelaar.stream_720p/playlist.m3u8:Nuenen - De Koppelaar
@@ -93,18 +109,30 @@
 #DESCRIPTION Sittard - Markt
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/flevoland2/flevoland2.stream swfUrl=http%3a//hdtv.webcam.nl/flevoland2/player.swf pageUrl=http%3a//hdtv.webcam.nl/flevoland2/:Urk - LIVE camera aan de haven in Urk
 #DESCRIPTION Urk - LIVE camera aan de haven in Urk
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserverdh.dyndns-remote.com%3a1935/live/workum-haven.stream/&mp4%3aplaylist.m3u8:Workum - Panorama polder
+#DESCRIPTION Workum - Panorama polder
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/nprc/nprc.stream swfUrl=http%3a//hdtv.webcam.nl/vaart/flash/player.swf pageUrl=http%3a//hdtv.webcam.nl/vaart/flash/:Zwijndrecht - LIVE camera vanaf het NPRC gebouw
 #DESCRIPTION Zwijndrecht - LIVE camera vanaf het NPRC gebouw
-#SERVICE 1:64:50:0:0:0:0:0:0:0:
+#SERVICE 1:64:51:0:0:0:0:0:0:0:
 #DESCRIPTION -- LiveWebcams kust/strand --
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/vvv-ameland/vvv-ameland.stream swfUrl=http%3a//hdtv.webcam.nl/vvv-ameland/player.swf pageUrl=http%3a//www.vvvameland.nl/webcam-vvv-ameland/webcam-1:Ameland - LIVE camera kijkt richting de veerboot
 #DESCRIPTION Ameland - LIVE camera kijkt richting de veerboot
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/ameland/ameland.stream swfUrl=http%3a//hdtv.webcam.nl/website/page1/page7/player.swf pageUrl=http%3a//hdtv.webcam.nl/website/page1/page7/live_ameland_webcam_II.html:Ameland - LIVE camera op het strand
 #DESCRIPTION Ameland - LIVE camera op het strand
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//wowza01.crossmediaventures.com/beachcam/beachcam.smil/playlist.m3u8:Bloemendaal - Reddingsbrigade
+#DESCRIPTION Bloemendaal - Reddingsbrigade
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming4.webcam.nl/deining/deining.stream/playlist.m3u8:Castricum - De Deining
+#DESCRIPTION Castricum - De Deining
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//mediaserv20.live-streams.nl%3a80/beachclubroyal playpath=beachclubroyal.stream swfUrl=http%3a//www.video-streams.nl/flow/flowplayer-3.2.11.swf pageUrl=http%3a//gobefore.me/cams/beach_club_royal/:Hoek van Holland - Beach Club Royal - Zuid-Holland
 #DESCRIPTION Hoek van Holland - Beach Club Royal - Zuid-Holland
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/hoekvanholland/hoekvanholland.stream swfUrl=http%3a//hdtv.webcam.nl/hoekvanholland/player.swf pageUrl=http%3a//hdtv.webcam.nl/hoekvanholland/:Hoek van Holland - LIVE camera bij Dechi Beach
 #DESCRIPTION Hoek van Holland - LIVE camera bij Dechi Beach
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming4.webcam.nl%3a1935/ijmuiden01/ijmuiden01.stream:IJmuiden Marina seaport
+#DESCRIPTION IJmuiden Marina seaport
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//srv13.arkasis.nl%3a/566/default.stream:IJmuiden zeesluis
+#DESCRIPTION IJmuiden zeesluis
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//565c3c746b763.streamlock.net/live/lauwersoog-haven.stream/playlist.m3u8:Lauwersoog - havenmond
+#DESCRIPTION Lauwersoog - havenmond
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live.streamink.nl%3a80/live/sys8.stream/.m3u8:Scheveningen Aloha surf
 #DESCRIPTION Scheveningen Aloha surf
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live.streamink.nl%3a80/live/sys1.stream/.m3u8:Scheveningen Boulevard Webcam
@@ -133,15 +161,23 @@
 #DESCRIPTION Terschelling - Veerkade
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//565c3c746b763.streamlock.net/live/VVV_Terschelling.stream/chunklist.m3u8:Terschelling - VVV Terschelling
 #DESCRIPTION Terschelling - VVV Terschelling
-#SERVICE 1:64:51:0:0:0:0:0:0:0:
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserverro.dyndns-remote.com%3a1935/live/vlissingen.stream/&mp4%3aplaylist.m3u8:Vlissingen - Strand
+#DESCRIPTION Vlissingen - Strand
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//aloha.streamink.nl/aloha/aloha.stream/playlist.m3u8:Wijk aan Zee - Aloha Beach
+#DESCRIPTION Wijk aan Zee - Aloha Beach
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream1.streamink.nl%3a80/timboektoe/tim01.stream/playlist.m3u8:Wijk aan Zee - Timboektoe
+#DESCRIPTION Wijk aan Zee - Timboektoe
+#SERVICE 1:64:52:0:0:0:0:0:0:0:
 #DESCRIPTION -- webcams vliegvelden--
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming4.webcam.nl%3a1935/ehhv/ehhv.stream:Hilversum Vliegveld
+#DESCRIPTION Hilversum Vliegveld
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming4.webcam.nl/ehhv/ehhv.stream/playlist.m3u8:Hilversum Vliegveld
 #DESCRIPTION Hilversum Vliegveld
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserverdh.dyndns-remote.com%3a1935/live/ehtx.stream/&mp4%3aplaylist.m3u8:Texel airport 1
 #DESCRIPTION Texel airport 1
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webcamserverdh.dyndns-remote.com%3a1935/live/ehtx2.stream/&mp4%3aplaylist.m3u8:Texel airport 2
 #DESCRIPTION Texel airport 2
-#SERVICE 1:64:52:0:0:0:0:0:0:0:
+#SERVICE 1:64:53:0:0:0:0:0:0:0:
 #DESCRIPTION -- LiveWebcam Dierenpark --
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming3.webcam.nl%3a1935/amersfoort1/amersfoort1.stream:Amersfoort Dierenpark 1
 #DESCRIPTION Amersfoort Dierenpark 1
@@ -153,7 +189,7 @@
 #DESCRIPTION Amersfoort - olifanten in Dierenpark Amersfoort(2)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/amersfoort4/amersfoort4.stream swfUrl=http%3a//hdtv.webcam.nl/amersfoort/cam4/player.swf pageUrl=http%3a//hdtv.webcam.nl/amersfoort/cam4/:Amersfoort - olifanten in Dierenpark Amersfoort(4)
 #DESCRIPTION Amersfoort - olifanten in Dierenpark Amersfoort(4)
-#SERVICE 1:64:53:0:0:0:0:0:0:0:
+#SERVICE 1:64:54:0:0:0:0:0:0:0:
 #DESCRIPTION -- LiveWebcam Bouw --
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/almelo/almelo.stream swfUrl=http%3a//bouw.webcam.nl/almelo/player.swf pageUrl=http%3a//bouw.webcam.nl/almelo/:Almelo - bouw stadhuis
 #DESCRIPTION Almelo - bouw stadhuis
@@ -163,7 +199,7 @@
 #DESCRIPTION Nijmegen Waaloversteek
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/venlo/venlo.stream swfUrl=http%3a//hdtv.webcam.nl/venlo/player.swf pageUrl=http%3a//hdtv.webcam.nl/venlo/:Venlo - LIVE beelden bij Smitma BV
 #DESCRIPTION Venlo - LIVE beelden bij Smitma BV
-#SERVICE 1:64:54:0:0:0:0:0:0:0:
+#SERVICE 1:64:55:0:0:0:0:0:0:0:
 #DESCRIPTION +++webcam verkeerspunten+++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//stream.vid.nl%3a1935/rtplive/IB_14.stream:A2/A9 Holendrecht
 #DESCRIPTION A2/A9 Holendrecht
@@ -221,6 +257,8 @@
 #DESCRIPTION Nijkerk - LIVE beeld van de N301 verkeerscamera
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/n224/n224.stream swfUrl=http%3a//webcam.prvgld.nl/site/player.swf pageUrl=http%3a//webcam.prvgld.nl/site/n224.html:Papendal - LIVE beeld van de N224 verkeerscamera
 #DESCRIPTION Papendal - LIVE beeld van de N224 verkeerscamera
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//streaming4.webcam.nl%3a1935/tilburg02/tilburg02.stream:Tilburg - Kempenbaan
+#DESCRIPTION Tilburg - Kempenbaan
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/n322/n322.stream swfUrl=http%3a//webcam.prvgld.nl/site/player.swf pageUrl=http%3a//webcam.prvgld.nl/site/n322.html:Zaltbommel - LIVE beeld van de N322 verkeerscamera
 #DESCRIPTION Zaltbommel - LIVE beeld van de N322 verkeerscamera
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/n314/n314.stream swfUrl=http%3a//webcam.prvgld.nl/site/player.swf pageUrl=http%3a//webcam.prvgld.nl/site/n314.html:Zutphen - LIVE beeld van de N314 verkeerscamera
@@ -229,7 +267,7 @@
 #DESCRIPTION Zutphen - LIVE beeld van de N348 verkeerscamera(2)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//streaming3.webcam.nl/n348g/n348g.stream swfUrl=http%3a//webcam.prvgld.nl/site/player.swf pageUrl=http%3a//webcam.prvgld.nl/site/n348g.html:Zutphen - LIVE beeld van de N348 verkeerscamera(7)
 #DESCRIPTION Zutphen - LIVE beeld van de N348 verkeerscamera(7)
-#SERVICE 1:64:55:0:0:0:0:0:0:0:
+#SERVICE 1:64:56:0:0:0:0:0:0:0:
 #DESCRIPTION +++radio webcams+++
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//538hls.lswcdn.triple-it.nl/content/538webcam/538webcam.m3u8:538 webcam
 #DESCRIPTION 538 webcam
@@ -245,7 +283,7 @@
 #DESCRIPTION Slam webcam
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//stream.radio350.nl/live/radio350:OV%3a Radio350 (Rijssen en Holten)
 #DESCRIPTION OV: Radio350 (Rijssen en Holten)
-#SERVICE 1:64:56:0:0:0:0:0:0:0:
+#SERVICE 1:64:57:0:0:0:0:0:0:0:
 #DESCRIPTION +++nestkastjes 2016+++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.nestkastlive.nl%3a1935/live/Bijen_Binnen.stream/playlist.m3u8:Bijen - binnen
 #DESCRIPTION Bijen - binnen

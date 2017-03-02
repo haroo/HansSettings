@@ -312,6 +312,9 @@ ffff0000:0019:10ef
 ffff0000:0068:08c9
 	c 658000:6900000:2:3:0:0:0
 /
+ffff0000:0817:0600
+	c 714750:6900000:2:5:0:0:0
+/
 ffff0000:0089:08c9
 	c 322000:6900000:2:3:0:0:0
 /
@@ -392,9 +395,6 @@ ffff0000:0802:0600
 /
 ffff0000:083a:0600
 	c 706750:6900000:2:5:0:0:0
-/
-ffff0000:0817:0600
-	c 714750:6900000:2:5:0:0:0
 /
 ffff0000:0086:08c9
 	c 586000:6900000:2:3:0:0:0
@@ -652,7 +652,7 @@ WDR
 p:Ziggo
 7700:ffff0000:0835:0600:25:0
 Ziggo Live Events FOX Sports
-p:UPC NL,c:050001
+p:Ziggo,c:050001
 4c05:ffff0000:0835:0600:25:0
 RTL 4 HD
 p:Ziggo,c:050001,c:098800
@@ -830,8 +830,11 @@ p:Ziggo
 4c34:ffff0000:0837:0600:1:0
 ONS
 p:Ziggo
+4c37:ffff0000:0837:0600:1:0
+Viceland
+p:Ziggo
 4845:ffff0000:0837:0600:2:0
-NPO Radio 6
+NPO 2 Soul & Jazz
 p:Ziggo
 4c2e:ffff0000:0837:0600:25:0
 Ziggo Sport Voetbal HD
@@ -843,11 +846,11 @@ p:Ziggo
 Videoland.
 p:Ziggo
 4c35:ffff0000:0837:0600:25:0
-Test 1
-p:Ziggo,f:40
+Ziggo Live Events FOX Sports
+p:Ziggo
 4c36:ffff0000:0837:0600:25:0
-Test 2
-p:Ziggo,f:40
+Ziggo Live Events FOX Sports
+p:Ziggo
 300d:ffff0000:0065:0600:1:0
 SmartRTV
 p:Ziggo
@@ -1272,7 +1275,7 @@ p:Ziggo
 iTV MTV On Demand
 p:Ziggo
 451b:ffff0000:081b:0600:1:0
-iTV Buzz
+PSV TV
 p:Ziggo
 451c:ffff0000:081b:0600:1:0
 iTV FOX
@@ -1333,6 +1336,9 @@ TVM Europe
 p:Ziggo
 4ce8:ffff0000:081b:0600:1:0
 Aljazeera
+p:Ziggo
+4ce1:ffff0000:081b:0600:25:0
+Ziggo Live Events
 p:Ziggo
 ac12:ffff0000:0090:08c9:1:0
 SBS9
@@ -1415,6 +1421,9 @@ p:Ziggo,c:050001
 4cd7:ffff0000:081a:0600:25:0
 SBS9 HD
 p:Ziggo,c:050001,c:090202
+44fe:ffff0000:081a:0600:193:0
+MH_System_Data_Service
+p:Ziggo
 2716:ffff0000:000a:10ef:1:0
 NPO Nieuws
 p:Delta,f:40
@@ -2421,7 +2430,7 @@ p:Ziggo
 SLAM!
 p:Ziggo
 4e4e:ffff0000:0803:0600:1:0
-CCTV News
+CGTN
 p:Ziggo
 4e4f:ffff0000:0803:0600:1:0
 650 SID 0x4e4f
@@ -3818,6 +3827,27 @@ p:CAIW Media,f:40
 0fd2:ffff0000:0068:08c9:25:0
 Net5 HD
 p:CAIW Media,c:050001,f:40
+4baa:ffff0000:0817:0600:1:0
+714 SID 0x4baa
+p:,f:40
+4ba2:ffff0000:0817:0600:25:0
+één HD
+p:Ziggo,c:050001,c:098800
+4ba3:ffff0000:0817:0600:25:0
+MTV HD
+p:Ziggo,c:050001
+4ba7:ffff0000:0817:0600:25:0
+HBO3 HD
+p:Ziggo,f:40
+4ba8:ffff0000:0817:0600:25:0
+FOXlife HD
+p:Ziggo,c:050001
+4ba9:ffff0000:0817:0600:25:0
+BBC Two HD
+p:Ziggo,c:050001,c:098800
+4baa:ffff0000:0817:0600:25:0
+Ziggo Sport Racing HD
+p:Ziggo
 90b0:ffff0000:0089:08c9:1:0
 TV Noord
 p:CAIW Media,f:40
@@ -3941,12 +3971,21 @@ p:
 76b1:ffff0000:0831:0600:25:0
 Ziggo Live Events FOX Sports
 p:Ziggo,c:050001
+4bb5:ffff0000:0831:0600:25:0
+ID HD
+p:Ziggo
+4bb6:ffff0000:0831:0600:25:0
+Ziggo Sport Golf HD
+p:Ziggo
 4bb9:ffff0000:0831:0600:25:0
 FOX Sports 6 HD
 p:Ziggo,c:050001
 4bbc:ffff0000:0831:0600:25:0
 Spike HD
 p:Ziggo,c:050001
+4bbd:ffff0000:0831:0600:25:0
+Viceland HD
+p:Ziggo,c:050001,f:40
 0bbc:ffff0000:001e:10ef:1:0
 RTL Telekids
 p:Delta,f:40
@@ -4048,7 +4087,7 @@ Comedy Central Extra
 p:Ziggo
 4bd0:ffff0000:0832:0600:1:0
 602 SID 0x4bd0
-p:,f:40
+p:
 4bc9:ffff0000:0832:0600:25:0
 NPO 1 HD
 p:Ziggo,c:050001,c:098800
@@ -4594,7 +4633,7 @@ Ziggo Live Events FOX Sports
 p:Ziggo,c:050001
 4c69:ffff0000:083a:0600:25:0
 FOX Sports 2 HD
-p:Ziggo,c:050001
+p:Ziggo,c:050001,c:098800
 4c6a:ffff0000:083a:0600:25:0
 FOX Sports 4 HD
 p:Ziggo,c:050001
@@ -4607,21 +4646,6 @@ p:Ziggo,c:050001
 4c6e:ffff0000:083a:0600:25:0
 TLC HD
 p:Ziggo,c:050001
-4ba2:ffff0000:0817:0600:25:0
-één HD
-p:Ziggo,c:050001,c:098800
-4ba3:ffff0000:0817:0600:25:0
-MTV HD
-p:Ziggo,c:050001
-4ba7:ffff0000:0817:0600:25:0
-HBO3 HD
-p:Ziggo,f:40
-4ba8:ffff0000:0817:0600:25:0
-FOXlife HD
-p:Ziggo,c:050001
-4ba9:ffff0000:0817:0600:25:0
-BBC Two HD
-p:Ziggo,c:050001,c:098800
 84da:ffff0000:0086:08c9:25:0
 Caiway Informatie HD
 p:CAIW Media,c:050001,f:40
