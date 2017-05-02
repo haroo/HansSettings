@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:1a14:0:0:0:0:0:0:0:
+#SERVICE 1:64:1a32:0:0:0:0:0:0:0:
 #DESCRIPTION Publieke zenders
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio1-bb-mp3:NPO Radio 1
 #DESCRIPTION NPO Radio 1
@@ -19,8 +19,6 @@
 #DESCRIPTION NPO 3FM Serious Talent
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio4-bb-mp3:NPO Radio 4
 #DESCRIPTION NPO Radio 4
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2tss.omroep.nl%3a80/radio4-bb-mp3:NPO Radio 4
-#DESCRIPTION NPO Radio 4
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/radio4-eigentijds-mp3:NPO Radio 4 Concerten
 #DESCRIPTION NPO Radio 4 Concerten
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio4-eigentijds-mp3:NPO Radio 4 Eigentijds
@@ -35,7 +33,7 @@
 #DESCRIPTION NPO Radio 6
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio6-bb-mp3:NPO Radio 6 Soul & Jazz
 #DESCRIPTION NPO Radio 6 Soul & Jazz
-#SERVICE 1:64:1a15:0:0:0:0:0:0:0:
+#SERVICE 1:64:1a33:0:0:0:0:0:0:0:
 #DESCRIPTION Radio met beeld
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//skyradio.rr.kpnstreaming.nl/b2b/live/skyradio/veronica/index.m3u8:Radio Veronica webcam
 #DESCRIPTION Radio Veronica webcam
@@ -45,7 +43,7 @@
 #DESCRIPTION Radio Veronica WebCam (MQ)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/1600.m3u8:Radio Veronica WebCam (HQ)
 #DESCRIPTION Radio Veronica WebCam (HQ)
-#SERVICE 1:64:1a16:0:0:0:0:0:0:0:
+#SERVICE 1:64:1a34:0:0:0:0:0:0:0:
 #DESCRIPTION Overige
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.surfradio.nl/50plus64.aac:50PLUSradio
 #DESCRIPTION 50PLUSradio
@@ -125,6 +123,8 @@
 #DESCRIPTION Deep FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//vip-icecast.538.lw.triple-it.nl/WEB07_MP3:Efteling Kids Radio
 #DESCRIPTION Efteling Kids Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//37.59.195.28%3a8226/;?1493280349696.mp3:Foute Muziek Radio
+#DESCRIPTION Foute Muziek Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//178.19.127.9/:FREEZ FM POP & ROCK
 #DESCRIPTION FREEZ FM POP & ROCK
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:rtmp%3a//streams.freshfmonline.com/shoutcast/FreshFMAACHighT.stream:Fresh FM
@@ -185,28 +185,12 @@
 #DESCRIPTION Pinguin Radio (128 kbps)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radio10.nl/radio10:Radio 10 Gold
 #DESCRIPTION Radio 10 Gold
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_6070s_mp3:Radio 10 60&70 Hits
-#DESCRIPTION Radio 10 60&70 Hits
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_Disco_mp3:Radio 10 Disco Classic
-#DESCRIPTION Radio 10 Disco Classic
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_80s_mp3:Radio 10 Gold 80's hits
-#DESCRIPTION Radio 10 Gold 80's hits
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_90s_mp3:Radio 10 Gold 90's Hits
-#DESCRIPTION Radio 10 Gold 90's Hits
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_filmhits_mp3:Radio 10 Film Hits
-#DESCRIPTION Radio 10 Film Hits
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_love_mp3:Radio 10 Gold Love songs
-#DESCRIPTION Radio 10 Gold Love songs
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/r10_rock_mp3:Radio 10 Rock Hits
-#DESCRIPTION Radio 10 Rock Hits
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//radio.40up.nl/40up1:Radio 40UP
 #DESCRIPTION Radio 40UP
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-14.stream-server.nl%3a8030/:Radio 192
 #DESCRIPTION Radio 192
 #SERVICE 4097:0:0:0:0:0:2:0:0:0:http%3a//server-33.stream-server.nl/;:Radio 8FM
 #DESCRIPTION Radio 8FM
-#SERVICE 4097:0:0:0:0:0:2:0:0:0:http%3a//radiocontinu.ic-stream.nl/:Radio Continu 
-#DESCRIPTION Radio Continu 
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream-nederland.decibel.nl/;:Radio Decibel Nederland
 #DESCRIPTION Radio Decibel Nederland
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.extragold.nl%3a8080:Radio Extra Gold
