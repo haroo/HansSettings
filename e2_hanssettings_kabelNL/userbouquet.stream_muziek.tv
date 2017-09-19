@@ -1,5 +1,5 @@
 #NAME Stream Muziek
-#SERVICE 1:64:93:0:0:0:0:0:0:0:
+#SERVICE 1:64:be:0:0:0:0:0:0:0:
 #DESCRIPTION ++NL en B++
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//538hls.lswcdn.triple-it.nl/content/538tv/538tv.m3u8:538 TV
 #DESCRIPTION 538 TV
@@ -7,6 +7,8 @@
 #DESCRIPTION 538 webcam
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live.wowza.kpnstreaming.nl/omropfryslanlive/_definst_/OFstream01.smil/chunklist-b1200000.m3u8?wowzasessionid=1551749186:Klipkar TV HQ
 #DESCRIPTION Klipkar TV HQ
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//84.22.97.59%3a80/radiocontinu/live/chunklist_w1324825240.m3u8 :Radio Continu
+#DESCRIPTION Radio Continu
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/400.m3u8:Radio Veronica WebCam (LQ)
 #DESCRIPTION Radio Veronica WebCam (LQ)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/800.m3u8:Radio Veronica WebCam (MQ)
@@ -27,11 +29,15 @@
 #DESCRIPTION XITE Kanal NL (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//kippingmultimediaal.nl%3a1935/live/ZFM1:ZMF1 Music Holland (1080p)
 #DESCRIPTION ZMF1 Music Holland (1080p)
-#SERVICE 1:64:94:0:0:0:0:0:0:0:
+#SERVICE 1:64:bf:0:0:0:0:0:0:0:
 #DESCRIPTION ++Duitsland++
+#SERVICE 4097:0:1:70:0:0:0:0:0:0:http%3a//server55.livestreamingcdn.com%3a1935/tulixdemo/tulixdemo/chunklist.m3u8:DELUXE MUSIC (Duitsland)
+#DESCRIPTION DELUXE MUSIC (Duitsland)
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//livestream-f.akamaihd.net/i/22300508_6675945_lsi1hdazdynub1zyvm2_1@447447/index_2128_av-p.m3u8?sd=10&dw=100&rebase=on&hdntl=exp=1505775300~acl=%252fi%252f22300508_6675945_lsi1hdazdynub1zyvm2_1%2540447447%252f*~data=hdntl~hmac=e54a424344c733b105dbfdf03541898b5fc2919fde39b75e9f5829a356846e29:Radio 21 TV (Duitsland)
+#DESCRIPTION Radio 21 TV (Duitsland)
 #SERVICE 4097:0:16:0:0:0:0:0:0:0:http%3a//highvolume03.streampartner.nl%3a1935/vleugels_hd6/livestream/playlist.m3u8:XITE Kanal DE (720p)
 #DESCRIPTION XITE Kanal DE (720p)
-#SERVICE 1:64:95:0:0:0:0:0:0:0:
+#SERVICE 1:64:c0:0:0:0:0:0:0:0:
 #DESCRIPTION ++Engeland++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ooyalahd2-f.akamaihd.net/i/globalradio01_delivery@156521/index_656_av-p.m3u8:Capital TV
 #DESCRIPTION Capital TV
@@ -43,7 +49,7 @@
 #DESCRIPTION Virgin Radio TV
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//tv.105.net%3a1935/live/virgin1/chunklist_w864163580.m3u8:Virgin TV (432p)
 #DESCRIPTION Virgin TV (432p)
-#SERVICE 1:64:96:0:0:0:0:0:0:0:
+#SERVICE 1:64:c1:0:0:0:0:0:0:0:
 #DESCRIPTION ++Frankrijk++
 #SERVICE 4097:0:19:2137:400:1:0:0:0:0:http%3a//5.196.138.6%3a1935/live/nrjbelgique_720p/chunklist_w1562122761.m3u8:NRJ HITS
 #DESCRIPTION NRJ HITS
@@ -53,7 +59,7 @@
 #DESCRIPTION Radio Montecarlo TV
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//rtmp.infomaniak.ch/livecast playpath=rougetv swfUrl=http%3a//tvplayer.castlemedia.fr/swf/tvplayer.swf?4dadb783f0a81537187120216 pageUrl=http%3a//www.playtv.fr/television/#rouge-tv live=true:Rouge FM
 #DESCRIPTION Rouge FM
-#SERVICE 1:64:97:0:0:0:0:0:0:0:
+#SERVICE 1:64:c2:0:0:0:0:0:0:0:
 #DESCRIPTION ++Italië++
 #SERVICE 4097:0:1:3:679:9999:0:0:0:0:rtmp%3a//wma10.fluidstream.net/CompanyTV/_definst_/mp4%3alivestream_720p:COMPANY TV
 #DESCRIPTION COMPANY TV
@@ -83,18 +89,26 @@
 #DESCRIPTION VENERE TV
 #SERVICE 4097:0:1:252:0:0:0:0:0:0:rtmp%3a//188.165.224.142%3a1935/veneretv2/veneretv2:VENERE TV 2
 #DESCRIPTION VENERE TV 2
-#SERVICE 1:64:98:0:0:0:0:0:0:0:
+#SERVICE 1:64:c3:0:0:0:0:0:0:0:
 #DESCRIPTION ++Turkije++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//trtcanlitv-lh.akamaihd.net/i/TRTMUZIK_1@181845/index_1000_av-b.m3u8?sd=10&rebase=on:TRT M�zik (576p)
 #DESCRIPTION TRT M�zik (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//stream.taksimbilisim.com/tv41/bant1:TV41 (Turkey)
 #DESCRIPTION TV41 (Turkey)
-#SERVICE 1:64:99:0:0:0:0:0:0:0:
+#SERVICE 1:64:c4:0:0:0:0:0:0:0:
 #DESCRIPTION ++diversen++
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//155.4.160.181%3a1935/fjwebb/live/playlist.m3u8:14TV Music Schweden (720p)
+#DESCRIPTION 14TV Music Schweden (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//80.250.191.10%3a1935/live/livestream3/playlist.m3u8:1HD Music Television  (720p)
 #DESCRIPTION 1HD Music Television  (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//80.250.191.10%3a1935/live/hjwdj376883hjdfgje7/chunklist.m3u8:1HD Music Television (720p
+#DESCRIPTION 1HD Music Television (720p
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//83.222.205.10%3a8080/1HDmusic/index.m3u8:1HD RU Music
+#DESCRIPTION 1HD RU Music
 #SERVICE 4097:0:1:37:0:0:0:0:0:0:mms%3a//62.162.58.55/24vesti:24 Vesti Tv
 #DESCRIPTION 24 Vesti Tv
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//4.31.30.145%3a9034:Afro Music (576p)
+#DESCRIPTION Afro Music (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//188.138.17.8%3a1935/albuk/albmus.stream/master.m3u8:ALBMusic HD (720p)
 #DESCRIPTION ALBMusic HD (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//dcs-188-64-85-40.atmcdn.pl/hls/mm/multimedia/live/amazing/live.livx/playlist.m3u8?stream=1:AmaZing Music (576p)
@@ -103,38 +117,94 @@
 #DESCRIPTION Amazing
 #SERVICE 4097:0:1:8:0:0:0:0:0:0:rtmp%3a//5.154.185.153/live/live.flv:ATOMIC
 #DESCRIPTION ATOMIC
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//beats_1.vedge.infomaniak.com/livecast//beats_1/playlist.m3u8:Beatz HD (720p)
+#DESCRIPTION Beatz HD (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//bl.webcaster.pro/media/playlist/free_9d6a8624a7702dddd15b6c4fbf272152_hd/65_91554723/576i_high/6b805dbede42bab6bbb6c3b829e4a31b/4639979456.m3u8:Bridge (720p)
+#DESCRIPTION Bridge (720p)
 #SERVICE 4097:0:1:7:0:0:0:0:0:0:http%3a//37.235.171.201%3a81/udp/225.50.64.26%3a1234:BRIDGE DANCE TV
 #DESCRIPTION BRIDGE DANCE TV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//213.178.33.37%3a4022/udp/232.0.1.3%3a1234:Bridge TV 
+#DESCRIPTION Bridge TV 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//213.178.33.37%3a4022/udp/232.0.1.27%3a1234:BRIDGE TV CLASSIC 
+#DESCRIPTION BRIDGE TV CLASSIC 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CANT/tu1_1.m3u8:Cantinazo (480p)
+#DESCRIPTION Cantinazo (480p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ooyalahd2-f.akamaihd.net/i/globalradio01_delivery@156521/index_1500_av-b.m3u8:Capital TV (720p)
+#DESCRIPTION Capital TV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8:Chanson TV (576p)
+#DESCRIPTION Chanson TV (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//video.chaula.tv/hls/live/high/playlist_high.m3u8:Chaula TV Riga (720p)
+#DESCRIPTION Chaula TV Riga (720p)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//video.chaula.tv/hls/live/medium/playlist_medium.m3u8:Chaula.tv (480p)
 #DESCRIPTION Chaula.tv (480p)
 #SERVICE 4097:0:1:238:0:0:0:0:0:0:http%3a//nodeb.gocaster.net%3a1935/CGL/_definst_/mp4%3aTODAYFM_TEST2/stream.m3u8:City TV
 #DESCRIPTION City TV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream01.yamgo.com/iPhone/HLS_TS/mptslive/clubbingtv-mobile.3gp.m3u8:ClubbingTv (720p)
+#DESCRIPTION ClubbingTv (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cmctv.ios.internapcdn.net%3a80/cmctv_vitalstream_com/live_1/CMC-TV/CCURstream.m3u8:CMC California (720p)
+#DESCRIPTION CMC California (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cmctv.ios.internapcdn.net%3a80/cmctv_vitalstream_com/live_1/CMCUSA/CCURstream.m3u8:CMC Country California (480p)
+#DESCRIPTION CMC Country California (480p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//k3.usastreams.com%3a1935/colosaltv1/colosaltv1/playlist.m3u8:Colosal TV(480p)
+#DESCRIPTION Colosal TV(480p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//wma10.fluidstream.net/CompanyTV/_definst_/mp4%3alivestream_720p:Company Tv (720p)
+#DESCRIPTION Company Tv (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//streaming-02.mivitec.net/live/smil%3atest.smil/chunklist_w1073861416_b879931_slDE.m3u8:Deluxe Music (360p)
+#DESCRIPTION Deluxe Music (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0089.m3u8:Djind DJS HD
+#DESCRIPTION Djind DJS HD
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0088.m3u8:Djing Animation HD
 #DESCRIPTION Djing Animation HD
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0090.m3u8:Djing Classic HD
 #DESCRIPTION Djing Classic HD
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0089.m3u8:Djind DJS HD
-#DESCRIPTION Djind DJS HD
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//us.djing.com/tv/04.m3u8:Djing E-Music HD (540p)
 #DESCRIPTION Djing E-Music HD (540p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0086.m3u8:Djing Ibiza HD 
 #DESCRIPTION Djing Ibiza HD 
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0087.m3u8:Djing Underground HD
 #DESCRIPTION Djing Underground HD
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//185.152.65.170/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8:DreamTV (576p)
+#DESCRIPTION DreamTV (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.electrosound.tv%3a1935/public/stream/chunklist.m3u8:Electrosound HD (720p)
 #DESCRIPTION Electrosound HD (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/best-t/best_480p/playlist.m3u8:ESKA Best Music TV (720p)
+#DESCRIPTION ESKA Best Music TV (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//stream.smcloud.net/live/hiphoptv:Eska HipHop TV (360p)
 #DESCRIPTION Eska HipHop TV (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/eska_party-t/eska_party_480p/playlist.m3u8:ESKA Party TV (720p)
+#DESCRIPTION ESKA Party TV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/eska_rock-t/eska_rock_480p/playlist.m3u8:Eska ROCK TV (720p)
+#DESCRIPTION Eska ROCK TV (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//stream.smcloud.net/tv/eskatv/eskatv_360p:Eska TV (360p)
 #DESCRIPTION Eska TV (360p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//stream.smcloud.net/live/vox2/stream1:Eska Vox Music TV (360p)
 #DESCRIPTION Eska Vox Music TV (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/vox2-p/stream1/playlist.m3u8:Eska Vox Music TV (360p)
+#DESCRIPTION Eska Vox Music TV (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/vox-t/vox_480p/playlist.m3u8:Eska VOX Old's Cool TV (720p)
+#DESCRIPTION Eska VOX Old's Cool TV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/wawa-t/wawa_480p/playlist.m3u8:Eska WAWA TV (720p)
+#DESCRIPTION Eska WAWA TV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.210.91.25%3a8080/live/tycUxFxgDx/XNQgG7XriC/25.m3u8?#User-Agent=Mozilla/5.0:Europaplus
+#DESCRIPTION Europaplus
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.210.91.25%3a8080/live/tycUxFxgDx/XNQgG7XriC/18.m3u8?#User-Agent=Mozilla/5.0:Fashion Music 
+#DESCRIPTION Fashion Music 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//flash8.streaming.xdevel.com%3a80/fmitalia/fmitalia:fmitalia (404p)
+#DESCRIPTION fmitalia (404p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//wse.planeta-online.tv%3a1935/live/channel_4/master.m3u8:Fresh TV Music (352p)
 #DESCRIPTION Fresh TV Music (352p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//185.96.177.181%3a7002/10:Gold TV (1080p)
+#DESCRIPTION Gold TV (1080p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//goldtv.md%3a1935/live/GOLDTV1.stream_aac/playlist.m3u8:GoldTV (576p)
+#DESCRIPTION GoldTV (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ec.playmedia.fr%3a1935/gong-base/live/master.m3u8:Gong (480p)
 #DESCRIPTION Gong (480p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//188.165.135.22/gospeltv/livestream/playlist.m3u8:Gospel Music TV (1080p)
 #DESCRIPTION Gospel Music TV (1080p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stmv2.euroti.com.br%3a1935/gmusic/gmusic/live.m3u8:Gospel Television (480p) Brasill
+#DESCRIPTION Gospel Television (480p) Brasill
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//nstream17.gotv.at%3a1936/live/gotvlive_576p/playlist.m3u8:GoTV (576p)
+#DESCRIPTION GoTV (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//rtmp.one.by/HD/1muz:HD ONE Music (720p)
 #DESCRIPTION HD ONE Music (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//rtmp.one.by%3a2300:HD ONE RU Music (1080p)
@@ -143,12 +213,20 @@
 #DESCRIPTION Hip Hop Channel
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hithd.camsh.orsk.ru/hls/hithd.m3u8:Hit Music (720p)
 #DESCRIPTION Hit Music (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//1mstream.digicable.hu/hitmusic/hitmusic.m3u8:Hit Music HU (576p)
+#DESCRIPTION Hit Music HU (576p)
 #SERVICE 4097:0:1:535:3:42:0:0:0:0:rtmp%3a//tst.es.flash.glb.ipercast.net/tst.es-live//live:HIT TV
 #DESCRIPTION HIT TV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ec.playmedia.fr/indies-live/live/playlist.m3u8:INDIES LIVE (480p)
+#DESCRIPTION INDIES LIVE (480p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ec.playmedia.fr%3a1935/indies-live/live/master.m3u8:Indies-live Music (480p)
 #DESCRIPTION Indies-live Music (480p)
 #SERVICE 4097:0:1:39:0:0:0:0:0:0:mms%3a//62.162.58.55/TVIris:Iris Tv
 #DESCRIPTION Iris Tv
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.210.91.25%3a8080/live/tycUxFxgDx/XNQgG7XriC/27.m3u8?#User-Agent=Mozilla/5.0:IVCONCERTS
+#DESCRIPTION IVCONCERTS
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//77.92.76.135%3a1935/jayzee/livestream/master.m3u8:JAYZEE (320p)
+#DESCRIPTION JAYZEE (320p)
 #SERVICE 4097:0:1:b:969:7777:0:0:0:0:http%3a//www.djing.com/tv/a-05.m3u8:JING ANIMATION
 #DESCRIPTION JING ANIMATION
 #SERVICE 4097:0:1:a:969:7777:0:0:0:0:http%3a//www.djing.com/tv/i-05.m3u8:JING CLASSIC
@@ -159,36 +237,78 @@
 #DESCRIPTION JING IBIZA
 #SERVICE 4097:0:1:8:969:7777:0:0:0:0:http%3a//cdn.djing.com/tv/u-05.m3u8:JING UNDERGROUND HD
 #DESCRIPTION JING UNDERGROUND HD
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//109.68.190.192%3a1935/WEB_JuceTV/JuceTV.stream/playlist.m3u8:JuceTV Music (720p)
+#DESCRIPTION JuceTV Music (720p)
 #SERVICE 4097:0:1:41:0:0:0:0:0:0:mms%3a//62.162.58.55/TVKanal21:Kanal 21 Tv
 #DESCRIPTION Kanal 21 Tv
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//tst.es.flash.glb.ipercast.net/tst.es-live/live/master.m3u8:Kiss TV (360p)
 #DESCRIPTION Kiss TV (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//webmobile.xdev.ro%3a81/tv9/playlist.m3u8:Kit TV Music (576p)
+#DESCRIPTION Kit TV Music (576p)
 #SERVICE 4097:0:1:254:0:0:0:0:0:0:http%3a//92.62.234.201%3a2249/klik.flv:Klik TV (Rep Ceca)
 #DESCRIPTION Klik TV (Rep Ceca)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//kraldigital.radyotvonline.com/kraldigital/smil%3aakustiktv.smil/playlist.m3u8?token=28f874b6b348bd9ece56f263d7515b9620e6c9baf355d178:KRAL AKUSTIK TV (360p)
 #DESCRIPTION KRAL AKUSTIK TV (360p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//kraldigital.radyotvonline.com/kraldigital/smil%3akonsertv.smil/playlist.m3u8?token=340278454773acfaa15c381f575b0fee30af0daf0fc1bfee:KRAL POP KONSER TV (360p)
 #DESCRIPTION KRAL POP KONSER TV (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//bitcdn-kronehit-live.bitmovin.com/hls/3000k/bitcodin.m3u8:Kronehit (1080p)
+#DESCRIPTION Kronehit (1080p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//bitcdn-kronehit-live.bitmovin.com/hls/1500k/bitcodin.m3u8:Kronehit (720p)
 #DESCRIPTION Kronehit (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8:m2o tv (360p)
 #DESCRIPTION m2o tv (360p)
 #SERVICE 4097:0:1:234:0:0:0:0:0:0:http%3a//144.76.2.213%3a1935/live/livestream/playlist.m3u8:MAD
 #DESCRIPTION MAD
+#SERVICE 4097:0:1:52:0:0:0:0:0:0:http%3a//edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8:MC Play (540p)
+#DESCRIPTION MC Play (540p)
 #SERVICE 4097:0:1:270:0:0:0:0:0:0:rtmp%3a//186.155.200.118%3a1935/live/MelodyChannel:MELODY CHANNEL
 #DESCRIPTION MELODY CHANNEL
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MMHD/tu1_1.m3u8:MIMUSICA HD  (720p)
+#DESCRIPTION MIMUSICA HD  (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//archlinux.frilab.com%3a8080/mola/directe.m3u8:Mola MusicTV (720p)
+#DESCRIPTION Mola MusicTV (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//fms.105.net/live/rmc1:Montecarlo Music (432p)
 #DESCRIPTION Montecarlo Music (432p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//telekomtv.ro.edgesuite.net/shls/LIVE$MoozDanceHD/6.m3u8/Level(545259)?start=LIVE&end=END:Mooz Dance (360p)
+#DESCRIPTION Mooz Dance (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//telekomtv.ro.edgesuite.net/shls/LIVE$MoozHD/6.m3u8/Level(545259)?start=LIVE&end=END:Mooz HD (360p)
+#DESCRIPTION Mooz HD (360p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//telekomtv.ro.edgesuite.net/shls/LIVE$MoozHitsSD/6.m3u8/Level(545259)?start=LIVE&end=END&time=1465215851358:Mooz Hits (360p)
 #DESCRIPTION Mooz Hits (360p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//telekomtv.ro.edgesuite.net/shls/LIVE$MoozRoSD/6.m3u8/Level(545259)?start=LIVE&end=END&time=1465215914083:Mooz RO! (360p)
 #DESCRIPTION Mooz RO! (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//185.162.141.69%3a9014/mtvdance:MTV Dance
+#DESCRIPTION MTV Dance
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.210.91.25%3a8080/live/tycUxFxgDx/XNQgG7XriC/26.m3u8?#User-Agent=Mozilla/5.0:MTV Hits
+#DESCRIPTION MTV Hits
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//213.178.33.37%3a4022/udp/232.0.2.51%3a1234:MTV Live HD 
+#DESCRIPTION MTV Live HD 
+#SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//4BA9EBDB07C05883%3a@5.159.96.170%3a80/mtvlivehd:MTV Live HD (1080p) 
+#DESCRIPTION MTV Live HD (1080p) 
+#SERVICE 4097:0:3:13:0:0:0:0:0:0:http%3a//unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/index_3500_av-b.m3u8:MTV Norwegen (720p)
+#DESCRIPTION MTV Norwegen (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//188.168.20.253%3a81/udp/233.12.144.86%3a5050:MTV Rocks  
+#DESCRIPTION MTV Rocks  
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//188.168.20.253%3a81/udp/233.12.144.84%3a5050:MTV Россия HD
+#DESCRIPTION MTV Россия HD
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.1music.hu/stream/1music.m3u8:Music 1HU (720p)
 #DESCRIPTION Music 1HU (720p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//musicbox.cdnvideo.ru/musicbox/musicboxtv.sdp/playlist.m3u8:MusicBox (576p)
 #DESCRIPTION MusicBox (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//109.201.156.21/musicbox/musicbox.sdp/chunklist_w526292636.m3u8:MusicBox RU (576p)
+#DESCRIPTION MusicBox RU (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//212.26.132.86/hls/mb_ua.m3u8:MusicBox UA (360p)
 #DESCRIPTION MusicBox UA (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//212.26.132.86/hls/mb_ua_2500.m3u8:MusicBox UA (576p))
+#DESCRIPTION MusicBox UA (576p))
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live-edge01.telecentro.net.ar/live/msctphd-720/playlist.m3u8:MUSICTOP HD (720p)
+#DESCRIPTION MUSICTOP HD (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live.muzzone.cdnvideo.ru/muzzone/muzzone.sdp/playlist.m3u8:Muzzone 
+#DESCRIPTION Muzzone 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.nebiset.tv/nebiset.m3u8:Nebiset Music (576p)
+#DESCRIPTION Nebiset Music (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//energytv.vedge.infomaniak.com/livecast/energytv/playlist.m3u8:NRJ TV (1080p)
+#DESCRIPTION NRJ TV (1080p)
 #SERVICE 4097:0:1:1:0:0:0:0:0:0:http%3a//hls.mycdn0633430096.cdnvideo.ru/mycdn0633430096/stream1_sd.sdp/chunklist.m3u8:O 2
 #DESCRIPTION O 2
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.mycdn0633430096.cdnvideo.ru/mycdn0633430096/stream1_sd.sdp/chunklist.m3u8:O2 TV (480p)
@@ -205,29 +325,101 @@
 #DESCRIPTION Ocko Gold (Rep. Ceca) OPZIONE 2
 #SERVICE 4097:0:1:258:0:0:0:0:0:0:http%3a//se02.se.ocko-live.service.cdn.cra.cz/channels/ocko/playlist/cze/live_hq.m3u8:Ocko Live (Rep. Ceca)
 #DESCRIPTION Ocko Live (Rep. Ceca)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//server5.stweb.tv/radioone/live/playlist.m3u8:ONE (720p)
+#DESCRIPTION ONE (720p)
 #SERVICE 4097:0:1:d:969:8888:0:0:0:0:rtmp%3a//rtmp.one.by/HD/1muz:ONE HD BY
 #DESCRIPTION ONE HD BY
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live.youiptv.ch%3a1935/8FM/ngrp%3a8FM_all/playlist.m3u8:OTTO 8 FM (540p)
 #DESCRIPTION OTTO 8 FM (540p)
 #SERVICE 4097:0:1:6:969:8888:0:0:0:0:http%3a//live.youiptv.ch%3a1935/8FM/8FM_source/livestream.m3u8:OTTO FM TV
 #DESCRIPTION OTTO FM TV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//77.232.128.68/bks.m3u8:Outdoor TV (1080p)
+#DESCRIPTION Outdoor TV (1080p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//tvm10.gcdn.co/piktv/ngrp%3apiktv_all//tracks-v1a1/index.m3u8:PIK TV Web Music (720p)
+#DESCRIPTION PIK TV Web Music (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//84.43.207.130/planetahd/planetahd.m3u8:Planeta HD Tv (720p)
+#DESCRIPTION Planeta HD Tv (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.cdn.smcloud.net/polo_party-t/polo_party_480p/playlist.m3u8:Polo Party TV (720p)
+#DESCRIPTION Polo Party TV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//tv.portalfoxmix.club%3a1935/portalfoxmix/portalfoxmix/playlist.m3u8:PortalFoxMix Tv (360p)
+#DESCRIPTION PortalFoxMix Tv (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//185.28.3.11/powertv/powertv.smil/playlist.m3u8:Power TV (720p)
+#DESCRIPTION Power TV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//102793ooyala-lh.akamaihd.net/i/depers02_delivery@381748/master.m3u8:QMusic NL (720p)
+#DESCRIPTION QMusic NL (720p)
 #SERVICE 4097:0:1:9:999:7777:0:0:0:0:mms%3a//streamqm.uigc.net/qmusica:Quiero Musica
 #DESCRIPTION Quiero Musica
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//wms.shared.streamshow.it%3a80/canale51/canale51/playlist.m3u8:Radio 51 Tv (480p)
+#DESCRIPTION Radio 51 Tv (480p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//37.48.83.35/radiobrunotv/radiobrunotv/playlist.m3u8:Radio Bruno TV (400p)
+#DESCRIPTION Radio Bruno TV (400p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//capital_tv-lh.akamaihd.net/i/CapitalTv_1@183098/master.m3u8:Radio Capital TV (360p)
+#DESCRIPTION Radio Capital TV (360p)
 #SERVICE 4097:0:1:250:0:0:0:0:0:0:rtmp%3a//server5.stweb.tv/radioone/live:Radio ONE TV (USA)
 #DESCRIPTION Radio ONE TV (USA)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//188.165.224.142%3a1935/radiotivuazzurralive/radiotivuazzurralive:Radio Tv Azzurra Live (404p)
+#DESCRIPTION Radio Tv Azzurra Live (404p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdn-live-egress.rbmtv.com/rightbrainmedia-live-109/mp4%3aradioutv_all/rightbrainmedia-live-109/radioutv1/chunks.m3u8:Radio UTV (720p)
+#DESCRIPTION Radio UTV (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//85.17.80.132%3a80/radionorbatv/norbatv_source.stream/playlist.m3u8:Radionorba Tv (404p)
+#DESCRIPTION Radionorba Tv (404p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//199.195.199.196%3a5000/live/410/410.m3u8:Rebell (576p)
+#DESCRIPTION Rebell (576p)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.mediawork.cz/retrotv/retrotvHQ1/chunklist_w669357231.m3u8:Retro Music (360p)
 #DESCRIPTION Retro Music (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8:Retro Music (360p)
+#DESCRIPTION Retro Music (360p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//199.195.199.196%3a5000/live/412/412.m3u8:Retro Music (576p)
+#DESCRIPTION Retro Music (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.210.91.25%3a8080/live/tycUxFxgDx/XNQgG7XriC/28.m3u8?#User-Agent=Mozilla/5.0:Retro
+#DESCRIPTION Retro
 #SERVICE 4097:0:1:3be5:64:fbff:0:0:0:0:mmsh%3a//mediatv2.topix.it/24RockOne66:Rock TV
 #DESCRIPTION Rock TV
 #SERVICE 4097:0:1:c:969:8888:0:0:0:0:http%3a//cdn.vsnw.net%3a8081/interradio/720i.m3u8:RTI HD
 #DESCRIPTION RTI HD
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdn.vsnw.net%3a8081/interradio/720i.m3u8:RTI Music (576p)
+#DESCRIPTION RTI Music (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.210.91.25%3a8080/live/tycUxFxgDx/XNQgG7XriC/24.m3u8?#User-Agent=Mozilla/5.0:RU TV
+#DESCRIPTION RU TV
 #SERVICE 4097:0:1:6:0:0:0:0:0:0:http%3a//109.74.144.130/live/senzihity/senzihity.m3u8:SENZI
 #DESCRIPTION SENZI
+#SERVICE 4097:0:1:1:0:0:0:0:0:0:http%3a//st2.worldkast.com/8030/8030/chunklist_w209618744.m3u8:Si TV (426p)
+#DESCRIPTION Si TV (426p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdn-live-egress.rbmtv.com/rightbrainmedia-live-109/mp4%3aspirit_all/rightbrainmedia-live-109/spirit1/chunks.m3u8:Spirit Music (720p)
+#DESCRIPTION Spirit Music (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live-edge01.telecentro.net.ar/live/smil%3atlx.smil/master.m3u8:Telemax (720p)
+#DESCRIPTION Telemax (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//83.222.205.10%3a8080/tntmusic/index.m3u8:THT Music
+#DESCRIPTION THT Music
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MESH/tu1_1.m3u8:TIGOMusic (720p)
+#DESCRIPTION TIGOMusic (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//nodeb.gocaster.net%3a1935/CGL/_definst_/mp4%3aTODAYFM_TEST2/live.m3u8:Top Music-CityTV 18+ (288p)
+#DESCRIPTION Top Music-CityTV 18+ (288p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TREN/tu1_1.m3u8:Trendy (480p)
+#DESCRIPTION Trendy (480p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//163.172.217.221%3a1935/tv/dance_tv/master.m3u8:TV Dance neu (720p)
+#DESCRIPTION TV Dance neu (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//84.16.66.109%3a1935/livecast/tvm3/master.m3u8:TVM3 (1080p)
+#DESCRIPTION TVM3 (1080p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//81.196.0.126%3a80/utvedge/utvlive/master.m3u8:UTV Music (576p)
+#DESCRIPTION UTV Music (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//188.165.224.142%3a1935/veneretv2/veneretv2/playlist.m3u8:VENERE TV oldies (480p)
+#DESCRIPTION VENERE TV oldies (480p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//188.168.20.253%3a81/udp/233.12.144.87%3a5050:VH-1 Classic
+#DESCRIPTION VH-1 Classic
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//46.101.21.42%3a8081/live/live2/playlist.m3u8:Vibee TV (540p)
 #DESCRIPTION Vibee TV (540p)
 #SERVICE 4097:0:1:280:0:0:0:0:0:0:http%3a//46.101.21.42%3a8081/live/live2/playlist.m3u8:VibeeTV Music Pop
 #DESCRIPTION VibeeTV Music Pop
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0008.m3u8:XITE.TV 
-#DESCRIPTION XITE.TV 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//unsecure.streann.com/loadbalancer/services/public/channels/57ea7c2a2cdcfb55a57f7267/playlist.m3u8:VIBZ Music (480p)
+#DESCRIPTION VIBZ Music (480p)
 #SERVICE 4097:0:16:0:0:0:0:0:0:0:http%3a//highvolume03.streampartner.nl%3a1935/vleugels_hd2/livestream/playlist.m3u8:XITE Kanal 4 (720p)
 #DESCRIPTION XITE Kanal 4 (720p)
+#SERVICE 4097:0:16:0:0:0:0:0:0:0:http%3a//highvolume03.streampartner.nl%3a1935/vleugels_hd5/livestream/playlist.m3u8:XITE Kanal 5 (720p)
+#DESCRIPTION XITE Kanal 5 (720p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.iptvsaga.com/play/tv3/0008.m3u8:XITE.TV 
+#DESCRIPTION XITE.TV 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//tv.simpalsmedia.com/playmd/d2dae479-149c-4762-8e8b-056872f441f6:ZONA M Moldavia (576p)
+#DESCRIPTION ZONA M Moldavia (576p)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//zouglahd-f.akamaihd.net/i/zougla_1@56341/index_700_av-b.m3u8:Zougla Music (360p)
+#DESCRIPTION Zougla Music (360p)
