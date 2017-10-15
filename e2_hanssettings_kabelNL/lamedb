@@ -6,23 +6,11 @@ ffff0000:0072:08c9
 ffff0000:007b:08c9
 	c 802000:6900000:2:3:0:0:0
 /
-ffff0000:f763:0000
-	c 490750:6900000:2:5:0:0:0
-/
-ffff0000:f77b:0000
-	c 474000:6900000:0:5:0:0:0
-/
-ffff0000:f77e:0000
-	c 498750:6900000:2:5:0:0:0
-/
 ffff0000:0066:08c9
 	c 554000:6900000:2:3:0:0:0
 /
 ffff0000:006f:08c9
 	c 674000:6900000:2:3:0:0:0
-/
-ffff0000:f77a:0000
-	c 466000:6900000:0:5:0:0:0
 /
 ffff0000:0065:08c9
 	c 538000:6900000:2:3:0:0:0
@@ -48,9 +36,6 @@ ffff0000:0012:10ef
 ffff0000:0084:08c9
 	c 610000:6900000:2:3:0:0:0
 /
-ffff0000:f762:0000
-	c 482750:6900000:2:5:0:0:0
-/
 ffff0000:08a3:2210
 	c 6979990:0:2:3:0:0:0
 /
@@ -62,9 +47,6 @@ ffff0000:001b:10ef
 /
 ffff0000:0837:0600
 	c 826750:6900000:2:5:0:0:0
-/
-ffff0000:f77d:0000
-	c 490750:6900000:2:5:0:0:0
 /
 ffff0000:0065:0600
 	c 132000:6900000:2:5:0:0:0
@@ -322,7 +304,7 @@ ffff0000:0068:08c9
 	c 658000:6900000:2:3:0:0:0
 /
 ffff0000:0817:0600
-	c 714700:6900000:2:5:0:0:0
+	c 714750:6900000:2:5:0:0:0
 /
 ffff0000:0089:08c9
 	c 322000:6900000:2:3:0:0:0
@@ -473,18 +455,6 @@ p:CAIW Media
 59f6:ffff0000:007b:08c9:1:0
 Sat1
 p:CAIW Media
-0001:ffff0000:f763:0000:1:0
-490 SID 0x01
-p:
-0001:ffff0000:f77b:0000:1:0
-474 SID 0x01
-p:
-0001:ffff0000:f77e:0000:1:0
-498 SID 0x01
-p:
-0006:ffff0000:f77e:0000:1:0
-498 SID 0x06
-p:
 0802:ffff0000:0066:08c9:1:0
 TV Rijnmond
 p:CAIW Media
@@ -596,9 +566,6 @@ p:CAIW Media
 2b75:ffff0000:006f:08c9:2:0
 Stingray All Day Party NL
 p:CAIW Media
-0003:ffff0000:f77a:0000:1:0
-466 SID 0x03
-p:
 0406:ffff0000:0065:08c9:1:0
 NPO 3
 p:CAIW Media
@@ -806,9 +773,6 @@ p:CAIW Media,c:050001
 7d3c:ffff0000:0084:08c9:25:0
 Eurosport HD
 p:CAIW Media,c:050001
-000b:ffff0000:f762:0000:1:0
-482 SID 0x0b
-p:
 000b:ffff0000:08a3:2210:1:0
 RTL 4
 p:Digitenne
@@ -914,9 +878,6 @@ p:Ziggo
 4c36:ffff0000:0837:0600:25:0
 Ziggo Live Events FOX Sports
 p:Ziggo
-000d:ffff0000:f77d:0000:1:0
-490 SID 0x0d
-p:
 300d:ffff0000:0065:0600:1:0
 SmartRTV
 p:Ziggo
@@ -1520,12 +1481,6 @@ p:,c:090202
 4c1e:ffff0000:0836:0600:1:0
 MTV Brand New
 p:Ziggo
-4c1f:ffff0000:0836:0600:1:0
-DanceTrippin
-p:Ziggo
-4c21:ffff0000:0836:0600:1:0
-Fine Living
-p:Ziggo,c:090202
 4c22:ffff0000:0836:0600:1:0
 Baby TV
 p:Ziggo
@@ -1544,6 +1499,12 @@ p:Ziggo
 4c27:ffff0000:0836:0600:1:0
 TV538
 p:Ziggo
+4c1f:ffff0000:0836:0600:25:0
+DanceTrippin HD
+p:Ziggo,c:050001,f:40
+4c21:ffff0000:0836:0600:25:0
+Fine Living HD
+p:Ziggo,f:40
 271a:ffff0000:006e:08c9:1:0
 TV 8
 p:CAIW Media
@@ -1574,9 +1535,6 @@ p:CAIW Media,c:050001
 531b:ffff0000:0812:0600:1:0
 OUTTV
 p:Ziggo,c:050001
-4b3e:ffff0000:0812:0600:1:0
-AMC
-p:Ziggo,c:050001,c:098800
 4b42:ffff0000:0812:0600:1:0
 Eurostar
 p:Ziggo
@@ -1607,6 +1565,9 @@ p:Ziggo
 4b4e:ffff0000:0812:0600:1:0
 TV Oranje
 p:Ziggo
+4b3e:ffff0000:0812:0600:25:0
+AMC HD
+p:Ziggo,c:050001,c:098800,f:40
 4b44:ffff0000:0812:0600:25:0
 Motorsport TV HD
 p:Ziggo,c:050001
@@ -1756,9 +1717,6 @@ eTV Standard Application 3
 p:Ziggo
 3f9e:ffff0000:083c:0600:1:0
 eTV Standard Application 2
-p:Ziggo
-4c9e:ffff0000:083c:0600:1:0
-Test1
 p:Ziggo
 3f9f:ffff0000:083c:0600:1:0
 eTV Standard Application 4
@@ -2068,10 +2026,10 @@ Ziggo Sport Extra2
 p:Ziggo
 4b39:ffff0000:0810:0600:1:0
 Ziggo
-p:Ziggo
+p:Ziggo,f:40
 4b2e:ffff0000:0810:0600:25:0
 Discovery Science HD
-p:Ziggo,c:050001,c:090202
+p:Ziggo,c:050001,c:090202,f:40
 4e2a:ffff0000:0078:08c9:1:0
 RTL Telekids
 p:CAIW Media
@@ -2789,9 +2747,6 @@ p:Ziggo,c:050001,c:090202
 4b5c:ffff0000:0813:0600:1:0
 Extreme Sports Channel
 p:Ziggo
-4b5d:ffff0000:0813:0600:1:0
-Food Network
-p:Ziggo
 4b5e:ffff0000:0813:0600:1:0
 SLAM!
 p:Ziggo
@@ -2810,6 +2765,9 @@ p:Ziggo,c:050001,c:098800
 4b63:ffff0000:0813:0600:1:0
 RTL Telekids
 p:Ziggo
+4b5d:ffff0000:0813:0600:25:0
+Food Network HD
+p:Ziggo,f:40
 0b57:ffff0000:001d:10ef:1:0
 NGC
 p:Delta
@@ -4011,8 +3969,11 @@ p:Ziggo
 Film1 Premiere HD
 p:Ziggo,c:050001
 4cc8:ffff0000:0819:0600:25:0
-Film1
+Film1 On Demand.
 p:Ziggo,c:050001
+4cc9:ffff0000:0819:0600:25:0
+Film1 On Demand.
+p:Ziggo,f:40
 5dc4:ffff0000:0018:10ef:1:0
 Food Network
 p:Delta
@@ -4902,4 +4863,4 @@ p:Digitenne
 FunX
 p:Digitenne
 end
-Editor:DreamSet 2.4.9 - http://www.dreamset-editor.com
+Editor:DreamSet 2.4.11 - http://www.dreamset-editor.com
