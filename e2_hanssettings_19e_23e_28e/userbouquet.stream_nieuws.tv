@@ -37,12 +37,18 @@
 #DESCRIPTION CBS7 Seattle (USA)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//54.251.134.121/live/15273.sdp:CNN Philippines
 #DESCRIPTION CNN Philippines
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//unlimited1-us.dps.live/cnn/cnn.smil/playlist.m3u8:CNN
+#DESCRIPTION CNN
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cnn_ibn_hls-lh.akamaihd.net/i/cnn_ibn_hls_n_1@174950/index_3_av-b.m3u8:CNN-News 18 (English)
+#DESCRIPTION CNN-News 18 (English)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/master.m3u8:CW 9 Chicago, IL
 #DESCRIPTION CW 9 Chicago, IL
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//62.67.13.53%3a1935/kabeljournal/live.stream/playlist.m3u8:DE%3a KabelJournal
 #DESCRIPTION DE: KabelJournal
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//stream-cdn.ok54.de/tv/nahetv:DE%3a Nahe TV
 #DESCRIPTION DE: Nahe TV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/master.m3u8:Deutsche Welle 
+#DESCRIPTION Deutsche Welle 
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//dwstream72-lh.akamaihd.net/i/dwstream72_live@123556/index_1_av-b.m3u8?sd=10&rebase=on:Deutsche Welle (Duitsland)
 #DESCRIPTION Deutsche Welle (Duitsland)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.metafilegenerator.de/DWelle/tv-latinoamerica/ios/master.m3u8:Deutsche Welle Latinoamerica (Spaans)
@@ -53,10 +59,10 @@
 #DESCRIPTION DW Asia
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//www.metafilegenerator.de/DWelle/tv-asia/ios/master.m3u8:DWTV (Engelstalig)
 #DESCRIPTION DWTV (Engelstalig)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ott.ec.streamcloud.be/live/disk1/EBSplus/hls_el/EBSplus-audio_AACL_ell_66400_407=66400-video=800000.m3u8:EBS Plus
-#DESCRIPTION EBS Plus
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ott.ec.streamcloud.be/live/disk1/EBS/hls_el/EBS-audio_AACL_ell_66400_207=66400-video=800000.m3u8:EBS
-#DESCRIPTION EBS
+#SERVICE 4097:0:1:1:0:0:0:0:0:0:http%3a//ott.ec.streamcloud.be/live/disk1/EBS/hls_el/EBS-audio_AACL_ell_66400_207=66400-video=800000.m3u8:EBS (Europe By Satellite)
+#DESCRIPTION EBS (Europe By Satellite)
+#SERVICE 4097:0:1:1:0:0:0:0:0:0:http%3a//ott.ec.streamcloud.be/live/disk1/EBSplus/hls_el/EBSplus-audio_AACL_ell_66400_407=66400-video=800000.m3u8:EBS Plus (Europe By Satellite)
+#DESCRIPTION EBS Plus (Europe By Satellite)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cmghlslive-i.akamaihd.net/hls/live/224672/WHBQ/564k/prog.m3u8:Fox 13 Memphis, TN
 #DESCRIPTION Fox 13 Memphis, TN
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cmghlslive-i.akamaihd.net%3a80/hls/live/224709/KOKI/904k/prog.m3u8:Fox 23 news Tulsa, OH
@@ -73,18 +79,42 @@
 #DESCRIPTION France24 (English)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//f24hls-i.akamaihd.net/hls/live/221192/F24_FR_LO_HLS/master_900.m3u8:France24 French (Frankrijk)
 #DESCRIPTION France24 French (Frankrijk)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//indiatvnews-lh.akamaihd.net/i/ITV_1@199237/master.m3u8:India TV (Hindi)
+#DESCRIPTION India TV (Hindi)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//edge-ind.inapcdn.in%3a1935/device2/camera2.stream/playlist.m3u8:JK 24x7 News
+#DESCRIPTION JK 24x7 News
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//edge-ind.inapcdn.in%3a1935/device2/camera2.stream/playlist.m3u8:JK 24x7 News
+#DESCRIPTION JK 24x7 News
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//play-prod1.live.anvato.net/server/play/ktvutestctg/master.m3u8:KTVU News
+#DESCRIPTION KTVU News
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//tvemsnbc-lh.akamaihd.net/i/nbcmsnbc_1@122532/index_2596_av-p.m3u8?sd=10&rebase=on:MSNBC (USA)
 #DESCRIPTION MSNBC (USA)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//nasa-i.akamaihd.net/hls/live/253565/NTV-Public1/master.m3u8:NASA TV Public
 #DESCRIPTION NASA TV Public
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cmghlslive-i.akamaihd.net/hls/live/224715/WPXI/564k/prog.m3u8:NBC 11 Pittsburg, PA
 #DESCRIPTION NBC 11 Pittsburg, PA
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//fs-b4e3010000000000.id.cdn.cv.net/vxedge/fs-ace3010000000000 playpath=fs-ace3010000000000 swfUrl=http%3a//www.news12.com/player/flowplayer.commercial-3.2.7.swf app=vxedge/fs-ace3010000000000 pageUrl=http%3a//www.news12.com/player/flowplayer/.live_player.html?region=BK live=true swfVfy=true timeout=10:News12 Brooklyn
-#DESCRIPTION News12 Brooklyn
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_NYC:News 12 Bronx & Brooklyn (Weather)
+#DESCRIPTION News 12 Bronx & Brooklyn (Weather)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_CT:News 12 Connecticut (Weather)
+#DESCRIPTION News 12 Connecticut (Weather)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_WC:News 12 Hudson Valley & Westchester (Weather)
+#DESCRIPTION News 12 Hudson Valley & Westchester (Weather)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_LI:News 12 Long Island (Weather)
+#DESCRIPTION News 12 Long Island (Weather)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_NJ:News 12 New Jersey (Weather)
+#DESCRIPTION News 12 New Jersey (Weather)
 #SERVICE 4097:0:1:1:0:0:0:0:0:0:http%3a//tv.balkanweb.com%3a8081/news24/livestream/playlist.m3u8:NEWS 24 (Albanië)
 #DESCRIPTION NEWS 24 (Albanië)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//fs-b4e3010000000000.id.cdn.cv.net/vxedge/fs-ace3010000000000 playpath=fs-ace3010000000000 swfUrl=http%3a//www.news12.com/player/flowplayer.commercial-3.2.7.swf app=vxedge/fs-ace3010000000000 pageUrl=http%3a//www.news12.com/player/flowplayer/.live_player.html?region=BK live=true swfVfy=true timeout=10:News12 Brooklyn
+#DESCRIPTION News12 Brooklyn
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//367449830.r.cdnsun.net/367449830/_definst_/newstv9/chunklist_w914356063.m3u8:News9
+#DESCRIPTION News9
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//newsx.live-s.cdn.bitgravity.com/cdn-live/_definst_/newsx/live/newsxnew.smil/playlist.m3u8:NewsX
+#DESCRIPTION NewsX
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//mek2.mekstream.com%3a1935/noticias16/live3:Noticias 16
 #DESCRIPTION Noticias 16
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream1.protv.ro/news/stream%3a1.stream/playlist.m3u8:ProTv News (Roemenië)
+#DESCRIPTION ProTv News (Roemenië)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//secure-streams.akamaized.net/rt-uk/index2500.m3u8:RT UK HD (Rus)
 #DESCRIPTION RT UK HD (Rus)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//secure-streams.akamaized.net/rt-usa/index2500.m3u8:RT USA HD (Rus)
@@ -105,6 +135,8 @@
 #DESCRIPTION The Weather Channels US
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//timesnow-lh.akamaihd.net/i/TIMESNOWWEB/TimesNow_1@129288/master.m3u8:Times Now (India)
 #DESCRIPTION Times Now (India)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/master.m3u8:TRT World (Engels)
+#DESCRIPTION TRT World (Engels)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//tv2danmark-tv2news-live.hls.adaptive.level3.net/tv2danmark/tv2news/master3200kbps.m3u8?u=n1info#X-Forwarded-For=78.157.96.0:TV2 News HD (Denemarken)
 #DESCRIPTION TV2 News HD (Denemarken)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//aljazeeraflashlivefs.fplive.net%3a443/aljazeeraflashlive-live?videoId=883816736001&lineUpId=&pubId=665003303001&playerId=751182905001&affiliateId= playpath=aljazeera_eng_med?videoId=883816736001&lineUpId=&pubId=665003303001&playerId=751182905001&affiliateId= swfUrl=http%3a//admin.brightcove.com/viewer/us20130328.1037/federatedVideoUI/BrightcovePlayer.swf?uid=1365259821715 live=1 pageUrl=http%3a//tklist.net/tklist/aljazeera2.php:USA_AlJAZEERA
