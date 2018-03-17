@@ -237,6 +237,9 @@ transponders
 00c00000:044d:0001
 	s 11836000:27500000:0:0:192:2:0
 /
+00c00000:0444:0001
+	s 12246000:29700000:1:4:192:2:0:1:1:0:2
+/
 00c00000:0418:0001
 	s 11186000:22000000:1:0:192:2:0
 /
@@ -257,9 +260,6 @@ transponders
 /
 00c00000:043c:0001
 	s 12090000:29700000:1:4:192:2:0:1:1:0:2
-/
-00c00000:0444:0001
-	s 12246000:29700000:1:4:192:2:0:1:1:0:2
 /
 00c00000:044c:0001
 	s 12402000:29700000:1:4:192:2:0:1:1:0:2
@@ -528,9 +528,6 @@ ffff0000:0079:08c9
 ffff0000:08c4:2210
 	c 5219990:0:2:3:0:0:0
 /
-ffff0000:0810:0600
-	c 172000:6900000:2:5:0:0:0
-/
 ffff0000:0078:08c9
 	c 666000:6900000:2:3:0:0:0
 /
@@ -542,6 +539,9 @@ ffff0000:080a:0600
 /
 ffff0000:0003:10ef
 	c 378000:6875000:2:3:0:0:0
+/
+ffff0000:0810:0600
+	c 172000:6900000:2:5:0:0:0
 /
 ffff0000:0006:10ef
 	c 402000:6875000:2:3:0:0:0
@@ -726,9 +726,6 @@ ffff0000:0007:0f3c
 ffff0000:001e:10ef
 	c 538000:6875000:2:3:0:0:0
 /
-ffff0000:0831:0600
-	c 762750:6900000:2:5:0:0:0
-/
 ffff0000:0007:10ef
 	c 410000:6875000:2:3:0:0:0
 /
@@ -800,6 +797,21 @@ ffff0000:008e:08c9
 /
 ffff0000:083a:0600
 	c 706750:6900000:2:5:0:0:0
+/
+ffff0000:0094:08c9
+	c 298000:6900000:2:3:0:0:0
+/
+ffff0000:0093:08c9
+	c 290000:6900000:2:3:0:0:0
+/
+ffff0000:0831:0600
+	c 762750:6900000:2:5:0:0:0
+/
+ffff0000:0092:08c9
+	c 282000:6900000:2:3:0:0:0
+/
+ffff0000:0091:08c9
+	c 274000:6945100:1:3:0:0:0
 /
 ffff0000:081c:0600
 	c 562000:6900000:0:5:0:0:0
@@ -1037,6 +1049,9 @@ p:
 08fc:00eb2d7c:0000:0001:1:0
 2300 - ESKA Beskidy/Zywiec
 p:
+10fe:00eb2d7c:0000:0001:1:0
+4350 - PLUS Lublin
+p:
 1418:00eb0000:0c85:0003:1:0
 UP NETWORK CZ
 p:M7 Group
@@ -1144,19 +1159,16 @@ Festival HD
 p:M7 Group
 13c9:00eb0000:0c95:0003:1:0
 Eurosport 2 HD BE
-p:M7 Group,c:050001
+p:M7 Group
 13cb:00eb0000:0c95:0003:1:0
 Animal Planet CZ
 p:M7 Group
-13cc:00eb0000:0c95:0003:1:0
-JimJam
-p:M7 Group,c:050001
 13b1:00eb0000:0c95:0003:25:0
 Eurosport 2 HD
 p:M7 Group
 13b3:00eb0000:0c95:0003:25:0
 Travel XP HD
-p:M7 Group,c:050001
+p:M7 Group
 13b4:00eb0000:0c95:0003:25:0
 Markiza HD
 p:M7 Group
@@ -1168,13 +1180,13 @@ Film Europe HD
 p:M7 Group
 13c7:00eb0000:0c95:0003:25:0
 Travel XP HD BNL
-p:M7 Group,c:050001
+p:M7 Group
 13ca:00eb0000:0c95:0003:25:0
 Eurosport 1 HD BE
-p:M7 Group,c:050001
+p:M7 Group
 13cd:00eb0000:0c95:0003:25:0
 Film Europe INT HD
-p:M7 Group,c:050001,c:090202
+p:M7 Group
 1331:00eb0000:0ca2:0003:1:0
 Slagr TV
 p:Towercom
@@ -1369,10 +1381,7 @@ MAZ new2
 p:MB Satellite
 36d9:00eb0000:0c8c:0003:1:0
 GERMAN TOTE TV
-p:MB Satellite
-36e7:00eb0000:0c8c:0003:1:0
-EROXXX
-p:MB Satellite
+p:MB Satellite,c:050001
 36e2:00eb0000:0c8c:0003:22:0
 FIGHTBOX
 p:M7 Group
@@ -1409,6 +1418,18 @@ p:M7 Group
 36f1:00eb0000:0c8c:0003:22:0
 Senzi
 p:M7 Group
+36f5:00eb0000:0c8c:0003:22:0
+Cartoon Network CZ
+p:M7 Group
+36f6:00eb0000:0c8c:0003:22:0
+MTV NL
+p:M7 Group
+36f7:00eb0000:0c8c:0003:22:0
+Nickelodeon / Spike
+p:M7 Group
+36f8:00eb0000:0c8c:0003:22:0
+Comedy Central
+p:M7 Group
 36e5:00eb0000:0c8c:0003:25:0
 Prima MAX HD
 p:M7 Group
@@ -1417,12 +1438,6 @@ History HD BNL
 p:M7 Group
 36e8:00eb0000:0c8c:0003:25:0
 Prima ZOOM HD
-p:M7 Group
-36f3:00eb0000:0c8c:0003:25:0
-Outdoor Channel HD
-p:M7 Group,c:050001
-36f4:00eb0000:0c8c:0003:25:0
-Outdoor Channel HD CZ
 p:M7 Group
 3746:00eb0000:0c8e:0003:2:0
 Proglas
@@ -1537,7 +1552,7 @@ Elevensports2
 p:M7 Group
 524d:00eb0000:0c99:0003:22:0
 Omrop Fryslan Televisie
-p:M7 Group
+p:M7 Group,c:050001
 524f:00eb0000:0c99:0003:22:0
 TV Drenthe
 p:M7 Group
@@ -1567,10 +1582,10 @@ een HD
 p:M7 Group,c:050001,c:098800
 5225:00eb0000:0c99:0003:25:0
 NPO1 HD
-p:M7 Group,c:050001,c:098800
+p:M7 Group,c:050001,c:060002,c:098800
 5226:00eb0000:0c99:0003:25:0
 Canvas HD
-p:M7 Group
+p:M7 Group,c:050001
 522b:00eb0000:0c99:0003:25:0
 Veronica/DisneyXD HD
 p:M7 Group
@@ -1654,15 +1669,9 @@ Omroep Brabant Televisie
 p:M7 Group
 1b99:00eb0000:0c8b:0003:22:0
 Eurosport 2 BE (3211)
-p:M7 Group,c:050001
+p:M7 Group
 1b98:00eb0000:0c8b:0003:25:0
 FOX Sports 2 HD int (3211)
-p:M7 Group,c:050001
-51a3:00eb0000:0c8b:0003:25:0
-Outdoor Channel HD
-p:M7 Group
-51a4:00eb0000:0c8b:0003:25:0
-Outdoor Channel HD CZ
 p:M7 Group
 1b72:00eb0000:0c88:0003:2:0
 Q-Music
@@ -1681,7 +1690,7 @@ RTL Lounge
 p:M7 Group
 1b92:00eb0000:0c88:0003:22:0
 RTL Z
-p:M7 Group
+p:M7 Group,c:050001
 1b94:00eb0000:0c88:0003:22:0
 Eurosport 2 NL
 p:M7 Group
@@ -1693,24 +1702,27 @@ RTL Crime
 p:M7 Group
 1b6c:00eb0000:0c88:0003:25:0
 RTL4 HD
-p:M7 Group
+p:M7 Group,c:050001
 1b6f:00eb0000:0c88:0003:25:0
 RTL5 HD
 p:M7 Group
 1b73:00eb0000:0c88:0003:25:0
 RTL7 HD
-p:M7 Group
+p:M7 Group,c:050001
 1b76:00eb0000:0c88:0003:25:0
 VTM HD
-p:M7 Group
+p:M7 Group,c:050001,c:098800
 1b7c:00eb0000:0c88:0003:25:0
 RTL8 HD
-p:M7 Group
+p:M7 Group,c:050001
 1b90:00eb0000:0c88:0003:25:0
 Q2 HD
 p:M7 Group
 1b91:00eb0000:0c88:0003:25:0
 VIER HD
+p:M7 Group,c:050001
+1bfc:00eb0000:0c88:0003:25:0
+FOX Sports 2 HD int
 p:M7 Group
 1f73:00eb0000:0ca1:0003:2:0
 CRo RADIOZURNAL
@@ -1900,7 +1912,7 @@ SBS6 HD
 p:M7 Group,c:050001,c:098800
 17cc:00eb0000:0c82:0003:25:0
 FOX Sports EDL 1 HD
-p:M7 Group
+p:M7 Group,c:050001
 17ce:00eb0000:0c82:0003:25:0
 the QYOU
 p:M7 Group
@@ -2127,7 +2139,7 @@ p:BetaDigital
 MediaShop- Meine Einkaufswelt
 p:BetaDigital
 0035:00c00000:0007:0085:1:0
-N24 Austria
+N24 DOKU Austria
 p:BetaDigital
 0036:00c00000:0007:0085:1:0
 StarParadies
@@ -3604,7 +3616,7 @@ L'EQUIPE
 p:CSAT
 2456:00c00000:0440:0001:25:0
 CINE+ PREMIER
-p:CSAT
+p:CSAT,c:050001
 2457:00c00000:0440:0001:25:0
 M6
 p:CSAT
@@ -4611,7 +4623,7 @@ p:BetaDigital
 Blue Movie
 p:SKY,c:050001
 0204:00c00000:0004:0085:22:0
-Sky Cinema Nostalgie
+Sky Cinema Western
 p:SKY,c:050001
 000a:00c00000:0004:0085:22:0
 Sky Cinema
@@ -4626,7 +4638,7 @@ p:SKY
 Sky Select
 p:SKY
 0014:00c00000:0004:0085:22:0
-Sky Cinema Emotion 
+Sky Cinema Emotion
 p:SKY,c:050001
 0017:00c00000:0004:0085:22:0
 Sky Krimi
@@ -4740,11 +4752,8 @@ p:Movistar+
 DISNEY CH.
 p:DCH
 76c4:00c00000:040e:0001:1:0
-M. OSCARS
+M. FAMA 24H
 p:Movistar+
-76c5:00c00000:040e:0001:1:0
-11038V SID 0x76c5
-p:DVB-S QPSK 11038V 19.2Â°E
 76c7:00c00000:040e:0001:1:0
 TCM
 p:TCM
@@ -4865,6 +4874,48 @@ p:ARD
 6dd1:00c00000:044d:0001:1:0
 SWR Fernsehen BW
 p:ARD
+19d3:00c00000:0444:0001:1:0
+12246V SID 0x19d3
+p:DVB-S2 QPSK 12246V 19.2Â°E
+1a2b:00c00000:0444:0001:12:0
+DATASYSTEM
+p:CSAT
+19ca:00c00000:0444:0001:25:0
+NOVELAS TV
+p:CSAT,c:050001
+19cc:00c00000:0444:0001:25:0
+OCS GEANTS
+p:CSAT
+19cd:00c00000:0444:0001:25:0
+VOYAGE
+p:CSAT
+19ce:00c00000:0444:0001:25:0
+PARAMOUNT CHANNEL
+p:CSAT,c:050001
+19cf:00c00000:0444:0001:25:0
+LIBIDO TV
+p:CSAT
+19d0:00c00000:0444:0001:25:0
+PENTHOUSE BLACK
+p:CSAT,c:050001
+19d1:00c00000:0444:0001:25:0
+EVENEMENT
+p:CSAT
+19d2:00c00000:0444:0001:25:0
+SEASONS
+p:CSAT
+19d3:00c00000:0444:0001:25:0
+EQUIDIA LIFE
+p:CSAT
+19d4:00c00000:0444:0001:25:0
+EQUIDIA
+p:CSAT
+19dd:00c00000:0444:0001:25:0
+MULTISPORTS 6
+p:CSAT
+19de:00c00000:0444:0001:25:0
+BABY TV
+p:CSAT
 10d6:00c00000:0418:0001:1:0
 TV TRWAM
 p:SES ASTRA
@@ -5140,7 +5191,7 @@ DISNEY CINEMA
 p:CSAT
 24bb:00c00000:043c:0001:25:0
 FRENCH LOVER
-p:CSAT,c:050001
+p:CSAT
 24bc:00c00000:043c:0001:25:0
 OCS CHOC
 p:CSAT
@@ -5159,50 +5210,14 @@ p:CSAT
 24c1:00c00000:043c:0001:25:0
 PLANETE+ CI
 p:CSAT
+24c2:00c00000:043c:0001:25:0
+CSTAR HITS FRANCE
+p:CSAT
 24c3:00c00000:043c:0001:25:0
 TELETOON+
 p:CSAT
 24c4:00c00000:043c:0001:25:0
 TELETOON+1
-p:CSAT
-1a2b:00c00000:0444:0001:12:0
-DATASYSTEM
-p:CSAT
-19ca:00c00000:0444:0001:25:0
-NOVELAS TV
-p:CSAT,c:050001
-19cc:00c00000:0444:0001:25:0
-OCS GEANTS
-p:CSAT
-19cd:00c00000:0444:0001:25:0
-VOYAGE
-p:CSAT
-19ce:00c00000:0444:0001:25:0
-PARAMOUNT CHANNEL
-p:CSAT
-19cf:00c00000:0444:0001:25:0
-LIBIDO TV
-p:CSAT
-19d0:00c00000:0444:0001:25:0
-PENTHOUSE BLACK
-p:CSAT,c:050001
-19d1:00c00000:0444:0001:25:0
-EVENEMENT
-p:CSAT
-19d2:00c00000:0444:0001:25:0
-SEASONS
-p:CSAT
-19d3:00c00000:0444:0001:25:0
-EQUIDIA LIFE
-p:CSAT
-19d4:00c00000:0444:0001:25:0
-EQUIDIA LIVE
-p:CSAT
-19dd:00c00000:0444:0001:25:0
-MULTISPORTS 6
-p:CSAT
-19de:00c00000:0444:0001:25:0
-BABY TV
 p:CSAT
 225f:00c00000:044c:0001:12:0
 DATASYSTEM
@@ -5239,7 +5254,7 @@ FRANCE 4
 p:CSAT,c:050001
 21fe:00c00000:044c:0001:25:0
 TFX
-p:CSAT,f:8
+p:CSAT
 21ff:00c00000:044c:0001:25:0
 TMC
 p:CSAT
@@ -5248,7 +5263,7 @@ DATASYSTEM
 p:CSAT
 251d:00c00000:045e:0001:25:0
 CINE+ CLUB
-p:CSAT
+p:CSAT,c:050001
 251e:00c00000:045e:0001:25:0
 MULTISPORTS 1
 p:CSAT
@@ -5286,8 +5301,8 @@ p:CSAT,c:050001
 NATIONAL GEO
 p:CSAT
 232b:00c00000:0442:0001:25:0
- TF1 Séries Films
-p:CSAT,f:8
+TF1 SERIES FILMS
+p:CSAT
 232c:00c00000:0442:0001:25:0
 PARIS PREMIERE
 p:CSAT
@@ -5312,6 +5327,9 @@ p:CSAT
 2334:00c00000:0442:0001:25:0
 C8
 p:CSAT
+233c:00c00000:0442:0001:25:0
+ASSOCIATION MATERIEL
+p:CSAT
 0f8c:00c00000:0002:0085:12:0
 Humax PR-HD3000C
 p:
@@ -5326,7 +5344,7 @@ Humax ESD 160C BL2
 p:
 0206:00c00000:0002:0085:22:0
 Romance TV
-p:SKY
+p:SKY,c:050001
 000c:00c00000:0002:0085:22:0
 NatGeo Wild
 p:SKY
@@ -5581,7 +5599,7 @@ CANAL+ SPORT
 p:CSAT
 2265:00c00000:0438:0001:25:0
 CANAL+ FAMILY
-p:CSAT
+p:CSAT,c:050001
 2266:00c00000:0438:0001:25:0
 CANAL+ SERIES
 p:CSAT
@@ -5634,7 +5652,7 @@ p:CSAT
 CANAL J
 p:CSAT
 1970:00c00000:044e:0001:25:0
-NICKELODEON 4TEEN
+NICKELODEON TEEN
 p:CSAT
 19c6:00c00000:044e:0001:100:0
 12441V SID 0x19c6
@@ -5772,13 +5790,13 @@ p:BetaDigital
 NICKELODEON HD
 p:MTV Networks
 5274:00c00000:041d:0001:25:0
-Welt HD
-p:BetaDigital
+WELT HD
+p:BetaDigital,c:050001
 527d:00c00000:041d:0001:25:0
 NICKELODEON HD AT
 p:MTV Networks
 527e:00c00000:041d:0001:25:0
-N24 HD Austria
+WELT HD
 p:BetaDigital
 52cf:00c00000:041d:0001:100:0
 10773H SID 0x52cf
@@ -6292,7 +6310,7 @@ SIXX HD
 p:ProSiebenSat.1,c:050001
 ef78:00c00000:03f9:0001:25:0
 Pro7 MAXX HD
-p:ProSiebenSat.1
+p:ProSiebenSat.1,c:050001
 ef8a:00c00000:03f9:0001:25:0
 kabel eins HD Austria
 p:ProSiebenSat.1,c:050001
@@ -6433,7 +6451,7 @@ SES UHD Demo Channel
 p:SES,c:050006
 0002:00c00000:040b:0001:31:0
 UHD1 by ASTRA / HD+
-p:SES ASTRA
+p:SES ASTRA,c:050006
 183a:00c00000:040b:0001:31:0
 Travelxp 4k
 p:MX1
@@ -7964,42 +7982,6 @@ p:KPN Digitenne
 01a4:ffff0000:08c4:2210:2:0
 MNM
 p:KPN Digitenne
-4b2a:ffff0000:0810:0600:1:0
-JimJam
-p:Ziggo,c:050001
-4b2f:ffff0000:0810:0600:1:0
-Discovery World
-p:Ziggo
-4b30:ffff0000:0810:0600:1:0
-DJAZZ
-p:Ziggo
-4b32:ffff0000:0810:0600:1:0
-TRT Çocuk
-p:Ziggo
-4b33:ffff0000:0810:0600:1:0
-Cartoon Network
-p:Ziggo
-4b34:ffff0000:0810:0600:1:0
-Comedy Central Extra
-p:Ziggo,c:050001
-4b35:ffff0000:0810:0600:1:0
-Comedy Central Family
-p:Ziggo
-4b36:ffff0000:0810:0600:1:0
-VH1 Classic
-p:Ziggo,c:050001
-4b37:ffff0000:0810:0600:1:0
-Ziggo Sport Extra1
-p:Ziggo
-4b38:ffff0000:0810:0600:1:0
-Ziggo Sport Extra2
-p:Ziggo
-4b39:ffff0000:0810:0600:1:0
-Ziggo
-p:Ziggo
-4b2e:ffff0000:0810:0600:25:0
-Discovery Science HD
-p:Ziggo,c:050001,c:090202
 4e2a:ffff0000:0078:08c9:1:0
 RTL Telekids
 p:CAIW Media
@@ -8111,6 +8093,39 @@ p:Delta
 0135:ffff0000:0003:10ef:25:0
 Nautical Channel HD
 p:Del
+4b2f:ffff0000:0810:0600:1:0
+Discovery World
+p:Ziggo
+4b30:ffff0000:0810:0600:1:0
+DJAZZ
+p:Ziggo
+4b32:ffff0000:0810:0600:1:0
+TRT Çocuk
+p:Ziggo
+4b33:ffff0000:0810:0600:1:0
+Cartoon Network
+p:Ziggo
+4b34:ffff0000:0810:0600:1:0
+Comedy Central Extra
+p:Ziggo,c:050001
+4b35:ffff0000:0810:0600:1:0
+Comedy Central Family
+p:Ziggo
+4b36:ffff0000:0810:0600:1:0
+VH1 Classic
+p:Ziggo,c:050001
+4b37:ffff0000:0810:0600:1:0
+Ziggo Sport Extra1
+p:Ziggo
+4b38:ffff0000:0810:0600:1:0
+Ziggo Sport Extra2
+p:Ziggo
+4b39:ffff0000:0810:0600:1:0
+Ziggo
+p:Ziggo
+4b2e:ffff0000:0810:0600:25:0
+Discovery Science HD
+p:Ziggo,c:050001,c:090202
 0131:ffff0000:0006:10ef:1:0
 Film1 Action
 p:Delta
@@ -8153,9 +8168,6 @@ p:CAIW Media
 2346:ffff0000:006d:08c9:1:0
 AT5
 p:CAIW Media
-2378:ffff0000:006d:08c9:1:0
-AMC Networks
-p:CAIW Media,c:098800
 238c:ffff0000:006d:08c9:2:0
 Radio Continu
 p:CAIW Media
@@ -8740,7 +8752,7 @@ CBS Reality
 p:Ziggo,c:050001,c:090202
 4b5c:ffff0000:0813:0600:1:0
 Extreme Sports Channel
-p:Ziggo
+p:Ziggo,c:050001,c:090202
 4b5e:ffff0000:0813:0600:1:0
 SLAM!
 p:Ziggo
@@ -9213,7 +9225,7 @@ p:Ziggo
 eentv
 p:Ziggo
 307d:ffff0000:00cc:0600:1:0
-TV Meierij
+Omroep Meierij
 p:Ziggo
 307e:ffff0000:00cc:0600:1:0
 Kontakt TV
@@ -9266,6 +9278,9 @@ p:Ziggo
 384f:ffff0000:00cc:0600:2:0
 VOS FM
 p:Ziggo
+3850:ffff0000:00cc:0600:2:0
+Omroep Meierij FM
+p:Ziggo
 4272:ffff0000:0075:08c9:1:0
 Film1 Spotlight
 p:CAIW Media
@@ -9274,9 +9289,6 @@ Film1 Premiere
 p:CAIW Media
 4286:ffff0000:0075:08c9:1:0
 Film1 Comedy & Kids
-p:CAIW Media
-4290:ffff0000:0075:08c9:1:0
-Film1 Sundance
 p:CAIW Media
 429a:ffff0000:0075:08c9:1:0
 Film1 Action
@@ -9926,30 +9938,6 @@ p:Delta
 0bba:ffff0000:001e:10ef:25:0
 24Kitchen HD
 p:Delta
-4bbc:ffff0000:0831:0600:1:0
-Spike HD
-p:,f:8
-4bbd:ffff0000:0831:0600:1:0
-Viceland HD
-p:,f:8
-76b1:ffff0000:0831:0600:25:0
-Ziggo Live Events FOX Sports
-p:Ziggo,c:050001
-4bb5:ffff0000:0831:0600:25:0
-ID HD
-p:Ziggo,c:050001
-4bb6:ffff0000:0831:0600:25:0
-Ziggo Sport Golf HD
-p:Ziggo
-4bb9:ffff0000:0831:0600:25:0
-FOX Sports 6 HD
-p:Ziggo,c:050001
-4bbc:ffff0000:0831:0600:25:0
-Spike HD
-p:Ziggo,c:050001
-4bbd:ffff0000:0831:0600:25:0
-Viceland HD
-p:Ziggo,c:050001
 02c3:ffff0000:0007:10ef:1:0
 DELTA App Portaal
 p:Delta
@@ -9976,7 +9964,7 @@ Film1 Action HD
 p:Ziggo,c:050001
 4cc6:ffff0000:0819:0600:25:0
 Film1 Family HD
-p:Ziggo
+p:Ziggo,c:050001
 4cc7:ffff0000:0819:0600:25:0
 Film1 Premiere HD
 p:Ziggo,c:050001
@@ -10661,6 +10649,63 @@ p:Ziggo,c:050001
 4c6e:ffff0000:083a:0600:25:0
 TLC HD
 p:Ziggo,c:050001
+bb94:ffff0000:0094:08c9:25:0
+FSI2 HD
+p:CAIW Media,c:050001
+bb9e:ffff0000:0094:08c9:25:0
+Discovery ID HD
+p:CAIW Media
+bba8:ffff0000:0094:08c9:25:0
+Motorsport TV HD
+p:CAIW Media
+bbb2:ffff0000:0094:08c9:25:0
+Xite HD
+p:CAIW Media
+b7ac:ffff0000:0093:08c9:25:0
+FSI4 HD
+p:CAIW Media
+b7b6:ffff0000:0093:08c9:25:0
+Disney XD HD
+p:CAIW Media
+b7c0:ffff0000:0093:08c9:25:0
+Travel Channel HD
+p:CAIW Media,c:050001
+76b1:ffff0000:0831:0600:25:0
+Ziggo Live Events FOX Sports
+p:Ziggo,c:050001
+4bb5:ffff0000:0831:0600:25:0
+ID HD
+p:Ziggo,c:050001
+4bb6:ffff0000:0831:0600:25:0
+Ziggo Sport Golf HD
+p:Ziggo
+4bb9:ffff0000:0831:0600:25:0
+FOX Sports 6 HD
+p:Ziggo,c:050001
+4bbc:ffff0000:0831:0600:25:0
+Spike HD
+p:Ziggo,c:050001
+4bbd:ffff0000:0831:0600:25:0
+Viceland HD
+p:Ziggo,c:050001
+b3c4:ffff0000:0092:08c9:25:0
+Ziggo Sport Golf HD
+p:CAIW Media
+b3ce:ffff0000:0092:08c9:25:0
+France 24 HD
+p:CAIW Media
+b3d8:ffff0000:0092:08c9:25:0
+BBC World News HD
+p:CAIW Media
+afdc:ffff0000:0091:08c9:25:0
+Ziggo Sport Racing HD
+p:CAIW Media,c:050001
+afe6:ffff0000:0091:08c9:25:0
+Ziggo Sport Voetbal HD
+p:CAIW Media
+aff0:ffff0000:0091:08c9:25:0
+Discovery Science HD
+p:CAIW Media
 4cf5:ffff0000:081c:0600:25:0
 24Kitchen HD
 p:Ziggo,c:050001

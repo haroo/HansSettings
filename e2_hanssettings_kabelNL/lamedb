@@ -129,9 +129,6 @@ ffff0000:0079:08c9
 ffff0000:08c4:2210
 	c 5219990:0:2:3:0:0:0
 /
-ffff0000:0810:0600
-	c 172000:6900000:2:5:0:0:0
-/
 ffff0000:0078:08c9
 	c 666000:6900000:2:3:0:0:0
 /
@@ -143,6 +140,9 @@ ffff0000:080a:0600
 /
 ffff0000:0003:10ef
 	c 378000:6875000:2:3:0:0:0
+/
+ffff0000:0810:0600
+	c 172000:6900000:2:5:0:0:0
 /
 ffff0000:0006:10ef
 	c 402000:6875000:2:3:0:0:0
@@ -327,9 +327,6 @@ ffff0000:0007:0f3c
 ffff0000:001e:10ef
 	c 538000:6875000:2:3:0:0:0
 /
-ffff0000:0831:0600
-	c 762750:6900000:2:5:0:0:0
-/
 ffff0000:0007:10ef
 	c 410000:6875000:2:3:0:0:0
 /
@@ -401,6 +398,21 @@ ffff0000:008e:08c9
 /
 ffff0000:083a:0600
 	c 706750:6900000:2:5:0:0:0
+/
+ffff0000:0094:08c9
+	c 298000:6900000:2:3:0:0:0
+/
+ffff0000:0093:08c9
+	c 290000:6900000:2:3:0:0:0
+/
+ffff0000:0831:0600
+	c 762750:6900000:2:5:0:0:0
+/
+ffff0000:0092:08c9
+	c 282000:6900000:2:3:0:0:0
+/
+ffff0000:0091:08c9
+	c 274000:6945100:1:3:0:0:0
 /
 ffff0000:081c:0600
 	c 562000:6900000:0:5:0:0:0
@@ -1907,42 +1919,6 @@ p:KPN Digitenne
 01a4:ffff0000:08c4:2210:2:0
 MNM
 p:KPN Digitenne
-4b2a:ffff0000:0810:0600:1:0
-JimJam
-p:Ziggo,c:050001
-4b2f:ffff0000:0810:0600:1:0
-Discovery World
-p:Ziggo
-4b30:ffff0000:0810:0600:1:0
-DJAZZ
-p:Ziggo
-4b32:ffff0000:0810:0600:1:0
-TRT Çocuk
-p:Ziggo
-4b33:ffff0000:0810:0600:1:0
-Cartoon Network
-p:Ziggo
-4b34:ffff0000:0810:0600:1:0
-Comedy Central Extra
-p:Ziggo,c:050001
-4b35:ffff0000:0810:0600:1:0
-Comedy Central Family
-p:Ziggo
-4b36:ffff0000:0810:0600:1:0
-VH1 Classic
-p:Ziggo,c:050001
-4b37:ffff0000:0810:0600:1:0
-Ziggo Sport Extra1
-p:Ziggo
-4b38:ffff0000:0810:0600:1:0
-Ziggo Sport Extra2
-p:Ziggo
-4b39:ffff0000:0810:0600:1:0
-Ziggo
-p:Ziggo
-4b2e:ffff0000:0810:0600:25:0
-Discovery Science HD
-p:Ziggo,c:050001,c:090202
 4e2a:ffff0000:0078:08c9:1:0
 RTL Telekids
 p:CAIW Media
@@ -2054,6 +2030,39 @@ p:Delta
 0135:ffff0000:0003:10ef:25:0
 Nautical Channel HD
 p:Del
+4b2f:ffff0000:0810:0600:1:0
+Discovery World
+p:Ziggo
+4b30:ffff0000:0810:0600:1:0
+DJAZZ
+p:Ziggo
+4b32:ffff0000:0810:0600:1:0
+TRT Çocuk
+p:Ziggo
+4b33:ffff0000:0810:0600:1:0
+Cartoon Network
+p:Ziggo
+4b34:ffff0000:0810:0600:1:0
+Comedy Central Extra
+p:Ziggo,c:050001
+4b35:ffff0000:0810:0600:1:0
+Comedy Central Family
+p:Ziggo
+4b36:ffff0000:0810:0600:1:0
+VH1 Classic
+p:Ziggo,c:050001
+4b37:ffff0000:0810:0600:1:0
+Ziggo Sport Extra1
+p:Ziggo
+4b38:ffff0000:0810:0600:1:0
+Ziggo Sport Extra2
+p:Ziggo
+4b39:ffff0000:0810:0600:1:0
+Ziggo
+p:Ziggo
+4b2e:ffff0000:0810:0600:25:0
+Discovery Science HD
+p:Ziggo,c:050001,c:090202
 0131:ffff0000:0006:10ef:1:0
 Film1 Action
 p:Delta
@@ -2096,9 +2105,6 @@ p:CAIW Media
 2346:ffff0000:006d:08c9:1:0
 AT5
 p:CAIW Media
-2378:ffff0000:006d:08c9:1:0
-AMC Networks
-p:CAIW Media,c:098800
 238c:ffff0000:006d:08c9:2:0
 Radio Continu
 p:CAIW Media
@@ -2683,7 +2689,7 @@ CBS Reality
 p:Ziggo,c:050001,c:090202
 4b5c:ffff0000:0813:0600:1:0
 Extreme Sports Channel
-p:Ziggo
+p:Ziggo,c:050001,c:090202
 4b5e:ffff0000:0813:0600:1:0
 SLAM!
 p:Ziggo
@@ -3156,7 +3162,7 @@ p:Ziggo
 eentv
 p:Ziggo
 307d:ffff0000:00cc:0600:1:0
-TV Meierij
+Omroep Meierij
 p:Ziggo
 307e:ffff0000:00cc:0600:1:0
 Kontakt TV
@@ -3209,6 +3215,9 @@ p:Ziggo
 384f:ffff0000:00cc:0600:2:0
 VOS FM
 p:Ziggo
+3850:ffff0000:00cc:0600:2:0
+Omroep Meierij FM
+p:Ziggo
 4272:ffff0000:0075:08c9:1:0
 Film1 Spotlight
 p:CAIW Media
@@ -3217,9 +3226,6 @@ Film1 Premiere
 p:CAIW Media
 4286:ffff0000:0075:08c9:1:0
 Film1 Comedy & Kids
-p:CAIW Media
-4290:ffff0000:0075:08c9:1:0
-Film1 Sundance
 p:CAIW Media
 429a:ffff0000:0075:08c9:1:0
 Film1 Action
@@ -3869,30 +3875,6 @@ p:Delta
 0bba:ffff0000:001e:10ef:25:0
 24Kitchen HD
 p:Delta
-4bbc:ffff0000:0831:0600:1:0
-Spike HD
-p:,f:8
-4bbd:ffff0000:0831:0600:1:0
-Viceland HD
-p:,f:8
-76b1:ffff0000:0831:0600:25:0
-Ziggo Live Events FOX Sports
-p:Ziggo,c:050001
-4bb5:ffff0000:0831:0600:25:0
-ID HD
-p:Ziggo,c:050001
-4bb6:ffff0000:0831:0600:25:0
-Ziggo Sport Golf HD
-p:Ziggo
-4bb9:ffff0000:0831:0600:25:0
-FOX Sports 6 HD
-p:Ziggo,c:050001
-4bbc:ffff0000:0831:0600:25:0
-Spike HD
-p:Ziggo,c:050001
-4bbd:ffff0000:0831:0600:25:0
-Viceland HD
-p:Ziggo,c:050001
 02c3:ffff0000:0007:10ef:1:0
 DELTA App Portaal
 p:Delta
@@ -3919,7 +3901,7 @@ Film1 Action HD
 p:Ziggo,c:050001
 4cc6:ffff0000:0819:0600:25:0
 Film1 Family HD
-p:Ziggo
+p:Ziggo,c:050001
 4cc7:ffff0000:0819:0600:25:0
 Film1 Premiere HD
 p:Ziggo,c:050001
@@ -4604,6 +4586,63 @@ p:Ziggo,c:050001
 4c6e:ffff0000:083a:0600:25:0
 TLC HD
 p:Ziggo,c:050001
+bb94:ffff0000:0094:08c9:25:0
+FSI2 HD
+p:CAIW Media,c:050001
+bb9e:ffff0000:0094:08c9:25:0
+Discovery ID HD
+p:CAIW Media
+bba8:ffff0000:0094:08c9:25:0
+Motorsport TV HD
+p:CAIW Media
+bbb2:ffff0000:0094:08c9:25:0
+Xite HD
+p:CAIW Media
+b7ac:ffff0000:0093:08c9:25:0
+FSI4 HD
+p:CAIW Media
+b7b6:ffff0000:0093:08c9:25:0
+Disney XD HD
+p:CAIW Media
+b7c0:ffff0000:0093:08c9:25:0
+Travel Channel HD
+p:CAIW Media,c:050001
+76b1:ffff0000:0831:0600:25:0
+Ziggo Live Events FOX Sports
+p:Ziggo,c:050001
+4bb5:ffff0000:0831:0600:25:0
+ID HD
+p:Ziggo,c:050001
+4bb6:ffff0000:0831:0600:25:0
+Ziggo Sport Golf HD
+p:Ziggo
+4bb9:ffff0000:0831:0600:25:0
+FOX Sports 6 HD
+p:Ziggo,c:050001
+4bbc:ffff0000:0831:0600:25:0
+Spike HD
+p:Ziggo,c:050001
+4bbd:ffff0000:0831:0600:25:0
+Viceland HD
+p:Ziggo,c:050001
+b3c4:ffff0000:0092:08c9:25:0
+Ziggo Sport Golf HD
+p:CAIW Media
+b3ce:ffff0000:0092:08c9:25:0
+France 24 HD
+p:CAIW Media
+b3d8:ffff0000:0092:08c9:25:0
+BBC World News HD
+p:CAIW Media
+afdc:ffff0000:0091:08c9:25:0
+Ziggo Sport Racing HD
+p:CAIW Media,c:050001
+afe6:ffff0000:0091:08c9:25:0
+Ziggo Sport Voetbal HD
+p:CAIW Media
+aff0:ffff0000:0091:08c9:25:0
+Discovery Science HD
+p:CAIW Media
 4cf5:ffff0000:081c:0600:25:0
 24Kitchen HD
 p:Ziggo,c:050001
