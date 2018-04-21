@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:1e3:0:0:0:0:0:0:0:
+#SERVICE 1:64:1d5:0:0:0:0:0:0:0:
 #DESCRIPTION Publieke zenders
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio1-bb-mp3:NPO Radio 1
 #DESCRIPTION NPO Radio 1
@@ -33,17 +33,7 @@
 #DESCRIPTION NPO Radio 6 Soul & Jazz
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2dss.omroep.nl%3a80/radio6-bb-mp3:NPO Radio 6
 #DESCRIPTION NPO Radio 6
-#SERVICE 1:64:1e4:0:0:0:0:0:0:0:
-#DESCRIPTION Radio met beeld
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/1600.m3u8:Radio Veronica WebCam (HQ)
-#DESCRIPTION Radio Veronica WebCam (HQ)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/400.m3u8:Radio Veronica WebCam (LQ)
-#DESCRIPTION Radio Veronica WebCam (LQ)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/800.m3u8:Radio Veronica WebCam (MQ)
-#DESCRIPTION Radio Veronica WebCam (MQ)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//skyradio.rr.kpnstreaming.nl/b2b/live/skyradio/veronica/index.m3u8:Radio Veronica webcam
-#DESCRIPTION Radio Veronica webcam
-#SERVICE 1:64:1e5:0:0:0:0:0:0:0:
+#SERVICE 1:64:1d6:0:0:0:0:0:0:0:
 #DESCRIPTION Overige
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radiocorp.nl/100pnl_dance_mp3:100%25 NL Dance
 #DESCRIPTION 100% NL Dance
@@ -71,8 +61,10 @@
 #DESCRIPTION Arrow-Caz
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//listen.radionomy.com%3a80/BlastFMNederlandOfficielestream:BlastFM-Nederland-Offici-le-stream
 #DESCRIPTION BlastFM-Nederland-Offici-le-stream
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//icecast-bnr.cdp.triple-it.nl/bnr_mp3_128_03:BNR Nieuwsradio (alleen audio)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-bnr.cdp.triple-it.nl/bnr_mp3_128_03:BNR Nieuwsradio (alleen audio)
 #DESCRIPTION BNR Nieuwsradio (alleen audio)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//str1.hollanddata.eu%3a8000:Bright FM (Family7)
+#DESCRIPTION Bright FM (Family7)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//candlelight.live-streams.nl/candlelight:Candlelight
 #DESCRIPTION Candlelight
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//185.80.220.12%3a8088/mobile:Carnaval-Radionl---24-7-Vastelaovend-muzieek
@@ -87,50 +79,60 @@
 #DESCRIPTION Classic FM Opera
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//18003.live.streamtheworld.com/SRGSTR26.mp3:Classic FM Soundtracks
 #DESCRIPTION Classic FM Soundtracks
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/gehoordestilte:Concertzender De Gehoorde Stilte
-#DESCRIPTION Concertzender De Gehoorde Stilte
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/Classic-Rock-Records:Classic Rock Records
+#DESCRIPTION Classic Rock Records
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/live:Concertzender
+#DESCRIPTION Concertzender
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/barok:Concertzender Barok
+#DESCRIPTION Concertzender Barok
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/amateurmuziek:Concertzender De Muzikant (amateurmuziek)
+#DESCRIPTION Concertzender De Muzikant (amateurmuziek)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/film:Concertzender Filmmuziek
 #DESCRIPTION Concertzender Filmmuziek
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/folkit:Concertzender Folk it!
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/folkit:Concertzender Folk it!
 #DESCRIPTION Concertzender Folk it!
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/gaudeamus:Concertzender Gaudeamus
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/gaudeamus:Concertzender Gaudeamus
 #DESCRIPTION Concertzender Gaudeamus
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/bach:Concertzender Geen dag zonder Bach
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/bach:Concertzender Geen dag zonder Bach
 #DESCRIPTION Concertzender Geen dag zonder Bach
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/gregoriaans:Concertzender Gregoriaans
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/gehoordestilte:Concertzender Gehoorde Stilte
+#DESCRIPTION Concertzender Gehoorde Stilte
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/gregoriaans:Concertzender Gregoriaans
 #DESCRIPTION Concertzender Gregoriaans
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/hardbop:Concertzender Hard Bop
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/hardbop:Concertzender Hard Bop
 #DESCRIPTION Concertzender Hard Bop
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/jazz:Concertzender Jazz
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/jazz:Concertzender Jazz
 #DESCRIPTION Concertzender Jazz
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/jazznotjazz:Concertzender Jazznotjazz
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/jazznotjazz:Concertzender Jazznotjazz
 #DESCRIPTION Concertzender Jazznotjazz
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/klassiek:Concertzender Klassieke Muziek
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/klassiek:Concertzender Klassieke Muziek
 #DESCRIPTION Concertzender Klassieke Muziek
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/nieuwemuziek:Concertzender Nieuwe Muziek
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/liveconcert:Concertzender Live Concert
+#DESCRIPTION Concertzender Live Concert
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/nieuwemuziek:Concertzender Nieuwe Muziek
 #DESCRIPTION Concertzender Nieuwe Muziek
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/novembermusic:Concertzender November Music
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/novembermusic:Concertzender November Music
 #DESCRIPTION Concertzender November Music
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/orientexpress:Concertzender Oriënt Express
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/orientexpress:Concertzender Oriënt Express
 #DESCRIPTION Concertzender Oriënt Express
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/oudemuziek:Concertzender Oude Muziek
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/opera:Concertzender Opera
+#DESCRIPTION Concertzender Opera
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/oudemuziek:Concertzender Oude Muziek
 #DESCRIPTION Concertzender Oude Muziek
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/pop:Concertzender Pop
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/pop:Concertzender Pop
 #DESCRIPTION Concertzender Pop
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/raakvlakken:Concertzender Raakvlakken
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/raakvlakken:Concertzender Raakvlakken
 #DESCRIPTION Concertzender Raakvlakken
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/radiophonics:Concertzender Radiophonics
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/radiophonics:Concertzender Radiophonics
 #DESCRIPTION Concertzender Radiophonics
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/slotaafranga:Concertzender Solta a Franga
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/slotaafranga:Concertzender Solta a Franga
 #DESCRIPTION Concertzender Solta a Franga
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/vredenburg:Concertzender TivoliVredenburg Live
-#DESCRIPTION Concertzender TivoliVredenburg Live
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/wereldmuziek:Concertzender Wereldmuziek
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/vredenburg:Concertzender Utrecht Muziekstad
+#DESCRIPTION Concertzender Utrecht Muziekstad
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/wereldmuziek:Concertzender Wereldmuziek
 #DESCRIPTION Concertzender Wereldmuziek
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/concertzenderlive:Concertzender X-Rated
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/concertzenderlive:Concertzender X-Rated
 #DESCRIPTION Concertzender X-Rated
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.greenhost.nl%3a8080/live:Concertzender
-#DESCRIPTION Concertzender
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//149.210.177.52%3a8000/dutchbeatsradio-bb:DBR (Dutch Beats Radio)
 #DESCRIPTION DBR (Dutch Beats Radio)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//sc-01.deep.fm/sd:Deep FM
@@ -167,16 +169,22 @@
 #DESCRIPTION Groot Nieuws Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream02.audisi.nl/kbc-high?1437830316953.mp3:KBC Radio (High Quality)
 #DESCRIPTION KBC Radio (High Quality)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.kxclassikx.nl/:KXclassics
-#DESCRIPTION KXclassics
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//www.lxclassics.com/playlist/LXClassics.m3u:LX Classics
-#DESCRIPTION LX Classics
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//kinderradio.ic-stream.nl%3a30039/stream:Kinderradio FM
+#DESCRIPTION Kinderradio FM
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.kxclassikx.nl/:KX-Classics
+#DESCRIPTION KX-Classics
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//178.19.116.3%3a8063/edgeclassics_mp3:KX-Classics The Edge
+#DESCRIPTION KX-Classics The Edge
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//play.lxclassics.com/:LX-Classics
+#DESCRIPTION LX-Classics
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream05.dotpoint.nl%3a8000/nederpop:Nederpop Radio
 #DESCRIPTION Nederpop Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//2.trafficstream.nl/proxy/business_main?mp=/stream:New Business Radio
 #DESCRIPTION New Business Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//178.20.171.156/;stream.mp3:Olympia radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//178.20.171.156/;stream.mp3:Olympia radio
 #DESCRIPTION Olympia radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//shoutcasthd.ourhouse.fm/proxy/ourhousehd:Our House FM
+#DESCRIPTION Our House FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//as192.pinguinradio.com:Pinguin Aardschok
 #DESCRIPTION Pinguin Aardschok
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//pc192.pinguinradio.com:Pinguin Classics
@@ -189,18 +197,18 @@
 #DESCRIPTION Puur NL
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream01.platform02.true.nl%3a8000/qdance-hard:Q-dance
 #DESCRIPTION Q-dance
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_32.aac:Q-Music
+#DESCRIPTION Q-Music
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_fouteuur_32.aac:Q-Music - Het Foute Uur Non Stop
 #DESCRIPTION Q-Music - Het Foute Uur Non Stop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_32.aac?rnd=3885139600267132:Q-Music - Hot Now
 #DESCRIPTION Q-Music - Hot Now
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_qlmb_32.aac:Qmusic - Limburg
+#DESCRIPTION Qmusic - Limburg
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_nonstop_32.aac:Q-Music - Non-Stop
 #DESCRIPTION Q-Music - Non-Stop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_classics_32.aac?rnd=3215139144578989:Q-Music - Summer
 #DESCRIPTION Q-Music - Summer
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_32.aac:Q-Music
-#DESCRIPTION Q-Music
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_qlmb_32.aac?rnd=5831675429940277:Qmusic Limburg
-#DESCRIPTION Qmusic Limburg
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_classics_32.aac:Qmusic-90s
 #DESCRIPTION Qmusic-90s
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//20423.live.streamtheworld.com%3a3690/RADIO10_SC:Radio 10
@@ -251,8 +259,8 @@
 #DESCRIPTION Radio-538-Dance-Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//18973.live.streamtheworld.com%3a3690/TLPSTR11_SC:Radio-538-Hitzone
 #DESCRIPTION Radio-538-Hitzone
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20073.live.streamtheworld.com%3a3690/TLPSTR09_SC:Radio-538-Nonstop
-#DESCRIPTION Radio-538-Nonstop
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com%3a3690/TLPSTR09_SC:Radio538 Nonstop
+#DESCRIPTION Radio538 Nonstop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20423.live.streamtheworld.com%3a3690/TLPSTR16_SC:Radio-538-Party
 #DESCRIPTION Radio-538-Party
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//19113.live.streamtheworld.com%3a3690/TLPSTR16_SC:Radio-538-Party
@@ -261,6 +269,8 @@
 #DESCRIPTION Radio-538-Verrckte-Stunde
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radiocontinu.nl/radio-continu:Radio Continu
 #DESCRIPTION Radio Continu
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//audiostreamen.nl%3a8062/:Radio Decibel
+#DESCRIPTION Radio Decibel
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.extragold.nl%3a8080:Radio Extra Gold
 #DESCRIPTION Radio Extra Gold
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//87.233.180.73%3a8000/;stream.mp3:Radio Maria NL
@@ -309,8 +319,8 @@
 #DESCRIPTION Sky Radio 80-s-Hits
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20133.live.streamtheworld.com%3a80/SRGSTR04.mp3:Sky-Radio-80-s-Hits
 #DESCRIPTION Sky-Radio-80-s-Hits
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20073.live.streamtheworld.com/SRGSTR05AAC.aac:Sky Radio 90-s-Hits
-#DESCRIPTION Sky Radio 90-s-Hits
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20073.live.streamtheworld.com%3a80/SRGSTR05.mp3:Sky Radio 90s Hits
+#DESCRIPTION Sky Radio 90s Hits
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/SRGSTR08AAC.aac:Sky Radio Christmas
 #DESCRIPTION Sky Radio Christmas
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20133.live.streamtheworld.com/SRGSTR20AAC.aac:Sky Radio feel good hits
@@ -323,8 +333,8 @@
 #DESCRIPTION Sky Radio Lounge
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//18183.live.streamtheworld.com%3a3690/SRGSTR07AAC_SC:Sky-Radio-Lounge
 #DESCRIPTION Sky-Radio-Lounge
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//17873.live.streamtheworld.com/SRGSTR03AAC.aac:Sky Radio Lovesongs
-#DESCRIPTION Sky Radio Lovesongs
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//19073.live.streamtheworld.com%3a3690/SRGSTR03AAC_SC:Sky Radio - Lovesongs
+#DESCRIPTION Sky Radio - Lovesongs
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20073.live.streamtheworld.com/SRGSTR23AAC.aac:Sky Radio running hits expert
 #DESCRIPTION Sky Radio running hits expert
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//17873.live.streamtheworld.com/SRGSTR22AAC.aac:Sky Radio running hits gevorderd
@@ -343,18 +353,20 @@
 #DESCRIPTION Sky Radio Supestar Top 101
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//20133.live.streamtheworld.com%3a3690/SKYRADIO_SC:Skyradio-NL
 #DESCRIPTION Skyradio-NL
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//19993.live.streamtheworld.com%3a80/SLAM_MP3_SC?:SLAM
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//19983.live.streamtheworld.com%3a80/SLAM_MP3_SC?:SLAM
 #DESCRIPTION SLAM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//17873.live.streamtheworld.com/WEB14_AAC.aac?ttag=PLAYER%3aNOPREROLL&tdsdk=js-2.9&pname=TDSdk&pversion=2.9&banners=none&sbmid=6f32a520-40af-458e-ce7f-88dfa4e3e1b4:SLAM! 40
 #DESCRIPTION SLAM! 40
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//20103.live.streamtheworld.com/WEB15_AAC.aac:SLAM Dance 1000
+#DESCRIPTION SLAM Dance 1000
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20403.live.streamtheworld.com%3a80/WEB11_MP3_SC?:SLAM-Hardstyle
 #DESCRIPTION SLAM-Hardstyle
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//19993.live.streamtheworld.com%3a80/WEB11_MP3_SC?:SLAM-Hardstyle
 #DESCRIPTION SLAM-Hardstyle
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//17873.live.streamtheworld.com%3a80/WEB09_MP3_SC?:SLAM-Juize
 #DESCRIPTION SLAM-Juize
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20423.live.streamtheworld.com%3a80/WEB10_MP3_SC?:SLAM-Non-stop
-#DESCRIPTION SLAM-Non-stop
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20873.live.streamtheworld.com%3a80/WEB10_MP3_SC?:SLAM - Non-stop
+#DESCRIPTION SLAM - Non-stop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20403.live.streamtheworld.com%3a80/WEB12_MP3_SC?:SLAM-The-Boom-Room
 #DESCRIPTION SLAM-The-Boom-Room
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//soulradio02.live-streams.nl/live:Soulradio
