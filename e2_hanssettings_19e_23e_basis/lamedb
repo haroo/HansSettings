@@ -72,6 +72,9 @@ transponders
 00eb0000:0c89:0003
 	s 11876000:29900000:0:3:235:2:0:1:2:0:2
 /
+00eb0000:0c8b:0003
+	s 11914000:29900000:0:2:235:2:0:1:2:0:2
+/
 00eb0000:0c84:0003
 	s 11778000:27500000:1:9:235:2:0:1:1:0:2
 /
@@ -287,9 +290,6 @@ transponders
 /
 00c00000:0008:0085
 	s 12070000:27500000:0:9:192:2:0:1:1:0:2
-/
-00c00000:045f:0001
-	s 12721000:22000000:0:2:192:2:0:1:2:0:2
 /
 00c00000:0455:0001
 	s 12574000:22000000:0:2:192:2:0:1:2:0:2
@@ -748,7 +748,7 @@ Eurosport 1 HD BE
 p:M7 Group,c:050001
 13cd:00eb0000:0c95:0003:25:0
 Film Europe INT HD
-p:M7 Group
+p:M7 Group,c:050001,c:090202
 1331:00eb0000:0ca2:0003:1:0
 Slagr TV
 p:Towercom
@@ -756,8 +756,8 @@ p:Towercom
 RADIO VLNA
 p:Towercom
 1337:00eb0000:0ca2:0003:2:0
-Radio Aktual
-p:Towercom
+Radio Jazz FM
+p:Towercom,f:8
 1339:00eb0000:0ca2:0003:2:0
 Slovensko
 p:Towercom
@@ -853,7 +853,7 @@ OCKO STAR
 p:Towercom
 1328:00eb0000:0ca2:0003:25:0
 TA3 HD
-p:Towercom,c:050001
+p:Towercom
 1329:00eb0000:0ca2:0003:25:0
 STV1 HD
 p:Towercom
@@ -956,9 +956,6 @@ p:Telekom Srbija
 00d3:00eb0000:0c20:0003:2:0
 PLAY Radio
 p:Telekom Srbija
-36d8:00eb0000:0c8c:0003:1:0
-MAZ new2
-p:MB Satellite
 36d9:00eb0000:0c8c:0003:1:0
 GERMAN TOTE TV 
 p:MB Satellite
@@ -1135,7 +1132,7 @@ p:M7 Group,c:050001
 p:M7 Group
 5246:00eb0000:0c99:0003:22:0
 Elevensports2
-p:M7 Group
+p:M7 Group,c:050001
 524d:00eb0000:0c99:0003:22:0
 Omrop Fryslan Televisie
 p:M7 Group,c:050001
@@ -1144,7 +1141,7 @@ TV Drenthe
 p:M7 Group
 5250:00eb0000:0c99:0003:22:0
 TV Gelderland
-p:M7 Group
+p:M7 Group,c:050001
 5252:00eb0000:0c99:0003:22:0
 TV Oost
 p:M7 Group
@@ -1171,7 +1168,7 @@ NPO1 HD
 p:M7 Group,c:050001,c:060002,c:098800
 5226:00eb0000:0c99:0003:25:0
 Canvas HD
-p:M7 Group,c:050001
+p:M7 Group,c:050001,c:098800
 522b:00eb0000:0c99:0003:25:0
 Veronica/DisneyXD HD
 p:M7 Group,c:050001
@@ -1216,7 +1213,7 @@ RTL5 HD
 p:M7 Group,c:050001
 1b73:00eb0000:0c88:0003:25:0
 RTL7 HD
-p:M7 Group,c:050001
+p:M7 Group,c:050001,c:098800
 1b76:00eb0000:0c88:0003:25:0
 VTM HD
 p:M7 Group,c:050001,c:098800
@@ -1372,7 +1369,7 @@ p:M7 Group,c:050001
 p:M7 Group
 1789:00eb0000:0c82:0003:22:0
 NPO Zapp Xtra/NPO 1 extra
-p:M7 Group
+p:M7 Group,c:050001
 178e:00eb0000:0c82:0003:22:0
 FOX Channel
 p:M7 Group
@@ -1637,6 +1634,15 @@ p:M7 Group
 3399:00eb0000:0c89:0003:25:0
 JOJ PLUS HD
 p:M7 Group
+51a4:00eb0000:0c8b:0003:25:0
+NPO 1 UHD
+p:M7 Group,c:050001
+51a5:00eb0000:0c8b:0003:25:0
+NPO1 UHD
+p:M7 Group,c:050001
+51a3:00eb0000:0c8b:0003:31:0
+Test 1
+p:M7 Group,c:050006
 150e:00eb0000:0c84:0003:31:0
 Astra UHD Demo
 p:SES ASTRA,c:050006
@@ -1898,6 +1904,9 @@ p:MTV Networks Europe
 1406:00c00000:0403:0001:1:0
 Russkij Perwyj R1
 p:SES ASTRA
+140a:00c00000:0403:0001:1:0
+YOL TV
+p:AMG Medya,c:050001
 13ed:00c00000:0403:0001:1:0
 VR demo
 p:
@@ -2519,9 +2528,6 @@ p:MB Satellite
 313c:00c00000:0459:0001:1:0
 Deutsches Musik Fernsehen
 p:MB Satellite
-313e:00c00000:0459:0001:1:0
-Lustkanal24 TV
-p:MB Satellite
 3144:00c00000:0459:0001:1:0
 GayBoys LIVE
 p:MB Satellite
@@ -2540,8 +2546,8 @@ p:MB Satellite
 314b:00c00000:0459:0001:1:0
 Erotiksat24 TV
 p:MB Satellite
-314c:00c00000:0459:0001:1:0
-123-Damenwahl
+314d:00c00000:0459:0001:1:0
+MB SAT - Test1
 p:MB Satellite
 314e:00c00000:0459:0001:1:0
 Maennersache TV
@@ -2580,7 +2586,7 @@ p:MB Satellite
 Babestation24
 p:MB Satellite
 315c:00c00000:0459:0001:1:0
-Fundorado TV
+freenet Shopping
 p:MB Satellite
 315f:00c00000:0459:0001:1:0
 EROTIKA TV - NEU!
@@ -2592,7 +2598,7 @@ p:MB Satellite
 Clipmobile
 p:MB Satellite
 3162:00c00000:0459:0001:1:0
-MEDIA BROADCAST - Test 4
+MB SAT - Test7
 p:MB Satellite
 3163:00c00000:0459:0001:1:0
 ALT Sendersuchlauf starten!!
@@ -2644,9 +2650,6 @@ MB SAT - Test3
 p:MB Satellite
 313f:00c00000:0459:0001:25:0
 freenet TV connect
-p:MB Satellite
-3164:00c00000:0459:0001:31:0
-MB SAT - Test2
 p:MB Satellite
 3165:00c00000:0459:0001:31:0
 MB SAT - Test6
@@ -4054,7 +4057,7 @@ p:SKY
 p:SKY
 0014:00c00000:0004:0085:22:0
 Sky Cinema Emotion
-p:SKY
+p:SKY,c:050001
 0017:00c00000:0004:0085:22:0
 Sky Krimi
 p:SKY
@@ -4417,7 +4420,7 @@ Elevensports1
 p:M7 Group
 101f:00c00000:0451:0035:22:0
 ElevenSports2
-p:M7 Group
+p:M7 Group,c:050001
 1031:00c00000:0451:0035:22:0
 Brazzers TV CZ
 p:M7 Group
@@ -4870,7 +4873,7 @@ p:
 p:
 0008:00c00000:0003:0085:22:0
 Sky Cinema Comedy
-p:SKY
+p:SKY,c:050001
 0009:00c00000:0003:0085:22:0
 Sky Cinema Action
 p:SKY
@@ -5056,16 +5059,13 @@ MOSAIQUE BEIN SPORTS
 p:CSAT
 3401:00c00000:03ed:0001:22:0
 SCHWEIZ 5
-p:-,c:050001
-3402:00c00000:03ed:0001:22:0
-oe24.TV
 p:-
 3403:00c00000:03ed:0001:22:0
 QS24
-p:ORS,c:050001
+p:ORS
 3404:00c00000:03ed:0001:22:0
 gotv neu
-p:GoTV,c:050001
+p:GoTV
 3405:00c00000:03ed:0001:22:0
 Melodie TV NEU
 p:-
@@ -5074,7 +5074,10 @@ Aristo.TV
 p:ORF
 3400:00c00000:03ed:0001:25:0
 R9 Oesterreich HD
-p:-,c:050001
+p:-
+3402:00c00000:03ed:0001:25:0
+oe24.TV HD
+p:-
 33f5:00c00000:03ed:0001:25:0
 ORF2St HD
 p:ORF
@@ -5098,13 +5101,13 @@ ORF2V HD
 p:ORF
 33fc:00c00000:03ed:0001:25:0
 ORF III HD
-p:ORF,c:050001
+p:ORF
 33fd:00c00000:03ed:0001:25:0
 ORF SPORT+ HD
 p:ORF
 33fe:00c00000:03ed:0001:25:0
 flimmit Zusatzpaket
-p:ORF,c:050001
+p:ORF
 0320:00c00000:0008:0085:22:0
 STEST1
 p:
@@ -5135,9 +5138,6 @@ p:SKY
 0093:00c00000:0008:0085:25:0
 Sky 1 HD
 p:SKY
-3521:00c00000:045f:0001:22:0
-PMC TV
-p:SES
 1523:00c00000:0455:0001:22:0
 .
 p:BetaDigital
@@ -5197,7 +5197,7 @@ WELT HD
 p:BetaDigital
 52cf:00c00000:041d:0001:100:0
 10773H SID 0x52cf
-p:DVB-S2 QPSK 10773H 19.2Â°E
+p:DVB-S2 8PSK 10773H 19.2Â°E
 2789:00c00000:0409:0001:22:0
 SES Demo
 p:BetaDigital
