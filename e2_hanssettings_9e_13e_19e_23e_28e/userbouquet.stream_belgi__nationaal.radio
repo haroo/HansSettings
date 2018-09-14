@@ -1,5 +1,5 @@
 #NAME Stream België nationaal
-#SERVICE 1:64:2d5:0:0:0:0:0:0:0:
+#SERVICE 1:64:2d8:0:0:0:0:0:0:0:
 #DESCRIPTION ++Vlaanderen++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.vrtcdn.be/radio1-high.mp3:VRT Radio 1
 #DESCRIPTION VRT Radio 1
@@ -29,6 +29,8 @@
 #DESCRIPTION VRT Studio Brussel
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/2bfm-40:2b FM 40
 #DESCRIPTION 2b FM 40
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//91.196.171.99/ajoinmusic:Ajoin Music (België)
+#DESCRIPTION Ajoin Music (België)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/belgian-oldies-radio:BelgianOldiesRadio
 #DESCRIPTION BelgianOldiesRadio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.fmbrussel.be:BRUZZ
@@ -43,8 +45,6 @@
 #DESCRIPTION Crooze FM Radio (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/DRIVE:DRIVE Radio (België)
 #DESCRIPTION DRIVE Radio (België)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radioemotion.be%3a80/;stream.mp3:Emotion (België)
-#DESCRIPTION Emotion (België)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//www.clubfmserver.be%3a8000/family.mp3:Family Radio (België)
 #DESCRIPTION Family Radio (België)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//radiofg.impek.com%3a80/fga:FG Belgium
@@ -69,6 +69,12 @@
 #DESCRIPTION Humorzender Radio
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl%3a80/JOEfm_be_live_128.mp3:Joe FM (België)
 #DESCRIPTION Joe FM (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/JOEfm_be_70s_64.aac?rnd=3826809923887511:Joe FM 70s (België)
+#DESCRIPTION Joe FM 70s (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/JOEfm_be_80s_64.aac?rnd=1234252811859879:Joe FM 80s (België)
+#DESCRIPTION Joe FM 80s (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/JOEfm_be_t2000_64.aac?rnd=8103381493905829:Joe FM Top 2000 (België)
+#DESCRIPTION Joe FM Top 2000 (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.movemedia.eu%3a8010/:Kerstkanaal BE
 #DESCRIPTION Kerstkanaal BE
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//54.77.134.165%3a1935/live/myStream:Ment Radio
@@ -81,12 +87,10 @@
 #DESCRIPTION Nostalgie-Extra-80-s
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewaf90.ice.infomaniak.ch/nostalgiewaf90-128.mp3:Nostalgie-Extra-90-s
 #DESCRIPTION Nostalgie-Extra-90-s
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewafextra.ice.infomaniak.ch/nostalgiewafextra-128.mp3:Nostalgie-Extra-BEACH-FESTIVAL
-#DESCRIPTION Nostalgie-Extra-BEACH-FESTIVAL
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewafbelpop.ice.infomaniak.ch/nostalgiewafbelpop-128.mp3:Nostalgie-Extra-BELPOP
 #DESCRIPTION Nostalgie-Extra-BELPOP
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewafnewwave.ice.infomaniak.ch/nostalgiewafnewwave-128:Nostalgie-Extra-NEW-WAVE
-#DESCRIPTION Nostalgie-Extra-NEW-WAVE
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nostalgiewafnewwave.ice.infomaniak.ch/nostalgiewafnewwave-128:Nostalgie-Extra-NEW-WAVE (België)
+#DESCRIPTION Nostalgie-Extra-NEW-WAVE (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewaflagelanden.ice.infomaniak.ch/nostalgiewaflagelanden-128.mp3:Nostalgie-Extra-NL-TALIG
 #DESCRIPTION Nostalgie-Extra-NL-TALIG
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewafparty.ice.infomaniak.ch/nostalgiewafparty-128.mp3:Nostalgie-Extra-PARTY
@@ -97,20 +101,22 @@
 #DESCRIPTION Nostalgie-Extra-ROCK
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nostalgiewhatafeeling.ice.infomaniak.ch%3a80/nostalgiewhatafeeling-128:Nostalgie - What a feeling (België)
 #DESCRIPTION Nostalgie - What a feeling (België)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//nostalgiewafnewwave.ice.infomaniak.ch/nostalgiewafnewwave-128:Nostalgie-Extra-NEW-WAVE (België)
-#DESCRIPTION Nostalgie-Extra-NEW-WAVE (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewafextra.ice.infomaniak.ch/nostalgiewafextra-128.mp3:NRJ België (België)
 #DESCRIPTION NRJ België (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//37.187.79.153%3a6158/stream:Puur Vlaams
 #DESCRIPTION Puur Vlaams
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//www.clubfmserver.be%3a8000/clubfm.mp3:ROXX Radio
-#DESCRIPTION ROXX Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_be_live_96.mp3:Q-Music BE
 #DESCRIPTION Q-Music BE
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_be_fouteuur_64.aac:Q-Music Belgie ACC 64
-#DESCRIPTION Q-Music Belgie ACC 64
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_be_fouteuur_128.mp3:Q-Music Belgie MP3
-#DESCRIPTION Q-Music Belgie MP3
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_dance_64.aac?rnd=4163978573856318:Q-Music Dance
+#DESCRIPTION Q-Music Dance
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_fouteuur_64.aac?rnd=3133297643101722:Q-Music De Foute Radio
+#DESCRIPTION Q-Music De Foute Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_fav40_64.aac?rnd=3414329982142364:Q-Music Favoriete 40
+#DESCRIPTION Q-Music Favoriete 40
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_qsummer_64.aac?rnd=3965205323763582:Q-Music Run To You Radio
+#DESCRIPTION Q-Music Run To You Radio
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_workalicious_64.aac?rnd=8494927520002569:Q-Music Workaholics
+#DESCRIPTION Q-Music Workaholics
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//audiostream.radio19.fm%3a8200:Radio 19
 #DESCRIPTION Radio 19
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//stream.radiomaria.be%3a8000/RadioMaria-96:Radio Maria België
@@ -121,8 +127,8 @@
 #DESCRIPTION Radio Montana 
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/rolradio:ROL Radio
 #DESCRIPTION ROL Radio
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//www.clubfmserver.be%3a8000/roxx.mp3:ROXX
-#DESCRIPTION ROXX
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//www.clubfmserver.be%3a8000/clubfm.mp3:ROXX Radio
+#DESCRIPTION ROXX Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//82.94.204.95%3a80/live:Sportpaleis FM
 #DESCRIPTION Sportpaleis FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.vrtcdn.be/stubru-high.mp3:Studio Brussel
@@ -133,8 +139,6 @@
 #DESCRIPTION Text Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//jwaac.topradio.be/topradio.aac:TOP Radio (België)
 #DESCRIPTION TOP Radio (België)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com%3a80/TradCan:TradCan (België)
-#DESCRIPTION TradCan (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.trendyfm.be%3a80/:Trendy FM
 #DESCRIPTION Trendy FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.vbro.be%3a9100/vbro:VBRO
@@ -153,7 +157,7 @@
 #DESCRIPTION Zen FM (mp3)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/RadioRock-Blues:ZZROCK (België)
 #DESCRIPTION ZZROCK (België)
-#SERVICE 1:64:2d6:0:0:0:0:0:0:0:
+#SERVICE 1:64:2d9:0:0:0:0:0:0:0:
 #DESCRIPTION ++Wallonië++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//audiostream.rtl.be/belrtl128:Bel RTL
 #DESCRIPTION Bel RTL
@@ -165,8 +169,6 @@
 #DESCRIPTION DH Radio (België)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/gooradioo-:Electrique Radio (België)
 #DESCRIPTION Electrique Radio (België)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//wr-eventradio.ice.rtbf.be/wr-eventradio-128.mp3:Fête de la Musique
-#DESCRIPTION Fête de la Musique
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//flashfm.ice.infomaniak.ch%3a80/flashfm-128:Flash FM (België)
 #DESCRIPTION Flash FM (België)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//funradiobe.ice.infomaniak.ch%3a80/funradiobe-high:Fun Radio (België)
@@ -329,7 +331,7 @@
 #DESCRIPTION Slowly Radio (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com%3a80/TradCan:TradCan (België)
 #DESCRIPTION TradCan (België)
-#SERVICE 1:64:2d7:0:0:0:0:0:0:0:
+#SERVICE 1:64:2da:0:0:0:0:0:0:0:
 #DESCRIPTION ++oost kanton (Duits)++
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.brf.be%3a80/brf1-high.mp3:BRF1 (België oost-kanton)
 #DESCRIPTION BRF1 (België oost-kanton)
