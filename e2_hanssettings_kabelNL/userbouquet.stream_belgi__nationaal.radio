@@ -1,5 +1,5 @@
 #NAME Stream België nationaal
-#SERVICE 1:64:164:0:0:0:0:0:0:0:
+#SERVICE 1:64:16d:0:0:0:0:0:0:0:
 #DESCRIPTION ++Vlaanderen++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.vrtcdn.be/radio1-high.mp3:VRT Radio 1
 #DESCRIPTION VRT Radio 1
@@ -13,20 +13,26 @@
 #DESCRIPTION VRT Radio 2 Vlaams-Brabant
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupc/live/604e4a0e-22e8-4f99-ad5e-4f62d27dfec4/live.isml/.m3u8:VRT Radio 2 West-Vlaanderen
 #DESCRIPTION VRT Radio 2 West-Vlaanderen
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupa/live/a9f36fda-cb3c-4b4e-9405-a5bba55654c0/live.isml/.m3u8:VRT Radio Klara
-#DESCRIPTION VRT Radio Klara
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupa/live/0d06dbbe-92d4-4cfe-a0b3-ccc6b7a32ec4/live.isml/.m3u8:VRT Radio Klara Continuo
-#DESCRIPTION VRT Radio Klara Continuo
+#SERVICE 4097:0:2:52dc:c96:3:eb0000:0:0:0:http%3a//icecast.vrtcdn.be/klara-high.mp3 :VTR Klara (met epg)
+#DESCRIPTION VTR Klara (met epg)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupa/live/0d06dbbe-92d4-4cfe-a0b3-ccc6b7a32ec4/live.isml/.m3u8:VRT Klara Continuo
+#DESCRIPTION VRT Klara Continuo
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupc/live/582109ca-1e71-4330-93fc-e9affee94d7d/live.isml/live-audio=128000.m3u8:VRT De Tijdloze
+#DESCRIPTION VRT De Tijdloze
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupa/live/014a9eea-af85-4da6-aab2-c472ca8d0149/live.isml/.m3u8:VRT Ketnet Hits
 #DESCRIPTION VRT Ketnet Hits
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupa/live/68dc3b80-040e-4a75-a394-72f3bb7aff9a/live.isml/.m3u8:VRT MNM
-#DESCRIPTION VRT MNM
+#SERVICE 4097:0:2:52da:c96:3:eb0000:0:0:0:http%3a//icecast.vrtcdn.be/mnm-high.mp3:VTR MNM (met epg)
+#DESCRIPTION VTR MNM (met epg)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupb/live/35dd91de-0352-4865-8632-17e5af8dc6ba/live.isml/.m3u8:VRT MNM Hits
 #DESCRIPTION VRT MNM Hits
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupa/live/da0b681c-73db-4c9e-af32-7921591d3fbd/live.isml/live-audio=128000.m3u8:VRT MNM UrbaNice
+#DESCRIPTION VRT MNM UrbaNice
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//progressive-audio.lwc.vrtcdn.be/content/fixed/11_11niws-snip_hi.mp3 :VRT Nieuws
 #DESCRIPTION VRT Nieuws
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//live-radio.lwc.vrtcdn.be/groupc/live/f404f0f3-3917-40fd-80b6-a152761072fe/live.isml/.m3u8:VRT Studio Brussel
-#DESCRIPTION VRT Studio Brussel
+#SERVICE 4097:0:2:52db:c96:3:eb0000:0:0:0:http%3a//icecast.vrtcdn.be/stubru-high.mp3 :VTR Studio Brussel (met epg)
+#DESCRIPTION VTR Studio Brussel (met epg)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//3755.cloudrad.io%3a8008/live:21Bis (België)
+#DESCRIPTION 21Bis (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/2bfm-40:2b FM 40
 #DESCRIPTION 2b FM 40
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//91.196.171.99/ajoinmusic:Ajoin Music (België)
@@ -41,8 +47,22 @@
 #DESCRIPTION City-Music (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streamserver1.contact-dance.com/contactdance:Contact Dance
 #DESCRIPTION Contact Dance
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//84.22.102.11%3a8000/stream128:Crooze FM Radio (België)
-#DESCRIPTION Crooze FM Radio (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//84.22.102.11%3a8000/stream128:Crooze FM Radio - original (België)
+#DESCRIPTION Crooze FM Radio - original (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8006/;stream128:Crooze FM Radio - chillout (België)
+#DESCRIPTION Crooze FM Radio - chillout (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8016/;stream128:Crooze FM Radio - classical (België)
+#DESCRIPTION Crooze FM Radio - classical (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8014/;stream128:Crooze FM Radio - dinner (België)
+#DESCRIPTION Crooze FM Radio - dinner (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8012/;stream128:Crooze FM Radio - easy (België)
+#DESCRIPTION Crooze FM Radio - easy (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8002/;stream128:Crooze FM Radio - jazz (België)
+#DESCRIPTION Crooze FM Radio - jazz (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8008/;stream128:Crooze FM Radio - lounge (België)
+#DESCRIPTION Crooze FM Radio - lounge (België)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8010/;stream128:Crooze FM Radio - smooth jazz (België)
+#DESCRIPTION Crooze FM Radio - smooth jazz (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/DRIVE:DRIVE Radio (België)
 #DESCRIPTION DRIVE Radio (België)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//www.clubfmserver.be%3a8000/family.mp3:Family Radio (België)
@@ -67,20 +87,22 @@
 #DESCRIPTION Hit FM (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/humorzender:Humorzender Radio
 #DESCRIPTION Humorzender Radio
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl%3a80/JOEfm_be_live_128.mp3:Joe FM (België)
-#DESCRIPTION Joe FM (België)
+#SERVICE 4097:0:2:1b74:c88:3:eb0000:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl%3a80/JOEfm_be_live_128.mp3:Joe FM (met epg)
+#DESCRIPTION Joe FM (met epg)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/JOEfm_be_70s_64.aac?rnd=3826809923887511:Joe FM 70s (België)
 #DESCRIPTION Joe FM 70s (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/JOEfm_be_80s_64.aac?rnd=1234252811859879:Joe FM 80s (België)
 #DESCRIPTION Joe FM 80s (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/JOEfm_be_t2000_64.aac?rnd=8103381493905829:Joe FM Top 2000 (België)
 #DESCRIPTION Joe FM Top 2000 (België)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//jouwradio.live-streams.nl/:Jouwradio (België)
+#DESCRIPTION Jouwradio (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.movemedia.eu%3a8010/:Kerstkanaal BE
 #DESCRIPTION Kerstkanaal BE
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//54.77.134.165%3a1935/live/myStream:Ment Radio
 #DESCRIPTION Ment Radio
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiepremium.ice.infomaniak.ch/nostalgiepremium-128.mp3:Nostalgie-Belgique-premium
-#DESCRIPTION Nostalgie-Belgique-premium
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewhatafeeling.ice.infomaniak.ch/nostalgiewhatafeeling-128.mp3:Nostalgie Vlaanderen
+#DESCRIPTION Nostalgie Vlaanderen
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewaf6070.ice.infomaniak.ch/nostalgiewaf6070-128.mp3:Nostalgie-Extra-60-s-70-s
 #DESCRIPTION Nostalgie-Extra-60-s-70-s
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//nostalgiewaf80.ice.infomaniak.ch/nostalgiewaf80-128.mp3:Nostalgie-Extra-80-s
@@ -105,8 +127,8 @@
 #DESCRIPTION NRJ België (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//37.187.79.153%3a6158/stream:Puur Vlaams
 #DESCRIPTION Puur Vlaams
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_be_live_96.mp3:Q-Music BE
-#DESCRIPTION Q-Music BE
+#SERVICE 4097:0:2:1b72:c88:3:eb0000:0:0:0:http%3a//icecast-qmusic.cdp.triple-it.nl/Qmusic_be_live_96.mp3:Q-Music BE (met epg)
+#DESCRIPTION Q-Music BE (met epg)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_dance_64.aac?rnd=4163978573856318:Q-Music Dance
 #DESCRIPTION Q-Music Dance
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streaming-medialaan-cdp.triple-it.nl/Qmusic_be_fouteuur_64.aac?rnd=3133297643101722:Q-Music De Foute Radio
@@ -159,7 +181,7 @@
 #DESCRIPTION Zen FM (mp3)
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com/RadioRock-Blues:ZZROCK (België)
 #DESCRIPTION ZZROCK (België)
-#SERVICE 1:64:165:0:0:0:0:0:0:0:
+#SERVICE 1:64:16e:0:0:0:0:0:0:0:
 #DESCRIPTION ++Wallonië++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//audiostream.rtl.be/belrtl128:Bel RTL
 #DESCRIPTION Bel RTL
@@ -283,8 +305,8 @@
 #DESCRIPTION RTBF-Classic-21---Soul-Power
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//radios.rtbf.be/rtbfi-64.aac:RTBF-International
 #DESCRIPTION RTBF-International
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//radios.rtbf.be/laprem1ere-64.aac:RTBF-La-1re---La-Vie-en-Rose
-#DESCRIPTION RTBF-La-1re---La-Vie-en-Rose
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//radios.rtbf.be/laprem1ere-64.aac:RTBF La première
+#DESCRIPTION RTBF La première
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//radios.rtbf.be/musiq3-128.aac:RTBF-Musiq3
 #DESCRIPTION RTBF-Musiq3
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//radios.rtbf.be/wr-ouftivi-128.mp3:RTBF-OUFtivi
@@ -327,7 +349,7 @@
 #DESCRIPTION Slowly Radio (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.radionomy.com%3a80/TradCan:TradCan (België)
 #DESCRIPTION TradCan (België)
-#SERVICE 1:64:166:0:0:0:0:0:0:0:
+#SERVICE 1:64:16f:0:0:0:0:0:0:0:
 #DESCRIPTION ++oost kanton (Duits)++
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//streaming.brf.be%3a80/brf1-high.mp3:BRF1 (België oost-kanton)
 #DESCRIPTION BRF1 (België oost-kanton)

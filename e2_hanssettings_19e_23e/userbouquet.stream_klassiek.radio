@@ -109,6 +109,8 @@
 #DESCRIPTION Concertzender X-Rated
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/live:Concertzender
 #DESCRIPTION Concertzender
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streams.crooze.fm%3a8016/;stream128:Crooze FM Radio - classical (België)
+#DESCRIPTION Crooze FM Radio - classical (België)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast5.play.cz/croddur-128.mp3:D-dur - CZ
 #DESCRIPTION D-dur - CZ
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//live-icy.gss.dr.dk%3a8000/A/A04L.mp3:DR-P2-Klassisk
@@ -123,7 +125,7 @@
 #DESCRIPTION Hi-On-Line-Radio-Classical
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:rtmp%3a//muste.radio.org.lv/shoutcast/mp4%3alr3a.stream:Klasika Latvijasradio - LT
 #DESCRIPTION Klasika Latvijasradio - LT
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//klassikradio.hoerradar.de/klassikradio-live-mp3-hq:Klassik Radio - Algemeen
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:https%3a//stream.klassikradio.de/live/mp3-128:Klassik Radio - Algemeen
 #DESCRIPTION Klassik Radio - Algemeen
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.klassikradio.de/barock/mp3-128:Klassik Radio - Barock
 #DESCRIPTION Klassik Radio - Barock
@@ -183,8 +185,6 @@
 #DESCRIPTION Klassikaraadio - Estonia
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//radio.klassik.com%3a8000/neuheiten.mp3:klassikcom-Neuheiten-Radio
 #DESCRIPTION klassikcom-Neuheiten-Radio
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//klassikradio.hoerradar.de/klassikradio-live-mp3-hq?sABC=581237q4%25230%252310pq39p12n5818r545354ns835rn704p%2523fgernz.xynffvxenqvb.qr&amsparams=playerid%3astream.klassikradio.de;skey%3a1477588948:Klassikradio
-#DESCRIPTION Klassikradio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//94.199.183.186/stream/3/:Klasszik Radio - H
 #DESCRIPTION Klasszik Radio - H
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//online.klasszikradio.hu/stream/3/:Klasszik Radio
@@ -215,12 +215,14 @@
 #DESCRIPTION NDR-Kultur Stake Stucke
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ndr-ndrkultur-live.cast.addradio.de/ndr/ndrkultur/live/mp3/128/stream.mp3:NDR-Kultur
 #DESCRIPTION NDR-Kultur
+#SERVICE 4097:0:2:525b:c99:3:eb0000:0:0:0:http%3a//icecast.omroep.nl%3a80/radio4-bb-mp3:NPO Radio 4 (met EPG)
+#DESCRIPTION NPO Radio 4 (met EPG)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/radio4-eigentijds-mp3:NPO Radio 4 Concerten
 #DESCRIPTION NPO Radio 4 Concerten
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio4-eigentijds-mp3:NPO Radio 4 Eigentijds
 #DESCRIPTION NPO Radio 4 Eigentijds
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl%3a80/radio4-bb-mp3:NPO Radio 4
-#DESCRIPTION NPO Radio 4
+#SERVICE 4097:0:1:525b:c99:3:eb0000:0:0:0:http%3a//livestreams.omroep.nl/live/npo/visualradio/radio4/radio4.isml/radio4-audio_nld=128000-video=1400000.m3u8:NPO Radio 4 - studiocam (met EPG)
+#DESCRIPTION NPO Radio 4 - studiocam (met EPG)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//lyd.nrk.no/nrk_radio_klassisk_mp3_h:NRK Klassisk - NOR
 #DESCRIPTION NRK Klassisk - NOR
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//mp3stream3.apasf.apa.at%3a8000/;stream.mp3:OE1 ORF - A
@@ -253,8 +255,6 @@
 #DESCRIPTION Radio NZ - NZ
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.lxcluster.at%3a8000/live128:Radio Stephansdom - A
 #DESCRIPTION Radio Stephansdom - A
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.srg-ssr.ch/m/rsc_de/mp3_128:Radio Suisse Classique _ CH
-#DESCRIPTION Radio Suisse Classique _ CH
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.srg-ssr.ch/m/rsc_it/mp3_128:Radio Svizzera Classica - CH
 #DESCRIPTION Radio Svizzera Classica - CH
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.srg-ssr.ch/m/rsc_de/mp3_128:Radio Swiss Classic
@@ -279,8 +279,10 @@
 #DESCRIPTION RTE Lyric FM - IRL
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//rthkaudio4-lh.akamaihd.net/i/radio4_1@355867/master.m3u8:RTHK Radio - Hongkong
 #DESCRIPTION RTHK Radio - Hongkong
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.srg-ssr.ch/m/espace-2/mp3_128:RTS Espace 2
-#DESCRIPTION RTS Espace 2
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//lsaplus.swisstxt.ch/audio/espace-2_96.stream/chunklist_DVR.m3u8:RTS Espace 2 (Zwitserland)
+#DESCRIPTION RTS Espace 2 (Zwitserland)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.srg-ssr.ch/m/rsc_de/mp3_128:SFR Swiss Classic (Zwitserland)
+#DESCRIPTION SFR Swiss Classic (Zwitserland)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.slovakradio.sk%3a8000/Devin_256.mp3:SRO Rádio Devín - SK
 #DESCRIPTION SRO Rádio Devín - SK
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.slovakradio.sk%3a8000/Klasika_256.mp3:SRO Rádio Klasika - SK
