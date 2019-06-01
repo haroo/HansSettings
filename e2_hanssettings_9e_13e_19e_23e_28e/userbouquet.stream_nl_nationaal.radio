@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal
-#SERVICE 1:64:302:0:0:0:0:0:0:0:
+#SERVICE 1:64:2fe:0:0:0:0:0:0:0:
 #DESCRIPTION ++publieke zenders++
 #SERVICE 4097:0:2:5258:c99:3:eb0000:0:0:0:http%3a//icecast.omroep.nl%3a80/radio1-bb-mp3:NPO Radio 1
 #DESCRIPTION NPO Radio 1
@@ -17,8 +17,8 @@
 #DESCRIPTION NPO 3FM
 #SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2hss.omroep.nl%3a80/3fm-alternative-mp3:NPO 3FM Alternative
 #DESCRIPTION NPO 3FM Alternative
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2ess.omroep.nl%3a80/3fm-serioustalent-mp3:NPO 3FM KX Radio
-#DESCRIPTION NPO 3FM KX Radio
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//ics2ess.omroep.nl%3a80/3fm-serioustalent-mp3:NPO 3FM KX
+#DESCRIPTION NPO 3FM KX
 #SERVICE 4097:0:2:525b:c99:3:eb0000:0:0:0:http%3a//icecast.omroep.nl/radio4-bb-mp3:NPO Radio 4
 #DESCRIPTION NPO Radio 4
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//icecast.omroep.nl/radio4-eigentijds-mp3:NPO Radio 4 Concerten
@@ -49,7 +49,7 @@
 #DESCRIPTION FUN X Utrecht
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//149.210.222.13%3a8030/:Spreekbuis Radio
 #DESCRIPTION Spreekbuis Radio
-#SERVICE 1:64:303:0:0:0:0:0:0:0:
+#SERVICE 1:64:2ff:0:0:0:0:0:0:0:
 #DESCRIPTION ++commerciële hoofdzenders++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.100p.nl/100pctnl.mp3:100%25 NL
 #DESCRIPTION 100% NL
@@ -65,6 +65,8 @@
 #DESCRIPTION 100% NL Liefde
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.100p.nl/web04_mp3:100%25 NL Nederpop
 #DESCRIPTION 100% NL Nederpop
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.100p.nl/web02_mp3:100%25 NL Nonstop
+#DESCRIPTION 100% NL Nonstop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.100p.nl/web02_mp3:100%25 NL Nonstop
 #DESCRIPTION 100% NL Nonstop
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//40upstream.live-streams.nl/40up1:40UP Radio (NL)
@@ -143,8 +145,10 @@
 #DESCRIPTION Concertzender Wereldmuziek
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streams.greenhost.nl%3a8006/concertzenderlive:Concertzender X-Rated
 #DESCRIPTION Concertzender X-Rated
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//18973.live.streamtheworld.com/TLPSTR07.mp3:Efteling Kids Radio (Kaatsheuvel - Noord-Brabant)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//ice.cr2.streamzilla.xlcdn.com%3a8000/sz=efteling=hdstream:Efteling Kids Radio (Kaatsheuvel - Noord-Brabant)
 #DESCRIPTION Efteling Kids Radio (Kaatsheuvel - Noord-Brabant)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//rrr.sz.xlcdn.com/?account=efteling&file=hdstream&type=live&service=icecast&protocol=http&port=8000&output=pls:Efteling Kids Radio (Kaatsheuvel - Noord-Brabant) alt.
+#DESCRIPTION Efteling Kids Radio (Kaatsheuvel - Noord-Brabant) alt.
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-67.stream-server.nl%3a8400:Hot Radio Hits
 #DESCRIPTION Hot Radio Hits
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//icecast-qmusicnl-cdp.triple-it.nl/Joe_nl_1_64.aac :Joe
@@ -333,7 +337,7 @@
 #DESCRIPTION XM Radio - The Talent Station! Talpa Radio Campus
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streaming.hofhosting.nl%3a8019/stream?type=http&nocache=160:ZTACK, voor jongeren 13-20 jaar
 #DESCRIPTION ZTACK, voor jongeren 13-20 jaar
-#SERVICE 1:64:304:0:0:0:0:0:0:0:
+#SERVICE 1:64:300:0:0:0:0:0:0:0:
 #DESCRIPTION ++religieus++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//primastream1.primareclame.nl%3a11231/:Christelijke Omroep
 #DESCRIPTION Christelijke Omroep
@@ -351,7 +355,7 @@
 #DESCRIPTION Seven FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.urkfm.nl%3a8000/geestelijk.mp3:Urk FM Geestelijk
 #DESCRIPTION Urk FM Geestelijk
-#SERVICE 1:64:305:0:0:0:0:0:0:0:
+#SERVICE 1:64:301:0:0:0:0:0:0:0:
 #DESCRIPTION ++overige++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.18hits.fm/18Hmp3:18Hits (NL Nationaal)
 #DESCRIPTION 18Hits (NL Nationaal)
@@ -505,6 +509,8 @@
 #DESCRIPTION Dutch Beats Radio (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//caster02.streampakket.com%3a8540/live:DZDRadio (NL)
 #DESCRIPTION DZDRadio (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//cc6.beheerstream.com/8718#:E2Radio (NL)
+#DESCRIPTION E2Radio (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//37.148.162.129%3a9346/;:Elver-Radio.nl
 #DESCRIPTION Elver-Radio.nl
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.engelsekoormuziek.nl%3a1098/;:Engelse koormuziek (NL)
@@ -625,10 +631,32 @@
 #DESCRIPTION Jofox Radio (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-28.stream-server.nl%3a8982/;:JouRadio.FM - Hollandse muziek (NL)
 #DESCRIPTION JouRadio.FM - Hollandse muziek (NL)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//21223.live.streamtheworld.com/TLPNET04AAC.aac:JUKE Klassiek (NL - klassiek)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//21303.live.streamtheworld.com/TLPNET08AAC.aac:JUKE Cabaret (NL)
+#DESCRIPTION JUKE Cabaret (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//21223.live.streamtheworld.com/TLPNET08.mp3:JUKE Cabaret (NL) alternatief
+#DESCRIPTION JUKE Cabaret (NL) alternatief
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET05.mp3:JUKE Cocktail Lounge (NL)
+#DESCRIPTION JUKE Cocktail Lounge (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET10.mp3:JUKE Feest Café (NL)
+#DESCRIPTION JUKE Feest Café (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET09.mp3:JUKE Hardstyle (NL)
+#DESCRIPTION JUKE Hardstyle (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET01.mp3:JUKE Hip Hop Classics (NL)
+#DESCRIPTION JUKE Hip Hop Classics (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET14.mp3:JUKE House Classics (NL)
+#DESCRIPTION JUKE House Classics (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET11.mp3:JUKE Kids Hits (NL)
+#DESCRIPTION JUKE Kids Hits (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//21223.live.streamtheworld.com/TLPNET04AAC.aac:JUKE Klassiek (NL - klassiek)
 #DESCRIPTION JUKE Klassiek (NL - klassiek)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//21223.live.streamtheworld.com/TLPNET15AAC.aac:JUKE Perfect piano (NL - klassiek)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET12.mp3:JUKE Levenslied (NL)
+#DESCRIPTION JUKE Levenslied (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET06.mp3:JUKE Nederpop (NL)
+#DESCRIPTION JUKE Nederpop (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//21223.live.streamtheworld.com/TLPNET15AAC.aac:JUKE Perfect piano (NL - klassiek)
 #DESCRIPTION JUKE Perfect piano (NL - klassiek)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//20103.live.streamtheworld.com/TLPNET16.mp3:JUKE Songfestival (NL)
+#DESCRIPTION JUKE Songfestival (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/k-easy:K-Easy Radio (NL)
 #DESCRIPTION K-Easy Radio (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/k-golden:K-Golden Radio (NL)
@@ -683,6 +711,8 @@
 #DESCRIPTION Nederpop Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//mediaserv33.live-streams.nl%3a8042/live:News Internetradio (NL)
 #DESCRIPTION News Internetradio (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.nlpoprock.nl%3a80/:NL PopRock (NL)
+#DESCRIPTION NL PopRock (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//212.48.126.146%3a8040/:Nova Classic Rock
 #DESCRIPTION Nova Classic Rock
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//188.138.116.46%3a9000/;:NRG Radio (NL)
@@ -719,6 +749,8 @@
 #DESCRIPTION Pinguin - Ska World
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//78.129.224.11%3a6167/;stream.mp3:Polderpop Radio (NL)
 #DESCRIPTION Polderpop Radio (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//192.95.46.223%3a8166/;:PopRock FM (NL)
+#DESCRIPTION PopRock FM (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/powerplantradio:PowerPlant Radio - RDD (NL)
 #DESCRIPTION PowerPlant Radio - RDD (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//caster04.streampakket.com%3a8117:Powerstation Buddha
@@ -727,14 +759,20 @@
 #DESCRIPTION Pro FM Dance Webradio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//cc6.beheerstream.com%3a8616/stream:Pure 24
 #DESCRIPTION Pure 24
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streamproxy2.dance.pureradio.eu/high_autodj:Pure Radio Holland Dance Channel (DutchCore FM)
+#DESCRIPTION Pure Radio Holland Dance Channel (DutchCore FM)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streamproxy2.djrip.pureradio.eu/ultra_autodj:Pure Radio HollandDJ RIP's Podcast (DutchCore FM)
+#DESCRIPTION Pure Radio HollandDJ RIP's Podcast (DutchCore FM)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//streamproxy2.downtempo.pureradio.eu/high:Pure Radio Holland Downtempo Channel (DutchCore FM)
+#DESCRIPTION Pure Radio Holland Downtempo Channel (DutchCore FM)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//centova.pure-isp.eu%3a8100/ultra_live:Pure Radio Holland Hardcore Channel (DutchCore FM)
 #DESCRIPTION Pure Radio Holland Hardcore Channel (DutchCore FM)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//centova.pure-isp.eu%3a8027/ultra_live:Pure Radio Holland Trance - Electro Channel (JDR Wapradio)
-#DESCRIPTION Pure Radio Holland Trance - Electro Channel (JDR Wapradio)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streamproxy2.live.pureradio.eu/high_autodj:Pure Radio Holland Liveparty Channel (DutchCore FM)
+#DESCRIPTION Pure Radio Holland Liveparty Channel (DutchCore FM)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//centova.pure-isp.eu%3a8027/ultra_live:Pure Radio Holland Trance-Electro Channel (JDR Wapradio)
+#DESCRIPTION Pure Radio Holland Trance-Electro Channel (JDR Wapradio)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//centova.pure-isp.eu%3a8000/ultra_live:Pure Radio Holland Underground Channel (Old Pure Radio Holland)
 #DESCRIPTION Pure Radio Holland Underground Channel (Old Pure Radio Holland)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//178.20.171.36%3a8112/;:Q-AM 1395 (Betuwe-NL)
-#DESCRIPTION Q-AM 1395 (Betuwe-NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//19993.live.streamtheworld.com/Q_DANCEAAC.aac:Q-dance
 #DESCRIPTION Q-dance
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.radio0511.com%3a8880/;:Radio 0511 (Buitenpost - Friesland)
@@ -753,7 +791,7 @@
 #DESCRIPTION Radio 509 (voor blinden/slechtzienden)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//144.217.180.30%3a8218/;/stream:Radio 854
 #DESCRIPTION Radio 854
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//79.143.187.96%3a8137:Radio Blondie (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//azuracast.shoutcastsolutions.com/radio/8000/radio.mp3:Radio Blondie (NL)
 #DESCRIPTION Radio Blondie (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-25.stream-server.nl%3a8502/;:Radio Boxerteam (NL)
 #DESCRIPTION Radio Boxerteam (NL)
