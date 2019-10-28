@@ -39,6 +39,9 @@ function cleanup
 		# add it to the list if it is a userbouquet
 		if [[ $line = userbouquet* ]]; then
 			BOUQUETS+=($line)
+			if [ ! -f $1/$line ]; then
+				echo "  Missing bouquet: $line"
+			fi
 		fi
 	done < $1/bouquets.$2
 
