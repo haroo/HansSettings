@@ -1,9 +1,11 @@
 #NAME Stream Engeland
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//178.159.5.10%3a50:BBC 1
+#SERVICE 1:64:204:0:0:0:0:0:0:0:
+#DESCRIPTION ++Hoofdzenders++
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//145.239.255.4%3a8080/HDBBC1/mono.m3u8?token=test:BBC 1
 #DESCRIPTION BBC 1
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//178.159.5.10%3a57:BBC 2
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//145.239.255.4%3a8080/HDBBC2/mono.m3u8?token=test:BBC 2
 #DESCRIPTION BBC 2
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/003:BBC 4 / CBeebies
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/003:BBC 4 / CBeebies
 #DESCRIPTION BBC 4 / CBeebies
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//178.159.5.10%3a41:BBC CBBC
 #DESCRIPTION BBC CBBC
@@ -15,14 +17,32 @@
 #DESCRIPTION BBC Scotland
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//ott-cdn.ucom.am/s24/index.m3u8?fluxustv.m3u8:BBC World News
 #DESCRIPTION BBC World News
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//vcnyellowspot.teleosmedia.com/stream/yellowspot/super-geek-heros/seglist_720p.m3u8?fluxustv.m3u8:24/7 Super Geek Heroes
-#DESCRIPTION 24/7 Super Geek Heroes
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//csm-e.tm.yospace.com/csm/extlive/boxplus01,4music-desktop.m3u8?yo.up=http%3a//boxtv-origin-elb.cds1.yospace.com/uploads/4music/:4 Music
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//sportportal1.akamaized.net/hls/live/702646/itvlive/ITV1PORTAL2/master_Main1800.m3u8:ITV 1
+#DESCRIPTION ITV 1
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/005:ITV 2
+#DESCRIPTION ITV 2
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/006:ITV 3
+#DESCRIPTION ITV 3
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/007:ITV 4
+#DESCRIPTION ITV 4
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//145.239.255.4%3a8080/HDCHANNEL4/mono.m3u8?token=test:Channel 4
+#DESCRIPTION Channel 4
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//csm-e.tm.yospace.com/csm/extlive/boxplus01,4music-desktop.m3u8?yo.up=http%3a//boxtv-origin-elb.cds1.yospace.com/uploads/4music/:4 Music
 #DESCRIPTION 4 Music
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//145.239.255.4%3a8080/E4/mono.m3u8?token=test:E4
+#DESCRIPTION E4
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/008:Film 4
+#DESCRIPTION Film 4
+#SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//145.239.255.4%3a8080/more4/mono.m3u8?token=test:More 4
+#DESCRIPTION More 4
 #SERVICE 5002:0:1:0:0:0:0:0:0:0:https%3a//streamonion.com/manager/uk/fo/fo_fw.m3u8?cid=22:5
 #DESCRIPTION 5
+#SERVICE 1:64:205:0:0:0:0:0:0:0:
+#DESCRIPTION ++Overige zenders++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//securecontributions.sechls01.visionip.tv/live/securecontributions-securecontributions-92_news-hsslive-25f-16x9-SD/chunklist.m3u8:92 News UK
 #DESCRIPTION 92 News UK
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//vcnyellowspot.teleosmedia.com/stream/yellowspot/super-geek-heros/seglist_720p.m3u8?fluxustv.m3u8:24/7 Super Geek Heroes
+#DESCRIPTION 24/7 Super Geek Heroes
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//stream.ecable.tv/afrobeats/tracks-v1a1/mono.m3u8:Afrobeats
 #DESCRIPTION Afrobeats
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdnamd-hls-globecast.akamaized.net/live/ramdisk/akaal_tv/hls1_smart_akaal/index.m3u8:Akaal Channel UK (Engels)
@@ -37,8 +57,6 @@
 #DESCRIPTION Box Hits (UK)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//cdnamd-hls-globecast.akamaized.net/live/ramdisk/british_muslim_tv/hls1/index.m3u8:British Muslim TV (Engeland - religie)
 #DESCRIPTION British Muslim TV (Engeland - religie)
-#SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.21%3a8888/http/003:Channel 4
-#DESCRIPTION Channel 4
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//live-craftuk.simplestreamcdn.com/craftuk/3/prog_index.m3u8:Create and Craft (Engeland)
 #DESCRIPTION Create and Craft (Engeland)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//cdnamd-hls-globecast.akamaized.net/live/ramdisk/cruise_tv/hls_video/index.m3u8:Cruise 1st TV (Engeland)
@@ -51,8 +69,6 @@
 #DESCRIPTION English Club TV
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//mobia.si/ts/EUROSPORT/stream_iptv_2000k.m3u8?#User-Agent=AppleCoreMedia:Eurosport 1 UK
 #DESCRIPTION Eurosport 1 UK
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/008:Film 4
-#DESCRIPTION Film 4
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//161.0.157.9/PLTV/88888888/224/3221226899/03.m3u8:Flow Sports (sport - UK)
 #DESCRIPTION Flow Sports (sport - UK)
 #SERVICE 4097:0:1:1:0:0:0:0:0:0:http%3a//static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8:France 24 (ENG)
@@ -67,14 +83,6 @@
 #DESCRIPTION Horizon Sports
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//live-isd.simplestreamcdn.com/idealworld/3/prog_index.m3u8:Ideal World
 #DESCRIPTION Ideal World
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.23%3a8888/http/013:ITV 1
-#DESCRIPTION ITV 1
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/005:ITV 2
-#DESCRIPTION ITV 2
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/006:ITV 3
-#DESCRIPTION ITV 3
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//51.52.156.22%3a8888/http/007:ITV 4
-#DESCRIPTION ITV 4
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//50250a38-3bb6-3bc4-e80d-5b344067562c-fs-chf02-03.cdn.arqiva-ott-live.com/live.m3u8:JML Direct (Engeland)
 #DESCRIPTION JML Direct (Engeland)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//csm-e.tm.yospace.com/csm/extlive/boxplus01,kerrang-desktop.m3u8?yo.up=http%3a//boxtv-origin-elb.cds1.yospace.com/uploads/kerrang/:Kerrang!
@@ -131,3 +139,93 @@
 #DESCRIPTION TV MANA (Engels)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//a.jsrdn.com/broadcast/22723/+0000/hi/c.m3u8:World of Free Sports
 #DESCRIPTION World of Free Sports
+#SERVICE 1:64:206:0:0:0:0:0:0:0:
+#DESCRIPTION ++Streamlink/Filmon++
+#SERVICE 1:0:19:1b31:802:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-one:UK%3a BBC One 
+#DESCRIPTION UK: BBC One 
+#SERVICE 1:0:1:18b2:7fd:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-two:UK%3a BBC Two
+#DESCRIPTION UK: BBC Two
+#SERVICE 1:0:1:18ac:7fd:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbeebiesbbc-four:UK%3a BBC Four
+#DESCRIPTION UK: BBC Four
+#SERVICE 1:0:1:2876:800:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-news:UK%3a BBC News
+#DESCRIPTION UK: BBC News
+#SERVICE 1:0:1:200c:24b8:13e:820000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-world-news:UK%3a BBC World News
+#DESCRIPTION UK: BBC World News
+#SERVICE 1:0:1:2843:7fe:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-parliament:UK%3a BBC Parliament
+#DESCRIPTION UK: BBC Parliament
+#SERVICE 1:0:1:200b:24b8:13e:820000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-arabic-tv:UK%3a BBC Arabic TV
+#DESCRIPTION UK: BBC Arabic TV
+#SERVICE 1:0:19:22cf:80d:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-1-wales:UK%3a BBC One Wales
+#DESCRIPTION UK: BBC One Wales
+#SERVICE 1:0:19:22c5:80d:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-1-scotland:UK%3a BBC One Scotland
+#DESCRIPTION UK: BBC One Scotland
+#SERVICE 1:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/bbc-1-north-ireland:UK%3a BBC One North Ireland
+#DESCRIPTION UK: BBC One North Ireland
+#SERVICE 1:0:19:1b28:802:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbbc:UK%3a CBBC 
+#DESCRIPTION UK: CBBC 
+#SERVICE 1:0:1:18ae:7fd:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbeebies:UK%3a CBeebies
+#DESCRIPTION UK: CBeebies
+#SERVICE 1:0:19:5208:812:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv1:UK%3a ITV 
+#DESCRIPTION UK: ITV 
+#SERVICE 1:0:1:276b:7fc:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv-plus-1:UK%3a ITV +1
+#DESCRIPTION UK: ITV +1
+#SERVICE 1:0:1:2756:7fc:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv2:UK%3a ITV 2
+#DESCRIPTION UK: ITV 2
+#SERVICE 1:0:1:27b5:805:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv2-plus-1:UK%3a ITV 2 +1
+#DESCRIPTION UK: ITV 2 +1
+#SERVICE 1:0:1:2814:806:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv3:UK%3a ITV 3
+#DESCRIPTION UK: ITV 3
+#SERVICE 1:0:1:2815:806:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv3-plus-1:UK%3a ITV 3 +1
+#DESCRIPTION UK: ITV 3 +1
+#SERVICE 1:0:1:2758:7fc:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv4:UK%3a ITV 4
+#DESCRIPTION UK: ITV 4
+#SERVICE 1:0:1:2759:7fc:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itv4-plus-1:UK%3a ITV 4 +1
+#DESCRIPTION UK: ITV 4 +1
+#SERVICE 1:0:1:275b:7fc:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/itvbe:UK%3a ITVBe
+#DESCRIPTION UK: ITVBe
+#SERVICE 1:0:1:23fb:7f9:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/channel-4:UK%3a Channel 4
+#DESCRIPTION UK: Channel 4
+#SERVICE 1:0:19:1e46:809:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/channel-5:UK%3a Channel 5 
+#DESCRIPTION UK: Channel 5 
+#SERVICE 1:0:1:1e1e:809:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/5usa:UK%3a 5USA
+#DESCRIPTION UK: 5USA
+#SERVICE 1:0:1:1e23:809:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/5-star:UK%3a 5STAR
+#DESCRIPTION UK: 5STAR
+#SERVICE 1:0:1:1c29:83b:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/box-hits:UK%3a Box Hits
+#DESCRIPTION UK: Box Hits
+#SERVICE 1:0:1:c6d7:840:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbs-drama:UK%3a CBS Drama
+#DESCRIPTION UK: CBS Drama
+#SERVICE 1:0:1:d7a9:840:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbs-action:UK%3a CBS Justice
+#DESCRIPTION UK: CBS Justice
+#SERVICE 1:0:1:d7ae:840:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbs-reality:UK%3a CBS Reality
+#DESCRIPTION UK: CBS Reality
+#SERVICE 1:0:1:d7b1:840:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/cbs-reality1:UK%3a CBS Reality +1
+#DESCRIPTION UK: CBS Reality +1
+#SERVICE 1:0:1:178f:7d7:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/challenge:UK%3a Challenge
+#DESCRIPTION UK: Challenge
+#SERVICE 1:0:1:197a:7e6:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/drama:UK%3a Drama
+#DESCRIPTION UK: Drama
+#SERVICE 1:0:1:2419:7f9:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/e4:UK%3a E4
+#DESCRIPTION UK: E4
+#SERVICE 1:0:1:b5e:7f3:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/food-network:UK%3a Food Network
+#DESCRIPTION UK: Food Network
+#SERVICE 1:0:1:b60:7f3:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/food-network-plus-1:UK%3a Food Network +1
+#DESCRIPTION UK: Food Network +1
+#SERVICE 1:0:1:1791:7d7:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/forces-tv:UK%3a Forces TV
+#DESCRIPTION UK: Forces TV
+#SERVICE 1:0:1:240f:7f9:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/more4:UK%3a More4
+#DESCRIPTION UK: More4
+#SERVICE 1:0:1:16c8:7e3:2:11a2f26:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/pick-tv:UK%3a Pick
+#DESCRIPTION UK: Pick
+#SERVICE 1:0:1:d066:83e:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/kix:UK%3a Pop Max
+#DESCRIPTION UK: Pop Max
+#SERVICE 1:0:1:d05c:83e:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/pop:UK%3a Pop
+#DESCRIPTION UK: Pop
+#SERVICE 1:0:1:d052:83e:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/tiny-pop:UK%3a Tiny Pop
+#DESCRIPTION UK: Tiny Pop
+#SERVICE 1:0:1:cfe9:83f:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/really:UK%3a Really
+#DESCRIPTION UK: Really
+#SERVICE 1:0:1:1c28:83b:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/the-box:UK%3a The Box
+#DESCRIPTION UK: The Box
+#SERVICE 1:0:1:1969:7e6:2:11a0000:0:0:0:http%3a//127.0.0.1%3a8088/https%3a//www.filmon.com/tv/yesterday:UK%3a Yesterday
+#DESCRIPTION UK: Yesterday
