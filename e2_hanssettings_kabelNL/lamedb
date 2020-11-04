@@ -121,13 +121,13 @@ ffff0000:006d:08c9
 	c 650000:6900000:2:3:0:0:0
 /
 ffff0000:0839:0600
-	c 474000:6900000:2:3:0:0:0
-/
-ffff0000:0837:0600
-	c 482000:6900000:2:5:0:0:0
+	c 164000:6900000:2:3:0:0:0
 /
 ffff0000:0805:0600
 	c 506000:6900000:2:5:0:0:0
+/
+ffff0000:0837:0600
+	c 482000:6900000:2:5:0:0:0
 /
 ffff0000:0082:08c9
 	c 690000:6900000:2:3:0:0:0
@@ -381,8 +381,11 @@ ffff0000:0091:08c9
 ffff0000:081c:0600
 	c 322000:6900000:2:5:0:0:0
 /
+ffff0000:0906:2210
+	c 5700000:0:2:3:0:0:0
+/
 eeee0000:0906:2210
-	t 570000000:0:5:5:3:6:2:4:2:0:0:0
+	t 570000000:0:5:5:3:2:4:4:2:0:0:0
 /
 end
 services
@@ -968,6 +971,9 @@ p:Ziggo
 4116:ffff0000:081a:0600:1:0
 Humax 5500C
 p:Ziggo
+4117:ffff0000:081a:0600:1:0
+Codedownload D4A
+p:Ziggo
 4cd4:ffff0000:081a:0600:1:0
 Testbeeld
 p:Ziggo
@@ -1036,7 +1042,7 @@ CI
 p:Ziggo,c:050001,c:098800
 4c26:ffff0000:0836:0600:1:0
 Nick Music
-p:Ziggo
+p:Ziggo,c:050001
 4c27:ffff0000:0836:0600:1:0
 TV538
 p:Ziggo,c:050001
@@ -1044,7 +1050,7 @@ p:Ziggo,c:050001
 RTL Crime HD
 p:Ziggo,c:050001
 4c1f:ffff0000:0836:0600:25:0
-DanceTrippin HD
+DanceTelevision
 p:Ziggo,c:050001
 271a:ffff0000:006e:08c9:1:0
 TV 8
@@ -1497,8 +1503,8 @@ p:Ziggo
 Comedy Central Extra
 p:Ziggo,c:050001
 4b36:ffff0000:0810:0600:1:0
-VH1 Classic
-p:Ziggo,c:050001
+MTV 80s
+p:Ziggo,c:050001,f:8
 4b37:ffff0000:0810:0600:1:0
 Ziggo Sport Extra1
 p:Ziggo
@@ -1604,36 +1610,9 @@ p:Ziggo
 3f4a:ffff0000:0839:0600:1:0
 MGM ON Demand
 p:Ziggo
-4c37:ffff0000:0837:0600:1:0
-VICEtv
-p:Ziggo
-4c3a:ffff0000:0837:0600:1:0
-RTV-7
-p:Ziggo
-4c3b:ffff0000:0837:0600:1:0
-Secret Circle
-p:Ziggo
-4c3c:ffff0000:0837:0600:1:0
-Ziggo TV
-p:Ziggo
-4845:ffff0000:0837:0600:2:0
-NPO 2 Soul & Jazz
-p:Ziggo
-4c32:ffff0000:0837:0600:25:0
-Netflix.
-p:Ziggo
-4c33:ffff0000:0837:0600:25:0
-Videoland.
-p:Ziggo
-4c35:ffff0000:0837:0600:25:0
-Ziggo Live Events FOX Sports
-p:Ziggo,c:050001
-4c36:ffff0000:0837:0600:25:0
-Ziggo Live Events FOX Sports
-p:Ziggo,c:050001
 4a39:ffff0000:0805:0600:1:0
 BBC One
-p:Ziggo
+p:Ziggo,c:090202
 4a3a:ffff0000:0805:0600:1:0
 BBC Two
 p:Ziggo
@@ -1756,6 +1735,30 @@ Qmusic Nonstop
 p:Ziggo
 278a:ffff0000:0805:0600:2:0
 Radio509
+p:Ziggo
+4c3a:ffff0000:0837:0600:1:0
+RTV-7
+p:Ziggo
+4c3b:ffff0000:0837:0600:1:0
+Secret Circle
+p:Ziggo
+4c3c:ffff0000:0837:0600:1:0
+Ziggo TV
+p:Ziggo
+4845:ffff0000:0837:0600:2:0
+NPO 2 Soul & Jazz
+p:Ziggo
+4c32:ffff0000:0837:0600:25:0
+Netflix.
+p:Ziggo
+4c33:ffff0000:0837:0600:25:0
+Videoland.
+p:Ziggo
+4c35:ffff0000:0837:0600:25:0
+Ziggo Live Events FOX Sports
+p:Ziggo
+4c36:ffff0000:0837:0600:25:0
+Ziggo Live Events FOX Sports
 p:Ziggo
 753a:ffff0000:0082:08c9:1:0
 Stingray DJAZZ
@@ -3586,7 +3589,7 @@ Spike
 p:Ziggo,c:098800
 4be4:ffff0000:0833:0600:1:0
 TVE
-p:Ziggo,c:098848
+p:Ziggo,c:098800
 4be6:ffff0000:0833:0600:1:0
 RTL Z
 p:Ziggo,c:098800
@@ -4187,21 +4190,21 @@ p:Ziggo,c:050001,c:090202
 4cfc:ffff0000:081c:0600:25:0
 XITE HD
 p:Ziggo,c:050001
-02c6:eeee0000:0906:2210:1:0
+02c6:ffff0000:0906:2210:31:0
 NPO 1
-p:KPN,c:050007,c:098800
-02d0:eeee0000:0906:2210:1:0
+p:KPN
+02d0:ffff0000:0906:2210:31:0
 NPO 2
-p:KPN,c:050007,c:098800
-02da:eeee0000:0906:2210:1:0
+p:KPN
+02da:ffff0000:0906:2210:31:0
 NPO 3
-p:KPN,c:050007
-02e4:eeee0000:0906:2210:1:0
+p:KPN
+02e4:ffff0000:0906:2210:31:0
 Omroep Brabant
-p:KPN,c:050007
-02ee:eeee0000:0906:2210:1:0
+p:KPN
+02ee:ffff0000:0906:2210:31:0
 L1
-p:KPN,c:050007
+p:KPN
 1c02:eeee0000:0906:2210:2:0
 Omroep Brabant
 p:KPN
@@ -4229,5 +4232,20 @@ p:KPN
 1bf8:eeee0000:0906:2210:2:0
 NPO Soul & Jazz
 p:KPN
+02c6:eeee0000:0906:2210:31:0
+NPO 1
+p:KPN,c:050007
+02d0:eeee0000:0906:2210:31:0
+NPO 2
+p:KPN,c:050007
+02da:eeee0000:0906:2210:31:0
+NPO 3
+p:KPN,c:050007
+02e4:eeee0000:0906:2210:31:0
+Omroep Brabant
+p:KPN,c:050007
+02ee:eeee0000:0906:2210:31:0
+L1
+p:KPN,c:050007
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
