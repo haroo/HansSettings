@@ -1,5 +1,5 @@
 #NAME Stream NL nationaal (NL)
-#SERVICE 1:64:323:0:0:0:0:0:0:0:
+#SERVICE 1:64:33e:0:0:0:0:0:0:0:
 #DESCRIPTION ++publieke zenders++
 #SERVICE 4097:0:2:5258:c99:3:eb0000:0:0:0:http%3a//icecast.omroep.nl%3a80/radio1-bb-mp3:NPO Radio 1
 #DESCRIPTION NPO Radio 1
@@ -47,7 +47,7 @@
 #DESCRIPTION FunX Utrecht
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//149.210.222.13%3a8030/:Spreekbuis Radio
 #DESCRIPTION Spreekbuis Radio
-#SERVICE 1:64:324:0:0:0:0:0:0:0:
+#SERVICE 1:64:33f:0:0:0:0:0:0:0:
 #DESCRIPTION ++(commerciële) HOOFDzenders++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//40upstream.live-streams.nl/40up1:40UP Radio
 #DESCRIPTION 40UP Radio
@@ -81,7 +81,7 @@
 #DESCRIPTION Arrow Classic Rock
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//20863.live.streamtheworld.com/SUBLIMEARROWJAZZ.mp3:Arrow Jazz
 #DESCRIPTION Arrow Jazz
-#SERVICE 4097:0:2:4ed1:c99:3:eb0000:0:0:0:http%3a//icecast-bnr.cdp.triple-it.nl/bnr_mp3_128_03:BNR Nieuwsradio
+#SERVICE 4097:0:2:4ed1:c99:3:eb0000:0:0:0:http%3a//stream.bnr.nl/bnr_mp3_128_20:BNR Nieuwsradio
 #DESCRIPTION BNR Nieuwsradio
 #SERVICE 4097:0:1:4ed1:c99:3:eb0000:0:0:0:http%3a//bnr-cache-cdp.triple-it.nl/studio/index.m3u8:BNR Nieuwsradio - Kijk live
 #DESCRIPTION BNR Nieuwsradio - Kijk live
@@ -213,6 +213,8 @@
 #DESCRIPTION JUKE - Werk(t) Vanuit Huis
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//21253.live.streamtheworld.com/TLPNET05.mp3:JUKE - Zomer Lounge
 #DESCRIPTION JUKE - Zomer Lounge
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream02.itego.nl/kbc-high:KBC Radio
+#DESCRIPTION KBC Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//21253.live.streamtheworld.com/KINK_DISTORTIONAAC.aac:KINK Distortion
 #DESCRIPTION KINK Distortion
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//22653.live.streamtheworld.com/KINK_DNAAAC.aac:KINK DNA Classics
@@ -421,7 +423,7 @@
 #DESCRIPTION Wild FM
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//audio.ztack.nl/radio/8000/ztack:ZTACK
 #DESCRIPTION ZTACK
-#SERVICE 1:64:325:0:0:0:0:0:0:0:
+#SERVICE 1:64:340:0:0:0:0:0:0:0:
 #DESCRIPTION ++religieus++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//str1.hollanddata.eu%3a8000:Bright FM
 #DESCRIPTION Bright FM
@@ -453,7 +455,7 @@
 #DESCRIPTION Trans World Radio NL
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//live.urkfm.nl%3a8000/geestelijk.mp3:Urk FM Geestelijk
 #DESCRIPTION Urk FM Geestelijk
-#SERVICE 1:64:326:0:0:0:0:0:0:0:
+#SERVICE 1:64:341:0:0:0:0:0:0:0:
 #DESCRIPTION ++overige++
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream.18hits.fm/18Hmp3:18Hits (NL Nationaal)
 #DESCRIPTION 18Hits (NL Nationaal)
@@ -597,7 +599,7 @@
 #DESCRIPTION DCR - Disco Classic Radio (NL-nationaal)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//emmawatson.mazlum.co%3a8000/trap:De Trap Stream
 #DESCRIPTION De Trap Stream
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//streamingv2.shoutcast.com/DeepDanceRadio:Deep Dance Radio (NL-nationaa)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//igor.torontocast.com%3a1295/stream:Deep Dance Radio (NL-nationaa)
 #DESCRIPTION Deep Dance Radio (NL-nationaa)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//caster02.streampakket.com%3a8044/stream:Different Radio 747 AM en Online
 #DESCRIPTION Different Radio 747 AM en Online
@@ -761,8 +763,6 @@
 #DESCRIPTION K-Golden Radio (NL)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//listen.radionomy.com/k-jazzy:K-Jazzy (NL)
 #DESCRIPTION K-Jazzy (NL)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//stream02.itego.nl/kbc-high:KBC Radio
-#DESCRIPTION KBC Radio
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//audiostreamen.nl%3a8168:Kerstradio.nl
 #DESCRIPTION Kerstradio.nl
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//kinderradio.ic-stream.nl%3a30039/stream:Kinderradio FM
@@ -953,8 +953,10 @@
 #DESCRIPTION Radio Omega (NL - piraten)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//37.148.162.129%3a9600/stream:Radio Palermo (NL - piraten)
 #DESCRIPTION Radio Palermo (NL - piraten)
-#SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//server-26.stream-server.nl%3a8686/;:Radio Paradijs - jaren 60 en 70 (NL)
-#DESCRIPTION Radio Paradijs - jaren 60 en 70 (NL)
+#SERVICE 4097:0:2:0:0:0:0:0:0:0:https%3a//cast.radiopatapoe.nl/patapoe.aac:Radio Patapoe (NL, overig)
+#DESCRIPTION Radio Patapoe (NL, overig)
+#SERVICE 5002:0:2:0:0:0:0:0:0:0:https%3a//cast.radiopatapoe.nl/transit:Radio Patapoe (NL, overig)
+#DESCRIPTION Radio Patapoe (NL, overig)
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//s3.myradiostream.com%3a9164/listen.mp3:Radio Rebecca
 #DESCRIPTION Radio Rebecca
 #SERVICE 4097:0:2:0:0:0:0:0:0:0:http%3a//46.17.5.73%3a8696/:Radio Regionaal
