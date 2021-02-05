@@ -138,9 +138,6 @@ ffff0000:0840:0600
 ffff0000:0bbc:0600
 	c 618000:6900000:0:5:0:0:0
 /
-ffff0000:0065:08c9
-	c 538000:6900000:2:3:0:0:0
-/
 ffff0000:0066:08c9
 	c 554000:6900000:2:3:0:0:0
 /
@@ -242,9 +239,6 @@ ffff0000:0086:08c9
 /
 ffff0000:0087:08c9
 	c 578000:6900000:2:3:0:0:0
-/
-ffff0000:0088:08c9
-	c 362000:6900000:2:3:0:0:0
 /
 ffff0000:0089:08c9
 	c 322000:6900000:2:3:0:0:0
@@ -380,6 +374,9 @@ ffff0000:001f:10ef
 /
 ffff0000:0063:10ef
 	c 546000:6875000:2:3:0:0:0
+/
+eeee0000:0906:2210
+	t 570000000:0:5:5:3:2:4:4:2:0:0:0
 /
 end
 services
@@ -917,9 +914,6 @@ p:Ziggo,c:098800
 4a3d:ffff0000:0805:0600:1:0
 BBC World News
 p:Ziggo
-4a3e:ffff0000:0805:0600:1:0
-REVOLT
-p:Ziggo
 4651:ffff0000:0805:0600:2:0
 Mini Disco
 p:Ziggo
@@ -1135,7 +1129,7 @@ FunX
 p:Ziggo
 4a50:ffff0000:0806:0600:25:0
 Net5 HD
-p:Ziggo
+p:Ziggo,c:050001,c:090202
 4a61:ffff0000:0807:0600:1:0
 NPO 1
 p:Ziggo,c:090202
@@ -1454,6 +1448,9 @@ p:Ziggo,c:050001,c:098800
 4b1b:ffff0000:080f:0600:25:0
 ESPN 5
 p:Ziggo,c:050001
+4b2f:ffff0000:0810:0600:1:0
+Discovery World
+p:Ziggo
 4b30:ffff0000:0810:0600:1:0
 Stingray DJAZZ
 p:Ziggo
@@ -1547,9 +1544,6 @@ p:Ziggo,c:050001
 4b60:ffff0000:0813:0600:1:0
 192TV
 p:Ziggo,c:050001
-4b55:ffff0000:0813:0600:25:0
-REVOLT HD
-p:Ziggo,c:050001
 4b61:ffff0000:0813:0600:25:0
 Shorts TV HD
 p:Ziggo,c:050001,c:090202
@@ -1564,7 +1558,7 @@ Nicktoons
 p:Ziggo
 4b66:ffff0000:0814:0600:1:0
 Evil Angel
-p:Ziggo,c:050001,c:090101
+p:Ziggo
 4b67:ffff0000:0814:0600:1:0
 Nick Jr.
 p:Ziggo
@@ -1573,28 +1567,25 @@ MTV Music 24
 p:Ziggo
 4b69:ffff0000:0814:0600:1:0
 PassieXXX
-p:Ziggo,c:050001
-4b6a:ffff0000:0814:0600:1:0
-810 SID 0x4b6a
-p:
-4b6b:ffff0000:0814:0600:1:0
-NPO 1 extra
-p:Ziggo,c:050001,c:098800,f:8
+p:Ziggo
 4b6c:ffff0000:0814:0600:1:0
 X-MO
-p:Ziggo,c:050001
+p:Ziggo
 4b6f:ffff0000:0814:0600:1:0
 DUSK
-p:Ziggo,c:050001
+p:Ziggo
 4b70:ffff0000:0814:0600:1:0
 MvH Hard
-p:Ziggo,c:050001
+p:Ziggo
 4b72:ffff0000:0814:0600:1:0
 MBC
-p:Ziggo,c:050001
+p:Ziggo
+4b6b:ffff0000:0814:0600:25:0
+NPO 1 extra HD
+p:Ziggo
 4b71:ffff0000:0814:0600:25:0
 Penthouse Gold
-p:Ziggo,c:050001
+p:Ziggo
 4b79:ffff0000:0815:0600:25:0
 Ziggo Sport Select HD
 p:Ziggo,c:050001
@@ -1654,9 +1645,6 @@ Ziggo Zenderoverzicht HD
 p:Ziggo,c:050001
 4b95:ffff0000:0816:0600:25:0
 Ziggo Zenderoverzicht HD
-p:Ziggo
-4b9b:ffff0000:0816:0600:25:0
-REVOLT
 p:Ziggo
 4ba2:ffff0000:0817:0600:25:0
 één HD
@@ -1926,38 +1914,35 @@ p:Ziggo,c:050001
 CNBC Europe
 p:Ziggo
 4c1e:ffff0000:0836:0600:1:0
-MTV Brand New
+MTV Hits
 p:Ziggo,c:050001
-4c21:ffff0000:0836:0600:1:0
-746 SID 0x4c21
-p:
 4c22:ffff0000:0836:0600:1:0
 Baby TV
 p:Ziggo
 4c23:ffff0000:0836:0600:1:0
 BBC Entertainment
-p:Ziggo,c:050001,c:090202
+p:Ziggo
 4c24:ffff0000:0836:0600:1:0
 Boomerang
-p:Ziggo,c:050001
+p:Ziggo
 4c25:ffff0000:0836:0600:1:0
 CI
-p:Ziggo,c:050001,c:098800
+p:Ziggo
 4c26:ffff0000:0836:0600:1:0
 Nick Music
-p:Ziggo,c:050001
+p:Ziggo
 4c27:ffff0000:0836:0600:1:0
 TV538
-p:Ziggo,c:050001
+p:Ziggo
 4c1b:ffff0000:0836:0600:25:0
 RTL Crime HD
-p:Ziggo,c:050001
+p:Ziggo
 4c1c:ffff0000:0836:0600:25:0
 NPO 2 extra HD
 p:Ziggo
 4c1f:ffff0000:0836:0600:25:0
 DanceTelevision
-p:Ziggo,c:050001
+p:Ziggo
 4c3a:ffff0000:0837:0600:1:0
 RTV-7
 p:Ziggo
@@ -1977,11 +1962,14 @@ p:Ziggo
 Videoland.
 p:Ziggo
 4c35:ffff0000:0837:0600:25:0
-Ziggo Live Events FOX Sports
+Ziggo Live Events ESPN
 p:Ziggo
 4c36:ffff0000:0837:0600:25:0
-Ziggo Live Events FOX Sports
+Ziggo Live Events ESPN
 p:Ziggo
+4c30:ffff0000:0837:0600:31:0
+LN UHD DVB
+p:Ziggo,c:050007
 3f21:ffff0000:0838:0600:1:0
 RTL Crime CoD
 p:UPC NL
@@ -2276,45 +2264,6 @@ p:Ziggo
 4d6e:ffff0000:0bbc:0600:1:0
 TV Limburg
 p:Ziggo
-0406:ffff0000:0065:08c9:1:0
-NPO 3
-p:CAIW Media
-044c:ffff0000:0065:08c9:1:0
-TV West
-p:CAIW Media
-046a:ffff0000:0065:08c9:1:0
-Disney-NL
-p:CAIW Media
-03f2:ffff0000:0065:08c9:1:0
-NPO 1
-p:CAIW Media
-03fc:ffff0000:0065:08c9:1:0
-NPO 2
-p:CAIW Media
-0410:ffff0000:0065:08c9:2:0
-NPO Radio 2 Soul & Jazz
-p:CAIW Media
-041a:ffff0000:0065:08c9:2:0
-NPO Radio 5
-p:CAIW Media
-0424:ffff0000:0065:08c9:2:0
-NPO Radio 1
-p:CAIW Media
-042e:ffff0000:0065:08c9:2:0
-NPO Radio 2
-p:CAIW Media
-0438:ffff0000:0065:08c9:2:0
-NPO 3FM
-p:CAIW Media
-0442:ffff0000:0065:08c9:2:0
-NPO Radio 4
-p:CAIW Media
-0474:ffff0000:0065:08c9:2:0
-Radio West
-p:CAIW Media
-049c:ffff0000:0065:08c9:2:0
-Fun X
-p:CAIW Media
 0802:ffff0000:0066:08c9:1:0
 TV Rijnmond
 p:CAIW Media
@@ -3196,18 +3145,6 @@ Canvas HD
 p:CAIW Media,c:050001
 88d6:ffff0000:0087:08c9:25:0
 Fox Sports 2 HD
-p:CAIW Media,c:050001
-8cc8:ffff0000:0088:08c9:1:0
-Eurosport 1
-p:CAIW Media
-8cd2:ffff0000:0088:08c9:1:0
-National Geographic
-p:CAIW Media
-8caa:ffff0000:0088:08c9:25:0
-RTL7 HD
-p:CAIW Media,c:050001
-8cb4:ffff0000:0088:08c9:25:0
-RTL8 HD
 p:CAIW Media,c:050001
 90b0:ffff0000:0089:08c9:1:0
 TV Noord
@@ -4178,5 +4115,50 @@ p:Delta
 26bd:ffff0000:0063:10ef:1:0
 Dummy Disco World
 p:Delta
+1c02:eeee0000:0906:2210:2:0
+Omroep Brabant
+p:KPN
+1c0c:eeee0000:0906:2210:2:0
+L1
+p:KPN
+1c16:eeee0000:0906:2210:2:0
+FunX
+p:KPN
+1bc6:eeee0000:0906:2210:2:0
+NPO Radio 1
+p:KPN
+1bd0:eeee0000:0906:2210:2:0
+NPO Radio 2
+p:KPN
+1bda:eeee0000:0906:2210:2:0
+NPO 3FM
+p:KPN
+1be4:eeee0000:0906:2210:2:0
+NPO Radio 4
+p:KPN
+1bee:eeee0000:0906:2210:2:0
+NPO Radio 5
+p:KPN
+1bf8:eeee0000:0906:2210:2:0
+NPO Soul & Jazz
+p:KPN
+02c6:eeee0000:0906:2210:31:0
+NPO 1
+p:KPN,c:050007
+02d0:eeee0000:0906:2210:31:0
+NPO 2
+p:KPN,c:050007,c:098800
+02da:eeee0000:0906:2210:31:0
+NPO 3
+p:KPN,c:050007
+02e4:eeee0000:0906:2210:31:0
+Omroep Brabant
+p:KPN,c:050007
+02ee:eeee0000:0906:2210:31:0
+L1
+p:KPN,c:050007
+02f8:eeee0000:0906:2210:31:0
+NPO 2 Extra
+p:KPN,c:050007
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
