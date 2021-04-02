@@ -1,13 +1,17 @@
 #NAME Stream Feeds
-#SERVICE 1:64:20a:0:0:0:0:0:0:0:
+#SERVICE 1:64:211:0:0:0:0:0:0:0:
 #DESCRIPTION STREAM FEEDS-PAKKET
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//ec1-nl.prd.talpatvcdn.nl/7e78ccb46d97454fa3aedb21801c2b98/index_1.m3u8:SBS 6 Event Channel
-#DESCRIPTION SBS 6 Event Channel
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//ec1-nl.prd.talpatvcdn.nl/7e78ccb46d97454fa3aedb21801c2b98/index_1.m3u8:SBS 6 Event Channel 1
+#DESCRIPTION SBS 6 Event Channel 1
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//ec2-nl.prd.talpatvcdn.nl/a203f1e9d1c94b02912a1dc4eba604db/index_5.m3u8:SBS 6 Event Channel 2
+#DESCRIPTION SBS 6 Event Channel 2
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//dpp-aldag-livestreams.akamaized.net/aldag-stream1/streamx/aldag-stream1_720p.m3u8:Algemeen Dagblad 1
 #DESCRIPTION Algemeen Dagblad 1
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//dpp-aldag-ochtendshow.akamaized.net/streamx/DeOchtendshow_540p.m3u8:Algemeen Dagblad 2
 #DESCRIPTION Algemeen Dagblad 2
-#SERVICE 1:64:20b:0:0:0:0:0:0:0:
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//smoote1b.omroep.nl/urishieldv2/l2fm67c0cad777c60f30006031509b000000.3b0cf49214d6d46738aa81c60ab0722f/live/nos/events/nos_event04/nos_event04.isml/nos_event04-audio_1=128000-video=2000000.m3u8:NOS feed (soms)
+#DESCRIPTION NOS feed (soms)
+#SERVICE 1:64:212:0:0:0:0:0:0:0:
 #DESCRIPTION BELGIE - VLAANDEREN
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//livestream.parolis.be%3a1935/live/PLN_NL/chunklist_w27225067.m3u8:Federaal Parlement
 #DESCRIPTION Federaal Parlement
@@ -21,15 +25,15 @@
 #DESCRIPTION VRT Events 3 / Radio 1 studiocam (België)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//live-cf-vrt.akamaized.net/groupa/live/7d5f0e4a-3429-4861-91d4-aa3229d7ad7b/live_aes.isml/live_aes-audio_track_0_0_dut=128000-video_track=3000000.m3u8?hd%3aSporza Livestream:VRT Feed
 #DESCRIPTION VRT Feed
-#SERVICE 1:64:20c:0:0:0:0:0:0:0:
+#SERVICE 1:64:213:0:0:0:0:0:0:0:
 #DESCRIPTION BELGIE - WALLONIE
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//rtltvi-lh.akamaihd.net/i/TVI_1@319659/master.m3u8:RTL TVI
 #DESCRIPTION RTL TVI
-#SERVICE 1:64:20d:0:0:0:0:0:0:0:
+#SERVICE 1:64:214:0:0:0:0:0:0:0:
 #DESCRIPTION ++Canada++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//github.com/geonsey/Free2ViewTV/blob/master/videos/GlobalNews_Notice.mp4?raw=true:Global News Live Stream
 #DESCRIPTION Global News Live Stream
-#SERVICE 1:64:20e:0:0:0:0:0:0:0:
+#SERVICE 1:64:215:0:0:0:0:0:0:0:
 #DESCRIPTION DUITSLAND
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//hrevent2-lh.akamaihd.net/i/hr_event2@309240/master.m3u8:HR Event
 #DESCRIPTION HR Event
@@ -39,13 +43,13 @@
 #DESCRIPTION NDR Event 2
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//ndrevent-lh.akamaihd.net/i/ndrevent_3@409068/master.m3u8:NDR Event 3
 #DESCRIPTION NDR Event 3
-#SERVICE 1:64:20f:0:0:0:0:0:0:0:
+#SERVICE 1:64:216:0:0:0:0:0:0:0:
 #DESCRIPTION ++EBS = Europe By Satellite++
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//euc-live.fl.freecaster.net/live/eucom/ebs-audio_int=96000-video=2600000.m3u8:EbS Live (Europe by Satellite)
 #DESCRIPTION EbS Live (Europe by Satellite)
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//euc-live.fl.freecaster.net/live/eucom/ebsp-audio_int=96000-video=2600000.m3u8:EbS+ Live (Europe by Satellite)
 #DESCRIPTION EbS+ Live (Europe by Satellite)
-#SERVICE 1:64:210:0:0:0:0:0:0:0:
+#SERVICE 1:64:217:0:0:0:0:0:0:0:
 #DESCRIPTION SPANJE
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/irtve01_lv3_aosv4_gl0/irtve01_lv3_aosv4_gl0.isml/irtve01_lv3_aosv4_gl0.m3u8:TVE +24 Eventos 1
 #DESCRIPTION TVE +24 Eventos 1
@@ -55,32 +59,30 @@
 #DESCRIPTION TVE +24 Eventos 3
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/irtve04_lv3_aosv4_gl0/irtve04_lv3_aosv4_gl0.isml/master.m3u8:TVE +24 Eventos 4
 #DESCRIPTION TVE +24 Eventos 4
-#SERVICE 1:64:211:0:0:0:0:0:0:0:
+#SERVICE 1:64:218:0:0:0:0:0:0:0:
 #DESCRIPTION USA
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//220.158.149.28%3a8180/live/TV00000000000000000034@HHZT:Reuters
-#DESCRIPTION Reuters
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//32ce4aad1eed49b1ba2999fb68d119c8.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Plex_ReutersNow/678e78de-ad71-4747-936a-55da37f68898/6.m3u8:Reuters TV News
 #DESCRIPTION Reuters TV News
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live01@423395/master.m3u8:ABC News Digital 1 [720p]
-#DESCRIPTION ABC News Digital 1 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live02@423396/master.m3u8:ABC News Digital 2 [720p]
-#DESCRIPTION ABC News Digital 2 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live03@423397/master.m3u8:ABC News Digital 3 [720p]
-#DESCRIPTION ABC News Digital 3 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live04@423398/master.m3u8:ABC News Digital 4 [720p]
-#DESCRIPTION ABC News Digital 4 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live05@423399/master.m3u8:ABC News Digital 5 [720p]
-#DESCRIPTION ABC News Digital 5 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live06@423400/master.m3u8:ABC News Digital 6 [720p]
-#DESCRIPTION ABC News Digital 6 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live07@423401/master.m3u8:ABC News Digital 7 [720p]
-#DESCRIPTION ABC News Digital 7 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live08@423402/master.m3u8:ABC News Digital 8 [720p]
-#DESCRIPTION ABC News Digital 8 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live09@420891/master.m3u8:ABC News Digital 9 [720p]
-#DESCRIPTION ABC News Digital 9 [720p]
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abclive1-lh.akamaihd.net/i/abc_live10@420897/master.m3u8:ABC News Digital 10 [720p]
-#DESCRIPTION ABC News Digital 10 [720p]
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023560/abcnews1/master.m3u8:ABC News 1
+#DESCRIPTION ABC News 1
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023561/abcnews2/master.m3u8:ABC News 2
+#DESCRIPTION ABC News 2
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023562/abcnews3/master.m3u8:ABC News 3
+#DESCRIPTION ABC News 3
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023563/abcnews4/master.m3u8:ABC News 4
+#DESCRIPTION ABC News 4
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023564/abcnews5/master.m3u8:ABC News 5
+#DESCRIPTION ABC News 5
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023565/abcnews6/master.m3u8:ABC News 6
+#DESCRIPTION ABC News 6
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023566/abcnews7/master.m3u8:ABC News 7
+#DESCRIPTION ABC News 7
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023567/abcnews8/master.m3u8:ABC News 8
+#DESCRIPTION ABC News 8
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023568/abcnews9/master.m3u8:ABC News 9
+#DESCRIPTION ABC News 9
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//abcnews-streams.akamaized.net/hls/live/2023569/abcnews10/master.m3u8:ABC News 10
+#DESCRIPTION ABC News 10
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//cbsnewshd-lh.akamaihd.net/i/cbsnewsLivePlayer_1@196305/master.m3u8:CBSN Live Event
 #DESCRIPTION CBSN Live Event
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//nbcnews-lh.akamaihd.net/i/nbc_live11@183427/master.m3u8:NBC News Now Event 1
