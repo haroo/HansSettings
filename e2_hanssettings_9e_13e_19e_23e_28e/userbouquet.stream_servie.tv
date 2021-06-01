@@ -1,79 +1,67 @@
 #NAME Stream Servie (RS)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//s1.media-planet.sk%3a80/live/bardejov1:Bardejov
-#DESCRIPTION Bardejov
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//194.249.141.146%3a1935/live/bktv:BK TV SLO
-#DESCRIPTION BK TV SLO
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//rtcg2.videostreaming.rs/rtcg/rtcg.2.stream:Crna Gora SatTV (Servië)
-#DESCRIPTION Crna Gora SatTV (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/dolnykubin:Dolny Kubin rtmp
-#DESCRIPTION Dolny Kubin rtmp
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//178.253.194.75%3a1935/live/hram.stream/.m3u8:Hram Ortodox TV (Servië)
-#DESCRIPTION Hram Ortodox TV (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//s1.media-planet.sk%3a80/live/myjava1/playlist.m3u8:Mijava
-#DESCRIPTION Mijava
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/myjava1:Mijava
-#DESCRIPTION Mijava
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//109.72.63.194%3a5900:Mlava TV (Servië)
-#DESCRIPTION Mlava TV (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//best.str.n1info.com%3a8080/stream?sp=n1info?channel=n1srb?stream=1mb?u=n1info?b=6?player=m3u8?u=n1info?p=n1Sh4redSecre7iNf0#User-Agent=Linux-Android 5.0.1:N1 SRB (Servië)
-#DESCRIPTION N1 SRB (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//bglive-a.bitgravity.com/ndtv/247hi/live/native:ND TV
-#DESCRIPTION ND TV
+#SERVICE 1:64:302:0:0:0:0:0:0:0:
+#DESCRIPTION Hoofdzenders
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//212.200.255.151/rtv1:RTV 1
+#DESCRIPTION RTV 1
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//212.200.255.151/rtv2:RTV 2
+#DESCRIPTION RTV 2
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//srv1.adriatelekom.com/TVAS/index.m3u8:RTV As
+#DESCRIPTION RTV As
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//167.172.39.13/hls/tvcityub.m3u8:RTV City Ub
+#DESCRIPTION RTV City Ub
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rtvnp.rs/hls/rtvnp.m3u8:RTV Novi Pazar
+#DESCRIPTION RTV Novi Pazar
+#SERVICE 4097:0:1:a195:b98e:ec:0:0:0:0:https%3a//best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1bos&u=n1info&p=n1Sh4redSecre7iNf0:N1 B&H
+#DESCRIPTION N1 B&H
+#SERVICE 4097:0:1:66a5:6b9a:ec:0:0:0:0:https%3a//best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1hrv&u=n1info&p=n1Sh4redSecre7iNf0:N1 HRV
+#DESCRIPTION N1 HRV
+#SERVICE 4097:0:1:b456:6c83:ec:0:0:0:0:https%3a//best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0:N1 SRB
+#DESCRIPTION N1 SRB
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//live.rednet.rs/providus/redtv_multi.m3u8:Red TV
+#DESCRIPTION Red TV
+#SERVICE 1:64:303:0:0:0:0:0:0:0:
+#DESCRIPTION Overige zenders
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtsp%3a//s1.media-planet.sk%3a80/live/bardejov1:Bardejovka TV
+#DESCRIPTION Bardejovka TV
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:rtmp%3a//rtcg2.videostreaming.rs/rtcg/rtcg.2.stream:Crna Gora SatTV
+#DESCRIPTION Crna Gora SatTV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//kurir-tv.haste-cdn.net/providus/live2805.m3u8:Kurir TV
+#DESCRIPTION Kurir TV
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-3/playlist.m3u8:Muzzik Cafe&Club Serbia
+#DESCRIPTION Muzzik Cafe&Club Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-a4/playlist.m3u8:Muzzik HipHop Serbia
+#DESCRIPTION Muzzik HipHop Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-4/playlist.m3u8:Muzzik Jeka Serbia
+#DESCRIPTION Muzzik Jeka Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-a5/playlist.m3u8:Muzzik Mediteraneo Serbia
+#DESCRIPTION Muzzik Mediteraneo Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-2/playlist.m3u8:Muzzik OKK Serbia
+#DESCRIPTION Muzzik OKK Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-1/playlist.m3u8:Muzzik Rock&Roll Serbia
+#DESCRIPTION Muzzik Rock&Roll Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-6/playlist.m3u8:Muzzik TV Serbia
+#DESCRIPTION Muzzik TV Serbia
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//muzzik-live.morescreens.com/mts-5/playlist.m3u8:Muzzik Worldwide Serbia
+#DESCRIPTION Muzzik Worldwide Serbia
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//s1.media-planet.sk%3a80/live/novezamky/playlist.m3u8:Nove Zamky
 #DESCRIPTION Nove Zamky
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/novezamky:Nove Zamky
-#DESCRIPTION Nove Zamky
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/pezinok:Pezinok
-#DESCRIPTION Pezinok
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/novezamky:Nove Zamky -2-
+#DESCRIPTION Nove Zamky -2-
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//s1.media-planet.sk%3a80/live/reduta/playlist.m3u8:Reduta
 #DESCRIPTION Reduta
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/reduta:Reduta
-#DESCRIPTION Reduta
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//82.114.65.202/live/rrokumtv:RROKUM TV
-#DESCRIPTION RROKUM TV
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_001/playlist.m3u8?video_id=5&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS 1 HD (Servië)
-#DESCRIPTION RTS 1 HD (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_002/playlist.m3u8?video_id=4&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS 2 HD (Servië)
-#DESCRIPTION RTS 2 HD (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//rts-live.morescreens.com/RTS_1_013/playlist.m3u8?video_id=2&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS 3 (Servië)
-#DESCRIPTION RTS 3 (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com//RTS_1_016/playlist.m3u8?video_id=218325&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS Direktan prenos (Servië)
-#DESCRIPTION RTS Direktan prenos (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_005/playlist.m3u8?video_id=14&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS DRAMA (Servië)
-#DESCRIPTION RTS DRAMA (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_015/playlist.m3u8?video_id=16887&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS HD (Servië)
-#DESCRIPTION RTS HD (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_003/playlist.m3u8?video_id=16886&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS KOLO (Servië)
-#DESCRIPTION RTS KOLO (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_007/playlist.m3u8?video_id=8&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS MUZIKA (Servië)
-#DESCRIPTION RTS MUZIKA (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_008/playlist.m3u8?video_id=16883&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS POLETARAC (Servië)
-#DESCRIPTION RTS POLETARAC (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_014/playlist.m3u8?video_id=16889&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS SVET HD (Servië)
-#DESCRIPTION RTS SVET HD (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_004/playlist.m3u8?video_id=16&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS TREZOR (Servië)
-#DESCRIPTION RTS TREZOR (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//rts-live.morescreens.com/RTS_1_006/playlist.m3u8?video_id=11&authority_instance_id=spectar-prd-rts&token=xxx&detected_delivery_method=mpegdash:RTS ZIVOT (Servië)
-#DESCRIPTION RTS ZIVOT (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//video.radio-banovina.hr/live/myStream:RTV BANOVINA HR
-#DESCRIPTION RTV BANOVINA HR
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//77.46.147.94%3a9250/:Sandzak (Servië)
-#DESCRIPTION Sandzak (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//s1.media-planet.sk%3a80/live/senica1/playlist.m3u8:Senica
-#DESCRIPTION Senica
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/senica1:Senica
-#DESCRIPTION Senica
-#SERVICE 4097:0:1:124:0:0:0:0:0:0:http%3a//edge-de-01.maksnet.tv/soskanal/soskanal/playlist.m3u8:Sos Kanal TV (Servië)
-#DESCRIPTION Sos Kanal TV (Servië)
-#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//str103.setplex.net%3a1935/228/stv_online:supersonic tv
-#DESCRIPTION supersonic tv
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//v.tf.rs/liveedge/smil%3alivestream.smil/chunklist_w2119200807_b1396000.m3u8:Telegraf (Servië)
-#DESCRIPTION Telegraf (Servië)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//tvstream.tvtopsound.com%3a1935/live/ngrp%3ampegts.stream_all/playlist.m3u8:Top Sound (Servië)
-#DESCRIPTION Top Sound (Servië)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/reduta:Reduta -2-
+#DESCRIPTION Reduta -2-
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//video.radio-banovina.hr/live/myStream:RTV Banovina
+#DESCRIPTION RTV Banovina
 #SERVICE 4097:0:1:0:0:0:0:0:0:0:rtmp%3a//s1.media-planet.sk%3a80/live/turzovka:Turzovka
 #DESCRIPTION Turzovka
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:http%3a//212.200.102.3%3a5000/udp/239.99.99.99%3a23999:TV Partizan HD (Servië)
-#DESCRIPTION TV Partizan HD (Servië)
-#SERVICE 4097:0:0:0:0:0:0:0:0:0:mmsh%3a//212.200.255.151/rtv2?MSWMExt=.asf:Vojvodina 2 (Servië)
-#DESCRIPTION Vojvodina 2 (Servië)
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//92.60.238.10%3a1935/live/belleamie/playlist.m3u8:TV Belle Amie
+#DESCRIPTION TV Belle Amie
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//109.92.29.10%3a1935/tvduga/tvduga/playlist.m3u8:TV Duga Plus 
+#DESCRIPTION TV Duga Plus 
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:https%3a//vod1.laki.eu/live/hram/index.m3u8:TV Hram
+#DESCRIPTION TV Hram
+#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//stream.pikanal.rs/pikanal/pgm.m3u8?v=1617785340:TV Pi Canal Pirot
+#DESCRIPTION TV Pi Canal Pirot
+#SERVICE 4097:0:0:0:0:0:0:0:0:0:mmsh%3a//212.200.255.151/rtv2?MSWMExt=.asf:Vojvodina 2
+#DESCRIPTION Vojvodina 2
